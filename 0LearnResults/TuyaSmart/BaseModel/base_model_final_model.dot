@@ -1,0 +1,39 @@
+digraph g {
+
+	s0 [shape="circle" label="s0"];
+	s1 [shape="circle" label="s1"];
+	s2 [shape="circle" label="s2"];
+	s3 [shape="circle" label="s3"];
+	s0 -> s1 [label="user1|local|AddDevice / user1|local|AddDevice_CLS_-1"];
+	s0 -> s2 [label="user1|local|SharePlug / NoElement"];
+	s0 -> s2 [label="user1|local|UnsharePlug / NoElement"];
+	s0 -> s2 [label="user1|local|RemoveDevice / NoElement"];
+	s0 -> s2 [label="user1|local|DeviceControl / NoElement"];
+	s0 -> s2 [label="user2|local|DeviceControl / NoElement"];
+	s0 -> s2 [label="user2|remote|DeviceControl / NoElement"];
+	s1 -> s2 [label="user1|local|AddDevice / NoElement"];
+	s1 -> s3 [label="user1|local|SharePlug / user1|local|SharePlug_CLS_1"];
+	s1 -> s2 [label="user1|local|UnsharePlug / NoElement"];
+	s1 -> s0 [label="user1|local|RemoveDevice / user1|local|RemoveDevice_CLS_0"];
+	s1 -> s1 [label="user1|local|DeviceControl / user1|local|DeviceControl_CLS_0"];
+	s1 -> s2 [label="user2|local|DeviceControl / NoElement"];
+	s1 -> s2 [label="user2|remote|DeviceControl / NoElement"];
+	s2 -> s2 [label="user1|local|AddDevice / NoElement"];
+	s2 -> s2 [label="user1|local|SharePlug / NoElement"];
+	s2 -> s2 [label="user1|local|UnsharePlug / NoElement"];
+	s2 -> s2 [label="user1|local|RemoveDevice / NoElement"];
+	s2 -> s2 [label="user1|local|DeviceControl / NoElement"];
+	s2 -> s2 [label="user2|local|DeviceControl / NoElement"];
+	s2 -> s2 [label="user2|remote|DeviceControl / NoElement"];
+	s3 -> s2 [label="user1|local|AddDevice / NoElement"];
+	s3 -> s3 [label="user1|local|SharePlug / user1|local|SharePlug_CLS_0"];
+	s3 -> s1 [label="user1|local|UnsharePlug / user1|local|UnsharePlug_CLS_0"];
+	s3 -> s0 [label="user1|local|RemoveDevice / user1|local|RemoveDevice_CLS_0"];
+	s3 -> s3 [label="user1|local|DeviceControl / user1|local|DeviceControl_CLS_0"];
+	s3 -> s3 [label="user2|local|DeviceControl / user2|local|DeviceControl_CLS_0"];
+	s3 -> s3 [label="user2|remote|DeviceControl / user2|remote|DeviceControl_CLS_0"];
+
+__start0 [label="" shape="none" width="0" height="0"];
+__start0 -> s0;
+
+}
