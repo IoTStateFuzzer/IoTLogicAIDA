@@ -1,16 +1,26 @@
-## Hi there 👋
+# IoTStateFuzzer
+Here is the IoTStateFuzzer repositorie, where the state machines learned during the experiments will be presented.
 
-<!--
-**IoTStateFuzzer/IoTStateFuzzer** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+# File Structure
 
-Here are some ideas to get you started:
+## 0LearnResults
+This folder contains the `Base models` and `State fuzzing models` for 6 devices from 5 vendors mentioned in the paper. These models are used for analyzing and testing the behavior of the devices under various conditions, with a focus on identifying potential logic vulnerabilities and bugs.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+In this folder, the files are stored as follows:
+```
+0LearnResults - Vendor (- Device) - BaseModel (- Special category) - .dot and .pdf
+                                  - StateFuzzing (- Special category) - Depth of Wp-Method - Hookable action - .dot and .pdf
+```
+
+File Description:
+
+1. **.dot file**: The dot files represent the state machine learned by the Learner. 
+
+2. **.pdf file**: The PDF files correspond to the state machine visualized using the dot files.
+
+State Machine Details:
+
+1. State: The `Initial state` for all models is `0`. The `Error state` is represented as either `state 1` or `state 2`, depending on the result from the learning process.
+
+2. Symbol: `NoElement` represents the special response `N/A` as described in the paper. 
+`CLS_-1` indicates that the execution of the action always leads to the same outcome and does not introduce any vulnerabilities, so no categorization is made for the action's output symbol.
