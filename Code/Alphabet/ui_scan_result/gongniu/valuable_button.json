@@ -1,0 +1,241 @@
+{
+    "homePage":"com.thebull.MainActivity",
+    "appStartActivity":"com.thebull.init.LaunchActivity",
+    "appPackage":"com.gongniu.smart",
+    "appName": "公牛智家",
+    "version": "4.2.1",
+    "removeDeviceSleepTime": 5,
+    "addDeviceSleepTime": 2,
+    "resetActions": [
+        "user1|local|RemoveDevice"
+    ],
+    "overlookActions": [
+    ],
+    "createDatabaseActionOrder": [
+        "user1|local|AddDevice", "user1|local|DeviceControl",
+        "user1|local|SharePlug", "user1|local|SharePlug",
+        "user2|remote|AcceptDeviceShare", "user1|local|SharePlug",
+        "user2|remote|DeviceControl",  "user1|local|DeviceControl", "user2|remote|DeviceControl",
+        "user1|local|UnsharePlug", "user1|local|RemoveDevice",
+
+        "user1|local|AddDevice", "user1|local|SharePlug", "user2|remote|AcceptDeviceShare", "user1|local|RemoveDevice"
+    ],
+    "Special":{
+        "restartApp": {
+            "no_need_back_homepage": true,
+            "1": {
+                "restartApp": true,
+                "description": "restart app"
+            },
+            "2": {
+                "refresh": true,
+                "description": "refresh"
+            }
+        },
+        "BackHome": {
+            "no_need_back_homepage": true,
+            "1": {
+                "xpath": "//android.widget.TextView[@text=\"家庭\"]",
+                "description": "BackHome: click Home"
+            }
+        },
+        "refresh": {
+            "no_need_back_homepage": true,
+            "1": {
+                "refresh": true,
+                "description": "refresh"
+            }
+        },
+        "ClickBack": {
+            "no_need_back_homepage": true,
+            "1": {
+                "back": true,
+                "description": "back"
+            }
+        }
+    },
+    "user1":{
+        "remote":{
+        },
+        "local":{
+            "AddDevice":{
+                "1":{
+                    "xpath":"//android.widget.ImageView[@resource-id=\"com.gongniu.smart:id/add_device\"]",
+                    "description": "click add"
+                },
+                "2":{
+                    "xpath":"//android.widget.TextView[@resource-id=\"com.gongniu.smart:id/tv_text\" and @text=\"添加设备\"]",
+                    "description": "click add device",
+                    "wait_until_exist": true
+                },
+                "3":{
+                    "xpath":"//android.widget.TextView[@text=\"插座\"]",
+                    "description": "choose plug",
+                    "bottom":true
+                },
+                "4":{
+                    "xpath":"//android.widget.TextView[@text=\"WiFi智能转换器\"]",
+                    "description": "choose wifi plug"
+                },
+                "5":{
+                    "xpath":"//android.view.ViewGroup[@content-desc=\"已确认上述操作\"]/android.widget.ImageView",
+                    "description": "select"
+                },
+                "6":{
+                    "xpath":"//android.widget.TextView[@text=\"下一步\"]",
+                    "description": "click next"
+                },
+                "7":{
+                    "xpath":"//android.widget.TextView[@text=\"下一步\"]",
+                    "description": "click next",
+                    "waiting_time": 0.5
+                },
+                "9":{
+                    "xpath":"//android.widget.TextView[@text=\"完成\"]",
+                    "description": "click done",
+                    "wait_until_exist": true
+                }
+            },
+            "SharePlug":{
+                "1":{
+                    "xpath":"//android.widget.TextView[@text='WiFi插座']",
+                    "description": "click device",
+                    "waiting_time": 2
+                },
+                "2":{
+                    "posi_x":1010,
+                    "posi_y":180,
+                    "description": "click edit"
+                },
+                "3":{
+                    "xpath":"//android.view.ViewGroup[@content-desc=\"设备共享\"]",
+                    "description": "click share device"
+                },
+                "4":{
+                    "xpath":"//android.widget.TextView[@text=\"手机号共享\"]",
+                    "description": "click share by phone number"
+                },
+                "5":{
+                    "xpath":"//android.widget.EditText[@text=\"请输入手机号码\"]",
+                    "description": "input user account",
+                    "input_text":"111111111"
+                },
+                "6":{
+                    "xpath":"//android.widget.TextView[@text=\"确定\"]",
+                    "description": "click done"
+                }
+            },
+            "UnsharePlug":{
+                "1":{
+                    "xpath":"//android.widget.TextView[@text='WiFi插座']",
+                    "description": "click device",
+                    "waiting_time": 2
+                },
+                "2":{
+                    "posi_x":1010,
+                    "posi_y":180,
+                    "description": "click edit"
+                },
+                "3":{
+                    "xpath":"//android.view.ViewGroup[@content-desc=\"设备共享\"]",
+                    "description": "click share device"
+                },
+                "4":{
+                    "xpath":"//android.widget.TextView[@text=\"共享管理\"]",
+                    "description": "click share manager"
+                },
+                "5":{
+                    "xpath":"//android.widget.TextView[@text=\"编辑\"]",
+                    "description": "click edit",
+                    "wait_until_exist": true
+                },
+                "6":{
+                    "xpath":"//android.widget.TextView[@text=\"等待接收\" or @text=\"已接受邀请\"]",
+                    "description": "select share number"
+                },
+                "7":{
+                    "xpath":"//android.widget.TextView[@text=\"取消分享\"]",
+                    "description": "click unshare"
+                },
+                "8":{
+                    "xpath":"//android.widget.TextView[@text=\"完成\"]",
+                    "description": "click done"
+                }
+            },
+            "RemoveDevice":{
+                "1":{
+                    "xpath":"//android.widget.TextView[@text='WiFi插座']",
+                    "description": "click device",
+                    "waiting_time": 2
+                },
+                "2":{
+                    "posi_x":1010,
+                    "posi_y":180,
+                    "description": "click edit"
+                },
+                "3":{
+                    "xpath":"//android.widget.TextView[@text=\"设备管理\"]",
+                    "description": "click device managre"
+                },
+                "4":{
+                    "xpath":"//android.widget.TextView[@text=\"删除设备\"]",
+                    "description": "click remove",
+                    "wait_until_exist": true
+                },
+                "5":{
+                    "xpath":"//android.widget.TextView[@resource-id=\"com.gongniu.smart:id/positive_bt\"]",
+                    "description": "click confirm"
+                }
+            },
+            "DeviceControl": {
+                "1":{
+                    "xpath":"//android.widget.ImageView[@resource-id=\"com.gongniu.smart:id/status\"]",
+                    "description": "click control",
+                    "waiting_time": 1.5
+                },
+                "2":{
+                    "xpath":"//android.widget.ImageView[@resource-id=\"com.gongniu.smart:id/status\"]",
+                    "description": "click control",
+                    "waiting_time": 1.5
+                }
+            }
+        }
+    },
+    "user2":{
+        "local":{
+        },
+        "remote":{
+            "AcceptDeviceShare":{
+                "1":{
+                    "xpath":"//android.widget.ImageView[@resource-id=\"com.gongniu.smart:id/notify\"]",
+                    "description": "click notify",
+                    "waiting_time": 2
+                },
+                "2":{
+                    "xpath":"//android.widget.TextView[@text=\"设备分享\"]",
+                    "description": "click invitation message"
+                },
+                "3":{
+                    "xpath":"//android.widget.TextView[@text=\"同意\"]",
+                    "description": "click accept"
+                },
+                "5":{
+                    "xpath":"//android.widget.TextView[@resource-id=\"com.gongniu.smart:id/positive_bt\"]",
+                    "description": "click confirm"
+                }
+            },
+            "DeviceControl":{
+                "1":{
+                    "xpath":"//android.widget.ImageView[@resource-id=\"com.gongniu.smart:id/status\"]",
+                    "description": "click control",
+                    "waiting_time": 1.5
+                },
+                "2":{
+                    "xpath":"//android.widget.ImageView[@resource-id=\"com.gongniu.smart:id/status\"]",
+                    "description": "click control",
+                    "waiting_time": 1.5
+                }
+            }
+        }
+    }
+}

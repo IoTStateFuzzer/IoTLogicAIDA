@@ -1,0 +1,5 @@
+tqdm~=4.66.1
+Appium-Python-Client~=2.11.1
+selenium~=4.12.0
+frida~=16.1.4
+pyshark~=0.6

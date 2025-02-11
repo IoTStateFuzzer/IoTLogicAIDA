@@ -1,0 +1,354 @@
+{
+    "homePage":"com.tuya.smartlifeiot/com.thingclips.smart.hometab.activity.FamilyHomeActivity",
+    "appStartActivity":"com.smart.ThingSplashActivity",
+    "appPackage":"com.tuya.smartlifeiot",
+    "appName": "智能生活",
+    "version": "5.6.1",
+    "removeDeviceSleepTime": 5,
+    "addDeviceSleepTime": 2,
+    "resetActions": [
+        "user1|local|RemoveDevice"
+    ],
+    "hookableActions": [
+        "user2|local|DeviceControl",
+        "user2|remote|DeviceControl"
+    ],
+    "overlookActions": [
+        "user1|remote|DeviceControl",
+        "user1|local|InviteToHome",
+        "user1|local|RemoveFromHome",
+        "user2|remote|AcceptInvite"
+    ],
+    "createDatabaseActionOrder": [
+        "user1|local|AddDevice", "user1|local|DeviceControl", "user1|local|SharePlug",
+        "user2|local|DeviceControl", "user1|local|SharePlug",
+        "user2|remote|DeviceControl", "user2|local|DeviceControl",
+        "user1|local|DeviceControl", "user2|remote|DeviceControl",
+        "user1|local|UnsharePlug", "user1|local|RemoveDevice",
+
+        "user1|local|AddDevice", "user1|local|SharePlug", "user1|local|RemoveDevice"
+    ],
+    "Special":{
+        "removeConfirm": {
+            "1":{
+                    "xpath":"//android.widget.TextView[@content-desc='dialog_confirm']",
+                    "description": "click 'got it' when removed",
+                    "can_not_exist": true
+            }
+        },
+        "restartApp": {
+            "no_need_back_homepage": true,
+            "1": {
+                "restartApp": true,
+                "description": "restart app"
+            },
+            "2": {
+                "refresh": true,
+                "description": "refresh"
+            }
+        },
+        "BackHome": {
+      "no_need_back_homepage": true,
+            "1": {
+                "xpath": "//android.widget.TextView[@resource-id=\"com.tuya.smartlifeiot:id/title\" and @text=\"Home\"]",
+                "description": "BackHome: click Home"
+            }
+        },
+        "refresh": {
+            "no_need_back_homepage": true,
+            "1": {
+                "refresh": true,
+                "description": "refresh"
+            }
+        },
+        "ClickBack": {
+            "no_need_back_homepage": true,
+            "1": {
+                "back": true,
+                "description": "back"
+            }
+        }
+    },
+    "user1":{
+        "remote":{
+            "DeviceControl": {
+                "1":{
+                    "xpath":"//android.widget.TextView[@resource-id='com.tuya.smartlifeiot:id/deviceName']",
+                    "description": "click device"
+                },
+                "2":{
+                    "xpath":"//android.view.ViewGroup[@content-desc='HomeScene_SwitchView_Switch1']/android.widget.ImageView",
+                    "description": "click control"
+                }
+            }
+        },
+        "local":{
+            "AddDevice":{
+                "1":{
+                    "xpath":"//android.widget.TextView[@content-desc='homepage_emptyadd']",
+                    "description": "click add"
+                },
+                "3":{
+                    "xpath":"//android.widget.TextView[@resource-id='com.tuya.smartlifeiot:id/tv_config_left_item' and @text='Others']",
+                    "description": "choose other",
+                    "bottom":true
+                },
+                "4":{
+                    "xpath":"(//android.widget.TextView[@resource-id='com.tuya.smartlifeiot:id/tv_config_right_item'])[5]",
+                    "description": "choose wifi other"
+                },
+                "5":{
+                    "xpath":"//android.widget.LinearLayout[@resource-id='com.tuya.smartlifeiot:id/ll_btn']",
+                    "description": "click next"
+                },
+                "6":{
+                    "xpath":"//android.widget.TextView[@resource-id='com.tuya.smartlifeiot:id/tv_next']",
+                    "description": "click next"
+                },
+                "7":{
+                    "xpath":"//android.widget.TextView[@resource-id='com.tuya.smartlifeiot:id/tv_next']",
+                    "description": "click next"
+                },
+                "8":{
+                    "xpath":"//android.widget.TextView[@resource-id='com.tuya.smartlifeiot:id/tv_next']",
+                    "description": "click next"
+                },
+                "9":{
+                    "xpath":"//android.view.View[@resource-id='com.tuya.smartlifeiot:id/view_ez_content']",
+                    "description": "click quick blink"
+                },
+                "10":{
+                    "xpath":"//android.widget.Button[@resource-id='com.tuya.smartlifeiot:id/btnDone']",
+                    "description": "click done",
+                    "wait_until_exist": true
+                },
+                "11":{
+                    "xpath":"//android.view.ViewGroup[@content-desc='TopBar_Btn_Back']/android.view.View",
+                    "description": "click back"
+                },
+                "12":{
+                    "xpath":"//android.widget.ImageView[@resource-id='com.tuya.smartlifeiot:id/iv_close']",
+                    "description": "click close",
+                    "wait_until_exist": true
+                }
+            },
+            "SharePlug":{
+                "1":{
+                    "xpath":"//android.widget.TextView[@resource-id='com.tuya.smartlifeiot:id/deviceName']",
+                    "description": "click device"
+                },
+                "2":{
+                    "xpath":"//android.widget.FrameLayout[@resource-id='com.tuya.smartlifeiot:id/thing_fragment_reactroot']/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.View",
+                    "description": "click edit"
+                },
+                "3":{
+                    "xpath":"//android.widget.TextView[@resource-id='com.tuya.smartlifeiot:id/menu_list_title' and @text='Share Device']",
+                    "description": "click share device",
+                    "wait_until_exist": true
+                },
+                "4":{
+                    "xpath":"//android.widget.TextView[@resource-id='com.tuya.smartlifeiot:id/tv_sub_menu_more']",
+                    "description": "click add user"
+                },
+                "5":{
+                    "xpath":"//android.widget.EditText[@content-desc='addshare_account']",
+                    "description": "input user account",
+                    "input_text":"111111111"
+                },
+                "6":{
+                    "xpath":"//android.widget.TextView[@content-desc='toolbar_menu']",
+                    "description": "click done"
+                }
+            },
+            "UnsharePlug":{
+                "1":{
+                    "xpath":"//android.widget.TextView[@resource-id='com.tuya.smartlifeiot:id/deviceName']",
+                    "description": "click device"
+                },
+                "2":{
+                    "xpath":"//android.widget.FrameLayout[@resource-id='com.tuya.smartlifeiot:id/thing_fragment_reactroot']/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.View",
+                    "description": "click edit"
+                },
+                "3":{
+                    "xpath":"//android.widget.TextView[@resource-id='com.tuya.smartlifeiot:id/menu_list_title' and @text='Share Device']",
+                    "description": "click share device",
+                    "wait_until_exist": true
+                },
+                "4":{
+                    "xpath":"//android.widget.ImageView[@content-desc=\"smart_add\"]",
+                    "description": "edit"
+                },
+                "5":{
+                    "xpath":"//android.widget.TextView[@text=\"user2\"]",
+                    "description": "select user2"
+                },
+                "6":{
+                    "xpath":"//android.widget.TextView[@resource-id=\"com.tuya.smartlifeiot:id/tv_remove_share\"]",
+                    "description": "click unshare"
+                },
+                "7":{
+                    "xpath":"//android.widget.TextView[@content-desc=\"dialog_confirm\"]",
+                    "description": "confirm"
+                }
+            },
+            "InviteToHome":{
+                "1":{
+                    "xpath":"//android.widget.TextView[@resource-id='com.tuya.smartlifeiot:id/name']",
+                    "description": "click home name"
+                },
+                "2":{
+                    "xpath":"//android.widget.TextView[@resource-id='com.tuya.smartlifeiot:id/tv_title' and @text='Home Management']",
+                    "description": "click home management"
+                },
+                "3":{
+                    "xpath":"//android.widget.TextView[@resource-id='com.tuya.smartlifeiot:id/tv_family' and @text='user1home']",
+                    "description": "click my home"
+                },
+                "4":{
+                    "xpath":"//android.widget.TextView[@content-desc='familyset_memberadd']",
+                    "description": "click add member"
+                },
+                "5":{
+                    "xpath":"//android.widget.TextView[@resource-id='com.tuya.smartlifeiot:id/tv_share_name' and @text='App account']",
+                    "description": "click use app account"
+                },
+                "6":{
+                    "xpath":"//android.widget.EditText[@resource-id='com.tuya.smartlifeiot:id/et_member_name']",
+                    "description": "input guest name ",
+                    "input_text":"guest"
+                },
+                "7":{
+                    "xpath":"//android.widget.EditText[@resource-id='com.tuya.smartlifeiot:id/et_account']",
+                    "description": "input guest account",
+                    "input_text":"111111111"
+                },
+                "8":{
+                    "xpath":"//android.widget.TextView[@content-desc='toolbar_menu']",
+                    "description": "click save"
+                },
+                "8-1":{
+                    "back": true,
+                    "description": "back"
+                }
+            },
+            "RemoveFromHome":{
+                "1":{
+                    "xpath":"//android.widget.TextView[@resource-id='com.tuya.smartlifeiot:id/name']",
+                    "description": "click home name"
+                },
+                "2":{
+                    "xpath":"//android.widget.TextView[@resource-id='com.tuya.smartlifeiot:id/tv_title' and @text='Home Management']",
+                    "description": "click home management"
+                },
+                "3":{
+                    "xpath":"//android.widget.TextView[@resource-id='com.tuya.smartlifeiot:id/tv_family' and @text='user1home']",
+                    "description": "click my home"
+                },
+                "4":{
+                    "xpath":"//android.widget.TextView[@resource-id='com.tuya.smartlifeiot:id/member_name' and @text='guest']",
+                    "description": "click guest"
+                },
+                "5":{
+                    "xpath":"//android.widget.TextView[@content-desc='member_details_remove']",
+                    "description": "click remove guest"
+                },
+                "6":{
+                    "xpath":"//android.widget.TextView[@content-desc='dialog_confirm']",
+                    "description": "click confirm"
+                }
+            },
+            "RemoveDevice":{
+                "1":{
+                    "xpath":"//android.widget.TextView[@resource-id='com.tuya.smartlifeiot:id/deviceName']",
+                    "description": "click device"
+                },
+                "3":{
+                    "xpath":"//android.widget.FrameLayout[@resource-id='com.tuya.smartlifeiot:id/thing_fragment_reactroot']/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.View",
+                    "description": "click edit"
+                },
+                "4":{
+                    "xpath":"//android.widget.TextView[@text='Remove Device']",
+                    "description": "click remove device",
+                    "bottom":true
+                },
+                "5":{
+                    "xpath":"//android.widget.TextView[@content-desc='dialog_confirm_1']",
+                    "description": "click clear"
+                },
+                "6":{
+                    "xpath":"//android.widget.TextView[@content-desc='dialog_confirm']",
+                    "description": "click confirm"
+                }
+            },
+            "DeviceControl": {
+                "1":{
+                    "xpath":"//android.widget.TextView[@resource-id='com.tuya.smartlifeiot:id/deviceName']",
+                    "description": "click device"
+                },
+                "2":{
+                    "xpath":"//android.view.ViewGroup[@content-desc='HomeScene_SwitchView_Switch1']/android.widget.ImageView",
+                    "description": "click control"
+                },
+                "3":{
+                    "xpath":"//android.view.ViewGroup[@content-desc='HomeScene_SwitchView_Switch1']/android.widget.ImageView",
+                    "description": "click control",
+                    "waiting_time": 1
+                }
+            }
+        }
+    },
+    "user2":{
+        "local":{
+            "DeviceControl":{
+                "1":{
+                    "xpath":"//android.widget.TextView[@resource-id='com.tuya.smartlifeiot:id/deviceName']",
+                    "description": "click device"
+                },
+                "2":{
+                    "xpath":"//android.view.ViewGroup[@content-desc='HomeScene_SwitchView_Switch1']/android.widget.ImageView",
+                    "description": "click control"
+                },
+                "3":{
+                    "xpath":"//android.view.ViewGroup[@content-desc='HomeScene_SwitchView_Switch1']/android.widget.ImageView",
+                    "description": "click control",
+                    "waiting_time": 1
+                }
+            }
+        },
+        "remote":{
+            "AcceptInvite":{
+                "1":{
+                    "xpath":"//android.widget.TextView[@resource-id='com.tuya.smartlifeiot:id/name']",
+                    "description": "click home"
+                },
+                "2":{
+                    "xpath":"//android.widget.TextView[@text='Waiting to join...']",
+                    "description": "click invitation message"
+                },
+                "3":{
+                    "xpath":"//android.widget.TextView[@content-desc='dialog_confirm']",
+                    "description": "click accept"
+                },
+                "4": {
+                    "otherPhoneAction": "user2|local|refresh",
+                    "description": "user2|local|refresh"
+                }
+            },
+            "DeviceControl":{
+                "1":{
+                    "xpath":"//android.widget.TextView[@resource-id='com.tuya.smartlifeiot:id/deviceName']",
+                    "description": "click device"
+                },
+                "2":{
+                    "xpath":"//android.view.ViewGroup[@content-desc='HomeScene_SwitchView_Switch1']/android.widget.ImageView",
+                    "description": "click control"
+                },
+                "3":{
+                    "xpath":"//android.view.ViewGroup[@content-desc='HomeScene_SwitchView_Switch1']/android.widget.ImageView",
+                    "description": "click control",
+                    "waiting_time": 1
+                }
+            }
+        }
+    }
+}

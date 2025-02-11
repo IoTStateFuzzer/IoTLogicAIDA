@@ -1,0 +1,708 @@
+{
+    "appPackage": "com.xiaomi.smarthome",
+    "appStartActivity": ".SmartHomeMainActivity",
+    "homePage": "com.xiaomi.smarthome/.SmartHomeMainActivity",
+    "appName": "Mi Home",
+    "version": "9.6.507",
+    "removeDeviceSleepTime": 10,
+    "addDeviceSleepTime": 2,
+
+
+    "resetActions": [
+        "user1|local|RemoveDevice",
+        "user2|remote|ClearInviteMessage"
+    ],
+
+
+    "overlookActions": [
+        "user1|local|AddPlug",
+        "user1|local|InviteToHome",
+        "user1|local|RemoveFromHome",
+        "user1|local|DeviceControl",
+        "user2|local|DeviceControl"
+    ],
+    "createDatabaseActionOrder": [
+        "user1|local|AddDevice", "user1|remote|DeviceControl",
+        "user1|local|ShareCamera", "user1|local|ShareCamera",
+        "user2|remote|AcceptDeviceShare", "user1|local|ShareCamera",
+        "user2|remote|DeviceControl", "user1|local|UnshareCamera",
+        "user1|local|ShareCamera", "user1|local|UnshareCamera", "user2|remote|AcceptDeviceShare",
+        "user1|local|RemoveDevice"
+    ],
+
+
+
+
+    "Special":{
+        "restartApp": {
+            "no_need_back_homepage": true,
+            "1": {
+                "restartApp": true,
+                "description": "restart app"
+            },
+            "2": {
+                "refresh": true,
+                "description": "refresh"
+            }
+        },
+        "refresh": {
+            "no_need_back_homepage": true,
+            "1": {
+                "refresh": true,
+                "description": "refresh"
+            }
+        },
+        "ClickBack": {
+            "no_need_back_homepage": true,
+            "1": {
+                "back": true,
+                "description": "back"
+            }
+        },
+
+        "ClearInviteMessage": {
+            "1": {
+                "xpath": "//android.widget.ImageView[@content-desc=\"Messaging\"]",
+                "description": "click message"
+            },
+            "2": {
+                "xpath": "//android.widget.TextView[@resource-id=\"com.xiaomi.smarthome:id/ai1\" and @text=\"System notifications\"]",
+                "description": "click message list"
+            },
+            "3": {
+                "xpath": "//android.widget.ImageView[@resource-id=\"com.xiaomi.smarthome:id/c9h\"]",
+                "description": "click select"
+            },
+            "4": {
+                "xpath": "//android.widget.ImageView[@resource-id=\"com.xiaomi.smarthome:id/dbb\"]",
+                "description": "select all"
+            },
+            "5": {
+                "xpath": "//android.widget.TextView[@text=\"Delete\"]",
+                "description": "click delete"
+            },
+            "6": {
+                "xpath": "//android.widget.Button[@text=\"Delete\"]",
+                "description": "click delete button"
+            }
+        },
+        "BackHome": {
+            "no_need_back_homepage": true,
+            "1":{
+                "xpath":"//android.widget.TextView[@text=\"Mi Home\"]",
+                "description": "click Mi Home"
+            },
+            "2":{
+                "xpath":"//android.widget.TextView[@text=\"Smart home\"]",
+                "description": "click Smart Home"
+            }
+        }
+    },
+
+
+
+
+    "user1":{
+        "remote":{
+            "DeviceControl": {
+                "1":{
+                    "xpath":"//android.widget.RelativeLayout[@resource-id='com.xiaomi.smarthome:id/ans']",
+                    "description": "open"
+                },
+                "2-1-1":{
+                    "posi_x":130,
+                    "posi_y": 795,
+                    "waiting_time": 1,
+                    "description": "click on/off"
+                },
+                "2-1-2":{
+                    "xpath":"//android.widget.TextView[@text='OK']",
+                    "description": "click ok",
+                    "can_not_exist": true
+                },
+                "2-2-1":{
+                    "posi_x":130,
+                    "posi_y": 795,
+                    "description": "click on/off"
+                },
+                "2-2-2":{
+                    "xpath":"//android.widget.TextView[@text='OK']",
+                    "description": "click ok",
+                    "can_not_exist": true
+                },
+                "3-3-1":{
+                    "posi_x":130,
+                    "posi_y": 795,
+                    "description": "click on/off"
+                },
+                "3-3-2":{
+                    "xpath":"//android.widget.TextView[@text='OK']",
+                    "description": "click ok",
+                    "can_not_exist": true
+                },
+                "3-4":{
+                    "posi_x":130,
+                    "posi_y": 795,
+                    "description": "click on/off"
+                },
+                "3-4-2":{
+                    "xpath":"//android.widget.TextView[@text='OK']",
+                    "description": "click ok",
+                    "can_not_exist": true
+                },
+                "4":{
+                    "xpath":"//android.widget.Button[@content-desc='rnLabelBtnReturn']",
+                    "description": "return",
+                    "waiting_time": 1
+                }
+            }
+        },
+        "local":{
+            "AddDevice":{
+                "1": {
+                    "xpath":"//android.widget.ImageView[@content-desc='Add device']",
+                    "description": "click add button in home page"
+                },
+                "2":{
+                    "xpath":"//android.widget.TextView[@resource-id='com.xiaomi.smarthome:id/gq']",
+                    "description": "click add a device choice"
+                },
+                "3":{
+                    "xpath":"//android.widget.TextView[@text='Scan code to add']",
+                    "description": "scan QR code"
+                },
+                "4":{
+                    "posi_x":320,
+                    "posi_y":2090,
+                    "xpath":"//android.widget.LinearLayout[@resource-id='com.xiaomi.smarthome:id/b91']",
+                    "description": "goto gallery",
+                    "waiting_time": 1
+                },
+                "5":{
+                    "xpath":"//android.widget.TextView[@resource-id='com.google.android.apps.photos:id/title' and @text='Download']",
+                    "description": "goto download folder"
+                },
+                "6":{
+                    "xpath":"//android.view.ViewGroup[@content-desc='Photo taken on Aug 29, 2024 4:46:56 PM']",
+                    "description": "select picture"
+                },
+                "7":{
+                    "xpath":"//android.widget.Button[@resource-id='com.xiaomi.smarthome:id/cet']",
+                    "description": "click device reset"
+                },
+                "8":{
+                    "xpath":"//android.widget.TextView[@resource-id='com.xiaomi.smarthome:id/cet']",
+                    "description": "click next"
+                },
+                "11":{
+                    "xpath":"//android.widget.TextView[@text='Living room']",
+                    "description": "choose room",
+                    "wait_until_exist": 25
+                },
+                "12":{
+                    "xpath":"//android.widget.Button[@resource-id='com.xiaomi.smarthome:id/dgs']",
+                    "description": "choose done"
+                },
+                "13":{
+                    "xpath":"//android.widget.Button[@resource-id='com.xiaomi.smarthome:id/azd']",
+                    "description": "set name"
+                },
+                "14":{
+                    "xpath":"//android.widget.Button[@resource-id='com.xiaomi.smarthome:id/ces']",
+                    "description": "set card"
+                },
+                "15":{
+                    "xpath":"//android.widget.Button[@resource-id='com.xiaomi.smarthome:id/azd']",
+                    "description": "set scene"
+                },
+                "16":{
+                    "xpath":"//android.widget.Button[@resource-id='com.xiaomi.smarthome:id/cfo']",
+                    "description": "do not share"
+                },
+                "17":{
+                    "xpath":"//android.widget.Button[@resource-id='com.xiaomi.smarthome:id/w0']",
+                    "description": "do not pro"
+                },
+                "18":{
+                    "xpath":"//android.widget.Button[@resource-id='com.xiaomi.smarthome:id/hu']",
+                    "description": "agree"
+                },
+                "19":{
+                    "xpath":"//android.widget.Button[@resource-id='com.xiaomi.smarthome:id/xw']",
+                    "description": "cancel"
+                },
+                "20":{
+                    "xpath":"//android.widget.TextView[@text='Cancel']",
+                    "description": "cancel",
+                    "waiting_time": 1
+                },
+                "21":{
+                    "xpath":"//android.widget.Button[@content-desc='rnLabelBtnReturn']",
+                    "description": "back"
+                },
+                "22": {
+                    "otherPhoneAction": "user1|remote|refresh",
+                    "description": "refresh"
+                }
+            },
+            "ShareCamera":{
+                "1":{
+                    "xpath":"//android.widget.RelativeLayout[@resource-id='com.xiaomi.smarthome:id/ans']",
+                    "act_before": ".activity.MainActivity",
+                    "act_after": ".activity.MainActivity",
+                    "description": "open"
+                },
+                "2":{
+                    "xpath":"//android.widget.Button[@content-desc='rnLabelBtnSetting']",
+                    "act_before": ".activity.MainActivity",
+                    "act_after": ".activity.MainActivity",
+                    "description": "open setting"
+                },
+                "3":{
+                    "xpath":"//android.widget.TextView[@text='Share device']",
+                    "act_before": ".activity.MainActivity",
+                    "act_after": ".activity.MainActivity",
+                    "description": "click share"
+                },
+                "4":{
+                    "xpath":"//android.widget.TextView[@text='Xiaomi Account (Phone)']",
+                    "act_before": ".activity.MainActivity",
+                    "act_after": ".activity.MainActivity",
+                    "description": "choose type"
+                },
+                "5":{
+                    "xpath":"//android.widget.Button[@resource-id='com.xiaomi.smarthome:id/vy']",
+                    "act_before": ".activity.MainActivity",
+                    "act_after": ".activity.MainActivity",
+                    "description": "click next"
+                },
+                "6":{
+                    "xpath":"//android.widget.AutoCompleteTextView[@resource-id='com.xiaomi.smarthome:id/e2']",
+                    "act_before": ".activity.MainActivity",
+                    "act_after": ".activity.MainActivity",
+                    "description": "input id",
+                    "input_text":"2900113497"
+                },
+                "7":{
+                    "xpath":"//android.widget.TextView[@resource-id='com.xiaomi.smarthome:id/wv']",
+                    "act_before": ".activity.MainActivity",
+                    "act_after": ".activity.MainActivity",
+                    "description": "ok"
+                },
+                "7.5":{
+                    "xpath":"//android.widget.TextView[@resource-id='com.xiaomi.smarthome:id/wb']",
+                    "act_before": ".activity.MainActivity",
+                    "act_after": ".activity.MainActivity",
+                    "description": "ok"
+                },
+                "8":{
+                    "xpath": "//android.widget.Button[@text='OK']",
+                    "description": "click invite next",
+                    "can_not_exist": true
+                }
+            },
+            "RemoveDevice":{
+                "1":{
+                    "xpath":"//android.widget.RelativeLayout[@resource-id='com.xiaomi.smarthome:id/ans']",
+                    "act_before": ".activity.MainActivity",
+                    "act_after": ".activity.MainActivity",
+                    "description": "open"
+                },
+                "2":{
+                    "xpath":"//android.widget.Button[@content-desc='rnLabelBtnSetting']",
+                    "act_before": ".activity.MainActivity",
+                    "act_after": ".activity.MainActivity",
+                    "description": "open setting"
+                },
+                "3":{
+                    "xpath":"//android.widget.TextView[@text='Delete device']",
+                    "act_before": ".activity.MainActivity",
+                    "act_after": ".activity.MainActivity",
+                    "description": "open remove",
+                    "bottom": true
+                },
+                "4":{
+                    "xpath":"//android.widget.Button[@resource-id='com.xiaomi.smarthome:id/vy']",
+                    "act_before": ".activity.MainActivity",
+                    "act_after": ".activity.MainActivity",
+                    "description": "ok"
+                },
+                "5": {
+                    "otherPhoneAction": "user1|remote|refresh",
+                    "description": "refresh"
+                }
+            },
+            "UnshareCamera":{
+                "1":{
+                    "xpath":"//android.widget.RelativeLayout[@resource-id='com.xiaomi.smarthome:id/ans']",
+                    "act_before": ".activity.MainActivity",
+                    "act_after": ".activity.MainActivity",
+                    "description": "open"
+                },
+                "2":{
+                    "xpath":"//android.widget.Button[@content-desc='rnLabelBtnSetting']",
+                    "act_before": ".activity.MainActivity",
+                    "act_after": ".activity.MainActivity",
+                    "description": "open setting"
+                },
+                "3":{
+                    "xpath":"//android.widget.TextView[@text='Share device']",
+                    "act_before": ".activity.MainActivity",
+                    "act_after": ".activity.MainActivity",
+                    "description": "click share"
+                },
+                "4":{
+                    "xpath":"//android.widget.TextView[@resource-id='com.xiaomi.smarthome:id/d0k']",
+                    "act_before": ".activity.MainActivity",
+                    "act_after": ".activity.MainActivity",
+                    "description": "click unshare"
+                },
+                "5":{
+                    "xpath":"//android.widget.Button[@resource-id='com.xiaomi.smarthome:id/vy']",
+                    "act_before": ".activity.MainActivity",
+                    "act_after": ".activity.MainActivity",
+                    "description": "click ok"
+                }
+            },
+            "DeviceControl": {
+                "1":{
+                    "xpath":"//android.view.View[@resource-id=\"com.xiaomi.smarthome:id/b0o\"]",
+                    "act_before": "",
+                    "act_after": "",
+                    "description": "click device",
+                    "refresh": true
+                },
+                "2":{
+                    "xpath":"//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup",
+                    "act_before": "",
+                    "act_after": "",
+                    "description": "click control"
+                }
+            },
+            "AddPlug":{
+                "9-c":{
+                    "xpath":"//android.widget.CheckBox[@resource-id='com.xiaomi.smarthome:id/a20']",
+                    "description": "click dot",
+                    "waiting_time": 5
+                },
+                "10-c":{
+                    "xpath":"//android.widget.Button[@resource-id='com.xiaomi.smarthome:id/b2p']",
+                    "description": "click next"
+                },
+                "1": {
+                    "xpath":"//android.widget.ImageView[@content-desc=\"Add device\"]",
+                    "act_before": ".activity.MainActivity",
+                    "act_after": ".activity.MainActivity",
+                    "description": "click add button in home page",
+                    "refresh": 1
+                },
+                "2":{
+                    "xpath":"//android.widget.TextView[@text='Add device']",
+                    "act_before": ".activity.MainActivity",
+                    "act_after": ".activity.MainActivity",
+                    "description": "click add device choice"
+                },
+                "3":{
+                    "xpath":"//android.widget.TextView[@text='Mijia Smart Plug 3']",
+                    "act_before": "",
+                    "act_after": "",
+                    "waiting_time": 5,
+                    "description": "click the device card"
+                },
+
+                "4":{
+                    "xpath":"//android.widget.TextView[@resource-id=\"com.xiaomi.smarthome:id/cet\"]",
+                    "act_before": "",
+                    "act_after": "",
+                    "description": "click next and wait for binding"
+                },
+                "5":{
+                    "xpath":"//android.widget.TextView[contains(@text, \"living room\") or contains(@text, \"客厅\")]",
+                    "act_before": "",
+                    "act_after": "",
+                    "description": "click living room",
+                    "waiting_time": 25
+                },
+                "6":{
+                    "xpath":"//android.widget.Button[@text='Next']",
+                    "act_before": "",
+                    "act_after": "",
+                    "description": "click set room next"
+                },
+                "7":{
+                    "xpath":"//android.widget.Button[@text='Next']",
+                    "act_before": "",
+                    "act_after": "",
+                    "description": "click set name next"
+                },
+                "8":{
+                    "xpath":"//android.widget.Button[@text=\"LET'S GET STARTED\"]",
+                    "act_before": "",
+                    "act_after": "",
+                    "description": "click automation(scene) next"
+                },
+                "9":{
+                    "xpath":"//android.widget.Button[@resource-id='com.xiaomi.smarthome:id/c9a']",
+                    "act_before": "",
+                    "act_after": "",
+                    "description": "click cancel invite",
+                    "can_not_exist":true
+                },
+                "10":{
+                    "xpath":"//android.widget.Button[@resource-id='com.xiaomi.smarthome:id/uq']",
+                    "act_before": "",
+                    "act_after": "",
+                    "description": "click cancel continue",
+                    "can_not_exist":true
+                },
+                "11":{
+                    "xpath":"//android.widget.Button[@text=\"Agree\"]",
+                    "act_before": "",
+                    "act_after": "",
+                    "description": "click agree"
+                },
+                "12":{
+                    "xpath":"//android.widget.TextView[@text=\"OK\"]",
+                    "act_before": "",
+                    "act_after": "",
+                    "description": "click OK",
+                    "can_not_exist": true
+                },
+                "13":{
+                    "otherPhoneAction": "user1|remote|refresh",
+                    "description": "user1|remote|refresh to update UI"
+                }
+            },
+            "InviteToHome":{
+                "1_1":  {
+                    "xpath": "//android.widget.ImageView[@resource-id=\"com.xiaomi.smarthome:id/b4m\"]",
+                    "act_before": "",
+                    "act_after": "",
+                    "description": "click my home (first)"
+                },
+                "1_2":  {
+                    "xpath": "//android.widget.ImageView[@resource-id=\"com.xiaomi.smarthome:id/b4m\"]",
+                    "can_not_exist": 1,
+                    "description": "click my home (second)"
+                },
+                "2":  {
+                    "xpath": "//android.widget.ImageView[@resource-id=\"com.xiaomi.smarthome:id/jv\"]",
+                    "act_before": "",
+                    "act_after": "",
+                    "description": "click my home management"
+                },
+                "3":  {
+                    "xpath": "//android.widget.TextView[@resource-id=\"com.xiaomi.smarthome:id/ccf\"]",
+                    "act_before": "",
+                    "act_after": "",
+                    "description": "click my home tag"
+                },
+                "4":  {
+                    "xpath": "//android.widget.TextView[@resource-id=\"com.xiaomi.smarthome:id/e_2\" and @text=\"Invite members\"]",
+                    "act_before": "",
+                    "act_after": "",
+                    "description": "click invite members"
+                },
+              "5":  {
+                    "xpath": "//android.widget.Button[@resource-id=\"com.xiaomi.smarthome:id/vy\"]",
+                    "act_before": "",
+                    "act_after": "",
+                    "description": "click invite next"
+                },
+                "6":  {
+                    "xpath": "//android.widget.TextView[@resource-id=\"com.xiaomi.smarthome:id/blx\"]",
+                    "act_before": "",
+                    "act_after": "",
+                    "description": "click not now"
+                },
+                "7":  {
+                    "xpath": "//android.widget.LinearLayout[@resource-id='com.xiaomi.smarthome:id/dew']",
+                    "act_before": "",
+                    "act_after": "",
+                    "description": "click mi account"
+                },
+                "8":  {
+                    "resource_id": "com.xiaomi.smarthome:id/d76",
+                    "act_before": "",
+                    "act_after": "",
+                    "input_text":"111111111",
+                    "description": "input member uid"
+                },
+                "9":  {
+                    "xpath": "//android.widget.TextView[@resource-id='com.xiaomi.smarthome:id/wv']",
+                    "act_before": "",
+                    "act_after": "",
+                    "description": "click search"
+                },
+                "10":  {
+                    "xpath": "//android.widget.TextView[@resource-id='com.xiaomi.smarthome:id/wv']",
+                    "act_before": "",
+                    "act_after": "",
+                    "description": "click invite"
+                }
+            },
+            "RemoveFromHome":{
+                "1_1":  {
+                    "xpath": "//android.widget.ImageView[@resource-id=\"com.xiaomi.smarthome:id/b4m\"]",
+                    "act_before": "",
+                    "act_after": "",
+                    "description": "click my home (first)"
+                },
+                "1_2":  {
+                    "xpath": "//android.widget.ImageView[@resource-id=\"com.xiaomi.smarthome:id/b4m\"]",
+                    "act_before": "",
+                    "act_after": "",
+                    "can_not_exist": 1,
+                    "description": "click my home (second)"
+                },
+                "2":  {
+                    "xpath": "//android.widget.ImageView[@resource-id=\"com.xiaomi.smarthome:id/jv\"]",
+                    "act_before": "",
+                    "act_after": "",
+                    "description": "click my home management"
+                },
+                "3":  {
+                    "xpath": "//android.widget.TextView[@resource-id=\"com.xiaomi.smarthome:id/ccf\"]",
+                    "act_before": "",
+                    "act_after": "",
+                    "description": "click my home tag"
+                },
+                "4":  {
+                    "xpath": "//android.widget.TextView[@text=\"2900113497\"]",
+                    "act_before": "",
+                    "act_after": "",
+                    "description": "click the costumer"
+                },
+                "5":  {
+                    "xpath": "//android.widget.TextView[@resource-id=\"com.xiaomi.smarthome:id/e4d\"]",
+                    "act_before": "",
+                    "act_after": "",
+                    "description": "click remove member"
+                },
+                "6":  {
+                    "xpath": "//android.widget.Button[@resource-id=\"com.xiaomi.smarthome:id/vy\"]",
+                    "act_before": "",
+                    "act_after": "",
+                    "description": "click remove ok"
+                }
+            }
+        }
+    },
+    "user2":{
+        "local":{
+            "DeviceControl": {
+                "1_1":  {
+                    "xpath": "//android.widget.ImageView[@resource-id=\"com.xiaomi.smarthome:id/b4m\"]",
+                    "act_before": "",
+                    "act_after": "",
+                    "description": "click my home (first)"
+                },
+                "1_2":  {
+                    "xpath": "//android.widget.ImageView[@resource-id=\"com.xiaomi.smarthome:id/b4m\"]",
+                    "act_before": "",
+                    "act_after": "",
+                    "can_not_exist": 1,
+                    "description": "click my home (second)"
+                },
+                "2":  {
+                    "xpath": "(//android.widget.RelativeLayout[@resource-id=\"com.xiaomi.smarthome:id/bta\"])[2]/android.widget.LinearLayout",
+                    "act_before": "",
+                    "act_after": "",
+                    "description": "click second home"
+                },
+                "3":{
+                    "xpath":"//android.view.View[@resource-id=\"com.xiaomi.smarthome:id/b0o\"]",
+                    "act_before": "",
+                    "act_after": "",
+                    "description": "click device",
+                    "refresh": true
+                },
+                "4":{
+                    "xpath":"//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup",
+                    "act_before": "",
+                    "act_after": "",
+                    "description": "click control"
+                }
+            }
+        },
+        "remote":{
+            "AcceptDeviceShare":{
+                "1": {
+                    "xpath": "//android.widget.ImageView[@content-desc=\"Messaging\"]",
+                    "act_before": "",
+                    "act_after": "",
+                    "description": "click message"
+                },
+                "2": {
+                    "xpath": "//android.widget.TextView[@resource-id=\"com.xiaomi.smarthome:id/ai1\" and @text=\"System notifications\"]",
+                    "act_before": "",
+                    "act_after": "",
+                    "description": "click message list"
+                },
+                "3": {
+                    "xpath": "//android.widget.TextView[@text=\"Accept\"]",
+                    "act_before": "",
+                    "act_after": "",
+                    "description": "click accept"
+                }
+            },
+            "DeviceControl": {
+                "1":  {
+                    "xpath": "//android.widget.TextView[@text=\"Video camera\"]",
+                    "description": "click camera"
+                },
+                "2-1":  {
+                    "xpath": "//android.widget.TextView[@text=\"OK\"]",
+                    "can_not_exist": true,
+                    "description": "click OK"
+                },
+                "3-1-1":{
+                    "posi_x":130,
+                    "posi_y": 795,
+                    "waiting_time": 2,
+                    "description": "click on/off"
+                },
+                "3-1-2":{
+                    "xpath":"//android.widget.TextView[@text='OK']",
+                    "description": "click ok",
+                    "can_not_exist": true
+                },
+                "3-2-1":{
+                    "posi_x":130,
+                    "posi_y": 795,
+                    "description": "click on/off"
+                },
+                "3-2-2":{
+                    "xpath":"//android.widget.TextView[@text='OK']",
+                    "description": "click ok",
+                    "can_not_exist": true
+                },
+                "3-3-1":{
+                    "posi_x":130,
+                    "posi_y": 795,
+                    "description": "click on/off"
+                },
+                "3-3-2":{
+                    "xpath":"//android.widget.TextView[@text='OK']",
+                    "description": "click ok",
+                    "can_not_exist": true
+                },
+                "3-4":{
+                    "posi_x":130,
+                    "posi_y": 795,
+                    "description": "click on/off"
+                },
+                "3-4-2":{
+                    "xpath":"//android.widget.TextView[@text='OK']",
+                    "description": "click ok",
+                    "can_not_exist": true
+                },
+                "4":{
+                    "xpath":"//android.widget.Button[@content-desc='rnLabelBtnReturn']",
+                    "description": "return",
+                    "waiting_time": 1
+                }
+            }
+        }
+    }
+}

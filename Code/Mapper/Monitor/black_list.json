@@ -1,0 +1,61 @@
+{
+  "domain": [
+    "time.android.com",
+    "www.google.com",
+    "www.google.com.hk",
+    "m.google.com",
+    "ssl.google-analytics.com",
+    "play-lh.googleusercontent.com",
+    "play.googleapis.com",
+    "www.googleapis.cn",
+
+    "openapi.vmall.com",
+    "mw.vmall.com",
+    "metrics1-drcn.dt.dbankcloud.cn",
+    "terms1.hicloud.com",
+    "store1.hispace.hicloud.com",
+    "store.hispace.hicloud.com",
+    "logservice1.dbankcloud.cn",
+    "nsp-logservice-hiview-p43-drcn.obs.cn-north-2.myhuaweicloud.com"
+  ],
+  "ip": [
+    "238.238.238.238",
+    "8.8.8.8",
+    "usere-\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.255",
+    "usere-\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.1",
+    "usere-22[4-9]\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}",
+    "usere-23[0-9]\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}"
+  ],
+  "request_uri": [
+    "/appfront/blappproxy/v1/article/ads",
+    "/appfront/blappproxy/v1/score/query",
+    "/appfront/blappproxy/v1/score/amazonproduct",
+    "/farm/product/v1/system/getlocatelist",
+    "/generate_204",
+    "sinaction-user2|remote|AcceptInvite-/device/control/v2/sdkcontrol",
+
+    "/pass/v2/safe/user/coreInfo",
+    "/app/v2/home/device_support_split",
+    "/app/product/infomation",
+    "/app/home/profiles",
+    "/app/home/profile",
+    "/app/appgateway/miot/appsceneservice/AppSceneService/GetSimpleSceneList",
+    "/app/share/share_history_query",
+    "/app/v2/message/mijia_notice",
+
+    "/mos/messageCenter/v1/shareMessage",
+    "/mos/messageCenter/v1/category"
+  ],
+  "hdrflags": [
+    "0x000000c0",
+    "0x000000d0"
+  ],
+  "message_type": [
+    "209",
+    "1",
+    "0"
+  ],
+  "full_feature": [
+    "usere-user(1|2)_(local|remote)(\\|){2}http(\\|){8,9}"
+  ]
+}

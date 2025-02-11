@@ -1,0 +1,6 @@
+{
+    "user2|remote|DeviceControl": "hookTuyaInfo.py",
+    "user2|remote|DeviceControl|hook": "deviceControl_remote.py",
+    "user2|local|DeviceControl": "hookTuyaInfo.py",
+    "user2|local|DeviceControl|hook": "deviceControl_local.py"
+}

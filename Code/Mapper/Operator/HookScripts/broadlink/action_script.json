@@ -1,0 +1,8 @@
+{
+    "user2|local|DeviceControl|hook": "deviceControl_local.py",
+    "user2|local|DeviceControl": "hookBroadlink.py",
+    "user2|remote|DeviceControl|hook": "deviceControl_remote.py",
+    "user2|remote|DeviceControl": "hookBroadlink.py",
+    "user2|remote|AcceptInvite": "getQRcode.py",
+    "user2|remote|AcceptInvite|hook": "joinFamily_remote.py"
+}

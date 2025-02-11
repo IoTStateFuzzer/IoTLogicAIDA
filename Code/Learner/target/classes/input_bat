@@ -1,0 +1,7 @@
+user1|local|AddDevice
+user1|local|SharePlug
+user1|local|UnsharePlug
+user1|local|RemoveDevice
+user1|local|DeviceControl
+user2|remote|AcceptDeviceShare
+user2|remote|DeviceControl

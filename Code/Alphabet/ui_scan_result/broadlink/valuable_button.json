@@ -1,0 +1,467 @@
+{
+    "homePage":"cn.com.broadlink.unify.app.main.activity.HomepageActivity",
+    "appStartActivity":"cn.com.broadlink.unify.app.main.activity.LoadingActivity",
+    "appPackage":"cn.com.broadlink.econtrol.international",
+    "appName": "BroadLink",
+    "version": "1.8.10",
+    "removeDeviceSleepTime": 5,
+    "addDeviceSleepTime": 4,
+    "resetActions": [
+        "user2|remote|RemoveScreenShot",
+        "user1|local|RemoveTcpdumpPacket",
+        "user2|local|RemoveTcpdumpPacket",
+        "user2|remote|RefreshAtHomeList",
+        "user2|remote|QuitHome",
+        "user2|remote|ClickBack",
+        "user2|local|RefreshAtHomeList",
+        "user1|local|RemoveDevice"
+    ],
+    "overlookActions": [
+    ],
+    "createDatabaseActionOrder": [
+        "user1|local|AddDevice", "user1|local|InviteToHome",
+        "user1|local|DeviceControl", "user1|remote|DeviceControl",
+        "user2|remote|ScanQRCode", "user2|remote|AcceptInvite", "user2|remote|ScanQRCode",
+        "user2|local|DeviceControl", "user2|remote|DeviceControl",
+        "user1|local|DeviceControl", "user1|local|RemoveDevice",
+
+        "user1|local|AddDevice", "user1|local|RemoveFromHome",
+        "user1|remote|DeviceControl", "user1|local|RemoveDevice", "user2|remote|ScanQRCode",
+        "user1|local|InviteToHome", "user2|remote|ScanQRCode", "user2|remote|AcceptInvite", "user2|remote|QuitHome"
+    ],
+    "Special":{
+        "restartApp": {
+            "1": {
+                "restartApp": true,
+                "description": "restart app"
+            },
+            "2": {
+                "refresh": true,
+                "description": "refresh"
+            }
+        },
+        "BackHome": {
+            "1": {
+                "xpath": "//android.widget.TextView[@resource-id=\"cn.com.broadlink.econtrol.international:id/tv_me\" and @text=\"Home\"]",
+                "description": "BackHome: click Home"
+            }
+        },
+        "refresh": {
+            "1": {
+                "refresh": true,
+                "description": "refresh"
+            }
+        },
+        "OpenDeviceStateAndControlDevice":{
+            "1":{
+                "resource_id":"cn.com.broadlink.econtrol.international:id/tv_family_name",
+                "description": "click home card"
+            },
+            "2":{
+                "xpath":"//android.widget.TextView[@resource-id=\"cn.com.broadlink.econtrol.international:id/tv_family_name\" and @text=\"user1home\"]",
+                "description": "click user1home"
+            },
+            "3": {
+                "resource_id": "cn.com.broadlink.econtrol.international:id/rl_device",
+                "description": "click smart plug",
+                "refresh": true
+            },
+            "4":{
+                "xpath": "//android.view.View[@resource-id=\"root\"]/android.view.View[2]/android.widget.Image",
+                "description": "click switch"
+            }
+        },
+        "ControlDeviceAtHomepage": {
+                "1": {
+                    "resource_id": "cn.com.broadlink.econtrol.international:id/iv_state_icon",
+                    "description": "click switch",
+                    "refresh": true
+                }
+        },
+        "ClickBack": {
+            "1": {
+                "back": true,
+                "description": "back"
+            }
+        },
+        "SaveScreenShot": {
+            "1": {
+                "command": {
+                    "is_shell": false,
+                    "root": false,
+                    "need_params": false,
+                    "command_expression": "push /home/username/Desktop/logic_bug/learn_model/1.png /sdcard/Download/1.png"
+                },
+                "description": "Execute command to save qr code on phone"
+            }
+        },
+        "RemoveScreenShot": {
+            "1": {
+                "command": {
+                    "is_shell": true,
+                    "root": false,
+                    "need_params": false,
+                    "command_expression": "rm /sdcard/Download/1.png"
+                },
+                "description": "Execute command to remove qr code"
+            }
+        },
+        "RemoveTcpdumpPacket": {
+            "1": {
+                "command": {
+                    "is_shell": true,
+                    "root": false,
+                    "need_params": false,
+                    "command_expression": "rm /data/local/tmp/1.pcap"
+                },
+                "description": "Execute command to remove pcap on phone"
+            }
+        },
+        "RefreshAtHomeList": {
+            "1":{
+                "resource_id":"cn.com.broadlink.econtrol.international:id/tv_family_name",
+                "description": "click home card"
+            },
+            "2":{
+                "resource_id":"cn.com.broadlink.econtrol.international:id/btn_family_manage",
+                "description": "click Manage homes"
+            },
+            "3":{
+                "refresh": true,
+                "description": "refresh"
+            },
+            "4": {
+                "back": true,
+                "description": "back"
+            }
+        }
+    },
+    "user1":{
+        "remote":{
+            "DeviceControl":{
+                "1": {
+                    "resource_id": "cn.com.broadlink.econtrol.international:id/iv_state_icon",
+                    "description": "click switch",
+                    "refresh": true
+                }
+            }
+        },
+        "local":{
+            "AddDevice":{
+                "1": {
+                    "resource_id": "cn.com.broadlink.econtrol.international:id/iv_add",
+                    "description": "click add"
+                },
+                "1-2":{
+                    "xpath":"//android.widget.TextView[@resource-id=\"cn.com.broadlink.econtrol.international:id/more_textview\" and @text=\"Add device\"]",
+                    "act_before": "",
+                    "act_after": "",
+                    "description": "choose add device"
+                },
+                "2":{
+                    "xpath":"//android.widget.TextView[@resource-id='cn.com.broadlink.econtrol.international:id/dev_name' and @text='Add A New Device']",
+                    "act_before": "",
+                    "act_after": "",
+                    "description": "choose add device"
+                },
+                "3":{
+                    "xpath":"//android.widget.TextView[@resource-id='cn.com.broadlink.econtrol.international:id/item_title' and @text='Smart Plug']",
+                    "act_before": "",
+                    "act_after": "",
+                    "description": "choose smart plug"
+                },
+                "4":{
+                    "xpath":"//android.widget.TextView[@resource-id='cn.com.broadlink.econtrol.international:id/item_des' and @text='SP4M-CN']",
+                    "act_before": "",
+                    "act_after": "",
+                    "description": "choose sp4m cn",
+                    "wait_until_exist": 1
+                },
+                "5":{
+                    "xpath":"//android.widget.Button[@resource-id='cn.com.broadlink.econtrol.international:id/btn_next']",
+                    "act_before": "",
+                    "act_after": "",
+                    "description": "click next"
+                },
+                "6":{
+                    "xpath":"//android.widget.Button[@resource-id='cn.com.broadlink.econtrol.international:id/btn_next']",
+                    "act_before": "",
+                    "act_after": "",
+                    "description": "click done"
+                },
+                "7":{
+                    "xpath":"//android.widget.Button[@resource-id='cn.com.broadlink.econtrol.international:id/btn_next']",
+                    "act_before": "",
+                    "act_after": "",
+                    "description": "correct done"
+                },
+                "8":{
+                    "xpath":"//android.widget.ImageView[@resource-id='cn.com.broadlink.econtrol.international:id/device_icon']",
+                    "act_before": "",
+                    "act_after": "",
+                    "description": "choose device",
+                    "wait_until_exist": 15
+                },
+                "9":{
+                    "xpath":"//android.widget.TextView[@resource-id='cn.com.broadlink.econtrol.international:id/btn_next']",
+                    "act_before": "",
+                    "act_after": "",
+                    "description": "join the room",
+                    "wait_until_exist": 1
+                },
+                "10":{
+                    "xpath":"//android.widget.TextView[@resource-id='cn.com.broadlink.econtrol.international:id/text_name' and @text='Living room']",
+                    "act_before": "",
+                    "act_after": "",
+                    "description": "select room"
+                },
+                "11":{
+                    "xpath":"//android.widget.TextView[@resource-id='cn.com.broadlink.econtrol.international:id/btn_next']",
+                    "act_before": "",
+                    "act_after": "",
+                    "description": "start"
+                },
+                "12":{
+                    "xpath":"//android.widget.TextView[@resource-id='cn.com.broadlink.econtrol.international:id/save']",
+                    "act_before": "",
+                    "act_after": "",
+                    "description": "save"
+                },
+                "13": {
+                    "resource_id": "cn.com.broadlink.econtrol.international:id/btn_home_page",
+                    "description": "back home page"
+                },
+                "14-1": {
+                    "otherPhoneAction": "user1|remote|refresh",
+                    "description": "user1|remote|refresh to update UI"
+                },
+                "14-2": {
+                    "otherPhoneAction": "user2|local|refresh",
+                    "description": "user2|local|refresh to update UI"
+                },
+                "14-3": {
+                    "otherPhoneAction": "user2|remote|refresh",
+                    "description": "user2|remote|refresh to update UI"
+                }
+            },
+            "RemoveDevice":{
+                "1": {
+                    "resource_id": "cn.com.broadlink.econtrol.international:id/rl_device",
+                    "description": "click smart plug"
+                },
+                "2":{
+                    "posi_x": 1005,
+                    "posi_y": 155,
+                    "description": "click options"
+                },
+                "3":{
+                    "xpath": "//android.widget.TextView[@text=\"Property\"]",
+                    "description": "click Property"
+                },
+                "4":{
+                    "xpath": "//android.widget.TextView[@text=\"Delete device\"]",
+                    "description": "click Delete device",
+                    "bottom": true
+                },
+                "5": {
+                    "resource_id": "cn.com.broadlink.econtrol.international:id/dialog_yes",
+                    "description": "click yes"
+                },
+                "6-1": {
+                    "otherPhoneAction": "user1|remote|refresh",
+                    "description": "user1|remote|refresh to update UI"
+                },
+                "6-2": {
+                    "otherPhoneAction": "user2|local|refresh",
+                    "description": "user2|local|refresh to update UI"
+                },
+                "6-3": {
+                    "otherPhoneAction": "user2|remote|refresh",
+                    "description": "user2|remote|refresh to update UI"
+                }
+            },
+            "DeviceControl":{
+                "1": {
+                    "resource_id": "cn.com.broadlink.econtrol.international:id/iv_state_icon",
+                    "description": "click switch",
+                    "refresh": true
+                }
+            },
+            "InviteToHome":{
+                "1":{
+                    "resource_id":"cn.com.broadlink.econtrol.international:id/tv_family_name",
+                    "description": "click home card"
+                },
+                "2":{
+                    "resource_id":"cn.com.broadlink.econtrol.international:id/btn_family_manage",
+                    "description": "click Manage homes"
+                },
+                "3":{
+                    "xpath":"//android.widget.TextView[@resource-id=\"cn.com.broadlink.econtrol.international:id/tv_family_name\"]",
+                    "description": "click user1home"
+                },
+                "4":{
+                    "xpath":"//android.widget.TextView[@text=\"Manage members\"]",
+                    "description": "click Manage members"
+                },
+                "5":{
+                    "resource_id": "cn.com.broadlink.econtrol.international:id/iv_photo_add_member",
+                    "description": "click Invite member"
+                },
+                "6":{
+                    "getScreenShot": true,
+                    "description": "save QR code on computer"
+                },
+                "7": {
+                    "otherPhoneAction": "user2|remote|SaveScreenShot",
+                    "description": "save QR code on user2|remote's /sdcard/Download"
+                }
+            },
+            "RemoveFromHome":{
+                "1":{
+                    "resource_id":"cn.com.broadlink.econtrol.international:id/tv_family_name",
+                    "description": "click home card"
+                },
+                "2":{
+                    "resource_id":"cn.com.broadlink.econtrol.international:id/btn_family_manage",
+                    "description": "click Manage homes"
+                },
+                "3":{
+                    "xpath":"//android.widget.TextView[@resource-id=\"cn.com.broadlink.econtrol.international:id/tv_family_name\"]",
+                    "description": "click user1home"
+                },
+                "4":{
+                    "xpath":"//android.widget.TextView[@text=\"Manage members\"]",
+                    "description": "click Manage members"
+                },
+                "5": {
+                    "xpath": "//android.widget.TextView[@resource-id=\"cn.com.broadlink.econtrol.international:id/tv_user_name\" and @text=\"user2\"]",
+                    "description": "select user2"
+                },
+                "6":{
+                    "resource_id":"cn.com.broadlink.econtrol.international:id/btn_delete",
+                    "description": "click Delete"
+                },
+                "7":{
+                    "resource_id":"cn.com.broadlink.econtrol.international:id/dialog_yes",
+                    "description": "click yes"
+                },
+                "8": {
+                    "otherPhoneAction": "user1|remote|refresh",
+                    "description": "user1|remote|refresh to update UI"
+                }
+            }
+        }
+    },
+    "user2":{
+        "local":{
+            "DeviceControl":{
+                "1":{
+                    "resource_id":"cn.com.broadlink.econtrol.international:id/tv_family_name",
+                    "description": "click home card"
+                },
+                "2":{
+                    "xpath":"//android.widget.TextView[@resource-id=\"cn.com.broadlink.econtrol.international:id/tv_family_name\" and @text=\"user1home\"]",
+                    "description": "click user1home"
+                },
+                "3": {
+                    "waiting_time": 1,
+                    "resource_id": "cn.com.broadlink.econtrol.international:id/iv_state_icon",
+                    "description": "click switch",
+                    "refresh": true
+                }
+            }
+        },
+        "remote":{
+            "DeviceControl":{
+                "1":{
+                    "resource_id":"cn.com.broadlink.econtrol.international:id/tv_family_name",
+                    "description": "click home card"
+                },
+                "2":{
+                    "xpath":"//android.widget.TextView[@resource-id=\"cn.com.broadlink.econtrol.international:id/tv_family_name\" and @text=\"user1home\"]",
+                    "description": "click user1home"
+                },
+                "3": {
+                    "waiting_time": 1,
+                    "resource_id": "cn.com.broadlink.econtrol.international:id/iv_state_icon",
+                    "description": "click switch",
+                    "refresh": true
+                }
+            },
+            "AcceptInvite":{
+                "no_need_back_homepage": true,
+                "1": {
+                    "resource_id": "cn.com.broadlink.econtrol.international:id/bt_join",
+                    "description": "click Join now"
+                },
+                "2": {
+                    "refresh": true,
+                    "description": "refresh"
+                },
+                "3": {
+                    "otherPhoneAction": "user2|local|RefreshAtHomeList",
+                    "description": "user2|local|RefreshAtHomeList to update UI"
+                }
+            },
+            "ScanQRCode":{
+                "1": {
+                    "resource_id": "cn.com.broadlink.econtrol.international:id/iv_add",
+                    "description": "click add"
+                },
+                "2": {
+                    "xpath": "//android.widget.TextView[@text=\"Scan QR code\"]",
+                    "description": "click Scan QR code"
+                },
+                "3": {
+                    "xpath": "//android.widget.Button[@text=\"Album\"]",
+                    "description": "click Album"
+                },
+                "4": {
+                    "xpath": "//android.widget.ImageButton[@content-desc=\"Show roots\"]",
+                    "description": "click more"
+                },
+                "5": {
+                    "xpath": "//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Downloads\"]",
+                    "description": "click Downloads"
+                },
+                "6": {
+                    "xpath": "(//android.widget.ImageView[@resource-id=\"com.google.android.documentsui:id/icon_thumb\"])[1]",
+                    "description": "select first png"
+                },
+                "7": {
+                    "resource_id": "cn.com.broadlink.econtrol.international:id/dialog_yes",
+                    "description": "click ok",
+                    "can_not_exist": true,
+                    "exist_and_do": "ClickBack"
+                }
+            },
+            "QuitHome":{
+                "1":{
+                    "resource_id":"cn.com.broadlink.econtrol.international:id/tv_family_name",
+                    "description": "click home card"
+                },
+                "2":{
+                    "resource_id":"cn.com.broadlink.econtrol.international:id/btn_family_manage",
+                    "description": "click Manage homes"
+                },
+                "3":{
+                    "xpath":"//android.widget.TextView[@resource-id=\"cn.com.broadlink.econtrol.international:id/tv_family_name\" and @text=\"user1home\"]",
+                    "description": "click user1home"
+                },
+                "4":{
+                    "xpath":"//android.widget.TextView[@resource-id=\"cn.com.broadlink.econtrol.international:id/tv_content\" and @text=\"Quit home\"]",
+                    "description": "click quit home"
+                },
+                "5":{
+                    "resource_id":"cn.com.broadlink.econtrol.international:id/dialog_yes",
+                    "description": "click confirm"
+                },
+                "6": {
+                    "otherPhoneAction": "user2|local|RefreshAtHomeList",
+                    "description": "user2|local update UI"
+                }
+            }
+        }
+    }
+}

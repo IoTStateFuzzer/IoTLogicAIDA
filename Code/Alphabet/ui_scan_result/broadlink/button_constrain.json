@@ -1,0 +1,23 @@
+{
+  "constrain_dict": {
+    "user1|local|DeviceControl": "user1|local|AddDevice",
+    "user1|remote|DeviceControl": "user1|local|AddDevice",
+    "user1|local|AddDevice": "not|user1|local|AddDevice",
+    "user1|local|RemoveDevice": "user1|local|AddDevice",
+    "user1|local|RemoveFromHome": ["user2|remote|AcceptInvite", "not|user1|local|RemoveFromHome"],
+
+    "user2|remote|ScanQRCode": "user1|local|InviteToHome",
+    "user2|remote|AcceptInvite": "user2|remote|ScanQRCode"
+  },
+  "conflict_dict": {
+    "user1|local|RemoveDevice": "user1|local|AddDevice",
+    "user1|local|InviteToHome": "user1|local|InviteToHome",
+    "user1|local|RemoveFromHome": ["user1|local|RemoveFromHome", "user2|remote|ScanQRCode"],
+
+    "user2|remote|QuitHome": ["user2|remote|AcceptInvite", "user2|remote|ScanQRCode", "user2|remote|QuitHome"],
+    "user2|remote|ScanQRCode": "user2|remote|ScanQRCode",
+    "user2|local|DeviceControl": "user2|remote|ScanQRCode",
+    "user2|remote|DeviceControl": "user2|remote|ScanQRCode",
+    "user2|remote|AcceptInvite": ["user2|remote|ScanQRCode", "user2|remote|QuitHome", "user1|local|RemoveFromHome"]
+  }
+}
