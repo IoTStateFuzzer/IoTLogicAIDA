@@ -1,5 +1,5 @@
-# IoTStateFuzzer
-Here is the **IoTStateFuzzer** repositorie, where the state machines learned during the experiments will be presented.
+# IoTLogicAIDA
+Here is the **IoTLogicAIDA** repositorie, where the state machines learned during the experiments will be presented.
 
 # Folder Structure
 
@@ -39,7 +39,7 @@ State Machine Details:
 
 
 ## Code
-This folder contains the code used by **IoTStateFuzzer**, and its directory structure is similar to Figure 4 in the paper.
+This folder contains the code used by **IoTLogicAIDA**, and its directory structure is similar to Figure 4 in the paper.
 The key file directory in the folder is as follows:
 ```
 📂 Alphabet  
@@ -59,7 +59,7 @@ The key file directory in the folder is as follows:
 │   │   ├── 📄 AlphabetManager.java
 │   │   ├── 📄 CacheManager.java
 │   │   ├── 📄 Configuration.java
-│   │   ├── 📄 IoTStateFuzzer.java
+│   │   ├── 📄 IoTLogicAIDA.java
 │   │   ├── 📄 Learner.java
 │   │   ├── 📄 LogManager.java
 │   │   ├── 📄 Mediator.java
@@ -123,7 +123,7 @@ Run the `pre_parse` function in `packet_parser.py` to analyze the recently captu
 
 
 ## Learning Model
-First, run `IoTStateFuzzer.java` in the `Learner` directory to start LearnLib. Then, run `learn_model_main` in the `learn.py` module to start the learning process. This function will first learn the *Base Model* and then proceed to learn the *State Fuzzing Model*.
+First, run `IoTLogicAIDA.java` in the `Learner` directory to start LearnLib. Then, run `learn_model_main` in the `learn.py` module to start the learning process. This function will first learn the *Base Model* and then proceed to learn the *State Fuzzing Model*.
 The learned results will be saved in the `Learner/result` directory.
 
 ## Differential Analysis
