@@ -123,7 +123,7 @@ Run the `pre_parse` function in `packet_parser.py` to analyze the recently captu
 
 
 ## Learning Model
-First, run `IoTLogicAIDA.java` in the `Learner` directory to start LearnLib. Then, run `learn_model_main` in the `learn.py` module to start the learning process. This function will first learn the *Base Model* and then proceed to learn the *State Fuzzing Model*.
+First, run `IoTStateFuzzer.java` in the `Learner` directory to start LearnLib. Then, run `learn_model_main` in the `learn.py` module to start the learning process. This function will first learn the *Base Model* and then proceed to learn the *State Fuzzing Model*.
 The learned results will be saved in the `Learner/result` directory.
 
 ## Differential Analysis
