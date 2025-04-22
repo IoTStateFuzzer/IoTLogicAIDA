@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Reason: HTTP responses from cloud endpoints (api.mijia.tech, core.api.mijia.tech) show code 0 (success) for SDK/plugin operations and vendor authentication. Device_0 PPPP streams include control payloads (pppp_stream_payload) and user2_remote PPPP packets contain partial success indicators like \"su...ce\" patterns."
+    ],
+    [
+        "Operation result: Success. Reason: Similar cloud success codes (code 0) for SDK/plugin/vendor operations. Device_0 PPPP streams show active control payloads. user2_remote PPPP packets include a \"su...ce\" fragment and streaming payloads, indicating command execution."
+    ],
+    [
+        "Operation result: Success. Reason: Consistent cloud success responses (code 0) for critical control prerequisites (SDK/vendor auth). user2_remote PPPP traffic contains \"su...ce\" fragments and streaming payloads, while device_0 responds with operational PPPP sequences."
+    ]
+]

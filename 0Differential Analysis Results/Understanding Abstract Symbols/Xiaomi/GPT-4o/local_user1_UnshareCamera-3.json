@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Reason: The traffic indicates a successful unshare operation of the camera, as we can see from the payload of the packet related to the operation is coming from 'api.mijia.tech'. Specifically, the POST request to '/app/share/delete_user' contains a payload with \"{\"code\":0,\"message\":\"ok\",\"result\":{\"list\":[{\"pid\":0,\"did\":\"369647111\",\"ret\":1}]}}\", confirming the successful deletion of a shared user (with 'ret': 1 indicating success). Other packets like '/app/share/device_share_list' and '/app/share/get_share_user' return lists that reflect the changes associated with unsharing the device, supporting the operation's success outcome."
+    ]
+]

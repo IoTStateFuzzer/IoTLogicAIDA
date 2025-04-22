@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Reason: The POST request to /app/share/delete_user returned code 0 (success) with ret:1 for device ID 369647111, confirming successful revocation of sharing permissions. Subsequent API calls to /app/share/device_share_list and /app/share/get_share_user verified the removal through updated sharing statuses with empty or modified user lists. Additional checks via /app/v2/share/sharelist_block_list yielded non-critical data consistent with successful unsharing. Other observed packets, including device control (types 224/225) and authentication/keep-alive traffic, were verified as unrelated routine operations and had no bearing on the outcome."
+    ]
+]

@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Reason: The POST request to `/app/share/delete_user` succeeded (code 0, message 'ok', ret=1), confirming user removal from camera sharing. Subsequent verification via `/app/share/device_share_list` and `/app/share/get_share_user` endpoints showed no active shares, with device acknowledgment packets (e.g., packets 224-225 or device_0 traffic) further corroborating the revocation. The consistent success markers across all analyses confirm the operation's completion without errors."
+    ]
+]

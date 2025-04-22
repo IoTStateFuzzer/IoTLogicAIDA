@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Reason: The HTTP POST request to the cloud server (api.mijia.tech) returned code 0 with message 'ok', the universal success indicator in API responses. This is programmatically confirmed by the structured payload {'code':0,'result':{'369647111':1}}, where value 1 signifies successful removal. The subsequent device_0 packets (payload codes 19/224/225) represent standard IoT protocol behavior - these are local network-layer acknowledgments and state synchronization signals emitted after cloud-initiated removal, explaining their payload-less (None) nature as final status updates rather than operational commands."
+    ]
+]

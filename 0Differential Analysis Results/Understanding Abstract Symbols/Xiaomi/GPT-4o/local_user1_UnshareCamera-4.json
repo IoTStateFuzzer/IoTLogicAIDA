@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Reason: The relevant traffic indicates that user1 attempted to unshare the camera. The key packet in this traffic set is `api.mijia.tech|/app/share/delete_user` with payload `{\"code\":0,\"message\":\"ok\",\"result\":{\"list\":[{\"pid\":0,\"did\":\"369647111\",\"ret\":1}]}}`, which confirms the successful unsharing of the camera, as indicated by `\"code\":0` and `\"ret\":1`. Additionally, `api.mijia.tech|/app/share/device_share_list` shows the device is still recorded without new shared users, confirming unsharing is complete. Other packets mention state retrieval and do not affect the unsharing attempt directly."
+    ]
+]

@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Failed. Reason: Device control packets from user2_remote show fragmented error code 5 in payload, indicating temporary permission rejection despite cloud API success."
+    ],
+    [
+        "Operation result: Failed. Reason: Similar error code patterns in pppp streams suggest device rejected control command after temporary access authorization."
+    ],
+    [
+        "Operation result: Failed. Reason: Consistent error signatures in device communication layer (pppp protocol) confirm persistent access denial for attacker-controlled commands."
+    ]
+]

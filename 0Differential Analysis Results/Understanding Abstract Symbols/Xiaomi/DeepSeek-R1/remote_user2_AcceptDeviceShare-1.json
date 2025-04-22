@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Success. Reason: The first traffic set contains a POST to /app/share/share_response with code 0 (success) and result \"true\", indicating the share acceptance was processed successfully."
+    ],
+    [
+        "Operation result: Failed. Reason: The second traffic set shows a POST to /app/share/share_response with code -6 (invalid request) and message \"invite not exist\", meaning the share invitation was no longer valid or already expired."
+    ]
+]

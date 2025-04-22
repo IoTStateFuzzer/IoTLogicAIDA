@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Reason: The traffic indicates that the unsharing operation was successfully executed. The packet 'api.mijia.tech|/app/share/delete_user' contains a payload with '{\"code\":0,\"message\":\"ok\"}' which means the removal of the user was successful. This is further supported by the absence of shared users in the 'api.mijia.tech|/app/share/sharelist_block_list' payload, indicating that no users remain on the share list. All other packets either confirm the user was listed before ('api.mijia.tech|/app/share/get_share_user') or are unrelated to the operation due to their unspecified payloads ('payload_is_None')."
+    ]
+]

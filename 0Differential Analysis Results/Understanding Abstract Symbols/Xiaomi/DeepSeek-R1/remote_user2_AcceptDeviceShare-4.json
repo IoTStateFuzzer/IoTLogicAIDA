@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Success. Reason: The /app/share/share_response returned code 0 with message 'ok' and result 'true', indicating the share acceptance was successful."
+    ],
+    [
+        "Operation result: Failed. Reason: The /app/share/share_response returned code -6 with message 'invalid request, invite not exist', indicating the share invitation no longer exists or is invalid."
+    ]
+]

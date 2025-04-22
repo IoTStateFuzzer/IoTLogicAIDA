@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Success. Reason: The response to the share response request indicates a code 0, meaning the share action was accepted successfully. This is confirmed by the message 'ok' and result 'true'."
+    ],
+    [
+        "Operation result: Failed. Reason: The response indicates a code -6 with the message 'invalid request, invite not exist', meaning the share action failed because the invitation does not exist."
+    ]
+]

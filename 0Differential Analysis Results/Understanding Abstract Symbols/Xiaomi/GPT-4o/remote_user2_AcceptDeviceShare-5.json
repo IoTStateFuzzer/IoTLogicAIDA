@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Success. Reason: The traffic contains a packet with a header indicating a POST request to share_response with payload showing the result as 'true' and message 'ok', which implies that the device share operation was accepted successfully."
+    ],
+    [
+        "Operation result: Failed. Reason: The traffic contains a packet with a header indicating a POST request to share_response with payload showing an error code '-6' and message 'invalid request, invite not exist', which implies that the device share operation failed due to a non-existent or invalid invitation."
+    ]
+]

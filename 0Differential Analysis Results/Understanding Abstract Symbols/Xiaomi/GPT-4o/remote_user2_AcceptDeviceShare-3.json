@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Success. Reason: The traffic includes a packet with a payload indicating that the device share acceptance was successful, with a response code of 0 and a message 'ok' specifying a result of 'true'. This indicates that user2 successfully accepted the device share."
+    ],
+    [
+        "Operation result: Failed. Reason: The traffic includes a packet with a payload indicating that the device share acceptance failed, with a response code of -6 and a message 'invalid request, invite not exist'. This suggests that the invitation to share the device was not valid or no longer exists."
+    ]
+]

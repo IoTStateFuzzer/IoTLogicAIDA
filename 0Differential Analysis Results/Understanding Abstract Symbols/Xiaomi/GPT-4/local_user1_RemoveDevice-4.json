@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Reason: The operation succeeded based on several components in the HTTP response from 'api.mijia.tech'. The POST request made to the 'del_owner_device_batch' endpoint resulting in a '0' code and 'ok' message, indicates a successful operation. Furthermore, the 'result' field points towards the completion of the requested batch device removal operation, specifically noting that the device with id '369647111' has been removed. The lack of any subsequent operational traffic corroborates the conclusion of a successfully completed operation."
+    ]
+]

@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Reason: The traffic shows user1 is checking the share status and sending a share request to the server. The traffic indicates a successful execution as a share request response with `\"result\":\"true\"` is returned, denoting the successful sharing of the camera."
+    ],
+    [
+        "Operation result: Failed. Reason: Despite making a request to share the camera, the traffic indicates that user1 already has a share permit for the specified user. This is confirmed by the share request response `{ \"code\":-11,\"message\":\"have share permit\",\"result\":\"have share permit\" }`, indicating the operation failed since the camera was already shared with this user."
+    ],
+    [
+        "Operation result: Failed. Reason: The share request shows a failure response `{ \"code\":-12,\"message\":\"false\",\"result\":\"false\" }`, indicating that the request to share the camera was not successful and rejected by the server."
+    ]
+]

@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Reason: The traffic includes responses confirming the successful execution of the 'UnshareCamera' operation. The cloud server returned 'code: 0' and 'message: ok' for the delete user request, and 'ret: 1' indicates that the camera was successfully removed from the share list."
+    ]
+]

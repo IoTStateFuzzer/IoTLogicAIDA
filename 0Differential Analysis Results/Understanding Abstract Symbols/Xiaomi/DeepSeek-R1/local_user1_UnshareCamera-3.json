@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Reason: The /app/share/delete_user API returned code 0 with 'ret':1 and message 'ok', confirming successful revocation of camera sharing permissions for device 369647111. Subsequent verification through /app/share/device_share_list and /app/share/get_share_user APIs demonstrated updated sharing lists with no active permissions remaining. Local device traffic (port pppp) further validated system synchronization. The consistency across multiple API responses and status checks (including empty share lists and status=1 for remaining valid users) provides multi-layered confirmation of the operation's success."
+    ]
+]

@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Success. Reason: The /app/share/share_response response has code 0 and result \"true\", indicating successful acceptance of the device share."
+    ],
+    [
+        "Operation result: Failed. Reason: The /app/share/share_response returns code -6 with \"invalid request, invite not exist\", meaning the share invitation was already processed or revoked."
+    ]
+]

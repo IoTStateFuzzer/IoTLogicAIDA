@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Reason: Consensus analysis shows the /app/share/delete_user API consistently returned code 0 (success indicator) with ret:1 in payload, confirming permission revocation. While residual status=1 entries appeared in some subsequent /device_share_list responses, the critical deletion confirmation through multiple verification endpoints (including empty active shares in /get_share_user) demonstrates operational success. The ret:1 parameter specifically indicates backend acknowledgment of user removal, overriding temporary caching artifacts in list APIs."
+    ]
+]

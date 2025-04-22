@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Reason: The /app/share/share_request response consistently returned code 0 with message 'ok' and result 'true', confirming successful camera sharing initiation. The consistent positive indicators across all reports validate the operation's success without conflicting data."
+    ],
+    [
+        "Operation result: Failed. Reason: All reports show code -11 with message 'have share permit', confirming an existing sharing relationship. The recurring error indicates user2 already possesses valid access privileges, making the new share request redundant and unsuccessful."
+    ],
+    [
+        "Operation result: Failed. Reason: Uniform code -12 responses with message 'false' suggest systemic failure. Multiple reports indicate potential causes including invalid sharing parameters, revoked permissions, or conflicting statuses (partially referenced pending state), though the core failure remains unspecified in the API response."
+    ]
+]

@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Reason: The operation of 'UnshareCamera' has been successful as seen by packets transmitted to 'api.mijia.tech' with the endpoint '/app/share/delete_user', resulting in a success message and a code of '0'. Additional packets confirm the change in shared device status suggesting the device is no longer being shared. Insignificant data such as 'payload_is_None', even if present, does not affect the operation's conclusion. Traffic to 'api.account.xiaomi.com' is likely for authentication purpose and does not influence the outcome of the operation."
+    ]
+]
