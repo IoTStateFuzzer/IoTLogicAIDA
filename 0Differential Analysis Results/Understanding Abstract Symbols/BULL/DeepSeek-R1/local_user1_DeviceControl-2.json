@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Reason: The HTTP PUT response code 200 with 'success': true confirms cloud acceptance of the control command. This is reinforced by sequential MQTT messages on the /sys/.../app/down/thing/properties channel showing PowerSwitch property updates to both 0 and 1 states. The dual-value transition demonstrates a complete execution cycle: initial command acknowledgment (200 response), followed by device-side implementation verification through bidirectional property synchronization between cloud and device."
+    ]
+]

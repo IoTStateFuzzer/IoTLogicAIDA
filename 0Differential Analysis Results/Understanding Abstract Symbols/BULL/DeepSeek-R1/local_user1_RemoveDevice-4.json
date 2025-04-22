@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Reason: The HTTP DELETE request to endpoint /mos/device/v1/devices/mHXk6DR3zDiKDwQd4vRo000000 returned code 200 with explicit \"success\":true confirmation in the payload, validating device removal. Post-removal processes including GET requests for device information and schedules (returning null/clean results) demonstrate systematic verification of removal completion. Concurrent MQTT property updates showing PowerSwitch_LocalTimer status changes and ONLINE state reporting indicate the device maintained active communication until removal, with subsequent system checks confirming resource cleanup and state synchronization."
+    ]
+]

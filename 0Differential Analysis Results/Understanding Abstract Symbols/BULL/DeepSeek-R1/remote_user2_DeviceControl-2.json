@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Success. Reason: Consistent HTTP 200 responses with 'success': true across all submissions confirm cloud acceptance of the device control command. Corresponding MQTT messages verify successful delivery of PowerSwitch state changes (0 and 1) to the device, demonstrating complete execution of property updates through both API and IoT protocols."
+    ],
+    [
+        "Operation result: Success. Reason: Repeated HTTP 200 responses with 'success': true indicate redundant cloud processing of the control command. The absence of new MQTT messages in this dataset suggests either confirmation of an already-executed state change or server-side command acknowledgement without requiring additional device communication."
+    ]
+]

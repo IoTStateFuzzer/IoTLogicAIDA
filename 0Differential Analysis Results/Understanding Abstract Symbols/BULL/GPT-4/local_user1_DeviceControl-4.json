@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Reason: The server confirmed the device control operation with a status code of 200 and a success flag, and MQTT traffic verified the device's state change, reflecting successful execution."
+    ]
+]

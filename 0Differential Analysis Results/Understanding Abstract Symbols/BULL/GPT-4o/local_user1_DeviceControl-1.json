@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Reason: The traffic shows that the device control operation was performed successfully with a 200 HTTP status code in response to the PUT request. Additionally, the MQTT messages confirm the successful toggling of the PowerSwitch property between 0 and 1, indicating that the device property changes were processed correctly."
+    ]
+]

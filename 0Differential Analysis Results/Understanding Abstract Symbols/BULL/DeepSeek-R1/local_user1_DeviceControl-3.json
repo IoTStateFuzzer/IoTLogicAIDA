@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Reason: The HTTP 200 response confirms cloud acceptance of the control command. Subsequent MQTT messages at '/sys/a1bveGxYmbV/C411E02ECC84/app/down/thing/properties' demonstrate successful bidirectional communication: the PowerSwitch value cycling between 0 and 1 reflects both the previous state (0) being overwritten by the new command (1), and the cloud's confirmation mechanism. This dual-state manifestation in MQTT messages indicates proper cloud-to-device synchronization rather than contradictory states, as the chronological sequence shows the final intended state (1) was achieved after initial acknowledgment of the command receipt (0\u21921 transition)."
+    ]
+]

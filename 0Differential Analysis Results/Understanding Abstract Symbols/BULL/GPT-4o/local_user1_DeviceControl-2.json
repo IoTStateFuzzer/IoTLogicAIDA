@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Reason: The operation to set the device property was successful. The HTTP PUT request returned a 200 status code, indicating the request was successfully processed. Subsequent MQTT packets confirmed the 'PowerSwitch' property changed from 0 (off) to 1 (on), demonstrating that the control command was effectively executed."
+    ]
+]

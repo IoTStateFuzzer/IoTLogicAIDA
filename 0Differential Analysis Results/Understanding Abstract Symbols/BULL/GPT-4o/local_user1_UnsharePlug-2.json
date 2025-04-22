@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Reason: The operation to unshare the plug was successful as indicated by multiple traffic logs including HTTP POST requests to '/mos/share/v1/devices/cancel' endpoints, all returning a response code 200 and success flag set to true."
+    ]
+]

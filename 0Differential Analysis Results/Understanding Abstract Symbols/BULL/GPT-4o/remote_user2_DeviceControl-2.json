@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Success. Reason: The HTTP PUT request to setDeviceProperty received a 200 code indicating success, and the MQTT messages confirmed state changes for PowerSwitch between values 0 and 1. This result is supported by successful HTTP responses from the server and the corresponding MQTT messages verifying the property changes."
+    ],
+    [
+        "Operation result: Success. Reason: The HTTP PUT request to setDeviceProperty received a 200 code indicating success. The positive result was consistently confirmed by successful HTTP responses from the server without any contradictory MQTT messages."
+    ]
+]

@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Reason: The device was successfully unshared, as indicated by multiple HTTP POST requests to /mos/share/v1/devices/cancel, all of which returned a success response with a 200 status code. This indicates that the API call to cancel the device share was processed successfully and the unshare operation was completed."
+    ]
+]

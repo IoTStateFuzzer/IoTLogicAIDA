@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Reason: The HTTP PUT request to api.iotbull.com returned code 200 with \"success\":true, confirming cloud acceptance of the command. This was validated through two sequential MQTT messages via the /sys/a1bveGxYmbV/C411E02ECC84/app/down/thing/properties channel showing PowerSwitch property updates (0 and 1), demonstrating both cloud API execution and local MQTT propagation of state changes. The combination of HTTP success response and bidirectional MQTT property updates provides conclusive evidence of complete command execution at both cloud and device levels."
+    ]
+]

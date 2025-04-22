@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Reason: The operation to unshare the plug device was successful as indicated by multiple successful API responses. Both the GET and POST requests returned a status code 200 with success messages. The schedule tip request and the cancel sharing request both confirmed the plug was unshared successfully."
+    ]
+]

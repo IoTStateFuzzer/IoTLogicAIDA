@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Reason: The successful cancellation of device sharing (UnsharePlug) was confirmed through the positive traffic response from the server, indicated by the response code 200 and the 'success' field being flagged as 'true'. This operation was executed by a HTTP POST request to the /mos/share/v1/devices/cancel endpoint on the api.iotbull.com server. The HTTP status code and success flag in the response payload corroborates the successful execution of the operation."
+    ]
+]

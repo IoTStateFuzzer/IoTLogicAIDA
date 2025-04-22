@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Failed. Reason: Although the DELETE request to remove the device returned a successful response code (200), subsequent GET requests still retrieve device information, indicating that the device 'mHXk6DR3zDiKDwQd4vRo000000' remains online. Therefore, the device was not successfully removed."
+    ]
+]

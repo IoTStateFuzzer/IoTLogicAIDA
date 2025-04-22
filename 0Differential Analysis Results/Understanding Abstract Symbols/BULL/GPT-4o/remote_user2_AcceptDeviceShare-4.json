@@ -1,0 +1,14 @@
+[
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Reason: The response packet contains a payload with code 200 and success set to true, indicating that the acceptance of the device share was successful."
+    ],
+    [
+        "Operation result: Failed. Reason: The response packet indicates success set to false, suggesting that the acceptance of the device share failed."
+    ],
+    [
+        "Operation result: Failed. Reason: Similar to previous, the response packet indicates success set to false, confirming the acceptance of the device share was unsuccessful."
+    ]
+]

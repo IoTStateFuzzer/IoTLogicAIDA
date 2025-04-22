@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Success. Reason: Both HTTP and MQTT traffic verify successful execution of the device control action. Specific MQTT payloads reflecting changes in state (PowerSwitch values) and HTTP response codes (200) confirm the changes and success of the operation."
+    ],
+    [
+        "Operation result: Success. Reason: The HTTP PUT requests from user2 resulting in response code 200, along with a success=true attribute in the payload, confirm the successful execution of the device control operation."
+    ]
+]

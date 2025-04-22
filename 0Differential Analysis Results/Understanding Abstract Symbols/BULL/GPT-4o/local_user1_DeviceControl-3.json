@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Reason: The majority of responses indicate successful operations with HTTP response codes of 200 and appropriate MQTT messages confirming the setting of the 'PowerSwitch' property. While one entry showed conflicting values, the consistency across the other entries suggests the control operation was generally applied correctly."
+    ]
+]

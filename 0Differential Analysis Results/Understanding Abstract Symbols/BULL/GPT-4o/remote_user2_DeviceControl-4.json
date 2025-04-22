@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Success. Reason: The HTTP response payload shows a successful status code of 200 for setting the device property. The MQTT messages indicate successful reception and processing of 'PowerSwitch' values, confirming proper device control. Additionally, the control operation performed by user2 remotely was successful."
+    ],
+    [
+        "Operation result: Success. Reason: The HTTP response payload shows a successful status code of 200 for setting the device property. This indicates that the remote device control operation performed by user2 was successful."
+    ]
+]
