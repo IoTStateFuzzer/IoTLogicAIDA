@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Reason: The operation to remove a member from the home was successful. Initially, the system retrieved a list of users which included both user1 and user2. The subsequent request to remove a family member resulted in a success message with an 'ok' status. Finally, verification of the current family members shows user1 remains with type 0 as a regular member and user2 with type 1 possibly indicating removal or change of status."
+    ]
+]

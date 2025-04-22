@@ -1,0 +1,20 @@
+[
+    [
+        "Operation result: Success. Reason: The relevant traffic headers indicate interaction with device control endpoints (`/device/control/v2/sdkcontrol`). Within these packets, the JSON payload under `event.payload.data` decodes to include `indicator: 1`, suggesting the device received the control command and confirmed its execution. Despite user2 being noted as an attacker in the scenario, all device control packets reflect a successful submission and acknowledgment from the device endpoint."
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Reason: Similar to the first set of traffic, the packets reveal interactions primarily over a `/device/control/` endpoint where the structure of responses includes recognized patterns with control data feedback within `event.payload.data`, indicating acknowledgment from the device. The consistency across the packet responses underscores a successful device control from user2 locally."
+    ]
+]

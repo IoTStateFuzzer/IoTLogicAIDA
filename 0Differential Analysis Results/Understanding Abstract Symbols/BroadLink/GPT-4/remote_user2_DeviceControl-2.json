@@ -1,0 +1,14 @@
+[
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Reason: The traffic indicates multiple successful requests to control the device remotely was made by user2 and the device responded properly to the commands. As per the payload data, it indicates that certain properties of device (like power) were successfully modified"
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Reason: The error response indicates that the device had been reset, which rendered the control attempt failed. Therefore, the device needs to be rebound before it can be controlled again. The 'status:-7' in the last packet further confirms this."
+    ]
+]

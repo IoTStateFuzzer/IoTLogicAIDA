@@ -1,0 +1,14 @@
+[
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Reason: The user2 was able to remotely execute the device control command successfully. The device control operation occurred over the http protocol using the POST method on the domain 'app-service-chn-467a8f05.ibroadlink.com'. Based on the http protocol and the payload data, user2 was able to control the device and change states as indicated by the 'value' parameters changing from 0 to 1 and vice versa in the 'properties' key of the payload. The Response header in each payload reaffirms this successful action execution."
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Reason: The device was reset during the process of control by user2. Since a 'DEVICE_RESET' type error response was received from the server (as evidenced by the 'ErrorResponse' indicated in the event header and corresponding 'status':-7 in the payload), it implies that the device had to be reset for some reason and thus the control operation could not be completed. The message stating 'device reset, please rebind' further validates this."
+    ]
+]

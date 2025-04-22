@@ -1,0 +1,14 @@
+[
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Reason: The response from the server indicates that the control command for the device was acknowledged and executed successfully, as evidenced by the 'DNA.TransmissionControl' responses containing 'payload' data reflecting the device state changes. Although there are a few unrelated packets and properties like 'notpadding', the main control responses are successful."
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Reason: The response from the server indicates an error with type 'DEVICE_RESET' and status '-7', suggesting that the device was reset and needs to be re-bound, leading to the failure of the control command."
+    ]
+]

@@ -1,0 +1,17 @@
+[
+    [
+        "Operation result: Success. Reason: The device control operation initiated by user1 remotely was successful. This is indicated by multiple packets containing responses with payload data showing transmission control responses and indicator values indicating successful execution of commands."
+    ],
+    [
+        "Operation result: Success. Reason: The control operation was completed successfully as evidenced by consistent payload responses reflecting the expected data and successful command execution indicators."
+    ],
+    [
+        "Operation result: Failed. Reason: The failure of the device control operation is shown by the 'ErrorResponse' indicating a 'NETWORK_TIME_OUT', meaning the endpoint was unreachable due to a network timeout issue."
+    ],
+    [
+        "Operation result: Failed. Reason: This operation failed because an 'ErrorResponse' packet contains a 'DEVICE_RESET' error, indicating that the device has reset and needs to be re-bound, which interrupted the control process."
+    ],
+    [
+        "Operation result: Failed. Reason: The device control operation was not successful due to an error response indicating a 'DEVICE_RESET', suggesting that the device reset and requires re-binding."
+    ]
+]

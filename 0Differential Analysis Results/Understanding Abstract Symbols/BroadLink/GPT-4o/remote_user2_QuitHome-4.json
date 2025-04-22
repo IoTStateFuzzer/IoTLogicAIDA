@@ -1,0 +1,20 @@
+[
+    [
+        "Operation result: Success. Reason: In all sets of traffic, the relevant packet indicating the completion of the quit-home operation shows a successful execution with \"error\":0 and \"status\":0 for the /appsync/group/member/quitfamily endpoint, confirming that user2 has successfully quit the home."
+    ],
+    [
+        "Operation result: Success. Reason: The same successful indicators are seen as in the first traffic set, confirming the quit operation was successful for user2."
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Reason: The /appsync/group/member/quitfamily endpoint in this packet set returns a status of -30107, indicating an error or failure in processing the quit operation request for user2."
+    ]
+]

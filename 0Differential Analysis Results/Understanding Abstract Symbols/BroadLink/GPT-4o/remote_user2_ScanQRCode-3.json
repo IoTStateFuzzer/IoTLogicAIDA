@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Reason: The first traffic set shows a successful operation with an 'error' and 'status' of 0 and a 'msg' confirming 'ok'. The data payload indicates that user2 successfully scanned the QR code of user1's home."
+    ],
+    [
+        "Operation result: Failed. Reason: The second traffic set indicates a failure with 'error' and 'status' set to -2010, accompanied by unintelligible characters in 'msg', suggesting an operation failure likely due to invalid input or server error."
+    ],
+    [
+        "Operation result: Failed. Reason: The third traffic set indicates a failure similar to the second set with 'error' and 'status' set to -2011, and unintelligible characters in 'msg', likely due to an invalid request or other error during execution."
+    ]
+]

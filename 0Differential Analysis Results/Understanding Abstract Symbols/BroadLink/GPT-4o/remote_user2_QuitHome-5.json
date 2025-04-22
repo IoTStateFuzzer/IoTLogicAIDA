@@ -1,0 +1,20 @@
+[
+    [
+        "Operation result: Success. Reason: User2 successfully left the family group. The quitfamily API call returned 'ok' indicating successful execution. Other packets like the 'Network Time Out' and 'DEVICE_RESET' are unrelated to the quit operation."
+    ],
+    [
+        "Operation result: Success. Reason: User2 successfully left the family group. The quitfamily API call returned 'ok' indicating successful execution. Other packets like the 'DEVICE_RESET' are unrelated to the quit operation."
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Reason: The quitfamily API call returned an error status '-30107', indicating a failure in User2's attempt to leave the family group."
+    ]
+]

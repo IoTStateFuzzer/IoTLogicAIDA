@@ -1,0 +1,20 @@
+[
+    [
+        "Operation result: Success. Reason: Although one instance indicated that there was a network issue, the majority of the instances signified a successful operation of the user leaving the family group. Even the partially successful operation result indicates an issue in the network, not necessarily the 'quit family' function itself, hence it doesn't invalidate the overall operation success."
+    ],
+    [
+        "Operation result: Success. Reason: Similar to the first set, there was a common successful quit family function execution across instances, with one instance requiring device reconnection due to a device reset. However, this device reset appears unrelated to the 'QuitHome' operation, hence it does not fundamentally negate the successful operation conclusion."
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Reason: Unlike the previous sets, the majority of results showed that the operation failed. The common issue was an error while trying to exit the family group, either due to a negative status in the operation request or an error status of '-30107'."
+    ]
+]

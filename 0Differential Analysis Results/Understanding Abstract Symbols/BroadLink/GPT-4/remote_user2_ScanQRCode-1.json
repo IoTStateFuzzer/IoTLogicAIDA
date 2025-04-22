@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Reason: The response indicates a successful QR code scan, with error code 0 and message 'ok', and includes detailed information about the 'user1home' family."
+    ],
+    [
+        "Operation result: Failed. Reason: The response shows a failure due to an error code -2010, but the error message content is garbled and not interpretable."
+    ],
+    [
+        "Operation result: Failed. Reason: The response features another failure with error code -2011, displaying a garbled message that suggests a system or service related problem."
+    ]
+]

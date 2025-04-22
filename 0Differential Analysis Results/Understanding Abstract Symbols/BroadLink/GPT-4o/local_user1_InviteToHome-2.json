@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Success. Reason: The traffic indicates that the invitation process was executed successfully. Initially, user1's information is retrieved with no errors. Subsequently, the current family member list is obtained, showing user1 as the sole member. Finally, the invitation QR code is successfully generated, signifying that the invitation action was completed as expected."
+    ],
+    [
+        "Operation result: Success. Reason: The traffic indicates user1 successfully invited user2 to the home. Initially, the user information retrieval shows both user1 and user2 indicating awareness of each other's existence. The family member list retrieval shows user2 with a different type identifier, likely indicating a pending or newly added member status. As with the first traffic set, the final step generates an invitation QR code successfully, confirming the success of the invite operation."
+    ]
+]

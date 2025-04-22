@@ -1,0 +1,14 @@
+[
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Reason: The traffic contains multiple valid 'Response' indicating successful control attempts with different status values."
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Reason: The device has reset and needs to be rebinded."
+    ]
+]

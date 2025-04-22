@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Reason: The application server returns a status 0 which means that user2 has successfully scanned the QR code remotely and received data about the device owner(user1), including family id, family name, user id, country, province, city and create time. The 'master' field suggests that user1 is the owner/master of the device"
+    ],
+    [
+        "Operation result: Failed. Reason: The server returned an error code -2010. Although the actual reason can't be exactly stated due to the unreadable message, but indication is that the operation was not successful."
+    ],
+    [
+        "Operation result: Failed. Reason: The server returned an error code -2011. Again, the actual reason can't be exactly stated due to the unreadable message, but it clearly indicates that the operation was not successful."
+    ]
+]

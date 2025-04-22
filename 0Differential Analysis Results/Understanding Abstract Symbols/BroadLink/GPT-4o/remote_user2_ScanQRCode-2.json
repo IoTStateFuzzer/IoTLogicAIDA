@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Reason: The first response packet indicates a successful scan of the QR code with 'error':0 and 'status':0, both indicating no error and successful operation. The payload includes details on the 'familyid', 'familyname', and 'master' related to 'user1', suggesting the QR code scan was successfully processed."
+    ],
+    [
+        "Operation result: Failed. Reason: The second response packet indicates an error with 'error':-2010 and 'status':-2010, accompanied by unreadable characters in the 'msg', suggesting an issue or error in processing the QR code scan request."
+    ],
+    [
+        "Operation result: Failed. Reason: The third response packet also indicates a failure with 'error':-2011 and 'status':-2011, again with unreadable characters in the 'msg', which implies another error occurred during the QR code scan operation."
+    ]
+]

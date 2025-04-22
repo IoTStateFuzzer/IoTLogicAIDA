@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Reason: The traffic shows a successful connection to the server with the status code 0 and 'ok' message indicates successful operation. Also, the data payload contains the familyhome, createuser, and nickname details that suggest user2 has successfully scanned the QR code to join user1's home."
+    ],
+    [
+        "Operation result: Failed. Reason: The traffic shows a connection to the server but an error -2010 hints at a failure in the operation. The 'msg' carries an encoding that might be explaining the failure cause but is not clearly understandable."
+    ],
+    [
+        "Operation result: Failed. Reason: The traffic shows a connection to the server but an error -2011 hints at a failure in the operation. The 'msg' carries an encoding that might be explaining the failure cause but is not clearly understandable."
+    ]
+]

@@ -1,0 +1,14 @@
+[
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Reason: The device experienced a reset and requires re-binding. Multiple responses containing error messages such as 'device reset, please rebind' suggest this was the predominant issue overriding any successful attempts."
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Reason: The majority of responses indicate an error related to a device reset that requires re-binding, with multiple instances recording an 'ErrorResponse' with the message 'device reset, please rebind'."
+    ]
+]

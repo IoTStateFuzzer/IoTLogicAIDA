@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Reason: The first traffic set indicates a successful operation with 'error':0 and 'status':0, meaning the operation of scanning the QR code was successfully processed, returning details of the family group associated with user1's home."
+    ],
+    [
+        "Operation result: Failed. Reason: The second traffic set encountered an error with 'error':-2010 and a corrupted message, suggesting a failure in the QR code scanning operation, possibly due to a malformed or unreadable QR code."
+    ],
+    [
+        "Operation result: Failed. Reason: The third traffic set contains 'error':-2011 which also accompanied by a corrupted message, indicating another failed attempt, likely due to a similar issue as before."
+    ]
+]

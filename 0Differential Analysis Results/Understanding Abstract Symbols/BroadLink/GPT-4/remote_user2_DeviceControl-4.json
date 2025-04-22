@@ -1,0 +1,14 @@
+[
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Reason: The traffic indicates that the 'remote' control request on the device by user2 was successful. The response packets contain 'DNA.TransmissionControl' and 'Response' fields, indicating a control operation has taken a place, and a successful response was provided. Also, the 'data' fields in the packets contain variations indicating different state changes that were requested (i.e., power on/off), suggesting that the 'DeviceControl' operation was successful."
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Reason: The traffic indicates that the device reset happened. The presence of an 'ErrorResponse' in the traffic suggests an error occurred during the 'DeviceControl' action. The 'message' field states 'device reset, please rebind' and the 'status' field with value -7 also point towards a failure in the execution of the operation. Thus, the operation ended up in a failure."
+    ]
+]

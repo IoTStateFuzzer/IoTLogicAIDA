@@ -1,0 +1,14 @@
+[
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Reason: The traffic shows that multiple control messages have been sent to the remote IoT device, and the payload denotes that the responses have been successfully returned, indicating that the control by user2 was successful."
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Reason: The traffic shows an ErrorResponse indicating that the device has been reset, and it asks for rebind. This suggests that user2's control operation failed due to the device being reset."
+    ]
+]

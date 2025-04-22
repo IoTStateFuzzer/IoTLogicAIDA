@@ -1,0 +1,20 @@
+[
+    [
+        "Operation result: Success. Reason: The quit home operation by user2 was successful because the traffic includes a request to quit the family group that returned an 'ok' status."
+    ],
+    [
+        "Operation result: Success. Reason: The quit home operation by user2 was successful because the traffic includes a request to quit the family group that returned an 'ok' status."
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Reason: The quit home operation by user2 failed because the traffic indicates a status error with the message containing non-readable characters, indicating an error in processing the request."
+    ]
+]

@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Success. Reason: The invitation to add a member to the home was successfully processed as indicated by the response message containing the family member details and the returned QR code."
+    ],
+    [
+        "Operation result: Success. Reason: The invitation to add a member to the home was successfully processed as indicated by the updated list of family members including user2 with a new user type indicating that the invitation was accepted, and the response message containing further details and the returned QR code."
+    ]
+]

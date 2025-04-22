@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Reason: The response traffic indicates that the user2's operation of scanning the QR code was successful. It returned the home-group details, indicating that user2 is now able to control the group named 'user1home' which was created by user1."
+    ],
+    [
+        "Operation result: Failed. Reason: The received response traffic contains an error code -2010, indicating that the scanning of QR code operation was unsuccessful, possibly due to invalid QR code or expired code."
+    ],
+    [
+        "Operation result: Failed. Reason: The response traffic contains an error code -2011, indicating that the scanning QR code operation failed. The specific reason is unclear due to the unintelligible message, could be an internal server error or other issue."
+    ]
+]

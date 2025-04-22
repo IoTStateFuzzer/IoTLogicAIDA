@@ -1,0 +1,14 @@
+[
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Reason: The majority of packets received appropriate responses from the server and indicated successful control action executions, despite an isolated error message suggesting a device reset required for reconfiguration."
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Reason: The payload consistently contained error messages indicating 'DEVICE_RESET', suggesting the device has been reset and needs to be rebound before control is possible."
+    ]
+]

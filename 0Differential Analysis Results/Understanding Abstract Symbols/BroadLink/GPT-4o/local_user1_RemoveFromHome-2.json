@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Reason: The traffic shows three POST requests to the server. The first packet retrieves user information associated with the home, listing user1 and user2. The second packet appears to remove a family member successfully by returning \"error\":0 and \"msg\":\"ok,\" indicating the removal operation was executed without errors. The third packet retrieves the list of family members again, confirming the operation as it still includes user2 but with a different type value, suggesting a possible role change or update. The operation to remove took place as expected based on the returned status and messages."
+    ]
+]

@@ -1,0 +1,20 @@
+[
+    [
+        "Operation result: Success. Reason: The traffic includes a successful response from /appsync/group/member/quitfamily with status 0 and message \"ok\", indicating that user2 successfully quit the home group. Other traffic such as device control errors is unrelated to this operation."
+    ],
+    [
+        "Operation result: Success. Reason: Similar to the first traffic set, the response from /appsync/group/member/quitfamily shows status 0 and message \"ok\", confirming the successful quitting of the home group by user2. Device-related errors are irrelevant to the QuitHome action."
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Reason: The response from /appsync/group/member/quitfamily returned a status of -30107, which indicates a failure in the quitting process. This is different from previous packets indicating a failure in the QuitHome operation for user2."
+    ]
+]

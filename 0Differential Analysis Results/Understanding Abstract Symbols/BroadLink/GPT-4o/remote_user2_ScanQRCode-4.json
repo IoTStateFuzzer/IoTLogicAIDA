@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Reason: The first traffic packet indicates a successful scan of the QR code, as seen from the payload with \"error\":0,\"status\":0,\"msg\":\"ok\" which confirms successful execution. The data returned includes the family information associated with user1, such as \"familyid\" and \"usernickname\":\"user1\"."
+    ],
+    [
+        "Operation result: Failed. Reason: The second traffic packet shows a failure indicated by \"error\":-2010,\"status\":-2010,\"msg\":\"\", which suggests an error occurred during the scan operation."
+    ],
+    [
+        "Operation result: Failed. Reason: The third traffic packet also indicates a failure with \"error\":-2011,\"status\":-2011,\"msg\":\"\", specifying another error encountered during the scan operation."
+    ]
+]

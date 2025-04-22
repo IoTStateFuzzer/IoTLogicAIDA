@@ -1,0 +1,20 @@
+[
+    [
+        "Operation result: Success. Reason: The majority of reports confirm the success of the quit family group operation, with unrelated subsequent device control issues."
+    ],
+    [
+        "Operation result: Success. Reason: Despite device control issues, the quit family operation was successful, confirmed by server responses and the majority of descriptions."
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Reason: Consistent error status -30107 across all reports indicates a failure in processing the quit family group operation, with additional device control issues."
+    ]
+]
