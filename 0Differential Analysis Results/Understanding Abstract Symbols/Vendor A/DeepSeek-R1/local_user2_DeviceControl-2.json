@@ -1,0 +1,14 @@
+[
+    [
+        "Operation result: Success. Reason: Consensus analysis confirms device control success through recurring MQTT deviceDataChanged notifications documenting switch state transitions (on/off) and brightness adjustments, supported by UDP command response packets from the device. While authentication errors occurred in unrelated HTTP endpoints (/family-group/recommend/users), these don't affect the operational chain of device status updates through local network protocols."
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Reason: Unified evidence from MQTT payloads shows explicit switch status changes to 'off' (on:0) with devId correlation, accompanied by UDP control command acknowledgments from device_0. Successful execution persists despite intermittent cloud authentication errors, as the local control channel remains functionally independent from non-critical HTTP service failures."
+    ]
+]

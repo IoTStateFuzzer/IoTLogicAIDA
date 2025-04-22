@@ -1,0 +1,14 @@
+[
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Reason: The POST request's 200 status confirms successful member addition. Initial GET errors about user non-existence reflect standard invitation workflow checks rather than operational failure, as subsequent confirmation through traffic analysis verifies the member's active status."
+    ],
+    [
+        "Operation result: Failed. Reason: Error code 205002 consistently indicates the home member already exists in the system. This operational failure stems from redundant execution of an invitation process that had already been completed and accepted in previous successful operations."
+    ]
+]

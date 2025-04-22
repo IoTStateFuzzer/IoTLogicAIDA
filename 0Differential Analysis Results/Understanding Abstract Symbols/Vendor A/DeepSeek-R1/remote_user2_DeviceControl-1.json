@@ -1,0 +1,20 @@
+[
+    [
+        "Operation result: Success. Reason: The MQTT command response contains errcode 0, confirming successful device control authorization. This is reinforced by subsequent deviceDataChanged notifications demonstrating sequential state updates across multiple parameters (switch status toggling, brightness adjustments, and mainSwitch activation), indicating full command execution and system acknowledgment."
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Reason: Persistent error code 500000401 across all responses strongly indicates an authorization framework failure. This likely stems from invalid credentials (potentially expired authentication tokens), explicit permission revocation for user2, or a privilege escalation attempt through unauthorized control pathways in the MQTT protocol implementation."
+    ],
+    [
+        "Operation result: Failed. Reason: Error code 500000404 consistently signals resource unavailability, suggesting either temporary device offline status, permanent ownership revocation from user2's account, or architectural mismatches in device/service path resolution within the IoT ecosystem's control plane."
+    ]
+]

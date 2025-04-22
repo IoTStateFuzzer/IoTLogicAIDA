@@ -1,0 +1,20 @@
+[
+    [
+        "Operation result: Success. Reason: The MQTT response consistently shows 'errcode':0 across all analyses, confirming successful command execution. This is further validated by subsequent 'deviceDataChanged' notifications demonstrating concrete state updates, including switch activation (on:1) and brightness adjustments (e.g., 90), which collectively verify operational success through both protocol-level confirmation and physical device feedback."
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Reason: Unified reports indicate error code 500000401, which systematically points to authorization failure. This pattern suggests either invalid credentials (potentially temporary permission revocation) or permanent access denial for user2's remote control request, with no successful state changes observed to contradict the permission-related failure conclusion."
+    ],
+    [
+        "Operation result: Failed. Reason: Consensus across analyses identifies error code 500000404, definitively signaling resource unavailability. This condition likely stems from either device disconnection from the network (offline status) or complete removal of the device from user2's authorized control scope, with no successful control signals registered post-attempt."
+    ]
+]

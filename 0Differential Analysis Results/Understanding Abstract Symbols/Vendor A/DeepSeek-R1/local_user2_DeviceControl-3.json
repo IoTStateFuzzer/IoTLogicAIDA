@@ -1,0 +1,14 @@
+[
+    [
+        "Operation result: Success. Reason: MQTT deviceDataChanged notifications consistently confirm device state modifications (switch/mainSwitch toggling, light status, brightness adjustments) across multiple instances. UDP packet analysis demonstrates successful transmission of control commands to the device (e.g., 'switch' payloads), verifying local execution despite intermittent unrelated API authentication errors in network traffic."
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Reason: Targeted MQTT payloads explicitly reflect device parameter changes (switch=0, lightStatus=0) with synchronized timestamp updates in records. UDP control packets and acknowledgment patterns confirm command execution at the device level, validating operational success through both cloud-based notifications and local network activity."
+    ]
+]

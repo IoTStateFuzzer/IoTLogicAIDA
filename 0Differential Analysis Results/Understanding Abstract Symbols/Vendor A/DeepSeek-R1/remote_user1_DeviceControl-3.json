@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Reason: Consensus analysis shows all 5 evaluations confirm errcode 0 (success) in MQTT commandRsp responses. Subsequent deviceDataChanged notifications consistently demonstrate switch state transitions (on:1 and on:0) across observations, with additional corroborating evidence from brightness and lightStatus updates in some reports. This multi-layer confirmation pattern \u2013 initial protocol-level success codes followed by concrete device state changes in multiple service dimensions \u2013 conclusively proves command acceptance and execution at both platform and device levels."
+    ]
+]

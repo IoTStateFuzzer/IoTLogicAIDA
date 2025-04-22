@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Reason: Consensus across all reports confirms successful device control through coordinated MQTT and UDP evidence. MQTT 'deviceDataChanged' notifications demonstrate synchronized state updates for mainSwitch (1/0), switch (1/0), and brightness (90), while UDP analysis reveals device_0 packets with switch/control commands containing status code 2 (success) and devDataInfo payloads. This dual-layer verification \u2013 cloud-based MQTT acknowledgments coupled with local network UDP command execution traces \u2013 provides irrefutable proof of command delivery and hardware state synchronization."
+    ]
+]

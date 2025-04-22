@@ -1,0 +1,14 @@
+[
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Reason: POST to add member returned 200 status, indicating successful invitation despite initial user check error."
+    ],
+    [
+        "Operation result: Failed. Reason: POST to add member returned error 205002, indicating member already exists."
+    ]
+]

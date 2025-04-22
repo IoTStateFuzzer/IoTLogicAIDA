@@ -1,0 +1,20 @@
+[
+    [
+        "Operation result: Success. Reason: Consensus analysis confirms MQTT command success through errcode 0 verification and corroborating deviceDataChanged notifications. Multiple independent observations confirm sequential state transitions (switch operations, brightness adjustments) following command execution, demonstrating full protocol compliance and system acknowledgment."
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Reason: Unified error code 500000401 across all reports indicates systemic authorization failure. Forensic pattern analysis suggests either expired session credentials or privilege escalation requirements were unmet during remote control attempts. The persistent error manifestation across multiple command iterations rules out transient network issues."
+    ],
+    [
+        "Operation result: Failed. Reason: Error code 500000404 consensus points to resource accessibility failure. Technical audit pattern indicates either device/service path invalidation post-authorization or temporary service degradation during control attempts. The 'payload_is_None' artifact in one report corroborates incomplete command execution cycles."
+    ]
+]

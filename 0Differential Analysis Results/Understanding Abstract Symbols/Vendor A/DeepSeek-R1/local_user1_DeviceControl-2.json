@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Reason: MQTT notifications consistently confirm device status updates including mainSwitch activation (1), switch activation (1), brightness adjustment to 90, and mode changes. Local control confirmation is validated through UDP packets from device_0 and user1_local, containing payloads such as 'switch' state updates and 'devDataInfo' acknowledgments, demonstrating successful command execution and device responsiveness."
+    ]
+]

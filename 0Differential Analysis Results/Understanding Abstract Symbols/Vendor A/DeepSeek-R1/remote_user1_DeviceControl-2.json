@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Reason: Consolidated analysis confirms success through MQTT command responses containing 'errcode':0 (protocol-level success code), followed by sequential 'deviceDataChanged' notifications demonstrating a state transition from 'on':0 to 'on':1. This dual verification confirms both command acceptance (via errcode 0) and physical device activation (via persistent state change). The absence of error flags in subsequent service updates and the consistency across multiple data streams eliminate ambiguity about operational success."
+    ]
+]

@@ -1,0 +1,20 @@
+[
+    [
+        "Operation result: Success. Reason: Consensus analysis confirms successful operation due to MQTT command response 'errcode:0' (explicit success code) followed by consistent 'deviceDataChanged' notifications. These notifications validate the device state transitions (e.g., switch toggling, brightness adjustments), confirming the command execution propagated through the system."
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Reason: Unanimous failure attributed to MQTT error code 500000401, universally recognized as an authentication/permission failure. This indicates user2 lacked valid authorization (e.g., expired/revoked privileges) to execute remote control commands at the time of the request."
+    ],
+    [
+        "Operation result: Failed. Reason: Unified determination from error code 500000404, signifying the target device or service was unreachable. This likely resulted from revoked access rights, incorrect device targeting (e.g., invalid device ID), or decommissioned infrastructure preventing command execution."
+    ]
+]

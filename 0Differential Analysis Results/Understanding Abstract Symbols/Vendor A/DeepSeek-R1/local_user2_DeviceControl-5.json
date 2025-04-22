@@ -1,0 +1,14 @@
+[
+    [
+        "Operation result: Success. Reason: MQTT notifications consistently demonstrate successful device state changes (switch toggling, brightness adjustments) through local UDP control channels. The deviceDataChanged events with timestamped updates and service-specific payloads (mainSwitch, switch services) confirm command execution. Cloud-related authentication errors in HTTP traffic are peripheral to the operational local control mechanism."
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Reason: MQTT deviceDataChanged messages explicitly validate switch status transitions (on=0/1) correlating with UDP control packets targeting specific devices. Persistent state updates across multiple notifications confirm operational continuity of the local control pathway, with HTTP authentication failures constituting separate cloud-layer issues."
+    ]
+]

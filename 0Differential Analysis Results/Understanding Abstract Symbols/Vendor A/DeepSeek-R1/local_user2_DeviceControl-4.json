@@ -1,0 +1,14 @@
+[
+    [
+        "Operation result: Success. Reason: Consensus across all analyses confirms MQTT notifications demonstrate consistent device status changes (switch toggling between on/off states, brightness adjustments) coupled with UDP packet evidence of command execution. The repeated pattern of device_0's response validation through both MQTT state propagation and direct UDP communication establishes reliable confirmation of successful local control by user2."
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Reason: Unified analysis identifies explicit MQTT payloads containing switch state transitions ('on':0/1) and record time updates, synchronized with UDP response packets from device_0. This dual-channel confirmation (MQTT state propagation + UDP command acknowledgment) provides irrefutable evidence of command acceptance and execution at both device and network levels."
+    ]
+]
