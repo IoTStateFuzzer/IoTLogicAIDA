@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Reason: The initial QR code scan was confirmed successful across all analyses due to error code 0 and message 'ok', which retrieved user1's family/home details. Subsequent errors (-2010, -2011) reflect post-scan authorization or permission issues (e.g., expired/duplicate scans, join failures) but do not invalidate the core success of decoding and initiating the family linkage process."
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ]
+]

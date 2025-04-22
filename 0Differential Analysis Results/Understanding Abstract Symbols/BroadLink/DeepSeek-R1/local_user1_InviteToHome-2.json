@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Success. Reason: Consolidated analysis confirms successful user1 information retrieval showing sole ownership (type 0), validation of empty initial family member list, and error-free QR code generation (status 0, error 0) through /invited/reqqrcode endpoint. The complete workflow demonstrates proper initiation of local home invitation with valid system confirmation through both user data checks and cryptographic invitation preparation."
+    ],
+    [
+        "Operation result: Success. Reason: Unified evaluation verifies successful integration of user2 as family member (type 1/guest) through invitation acceptance, evidenced by updated member list containing both owner (user1) and guest (user2), coupled with subsequent QR code regeneration (status 0). The sequential traffic confirms completed invitation lifecycle - from initial QR generation to new member onboarding and system acknowledgment through refreshed credentials."
+    ]
+]

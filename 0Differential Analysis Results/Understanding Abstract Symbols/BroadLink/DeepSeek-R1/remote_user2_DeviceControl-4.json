@@ -1,0 +1,14 @@
+[
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Reason: The HTTP POST requests to /device/control/v2/sdkcontrol consistently returned responses containing validated control parameters (pwr=0 and pwr=1) in both headers and payloads. This pattern confirms successful cloud-side command processing. The UDP packet from device_0 provides critical physical-layer verification of local command execution, establishing a complete control loop from cloud instruction to device implementation."
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Reason: The ErrorResponse payloads with type 'DEVICE_RESET' (status -7) demonstrate explicit security protocol enforcement. The system revoked temporary permissions through either user-initiated access revocation or automated device security reset, as evidenced by the 'please rebind' directive. This failure mode indicates layered authorization controls preventing unauthorized command execution after permission expiration."
+    ]
+]

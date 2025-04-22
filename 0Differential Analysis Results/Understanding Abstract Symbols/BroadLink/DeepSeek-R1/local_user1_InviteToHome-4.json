@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Success. Reason: Consensus analysis confirms successful QR code generation (status/error 0) for user1 (owner, type 0), followed by user2's verified addition as a family member (type 1). The first traffic set establishes ownership and invitation initiation, while subsequent entries validate the system\u2019s updated state with user2\u2019s inclusion and persistent invitation capabilities."
+    ],
+    [
+        "Operation result: Success. Reason: Unified evidence shows the invitation workflow completed fully: user2 (type 1) appears in the family list alongside user1 (type 0), all operations return status/error 0, and QR code regeneration succeeds. This confirms the system processed the invitation acceptance, updated membership states correctly, and maintained functional integrity post-operation."
+    ]
+]

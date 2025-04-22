@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Reason: Consistent error code 0 and status 0 across all analyses confirm successful QR code authentication. The response includes valid family metadata (familyid, familyname) and user1\u2019s authorized details, aligning with the \"msg\":\"ok\" server validation."
+    ],
+    [
+        "Operation result: Failed. Reason: Unified error code -2010 indicates authentication failure. Probable causes include an expired/invalid QR code, insufficient user2 permissions, or a revoked scanning authorization not meeting system requirements."
+    ],
+    [
+        "Operation result: Failed. Reason: Consensus error code -2011 points to invitation invalidity. This encompasses QR code expiration, prior usage by another user, explicit revocation by the family admin, or user2\u2019s ineligibility to join the family group under current constraints."
+    ]
+]

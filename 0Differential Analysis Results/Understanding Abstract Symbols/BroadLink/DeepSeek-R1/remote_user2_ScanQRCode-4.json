@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Reason: Multiple error code 0 confirmations with 'ok' status messages and family group data (familyid 11b9af345...) demonstrate successful QR code authentication. This allows user2 to access user1's home information and permanently join the family group through the initial valid scan."
+    ],
+    [
+        "Operation result: Failed. Reason: Consistent error code -2010 across analyses indicates system rejection due to invalid credentials. The QR code likely expired after the first successful use or became corrupted, as evidenced by garbled messages in subsequent authorization attempts."
+    ],
+    [
+        "Operation result: Failed. Reason: Unified error code -2011 reflects authorization protocol enforcement. The system prevents duplicate family group joins (user2 already added) and blocks revoked invitations, with error semantics pointing to expired cryptographic validity of the QR code's underlying token."
+    ]
+]

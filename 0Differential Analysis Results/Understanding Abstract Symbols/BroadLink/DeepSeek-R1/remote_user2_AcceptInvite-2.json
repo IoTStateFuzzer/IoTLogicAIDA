@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Reason: Analysis of multiple reports confirms user2 successfully joined user1's family through the /appsync/group/member/invited/joinfamily endpoint (status:0, familyid:11b9af345feef8afb71de0053611d0eb). While subsequent device control errors (code -7) were observed, these occurred after successful family joining and are unrelated to the invitation acceptance process. The consistent success markers across all reports include valid API response structure (error:0, status:0, msg:'ok') and proper family ID propagation."
+    ]
+]

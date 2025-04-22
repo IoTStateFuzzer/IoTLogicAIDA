@@ -1,0 +1,20 @@
+[
+    [
+        "Operation result: Success. Reason: Consistent API responses across all instances show error code 0 and \"ok\" message from the /appsync/group/member/quitfamily endpoint, confirming successful home exit. Network timeout errors (NETWORK_TIME_OUT) observed in device control logs are distinct operational failures unrelated to the home membership termination process, likely occurring during subsequent device status checks."
+    ],
+    [
+        "Operation result: Success. Reason: Repeated successful status 0 responses from the quitfamily endpoint confirm home exit completion. Subsequent DEVICE_RESET errors reflect expected post-operation behavior where device access revocation triggers disconnection events, demonstrating system consistency in handling membership changes rather than indicating operation failure."
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Reason: Uniform -30107 status codes across both family membership queries and exit attempts indicate authorization system rejection. Garbled error messages suggest server-side validation failures, likely caused by attempting operations on non-existent family relationships after previous successful exits, creating an invalid permission state for subsequent requests."
+    ]
+]

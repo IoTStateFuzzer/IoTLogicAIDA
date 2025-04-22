@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Reason: The '/appsync/group/member/invited/joinfamily' endpoint returned status code 0 ('ok') with a valid familyid (11b9af345feef8afb71de0053611d0eb), confirming user2 successfully joined user1's family. Subsequent device control errors (e.g., error code -7, 'device reset') are unrelated to the invitation acceptance and likely reflect post-join operational requirements, such as device rebinding or transient system states."
+    ]
+]

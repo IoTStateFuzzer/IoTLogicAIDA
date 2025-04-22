@@ -1,0 +1,14 @@
+[
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Reason: Consistent HTTP POST responses with 'Response' namespace and payloads containing explicit device control parameters (e.g., power state transitions between 0/1) confirm successful command execution. Cloud acknowledgment is further validated by UDP packet confirmation of local device implementation."
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Reason: Unified 'ErrorResponse' events with status code -7 explicitly indicate forced device reset and rebind requirements. This security response confirms revoked permissions for user2, likely triggered by unauthorized control attempts or persistent invalid access credentials."
+    ]
+]

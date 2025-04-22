@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Reason: Initial QR code scan succeeded with error code 0, 'ok' status message, and retrieval of family information (user1home). Subsequent error codes (-2010/-2011) relate to invitation validity but do not invalidate the initial successful scan and data acquisition."
+    ],
+    [
+        "Operation result: Failed. Reason: Error code -2010 confirms the QR code expired or became invalid, preventing successful family joining. System responses consistently indicate temporal limitations or authorization failure for this scan attempt."
+    ],
+    [
+        "Operation result: Failed. Reason: Error code -2011 reflects authorization conflict, primarily due to the user having already joined the family through this QR code or exceeding permitted usage limits, as evidenced by repeated system rejections."
+    ]
+]

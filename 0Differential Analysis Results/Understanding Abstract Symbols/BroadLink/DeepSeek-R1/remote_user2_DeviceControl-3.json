@@ -1,0 +1,14 @@
+[
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Reason: The operation succeeded based on multiple confirmed HTTP POST requests to /device/control/v2/sdkcontrol with payloads toggling power states (pwr:0/1) and UDP acknowledgment from device_0. While ErrorResponse (status -7) indicated a device reset in some cases, the preponderance of evidence confirms successful command execution prior to the reset condition."
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Reason: All reports consistently show ErrorResponse status -7 ('device reset, please rebind'), conclusively demonstrating that user2's control attempts were rejected due to revoked permissions or device unavailability, requiring re-binding to regain access authorization."
+    ]
+]

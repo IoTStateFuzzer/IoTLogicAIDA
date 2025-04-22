@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Reason: The initial QR scan succeeded (error code 0, status 0, and 'ok' message) with successful retrieval of family information for user1. Subsequent errors (-2010/-2011) reflect later validation failures of the QR code's status or permissions, but these do not negate the initial successful scan that established temporary access for user2."
+    ],
+    [
+        "Operation result: Success. Reason: The core operation succeeded as evidenced by the first response (error code 0, status 0, and explicit 'ok' confirmation) that granted user2 access through a valid QR code. The subsequent -2010/-2011 errors pertain to post-scan validation checks of code expiration or reuse, which are secondary to the primary successful authorization event."
+    ],
+    [
+        "Operation result: Success. Reason: Success is confirmed by the first response containing complete family data and error code 0. Later errors (-2010/-2011) represent separate failed attempts to reuse an already-consumed QR code session, distinct from the initial successful scan that fulfilled the core operational objective."
+    ]
+]

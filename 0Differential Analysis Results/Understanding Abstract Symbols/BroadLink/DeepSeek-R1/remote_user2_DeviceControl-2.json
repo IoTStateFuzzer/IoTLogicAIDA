@@ -1,0 +1,14 @@
+[
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Reason: Multiple HTTP POST requests to /device/control/v2/sdkcontrol demonstrate successful device control through payload data containing sequential pwr parameter modifications (0 and 1 values derived from base64-decoded responses). The consistency across responses is reinforced by 'DNA.TransmissionControl' success acknowledgments and complementary UDP packets, which collectively confirm completed power state changes at both application and network protocol levels."
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Reason: Unified ErrorResponse patterns with status code -7 and explicit 'device reset, please rebind' messages across all attempts indicate systemic authorization failure. This error state confirms revoked temporary permissions for user2 (attacker), likely triggered by security protocols invalidating compromised credentials or terminating unauthorized control sessions. The persistent error across multiple requests rules out transient network issues, emphasizing authentication-layer rejection."
+    ]
+]

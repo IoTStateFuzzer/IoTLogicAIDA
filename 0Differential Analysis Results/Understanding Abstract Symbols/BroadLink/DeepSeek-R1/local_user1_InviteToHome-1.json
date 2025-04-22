@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Success. Reason: Consensus analysis confirms successful invitation workflow: 1) Initial QR code generation succeeded (status:0/error:0) with only user1 (owner) listed 2) Subsequent verification shows user2 (type=1 guest) added to family members 3) Multiple traffic checks consistently show error-free status codes and logical progression from invitation initiation to member list update."
+    ],
+    [
+        "Operation result: Success. Reason: Unified evidence from all reports demonstrates: 1) Post-invitation family member list now contains both user1 (type=0 owner) and user2 (type=1 guest) 2) Continued valid QR code generation capability indicates maintained system integrity 3) Invitation completion confirmed through persistent member list updates across multiple verification requests with consistent typing distinctions between owner and guest roles."
+    ]
+]

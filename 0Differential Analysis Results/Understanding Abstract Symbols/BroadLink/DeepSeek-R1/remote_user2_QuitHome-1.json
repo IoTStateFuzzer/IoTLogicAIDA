@@ -1,0 +1,20 @@
+[
+    [
+        "Operation result: Success. Reason: The API response consistently shows error:0 and status:0 with \"ok\" messages, confirming successful family exit. Device-related errors (DEVICE_RESET/NETWORK_TIME_OUT) occur independently of the QuitHome operation and reflect post-exit device state changes rather than failures in the family group removal process."
+    ],
+    [
+        "Operation result: Success. Reason: Repeated API success indicators (error:0/status:0) definitively confirm the family exit. Subsequent DEVICE_RESET errors (-7) stem from legitimate access revocation after successful group removal, representing expected device control limitations rather than operational failure."
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Reason: Consistent status:-30107 errors across both getfamilymember and quitfamily endpoints indicate systemic authorization failure. The garbled messages likely translate to invalid family membership status, suggesting either revoked permissions, prior successful exit, or unauthorized access attempts preventing operation completion."
+    ]
+]

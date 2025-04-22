@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Reason: The POST request to /appsync/group/member/delfamilymember returned status 0 and 'ok' message, confirming successful removal. A subsequent GET request verified user2's type changed to 1 (non-owner), demonstrating the removal took effect, while user1 remains the owner (type 0)."
+    ]
+]

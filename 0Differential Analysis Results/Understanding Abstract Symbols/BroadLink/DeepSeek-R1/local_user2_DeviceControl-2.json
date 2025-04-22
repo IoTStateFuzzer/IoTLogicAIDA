@@ -1,0 +1,20 @@
+[
+    [
+        "Operation result: Success. Reason: The HTTP POST command to /device/control/v2/sdkcontrol succeeded, evidenced by a valid control response with payload parameters (pwr=1 and indicator=1) confirming power-on. This is further supported by status code 0 in TransmissionControl responses and UDP traffic between device_0 and user2_local, which validates local command execution and device state synchronization."
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Reason: Repeated UDP packets (64/144 bytes) exchanged between device_0 and user2_local demonstrate persistent local communication and state synchronization after the cloud service accepted the initial control command. This recurring traffic pattern confirms ongoing acknowledgment of the device\u2019s updated state, consistent with successful control execution."
+    ]
+]
