@@ -1,0 +1,14 @@
+[
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Reason: The operation failed as the system could not recognize or find the user, preventing any further process of invitation and acceptance."
+    ],
+    [
+        "Operation result: Failed. Reason: The operation failed due to redundancy issues, as the system identified the user as an existing member, leading to confusion in the invitation process."
+    ]
+]

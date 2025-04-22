@@ -1,0 +1,14 @@
+[
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Reason: The specified user does not exist. The majority of the operations failed due to user not being found, as evidenced by error codes and failed user validation."
+    ],
+    [
+        "Operation result: Failed. Reason: The specified user does not exist and there is also a conflict with an existing user entry in the database. Most operations failed due to these user-related issues."
+    ]
+]

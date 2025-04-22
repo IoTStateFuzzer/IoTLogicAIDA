@@ -1,0 +1,20 @@
+[
+    [
+        "Operation result: Success. Reason: The device received the command, acknowledged with no errors, and the response messages indicated the expected changes in the device states through multiple MQTT notifications."
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Reason: The device responded with an error code of 500000401, indicating an issue with authentication or permission, leading to unauthorized operation."
+    ],
+    [
+        "Operation result: Failed. Reason: The device responded with an error code of 500000404, indicating the device or service could not be found or the specific command was not recognized."
+    ]
+]

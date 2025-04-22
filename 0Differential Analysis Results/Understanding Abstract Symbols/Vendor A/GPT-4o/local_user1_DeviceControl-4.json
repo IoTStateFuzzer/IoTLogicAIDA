@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Reason: The device control operation was successful as evidenced by multiple 'deviceDataChanged' notifications. These notifications reflected changes in various device parameters, including brightness, light switch status, mode, and the main switch, confirming that the device control was executed and the state changes were accurately reported."
+    ]
+]

@@ -1,0 +1,8 @@
+[
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Reason: The DELETE request to remove the member returned a 200 status code, indicating the operation was successful. Subsequent reports and data changes confirm the removal and proper update of authorization settings."
+    ]
+]

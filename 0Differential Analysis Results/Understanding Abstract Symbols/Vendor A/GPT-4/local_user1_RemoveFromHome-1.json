@@ -1,0 +1,8 @@
+[
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Reason: The operation to remove a member from the smart home was successfully executed as indicated by the HTTP DELETE method and the '200' status code. Subsequent actions, including privacy data reporting and updates to house authorization, confirm the system's successful adaptation to the change."
+    ]
+]

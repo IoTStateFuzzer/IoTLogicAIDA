@@ -1,0 +1,14 @@
+[
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Reason: The operation failed because the user does not exist in the system. Additionally, the home member already exists in the database, contributing to the invite and accept process failure."
+    ],
+    [
+        "Operation result: Failed. Reason: The operation failed due to the user not existing in the system and the home member already existing in the database, which prevented the invitation process from completing."
+    ]
+]

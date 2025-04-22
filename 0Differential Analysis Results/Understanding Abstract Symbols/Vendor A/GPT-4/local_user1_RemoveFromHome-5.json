@@ -1,0 +1,8 @@
+[
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Reason: The operation successfully removed a member from the home, confirmed by DELETE and PUT requests which were validated by server responses and subsequent updates in house authorization."
+    ]
+]

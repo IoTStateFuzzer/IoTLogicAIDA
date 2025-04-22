@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Reason: The traffic contains a notification of the device having been deleted and relevant HTTP DELETE requests, TCP/UDP packets managing device information, and MQTT notifications indicating successful processing and confirmation of device removal from the system."
+    ]
+]

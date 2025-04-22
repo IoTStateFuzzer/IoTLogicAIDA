@@ -1,0 +1,20 @@
+[
+    [
+        "Operation result: Success. Reason: The majority of MQTT messages indicate positive command responses with errcode 0. Furthermore, multiple notify messages show successful changes in device states such as switch, brightness, mode, and light status."
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Reason: The MQTT message contains an errcode 500000401, indicating an error related to authentication or permission issues that prevented successful device control."
+    ],
+    [
+        "Operation result: Failed. Reason: The MQTT message contains an errcode 500000404, indicating that the target device or command was not found, resulting in failed remote control attempts."
+    ]
+]

@@ -1,0 +1,14 @@
+[
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Reason: Majority of the attempts failed due to the invited user not existing (error code 907134773). Additionally, there was an issue where the home member already exists in the database (error code 205002). While there was a partial success in one attempt after resolving the initial issue, the majority of operations resulted in failure."
+    ],
+    [
+        ""
+    ]
+]

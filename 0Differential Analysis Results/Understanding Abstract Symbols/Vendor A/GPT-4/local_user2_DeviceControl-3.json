@@ -1,0 +1,14 @@
+[
+    [
+        "Operation result: Success. Reason: Device control commands were successfully executed, confirmed by both MQTT notifications and device data change notifications."
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Reason: Device control commands were successfully executed, confirmed by specific action logs and device data change notifications."
+    ]
+]

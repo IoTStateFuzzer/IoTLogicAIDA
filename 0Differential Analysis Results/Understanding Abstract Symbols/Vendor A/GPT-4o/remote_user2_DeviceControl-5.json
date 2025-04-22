@@ -1,0 +1,20 @@
+[
+    [
+        "Operation result: Success. Reason: The traffic and MQTT notifications indicate that the device control operations were acknowledged without errors. The responses consistently showed an error code 0, and confirmed changes in settings such as brightness and switch status were successfully executed."
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Reason: All responses included an error code 500000401, indicating an authorization error. This suggests the failure was due to issues with permissions or authentication."
+    ],
+    [
+        "Operation result: Failed. Reason: The responses contained an error code 500000404, indicating a device not found error. This implies that the operation failed because the requested device or resource could not be located or was offline."
+    ]
+]

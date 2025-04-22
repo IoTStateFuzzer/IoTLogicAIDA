@@ -1,0 +1,14 @@
+[
+    [
+        "Operation result: Failed. Reason: Despite multiple device control attempts shown by 'deviceDataChanged' notifications in the MQTT packets, an 'Authentication failure' error in one of the HTTP responses, with the error code 100010001, indicates user2 lacks proper authorization to control the device."
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Reason: Traffic packets show successful commands for switching the device, backlight, and light status. The 'deviceDataChanged' notifications confirm device control actions executed by user2, with changes observed in 'switch', 'record', 'backlight', and 'lightStatus' values."
+    ]
+]

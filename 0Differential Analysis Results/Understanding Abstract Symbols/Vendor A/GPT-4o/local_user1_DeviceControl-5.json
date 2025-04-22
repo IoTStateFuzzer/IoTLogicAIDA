@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Reason: The operation was successful as indicated by multiple device status changes being reported through the MQTT protocol, showing that various device states such as switch, brightness, mainSwitch changes were applied and maintained consistently."
+    ]
+]

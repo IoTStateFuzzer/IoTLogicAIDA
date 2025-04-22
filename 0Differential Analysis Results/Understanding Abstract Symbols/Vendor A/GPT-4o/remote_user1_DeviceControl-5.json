@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Reason: The control operation was acknowledged with an errcode of 0, and subsequent data changes were reported accordingly. Multiple MQTT packets indicated the successful execution of device command responses. The presence of 'deviceDataChanged' and state changes confirmed the successful control operations by user1 remotely."
+    ]
+]

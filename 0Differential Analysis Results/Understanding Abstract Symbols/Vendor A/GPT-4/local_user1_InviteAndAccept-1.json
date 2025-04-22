@@ -1,0 +1,14 @@
+[
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Reason: The operation attempted to invite and accept a new user into the smart home system. However, this operation failed due to error code 907134773, which indicates the user does not exist."
+    ],
+    [
+        "Operation result: Failed. Reason: While the attempted operation was to invite and add a member to the smart home system, it failed. This failure was due to the error code 205002, indicating that the home member already exists in the database. Hence, a duplicate entry could not be made."
+    ]
+]

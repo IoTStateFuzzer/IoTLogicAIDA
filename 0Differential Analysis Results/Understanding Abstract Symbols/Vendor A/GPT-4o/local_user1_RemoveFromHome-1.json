@@ -1,0 +1,8 @@
+[
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Reason: The first traffic packet indicates a DELETE request to remove a member from the home, and the server responded with a 200 status, indicating the request was successful."
+    ]
+]

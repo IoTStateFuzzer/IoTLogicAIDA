@@ -1,0 +1,8 @@
+[
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Reason: The DELETE request to remove a member from the home returned a 200 status, indicating successful execution. Subsequent reporting data and house authorization changes were also successful with status code 200."
+    ]
+]

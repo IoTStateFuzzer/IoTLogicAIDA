@@ -1,0 +1,8 @@
+[
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Reason: The DELETE request successfully targeted a member endpoint, resulting in the member's removal from the home. This was corroborated by PUT requests that updated authorization data, confirming changes in home permissions."
+    ]
+]

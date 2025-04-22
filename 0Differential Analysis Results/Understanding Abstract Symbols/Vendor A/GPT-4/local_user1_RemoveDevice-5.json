@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Reason: The operation was confirmed successful through consistent HTTP DELETE requests and MQTT notifications, which verified the device's removal from both local and cloud systems."
+    ]
+]

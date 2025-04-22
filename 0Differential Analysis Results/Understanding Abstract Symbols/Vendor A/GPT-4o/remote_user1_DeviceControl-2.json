@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Reason: The device control operation performed by user1 remotely was indicated as successful by multiple acknowledgment (ACK) packets with error code 0. These acknowledgments confirmed the commands were executed without errors, and the successive 'deviceDataChanged' notifications reflected consistent changes in the device statuses that matched the commanded controls."
+    ]
+]
