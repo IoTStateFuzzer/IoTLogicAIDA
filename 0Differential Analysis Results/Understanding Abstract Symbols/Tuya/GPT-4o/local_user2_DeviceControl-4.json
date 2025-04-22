@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Failed. Reason: The traffic indicates that there are repeated attempts to control the device with normal MQTT control commands not being successfully processed. Despite the presence of multiple TCP connections and MQTT traffic, the intended control actions were not achieved."
+    ],
+    [
+        "Operation result: Failed. Reason: The multiple attempts through TCP and MQTT protocols, coupled with varied packet lengths and different MQTT command topics imply that the device did not respond appropriately to the control commands issued by user2, resulting in a failure of the intended device control action."
+    ]
+]

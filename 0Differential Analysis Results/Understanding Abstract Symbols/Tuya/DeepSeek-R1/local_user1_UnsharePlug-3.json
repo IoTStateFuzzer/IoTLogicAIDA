@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Reason: Traffic contains a successful response from the API endpoint `/api.json/smartlife/m/sharing/device/remove` with `\"result\":true` and `\"success\":true`, indicating the plug unshare operation was completed. The `/sharing/resource/member/relation/page` response also lists user2 with `\"status\":false`, confirming access revocation."
+    ]
+]

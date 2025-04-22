@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Reason: The traffic contains a POST request to \"/api.json/smartlife/m/sharing/device/remove\" with payload {\"result\":true, \"success\":true}, indicating the unshare operation was accepted. Additionally, the \"/api.json/smartlife/m/sharing/resource/member/relation/page\" response lists user2 with \"status\":false, confirming their access was revoked."
+    ]
+]

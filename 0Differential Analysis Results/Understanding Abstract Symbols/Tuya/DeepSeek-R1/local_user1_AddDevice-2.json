@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Reason: The traffic includes successful HTTP responses from the cloud (e.g., \"/api.json/smartlife/m/device/list/token\" with \"success\":true and populated \"successDevices\"), MQTT messages confirming device addition (\"type\":\"add\"), and the device ID (208580022462ab36ab23) is registered with valid credentials (localKey, productId)."
+    ],
+    [
+        "Operation result: Success. Reason: Similar to the first set, HTTP responses confirm successful device token generation and registration (non-empty \"successDevices\"), MQTT traffic shows device addition, and the device is marked as online (\"isOnline\":true)."
+    ],
+    [
+        "Operation result: Success. Reason: Consistent success signals: HTTP responses with \"success\":true, device listed in \"successDevices\", and MQTT payloads (e.g., \"type\":\"add\") validate the device was added locally and synced with the cloud."
+    ]
+]

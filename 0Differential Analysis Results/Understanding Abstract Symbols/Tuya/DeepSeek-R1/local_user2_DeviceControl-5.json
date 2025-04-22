@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Failed. Reason: Majority analysis (3/5) indicates insufficient confirmation - only isolated TCP packets (status 135/'w3.3') were observed without required MQTT control channel confirmation or proper device acknowledgment. Protocol mismatch concerns (repeated 'U' fields) and lack of bidirectional validation suggest uncompleted control attempts despite command transmission."
+    ],
+    [
+        "Operation result: Success. Reason: Unanimous consensus (5/5) confirms valid control through coordinated MQTT-TCP patterns. Persistent MQTT publishes to device-specific topics (smart/mb/in/...) with versioned payloads (2.2) were systematically followed by TCP responses containing status codes (123/28/135) and acknowledgment markers ('k','U','3.3'), demonstrating temporary local permission activation and complete command execution cycle."
+    ]
+]

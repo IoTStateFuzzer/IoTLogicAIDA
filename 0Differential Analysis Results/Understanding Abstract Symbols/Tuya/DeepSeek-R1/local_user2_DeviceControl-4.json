@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Success. Reason: MQTT control messages (payload '2.2...') were successfully published to the device's control topic (smart/mb/in/...) through the local channel. TCP responses from device_0 containing 'w3.3' (parameter write confirmation) and 'k' (acknowledgment markers) validate command execution. The absence of error codes in analyzed packets and synchronized device responses confirm successful local control operation."
+    ],
+    [
+        "Operation result: Success. Reason: Repeated MQTT commands (payload '2.2...') to the device control topic were followed by matching TCP acknowledgments ('k3.3' from user2 and 'w3.3' from device_0). Persistent control signals and parameter patterns (3.3) in bidirectional traffic confirm valid temporary access through the local channel, with no authentication failures or persistent error markers observed in the transaction."
+    ]
+]

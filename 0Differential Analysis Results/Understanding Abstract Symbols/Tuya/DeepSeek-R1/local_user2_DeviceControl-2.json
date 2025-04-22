@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Success. Reason: MQTT commands targeting the device control topic (smart/mb/in/...) with standardized payload patterns (2.2/w3.3) were consistently observed. TCP responses containing status codes (3.3) and protocol-specific markers (kAbs_Len4) confirm device acknowledgment. While isolated TCP packets showed error indicators, the majority of traffic validates successful command execution through the MQTT pub/sub mechanism, likely leveraging temporary permissions granted to user2's local channel."
+    ],
+    [
+        "Operation result: Success. Reason: Repeated MQTT PUBLISH operations to the device-specific command topic (smart/mb/in/208580022462ab36ab23) with structured payloads (2.2Abs_Len...) triggered TCP responses containing validated control parameters (kAbs_Len4|3.3). The clustered acknowledgments and sequential payload alignment indicate protocol-compliant execution, overriding sporadic error codes through the exploitation of temporary access privileges despite user2's unauthorized role."
+    ]
+]

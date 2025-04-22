@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Reason: The traffic contains a POST request to \"/api.json/smartlife/m/sharing/device/remove\" with {\"result\":true, \"success\":true}, confirming the unsharing action. Additionally, the \"/api.json/smartlife/m/sharing/resource/member/relation/page\" response lists user2 with \"status\":false, indicating their access was revoked. MQTT packets (0x30/0x40) suggest local protocol acknowledgments."
+    ]
+]

@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Failed. Reason: The device has already been shared with user2, indicated by the error code 'REPETITION_SHARE' in the /sharing/device/account/add response."
+    ],
+    [
+        "Operation result: Success. Reason: The /sharing/device/account/add response confirms successful sharing with user2, including a valid relationId and receiverName."
+    ]
+]

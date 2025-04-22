@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Reason: The unsharing operation of the device was confirmed successful by multiple sources including traffic packets, server responses, and API confirmations. All sources indicate a positive success status, with details such as 'ok' status messages, updated member statuses reflecting removal, and direct confirmations of the unsharing action."
+    ]
+]
