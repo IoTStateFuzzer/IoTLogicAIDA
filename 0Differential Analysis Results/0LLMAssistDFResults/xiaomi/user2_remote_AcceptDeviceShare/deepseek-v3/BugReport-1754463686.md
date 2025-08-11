@@ -1,0 +1,27 @@
+### Base model
+* No issues found.
+
+### Divergent model
+* **Vulnerability 1: Unauthorized Permission Retention After Device Re-addition**
+    * **Impact:** User2 retains control permissions for a re-added device without receiving a new invitation, violating the direct sharing permission principle where permissions should expire upon device removal/re-addition. This could lead to unauthorized access attempts and potential exploitation if error handling is flawed. The system correctly prevents actual permission gain through error messages, but the ability to attempt these operations indicates residual permission state issues.
+    * **Problematic State(s):**
+        * `s5`: User2 attempts `AcceptDeviceShare` after device removal, receiving error code -6 ("invalid request, invite not exist"). While access is denied, the attempt should be prevented entirely if permissions are truly invalid.
+        * `s6`: User2 attempts `AcceptDeviceShare` on a re-added device, receiving error code -6 ("invalid request, invite not exist"). The system should ensure no residual permissions exist for new device instances.
+
+* **Vulnerability 2: Information Leakage via Differential Error Messages**
+    * **Impact:** Different error messages for similar operations allow attackers to infer system state, invitation validity, or family membership status. This violates information leakage principles by enabling state inference attacks through response variations (CLS_1 vs CLS_2 error classifications).
+    * **Problematic State(s):**
+        * `s4`: User2's `AcceptDeviceShare` returns error code -6 ("invalid request, invite not exist" - CLS_1).
+        * `s5`: Same error as s4 but with different state semantics (device removed).
+        * `s6`: Same error as s4/s5 but for a new device instance.
+        * `s8`: User2's `AcceptDeviceShare` returns different error message "already in room" (CLS_2), revealing family membership status.
+        * `s3`/`s7`: `ShareCamera` fails with error code -12 ("false" - CLS_2.
+        * `s4`/`s8`: `ShareCamera` fails with error code -11 ("have share permit") - CLS_1, creating inconsistency in permission conflict messaging.
+
+* **Vulnerability 3: Inconsistent Permission Conflict Handling**
+    * **Impact:** The system shows inconsistent handling of permission conflicts through varying error codes and messages for similar operations, potentially exposing system logic and enabling state mapping by attackers. While unauthorized actions are blocked, the inconsistency in error handling could be exploited if vulnerabilities emerge in the error handling mechanism.
+    * **Problematic State(s):**
+        * `s4`: `ShareCamera` fails with error code -11 ("have share permit").
+        * `s8`: `ShareCamera` fails with same error code -11 but `AcceptDeviceShare` fails with different message ("already in room").
+        * `s3`/`s7`: `ShareCamera` fails with error code -12 ("false"), creating inconsistency with s4/s8 error codes.
+        * `s6`: User2 can attempt `AcceptDeviceShare` without an invitation (fails with error code -6), indicating permission check inconsistency.

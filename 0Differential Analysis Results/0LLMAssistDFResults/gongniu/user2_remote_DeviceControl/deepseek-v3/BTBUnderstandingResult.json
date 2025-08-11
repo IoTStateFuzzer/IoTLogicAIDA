@@ -1,0 +1,51 @@
+{
+    "local_user1_AddDevice": null,
+    "local_user1_DeviceControl": [
+        [
+            "Operation result: Success. Evidence: **'{'code':200,'message':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd','result':null,'success':true}'**. Reason: HTTP 200 status code with 'success': true confirms successful device control."
+        ]
+    ],
+    "local_user1_RemoveDevice": [
+        [
+            "Operation result: Success. Evidence: 'DELETE|api.iotbull.com|/mos/device/v1/devices/mHXk6DR3zDiKDwQd4vRo000000' and '{'code':200,'message':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd','result':null,'success':true}'. Reason: Consistent HTTP DELETE requests with status code 200 and 'success':true confirm successful device removal."
+        ]
+    ],
+    "local_user1_SharePlug": [
+        [
+            "Operation result: Success. Evidence: 'POST|/mos/share/v1/devices|||||FPSPER{'code':200,'message':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd','result':null,'success':true}'; 'POST|/mos/share/v1/devices|||||FPSPER{'code':200,'success':true}'. Reason: HTTP POST to share endpoint with code 200 and 'success': true indicates successful operation."
+        ],
+        [
+            "Operation result: Failed. Evidence: 'POST|/mos/share/v1/devices|||||FPSPER{'code':|------|,'message':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd','result':null,'success':false}'; 'POST|/mos/share/v1/devices|||||FPSPER{'code':|------|,'success':false}'. Reason: 'success': false in payload indicates operation failure."
+        ]
+    ],
+    "local_user1_UnsharePlug": [
+        [
+            "Operation result: Success. Evidence: 'POST|/mos/share/v1/devices/cancel' + '{'code':200,'success':true}'. Reason: HTTP POST to unshare endpoint with 200 status code and success=true confirms operation completion."
+        ]
+    ],
+    "remote_user2_AcceptDeviceShare": [
+        [
+            ""
+        ],
+        [
+            "Operation result: Success. Evidence: '{'code':200,'success':true}'; 'code':200, 'success':true. Reason: HTTP 200 status code with 'success': true confirms successful operation."
+        ],
+        [
+            "Operation result: Failed. Evidence: '{'success':false}'; 'success':false. Reason: 'success': false in payload indicates operation failure."
+        ],
+        [
+            "Operation result: Failed. Evidence: '{'success':false}'; 'success':false. Reason: 'success': false in payload indicates operation failure."
+        ]
+    ],
+    "remote_user2_DeviceControl": [
+        [
+            "Operation result: Success. Evidence: 'code':200,'success':true; '{'code':200,'message':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd','result':null,'success':true}'. Reason: HTTP 200 status code and 'success': true consistently confirm successful device control and property update."
+        ],
+        [
+            ""
+        ],
+        [
+            "Operation result: Failed. Evidence: 'code':9017,'success':false; '{'code':9017,'message':'','result':null,'success':false}'. Reason: HTTP 9017 status code and 'success': false consistently indicate device control failure."
+        ]
+    ]
+}

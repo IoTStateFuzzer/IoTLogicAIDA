@@ -1,0 +1,73 @@
+{
+    "local_user1_DeviceControl": [
+        [
+            "Operation result: Success. Evidence: **'mainSwitch data with on set to 1'**; **'mainSwitch','on':1'**; **'mainSwitch' with 'on':1**. Reason: The majority of MQTT payloads consistently indicate that the device's mainSwitch state transitioned to on, confirming that the device control operation executed successfully."
+        ]
+    ],
+    "local_user1_InviteAndAccept": [
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            "Operation result: Success. Evidence: **'FPSPER200'**. Reason: The predominant reasons indicate successful HTTP 200 responses from POST endpoints confirming the invite and acceptance, although a minority of logs contained explicit errors about a non-existent user."
+        ],
+        [
+            "Operation result: Failed. Evidence: **'Home member is already exist in database'**. Reason: The majority of logs report a duplicate membership error in the invite process, establishing failure, while additional error messages regarding a non-existent user further support the operation\u2019s failure."
+        ]
+    ],
+    "local_user1_RemoveDevice": [
+        [
+            "Operation result: Success. Evidence: 'deviceDeleted'. Reason: The integrated analysis indicates that the removal operation succeeded based on a consistent MQTT notification 'deviceDeleted', which is present in every report and is supported by HTTP DELETE indications where applicable."
+        ]
+    ],
+    "local_user1_RemoveFromHome": [
+        [
+            ""
+        ],
+        [
+            "Operation result: Success. Evidence: 'DELETE'. Reason: The evidence consistently shows that a DELETE operation returning a success status (whether expressed as FPSPER200, HTTP 200 or similar) was executed, thereby confirming the RemoveFromHome operation."
+        ]
+    ],
+    "local_user2_DeviceControl": [
+        [
+            "Operation result: Success. Evidence: 'on:1'. Reason: Consistent MQTT notifications report a state change to on (on:1), confirming successful device control as evidenced by the raw 'on:1' fragment present in every report."
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            "Operation result: Undetermined. Evidence: 'on:0'. Reason: All reports indicate the device state as off (on:0); however, conflicting interpretations\u2014some viewing the off state as expected and others as a deviation from the intended outcome\u2014make the overall determination inconclusive."
+        ]
+    ],
+    "remote_user1_DeviceControl": [
+        [
+            "Operation result: Success. Evidence: '**'errcode':0**'. Reason: MQTT ACK responses consistently showing errcode 0 confirm the successful execution of the DeviceControl command."
+        ]
+    ],
+    "remote_user2_DeviceControl": [
+        [
+            "Operation result: Success. Evidence: '**'errcode':0**'. Reason: The repeated MQTT acknowledgments with error code 0 consistently confirm that the device control operation executed correctly."
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            "Operation result: Failed. Evidence: '**'errcode':500000401**'. Reason: The consistent appearance of error code 500000401 in the MQTT commandRsp messages clearly indicates a failure in the device control operation."
+        ],
+        [
+            "Operation result: Failed. Evidence: '**'errcode':500000404**'. Reason: The common error code 500000404 in the MQTT commandRsp packets decisively evidences that the device control action failed."
+        ]
+    ]
+}

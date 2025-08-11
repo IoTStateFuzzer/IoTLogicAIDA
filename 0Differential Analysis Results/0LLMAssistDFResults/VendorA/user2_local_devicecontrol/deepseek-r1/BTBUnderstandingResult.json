@@ -1,0 +1,54 @@
+{
+    "local_user1_DeviceControl": [
+        [
+            "Operation result: Success. Evidence: 'notifyType':'deviceDataChanged'; 'data':{'on':1}'. Reason: MQTT state-change notifications (deviceDataChanged) with device activation (on:1) confirm execution success; absence of explicit control-response acknowledgments introduces operational uncertainty despite consistent state updates."
+        ]
+    ],
+    "local_user1_InviteAndAccept": [
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            "Operation result: Failed. Evidence: '200';'{'error_code':205002,'error_desc':'Home member is already exist in database.'}';'error_code':205002';'205002'. Reason: Critical member addition failure (error code 205002) indicating existing member, overriding HTTP 200 success indicators. User lookup failure also occurred but did not prevent endpoint access, though persistent member conflict invalidated final outcome."
+        ],
+        [
+            "Operation result: Failed. Evidence: '205002';'error_code':205002';'{'error_code':205002,'error_desc':'Home member is already exist in database.'}'. Reason: Member addition conflict (205002) confirming existing member in database, compounded by fatal user lookup failure. No successful indicators overrode core errors."
+        ]
+    ],
+    "local_user1_RemoveDevice": [
+        [
+            "Operation result: Success. Evidence: ''notifyType':'deviceDeleted''. Reason: Explicit device deletion confirmation via MQTT notifyType payload overriding operational context; protocol semantics conclusively match RemoveDevice action despite ancillary signals."
+        ]
+    ],
+    "local_user1_RemoveFromHome": [
+        [
+            ""
+        ],
+        [
+            "Operation result: Success. Evidence: '200'. Reason: Explicit success confirmation via HTTP 200 status code from DELETE request to member endpoint, with forensic packet analysis confirming operation alignment and exclusion of irrelevant traffic."
+        ]
+    ],
+    "local_user2_DeviceControl": [
+        [
+            "Operation result: Success. Evidence: 'deviceDataChanged notification with {'st':'switch','data':{'on':1}}'; **''st':'switch','data':{'on':1}'**; **'{'st':'switch','data':{'on':1'**; ''notifyType':'deviceDataChanged','st':'switch','data':{'on':1}'. Reason: MQTT state update notifications confirm switch activation (on:1) with successful control execution; state changes occurred without observed user2 command packets."
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            "Operation result: Success. Evidence: 'deviceDataChanged notification with {'st':'switch','data':{'on':0}}'; **''st':'switch','data':{'on':0}'**; **'{'st':'switch','data':{'on':0'**; ''st':'switch','data':{'on':0}'. Reason: MQTT state update notifications confirm switch deactivation (on:0) with successful control execution; state changes occurred without observed user2 command packets."
+        ]
+    ],
+    "remote_user1_DeviceControl": [
+        [
+            "Operation result: Success. Evidence: 'errcode':0. Reason: Command responses consistently indicate errcode 0 across protocol-level ACKs, confirming successful control execution with MQTT commandRsp alignment. Operational success is further evidenced by subsequent state synchronization."
+        ]
+    ],
+    "remote_user2_DeviceControl": null
+}

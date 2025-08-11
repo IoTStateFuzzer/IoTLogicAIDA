@@ -1,0 +1,73 @@
+{
+    "local_user1_DeviceControl": [
+        [
+            "Operation result: Success. Evidence: 'deviceDataChanged'. Reason: Consistent device data change notifications with no sign of error indicate successful operation."
+        ]
+    ],
+    "local_user1_InviteAndAccept": [
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            "Operation result: Success. Evidence: 'FPSPER200'. Reason: The server returned HTTP 200 for the add-member call, indicating the invite was successful."
+        ],
+        [
+            "Operation result: Failed. Evidence: 'error_code=205002'. Reason: The majority consensus is that the system refused the invite because the user was already a member. An alternate perspective indicates the invite was effectively fulfilled by existing membership."
+        ]
+    ],
+    "local_user1_RemoveDevice": [
+        [
+            "Operation result: Success. Evidence: 'DELETE'; 'deviceDeleted'. Reason: A consensus indicates that the DELETE request was followed by a deviceDeleted notification, confirming successful removal."
+        ]
+    ],
+    "local_user1_RemoveFromHome": [
+        [
+            ""
+        ],
+        [
+            "Operation result: Success. Evidence: 'DELETE'; '200'. Reason: The request returning 200 indicates membership removal was successful."
+        ]
+    ],
+    "local_user2_DeviceControl": [
+        [
+            "Operation result: Success. Evidence: 'deviceDataChanged'. Reason: MQTT messages and local toggles confirm normal device state changes with no errors, indicating successful control."
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            "Operation result: Success. Evidence: 'deviceDataChanged'. Reason: MQTT notifications and local updates confirm device state changes with no failures, indicating successful control."
+        ]
+    ],
+    "remote_user1_DeviceControl": [
+        [
+            "Operation result: Success. Evidence: 'errcode=0'. Reason: 'errcode=0' indicates successful device control with confirmed operational changes"
+        ]
+    ],
+    "remote_user2_DeviceControl": [
+        [
+            "Operation result: Success. Evidence: 'errcode=0'. Reason: A zero error code indicates a successful control request."
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            "Operation result: Failed. Evidence: 'errcode=500000401'. Reason: The device responded with error code 500000401, indicating the request was not fulfilled."
+        ],
+        [
+            "Operation result: Failed. Evidence: 'errcode=500000404'. Reason: The device responded with error code 500000404, indicating the request was not fulfilled."
+        ]
+    ]
+}

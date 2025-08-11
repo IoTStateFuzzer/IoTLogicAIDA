@@ -1,0 +1,19 @@
+### Base model
+• No issues found.
+
+### Divergent model
+• Vulnerability 1: Unauthorized Device Control Despite Revoked or Pending Sharing Permission  
+  • Impact: Multiple reports indicate that when a sharing permission is revoked—either through an unshare event or when a new sharing invitation is issued but not yet accepted—the remote DeviceControl operation by user2 returns a Success response. This behavior violates the intended access control mechanisms by allowing an unauthorized user to operate the device even after losing valid permissions. Such inconsistencies in permission enforcement jeopardize the integrity and confidentiality of device operations and may let an attacker exploit historical sharing data to maintain control.  
+  • Problematic State(s):
+    * s12: Performed **user2_remote_DeviceControl** after an unshare event; received **Success (Symbol: CLS_1)**; resulting in unauthorized device control despite revoked sharing permission.
+    * s13: Performed **user2_remote_DeviceControl** in a pending invitation state; received **Success (Symbol: CLS_1)**; granting control without the necessary re-acceptance of sharing.
+    * s20: Performed **user2_remote_DeviceControl** following a revocation (unshare) event; received **Success (Symbol: CLS_1)**; leading to control operations that breach access restrictions.
+    * s21: Performed **user2_remote_DeviceControl** when sharing was re-initiated but still pending; received **Success (Symbol: CLS_1)**; bypassing proper validation of the active share.
+    
+• Vulnerability 2: Differential Error Feedback Enables State Inference  
+  • Impact: In some divergent states, the remote DeviceControl operation fails with error responses that vary in content and symbolism. These differences—in cases such as manual re-addition versus the absence of an active share—can inadvertently leak information about the internal state transitions and sharing history. Such leakage provides attackers with subtle cues regarding the device’s current operational context, potentially enabling more targeted exploits by correlating error details with state changes.  
+  • Problematic State(s):
+    * s11: Performed **user2_remote_DeviceControl** when the device was manually re-added; received a distinct error response (**Symbol: CLS_4, “Manual addition: The device has been added again…”**) that exposes re-addition events.
+    * s14: Performed **user2_remote_DeviceControl** in a state lacking a valid invitation; received an error response with code **–6** indicating an invalid request, hinting at the absence of a share.
+    * s16: Performed **user2_remote_DeviceControl** in a re-added state; received an error response that differs from other states, thereby leaking internal transition information.
+    * s17: Performed **user2_remote_DeviceControl** under similar conditions; received a differentiated error response which cumulatively aids an attacker in inferring state changes.

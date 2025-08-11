@@ -1,0 +1,19 @@
+
+
+### Base model
+*   No issues found.
+
+### Divergent model
+*   **Vulnerability 1: Improper Access Control After Permission Revocation**  
+    **Impact:** User2 retains unauthorized device control capabilities after explicit permission revocation (via UnshareCamera/RemoveDevice), violating permission timeliness, integrity, and confidentiality. This allows continued access to devices even after unsharing/removal actions, breaching Direct Sharing Permission rules.  
+    **Problematic State(s):**  
+        *   `s12`: Performed **user2|remote|DeviceControl**, received **CLS_1 (Success)**, transitioned to **s12**, causing **persistent control despite explicit unshare action**.  
+        *   `s20`: Performed **user2|remote|DeviceControl**, received **CLS_1 (Success)**, transitioned to **s20**, causing **continued access after device unshare/removal**.  
+
+*   **Vulnerability 2: Differential State Inference via Error Code Patterns**  
+    **Impact:** Attackers can infer device state changes (e.g., device removal/re-addition, invitation status) through distinct error codes (CLS_4/-6 vs CLS_0) and response patterns, violating confidentiality and Principle 2 of information leakage prevention.  
+    **Problematic State(s):**  
+        *   `s5/s6/s15`: Performed **user2|remote|AcceptDeviceShare**, received **error -6** ("invite not exist"), causing **confirmation of device removal through consistent error patterns**.  
+        *   `s10/s11`: Performed **user2|remote|DeviceControl**, received **empty response (s10)** vs **CLS_4 error (s11)**, causing **inference of device re-addition state**.  
+        *   `s14/s17`: Performed **user2|remote|DeviceControl**, received **CLS_4 error**, causing **leakage of device-added state vs removed state (no response)**.  
+        *   `s16`: Performed **user2|remote|DeviceControl**, received **CLS_4 failure**, causing **detection of device lifecycle changes through contrast with CLS_0 success patterns**.

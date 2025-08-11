@@ -1,0 +1,51 @@
+{
+    "local_user1_AddDevice": null,
+    "local_user1_DeviceControl": [
+        [
+            "Operation result: Success. Evidence: 'code':200,'success':true'; 'code:200' + 'success':true'; ''code':200,'success':true'; 'code:200, success:true'; 'code=200','success':true'. Reason: The HTTP 200 code with success=true confirms device control was performed successfully."
+        ]
+    ],
+    "local_user1_RemoveDevice": [
+        [
+            "Operation result: Success. Evidence: 'code=200','success=true'. Reason: The server indicated removal succeeded with a 200 status and success flag"
+        ]
+    ],
+    "local_user1_SharePlug": [
+        [
+            "Operation result: Success. Evidence: 'code=200,success=true'. Reason: The returned code=200 with success=true indicates a successful share request."
+        ],
+        [
+            "Operation result: Failed. Evidence: 'success=false'. Reason: The share request reported success=false indicating the operation did not complete."
+        ]
+    ],
+    "local_user1_UnsharePlug": [
+        [
+            "Operation result: Success. Evidence: ''. Reason: The request responded with code=200 and success=true indicating the unshare action was successful."
+        ]
+    ],
+    "remote_user2_AcceptDeviceShare": [
+        [
+            ""
+        ],
+        [
+            "Operation result: Success. Evidence: '**'code=200,success=true'**'; '**'code':200,'success':true**'; '**'code=200','success=true'**'; '**'code=200 success=true'**'; '**'code=200,success=true'**'. Reason: The response with code=200 and success=true indicates acceptance."
+        ],
+        [
+            "Operation result: Failed. Evidence: '**'success=false'**'; '**'success':false**'; '**'success=false'**'; '**'success=false'**'; '**'success=false'**'. Reason: The response with success=false indicates rejection."
+        ],
+        [
+            "Operation result: Failed. Evidence: '**'success=false'**'; '**'success':false**'; '**'success=false'**'; '**'success=false'**'; '**'success=false'**'. Reason: The response with success=false indicates rejection."
+        ]
+    ],
+    "remote_user2_DeviceControl": [
+        [
+            "Operation result: Success. Evidence: 'code=200'. Reason: A 200 code indicates the operation was successful."
+        ],
+        [
+            ""
+        ],
+        [
+            "Operation result: Failed. Evidence: ''. Reason: Code 9017 or success=false indicates the operation failed."
+        ]
+    ]
+}

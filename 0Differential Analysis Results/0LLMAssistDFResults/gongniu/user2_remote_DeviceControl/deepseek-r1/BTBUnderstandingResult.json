@@ -1,0 +1,38 @@
+{
+    "local_user1_AddDevice": null,
+    "local_user1_DeviceControl": [
+        [
+            "Operation result: Success. Evidence: 'code:200'; 'success:true'. Reason: Control command execution confirmed by HTTP 200 status code and explicit boolean success flag in payload, indicating acknowledged device state change."
+        ]
+    ],
+    "local_user1_RemoveDevice": [
+        [
+            "Operation result: Success. Evidence: 'code':200; 'success':true'. Reason: DELETE operation to device endpoint returned HTTP 200 status and explicit success boolean in payload, confirming device removal. Absence of localized traffic in one instance due to packet discard policies does not contradict success indicators."
+        ]
+    ],
+    "local_user1_SharePlug": [
+        [
+            "Operation result: Success. Evidence: 'POST /mos/share/v1/devices'; 'success':true'; 'code':200'. Reason: Successful sharing operation confirmed through API response status 200 and explicit payload success indicator."
+        ],
+        [
+            "Operation result: Failed. Evidence: 'POST /mos/share/v1/devices'; 'success':false'. Reason: Sharing endpoint response contains definitive failure marker (success=false) in payload."
+        ]
+    ],
+    "local_user1_UnsharePlug": [
+        [
+            "Operation result: Success. Evidence: 'POST /mos/share/v1/devices/cancel' and '{'code':200,'success':true}'. Reason: Cancel share operation succeeded with consensus on API endpoint '/mos/share/v1/devices/cancel' showing HTTP 200 code and explicit 'success:true' payload. All reports confirmed successful authentication and response validation without error indications."
+        ]
+    ],
+    "remote_user2_AcceptDeviceShare": null,
+    "remote_user2_DeviceControl": [
+        [
+            "Operation result: Failed. Evidence: 'code':9017,'success':false'. Reason: Command rejected at device level with explicit failure code 9017 and false success indicator."
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ]
+    ]
+}

@@ -1,0 +1,73 @@
+{
+    "local_user1_DeviceControl": [
+        [
+            "Operation result: Success. Evidence: **'mainSwitch','data':{'on':1}'**; **''st':'mainSwitch','data':{'on':1}'**; **'{'st':'mainSwitch','data':{'on':1}}'**. Reason: MQTT payloads consistently show successful device control with 'mainSwitch' turned on, confirmed across multiple notifications and packets."
+        ]
+    ],
+    "local_user1_InviteAndAccept": [
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            "Operation result: Failed. Evidence: 'error_code:907134773, error_desc:The user don't exist!'. Reason: User existence check failed with explicit error code and message indicating non-existent user."
+        ],
+        [
+            "Operation result: Failed. Evidence: 'error_code:205002, error_desc:Home member is already exist in database.'. Reason: Membership addition failed due to existing user in database."
+        ]
+    ],
+    "local_user1_RemoveDevice": [
+        [
+            "Operation result: Success. Evidence: **'{'header':{'notifyType':'deviceDeleted'}}'**; **'HTTP DELETE /smart-life/v2/devices/'**; **''notifyType':'deviceDeleted''**; **'notifyType:'deviceDeleted''**; **'DELETE|smarthome.hicloud.com|/smart-life/v2/devices/'**. Reason: Consistent evidence of MQTT notifications with 'deviceDeleted' type and HTTP DELETE requests to the device endpoint confirm successful device removal."
+        ]
+    ],
+    "local_user1_RemoveFromHome": [
+        [
+            ""
+        ],
+        [
+            "Operation result: Success. Evidence: 'DELETE|smarthome.hicloud.com|/smart-life/v3/home/gut9j9nkcp37t3puhqvj/member/Abs_Len26||||||FPSPER200'. Reason: HTTP DELETE request with 200 status code confirms successful removal of the member."
+        ]
+    ],
+    "local_user2_DeviceControl": [
+        [
+            "Operation result: Success. Evidence: 'st:switch,data:{on:1}'; '{'st':'switch','data':{'on':1}}'. Reason: MQTT packets consistently show switch status changed to 'on', confirming successful control. Undetermined results due to encrypted UDP traffic lack conclusive evidence."
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            "Operation result: Success. Evidence: '{'st':'switch','data':{'on':0}}'; 'st:switch,data:{on:0}'. Reason: Multiple MQTT packets confirm switch status changed to 'off', indicating successful control. Additional evidence of 'on':1 status is noted but does not contradict the majority result."
+        ]
+    ],
+    "remote_user1_DeviceControl": [
+        [
+            "Operation result: Success. Evidence: 'errcode':0. Reason: Consistent MQTT responses with 'errcode':0 confirm successful device control operations."
+        ]
+    ],
+    "remote_user2_DeviceControl": [
+        [
+            "Operation result: Success. Evidence: '{'errcode':0}'. Reason: MQTT response consistently indicates successful operation with 'errcode:0' across all reports."
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            "Operation result: Failed. Evidence: '{'errcode':500000401}'. Reason: MQTT response consistently indicates failure with 'errcode:500000401' across all reports."
+        ],
+        [
+            "Operation result: Failed. Evidence: '{'errcode':500000404}'. Reason: MQTT response consistently indicates failure with 'errcode:500000404' across all reports."
+        ]
+    ]
+}

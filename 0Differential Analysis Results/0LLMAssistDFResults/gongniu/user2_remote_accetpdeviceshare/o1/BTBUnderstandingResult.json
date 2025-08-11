@@ -1,0 +1,51 @@
+{
+    "local_user1_AddDevice": null,
+    "local_user1_DeviceControl": [
+        [
+            "Operation result: Success. Evidence: 'success':true. Reason: The 200 status code with 'success':true indicates the device property update completed successfully"
+        ]
+    ],
+    "local_user1_RemoveDevice": [
+        [
+            "Operation result: Success. Evidence: 'code=200, success=true'; 'code':200,'success':true'; 'code:200, success:true'. Reason: The request returned code 200 with success=true, indicating device removal was successful."
+        ]
+    ],
+    "local_user1_SharePlug": [
+        [
+            "Operation result: Success. Evidence: 'code=200'; 'success=true'. Reason: The share request returned code=200 with success=true."
+        ],
+        [
+            "Operation result: Failed. Evidence: 'success=false'. Reason: The share request returned success=false."
+        ]
+    ],
+    "local_user1_UnsharePlug": [
+        [
+            "Operation result: Success. Evidence: '200' 'success'. Reason: Code=200 with success=true indicates the unshare operation completed successfully."
+        ]
+    ],
+    "remote_user2_AcceptDeviceShare": [
+        [
+            ""
+        ],
+        [
+            "Operation result: Success. Evidence: '200'. Reason: The server responded with code 200, indicating acceptance."
+        ],
+        [
+            "Operation result: Failed. Evidence: 'success':false. Reason: The payload indicates success=false, producing a failure result."
+        ],
+        [
+            "Operation result: Failed. Evidence: 'success':false. Reason: The payload indicates success=false, producing a failure result."
+        ]
+    ],
+    "remote_user2_DeviceControl": [
+        [
+            "Operation result: Success. Evidence: 'code=200'. Reason: Majority consensus indicates code=200 signifies a successful update. Additional evidence mentions a success flag."
+        ],
+        [
+            ""
+        ],
+        [
+            "Operation result: Failed. Evidence: 'code=9017'. Reason: Majority consensus indicates code=9017 denotes an operation failure. Additional evidence includes a false success flag."
+        ]
+    ]
+}

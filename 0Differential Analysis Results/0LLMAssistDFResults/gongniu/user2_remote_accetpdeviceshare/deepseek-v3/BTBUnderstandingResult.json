@@ -1,0 +1,51 @@
+{
+    "local_user1_AddDevice": null,
+    "local_user1_DeviceControl": [
+        [
+            "Operation result: Success. Evidence: **'{'code':200,'message':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd','result':null,'success':true}'**. Reason: HTTP 200 status code with 'success': true in payload confirms successful device control operation."
+        ]
+    ],
+    "local_user1_RemoveDevice": [
+        [
+            "Operation result: Success. Evidence: 'DELETE|/mos/device/v1/devices/mHXk6DR3zDiKDwQd4vRo000000'; 'code':200, 'success':true'; 'DELETE|api.iotbull.com|/mos/device/v1/devices/mHXk6DR3zDiKDwQd4vRo000000'; '{'code':200,'success':true}'. Reason: HTTP DELETE request with status code 200 and success=true consistently confirms successful device removal."
+        ]
+    ],
+    "local_user1_SharePlug": [
+        [
+            "Operation result: Success. Evidence: 'POST|/mos/share/v1/devices|||||FPSPER{'code':200,'success':true}'. Reason: HTTP POST to share endpoint with code 200 and 'success': true confirms successful operation."
+        ],
+        [
+            "Operation result: Failed. Evidence: 'POST|/mos/share/v1/devices|||||FPSPER{'code':|------|,'success':false}'. Reason: HTTP POST to share endpoint with incomplete code and 'success': false indicates operation failure."
+        ]
+    ],
+    "local_user1_UnsharePlug": [
+        [
+            "Operation result: Success. Evidence: 'POST /mos/share/v1/devices/cancel', 'code':200, 'success':true. Reason: Consistent HTTP POST to unshare endpoint with 200 status code and success=true confirms operation completion."
+        ]
+    ],
+    "remote_user2_AcceptDeviceShare": [
+        [
+            ""
+        ],
+        [
+            "Operation result: Success. Evidence: 'code':200, 'success':true. Reason: HTTP 200 status code and 'success': true confirm successful operation."
+        ],
+        [
+            "Operation result: Failed. Evidence: 'success':false. Reason: 'success': false indicates operation failure."
+        ],
+        [
+            "Operation result: Failed. Evidence: 'success':false. Reason: 'success': false confirms operation failure."
+        ]
+    ],
+    "remote_user2_DeviceControl": [
+        [
+            "Operation result: Success. Evidence: '{'code':200,'message':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd','success':true}'; '{'code':200,'message':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd','result':null,'success':true}'. Reason: HTTP 200 status code with 'success': true confirms successful device control and property update."
+        ],
+        [
+            ""
+        ],
+        [
+            "Operation result: Failed. Evidence: '{'code':9017,'success':false}'; '{'code':9017,'message':'','result':null,'success':false}'. Reason: HTTP 9017 error code with 'success': false indicates device control operation failure."
+        ]
+    ]
+}

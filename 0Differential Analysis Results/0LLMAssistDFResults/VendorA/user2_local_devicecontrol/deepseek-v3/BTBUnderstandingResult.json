@@ -1,0 +1,60 @@
+{
+    "local_user1_DeviceControl": [
+        [
+            "Operation result: Success. Evidence: **''notifyType':'deviceDataChanged''**; **'{'st':'mainSwitch','data':{'on':1}}'**; **'MQTT smarthome.notify.app.v1: deviceDataChanged'**. Reason: MQTT notifications confirm successful device state changes, particularly the mainSwitch and switch status updates to 'on'."
+        ]
+    ],
+    "local_user1_InviteAndAccept": [
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            "Operation result: Failed. Evidence: 'error_code:907134773, error_desc:The user don't exist!'. Reason: GET request failed with error indicating the user doesn't exist."
+        ],
+        [
+            "Operation result: Failed. Evidence: 'error_code:205002, error_desc:Home member is already exist in database.'. Reason: POST request failed as the home member already exists."
+        ]
+    ],
+    "local_user1_RemoveDevice": [
+        [
+            "Operation result: Success. Evidence: 'notifyType':'deviceDeleted'; 'HTTP DELETE /smart-life/v2/devices/'. Reason: Consistent MQTT notification ('deviceDeleted') and HTTP DELETE requests confirm successful device removal with endpoint verification."
+        ]
+    ],
+    "local_user1_RemoveFromHome": [
+        [
+            ""
+        ],
+        [
+            "Operation result: Success. Evidence: 'DELETE|smarthome.hicloud.com|/smart-life/v3/home/gut9j9nkcp37t3puhqvjnf8/member/Abs_Len26||||||FPSPER200'; 'DELETE|smarthome.hicloud.com|/smart-life/v3/home/gut9j9nkcp37t3puhqvj/member/Abs_Len26||||||FPSPER200'. Reason: HTTP DELETE request with status code 200 confirms successful removal of the member from the smart home system."
+        ]
+    ],
+    "local_user2_DeviceControl": null,
+    "remote_user1_DeviceControl": [
+        [
+            "Operation result: Success. Evidence: **'errcode':0**; **'{'header':{'mode':'ACK','notifyType':'commandRsp','method':'POST','requestId':'Abs_Len8|-Abs_Len4|-4Abs_Len3|-Abs_Len4|-Abs_Len12|','from':'/devices/Abs_Len8|-Abs_Len4|-4Abs_Len3|-Abs_Len4|-Abs_Len12|/services/switch','mqttTopic':'smarthome.notify.app.v1','to':'/users/30086000763845487','category':'device','deviceId':'Abs_Len8|-Abs_Len4|-4Abs_Len3|-Abs_Len4|-Abs_Len12|','timestamp':'|--------------|'},'body':{'errcode':0,'devicectltype':0,'devicedelay':5}}'**. Reason: MQTT ACK response with 'errcode:0' consistently confirms successful device control across all reports."
+        ]
+    ],
+    "remote_user2_DeviceControl": [
+        [
+            "Operation result: Success. Evidence: **'{'errcode':0}'**. Reason: MQTT response with errcode 0 indicates successful device control."
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            "Operation result: Failed. Evidence: **'{'errcode':500000401}'**. Reason: MQTT response with errcode 500000401 indicates a device control failure."
+        ],
+        [
+            "Operation result: Failed. Evidence: **'{'errcode':500000404}'**. Reason: MQTT response with errcode 500000404 indicates a device control failure."
+        ]
+    ]
+}

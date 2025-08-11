@@ -1,0 +1,73 @@
+{
+    "local_user1_DeviceControl": [
+        [
+            "Operation result: Success. Evidence: 'notifyType':'deviceDataChanged' with switch on=1'. Reason: The consistent presence of 'notifyType':'deviceDataChanged' notifications showing switch state updated to 'on=1' confirms successful execution of the device control command."
+        ]
+    ],
+    "local_user1_InviteAndAccept": [
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            "Operation result: Failed. Evidence: 'error_code':907134773,'error_desc':'The user don't exist!'. Reason: The explicit error code 907134773 and message 'The user don't exist!' confirm the invited user does not exist, causing invite failure."
+        ],
+        [
+            "Operation result: Failed. Evidence: 'error_code':205002,'error_desc':'Home member is already exist in database.'. Reason: The error code 205002 and message indicate the invited user is already a member in the database, resulting in invite failure due to existing membership."
+        ]
+    ],
+    "local_user1_RemoveDevice": [
+        [
+            "Operation result: Success. Evidence: 'HTTP DELETE /smart-life/v2/devices/'; 'notifyType':'deviceDeleted'. Reason: The HTTP DELETE request to the device removal endpoint demonstrates an explicit intent and action to remove the device, while the MQTT notification with 'notifyType' of 'deviceDeleted' confirms that the device deletion has been successfully completed."
+        ]
+    ],
+    "local_user1_RemoveFromHome": [
+        [
+            ""
+        ],
+        [
+            "Operation result: Success. Evidence: 'HTTP DELETE 200'; 'DELETE ... /member/Abs_Len26 ... FPSPER200'. Reason: The DELETE HTTP request receiving status 200 confirms successful removal of user from home, as indicated by consistent presence of payload evidence showing the member removal endpoint interaction."
+        ]
+    ],
+    "local_user2_DeviceControl": [
+        [
+            "Operation result: Success. Evidence: 'switch data changed on=0 to on=1 notifications in MQTT payloads'; 'MQTT notifications of 'switch' state changing from 0 to 1 and 'mainSwitch' data changes to on=1'; 'switch service state changed on:0 to on:1 and multiple deviceDataChanged MQTT notifications reflecting updated states'; 'smarthome.notify.app.v1 deviceDataChanged with switch on=1 and brightness=90'; 'mqtt notifyType: deviceDataChanged with switch state changes from 0 to 1'. Reason: A consistent set of bidirectional MQTT deviceDataChanged events indicates device state transitioned from off to on, confirming successful local control command execution."
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            "Operation result: Success. Evidence: 'MQTT deviceDataChanged messages with switch on=0 and lightStatus=0'; 'MQTT notifyType deviceDataChanged for switch state off (0) and multiple device service updates'; 'switch service MQTT notifications indicating device state off and related state updates'; 'smarthome.notify.app.v1 deviceDataChanged with switch on=0 and lightStatus=0'; 'mqtt notifyType: deviceDataChanged with switch data on=0 to on=1'. Reason: MQTT deviceDataChanged payloads and notifications consistently report switch state off with associated lightStatus=0, demonstrating successful device control signaling and state update confirmation on the local channel."
+        ]
+    ],
+    "remote_user1_DeviceControl": [
+        [
+            "Operation result: Success. Evidence: 'errcode':0,'notifyType':'commandRsp'; 'errcode':0 in MQTT commandRsp; 'errcode':0,'notifyType':'commandRsp' in MQTT payloads; 'errcode':0 in MQTT POST commandRsp payload; 'errcode':0 in MQTT commandRsp ACK message. Reason: The unanimous presence of 'errcode':0 in MQTT command response payloads and acknowledgments establishes a consensus of successful device control command execution, as these payload-centric evidences explicitly indicate acceptance and successful processing of commands."
+        ]
+    ],
+    "remote_user2_DeviceControl": [
+        [
+            "Operation result: Success. Evidence: ''errcode':0' in MQTT commandRsp ACK'; ''errcode':0' in MQTT ACK commandRsp message'; ''errcode':0' in MQTT ACK commandRsp message'; ''errcode':0' in MQTT commandRsp ACK payload'; ''errcode':0' in commandRsp ACK payload'. Reason: Majority consensus confirms the MQTT ACK contains errcode 0 across messages indicating successful device control acknowledgment and execution by user2."
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            "Operation result: Failed. Evidence: ''errcode':500000401' in MQTT commandRsp ACK'; ''errcode':500000401' in MQTT ACK commandRsp message'; ''errcode':500000401' in MQTT ACK commandRsp message'; ''errcode':500000401' in MQTT commandRsp ACK payload'; ''errcode':500000401' in commandRsp ACK payload'. Reason: Errcode 500000401 consistently appears in MQTT commandRsp ACK messages indicating failure in device control response and execution."
+        ],
+        [
+            "Operation result: Failed. Evidence: ''errcode':500000404' in MQTT commandRsp ACK'; ''errcode':500000404' in MQTT ACK commandRsp message'; ''errcode':500000404' in MQTT ACK commandRsp message'; ''errcode':500000404' in MQTT commandRsp ACK payload'; ''errcode':500000404' in commandRsp ACK payload'. Reason: Errcode 500000404 is uniformly present in MQTT ACK responses signifying unsuccessful device control operations."
+        ]
+    ]
+}

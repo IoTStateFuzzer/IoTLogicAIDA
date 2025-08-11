@@ -1,0 +1,97 @@
+{
+    "local_user1_AddDevice": [
+        [
+            "Operation result: Success. Evidence: 'status':0'; 'msg':'ok'. Reason: 'status':0' and 'msg':'ok' indicate a successful addition with no error codes"
+        ]
+    ],
+    "local_user1_DeviceControl": [
+        [
+            "Operation result: Undetermined. Evidence: 'no success or error codes'; 'short UDP flow'. Reason: There are no explicit success or failure indicators in the limited UDP exchange, leaving the final outcome unconfirmed."
+        ]
+    ],
+    "local_user1_InviteToHome": [
+        [
+            "Operation result: Success. Evidence: 'invited' with 'error=0'. Reason: Invitation requests returned success codes with no errors."
+        ],
+        [
+            "Operation result: Success. Evidence: 'user2'. Reason: The updated membership confirms user2 was successfully added with no errors."
+        ]
+    ],
+    "local_user1_RemoveDevice": null,
+    "local_user1_RemoveFromHome": [
+        [
+            "Operation result: Success. Evidence: 'error=0','status=0','msg=ok'. Reason: The removal request returned these indicators, confirming a successful operation."
+        ]
+    ],
+    "local_user2_DeviceControl": [
+        [
+            "Operation result: Success. Evidence: 'status':0. Reason: A zero status code indicates successful operation"
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            "Operation result: Undetermined. Evidence: ''. Reason: No conclusive codes or error messages; a minority indicates normal operation, but overall outcome remains uncertain"
+        ]
+    ],
+    "remote_user1_DeviceControl": null,
+    "remote_user2_AcceptInvite": [
+        [
+            "Operation result: Success. Evidence: 'invited/joinfamily' with 'error=0'. Reason: The invitation acceptance was confirmed by a successful response indicating error=0."
+        ]
+    ],
+    "remote_user2_DeviceControl": [
+        [
+            ""
+        ],
+        [
+            "Operation result: Success. Evidence: 'Response'. Reason: Repeated 'Response' messages with no error codes, indicating successful control."
+        ],
+        [
+            ""
+        ],
+        [
+            "Operation result: Failed. Evidence: 'ErrorResponse' with 'status':-7. Reason: The device reset message indicates a negative code requiring rebind and control failure."
+        ]
+    ],
+    "remote_user2_QuitHome": [
+        [
+            "Operation result: Success. Evidence: 'status=0','msg':'ok'. Reason: The request returned a 0 status code and an 'ok' message, indicating a successful quit operation."
+        ],
+        [
+            "Operation result: Success. Evidence: 'status=0','msg':'ok'. Reason: The request returned a 0 status code and an 'ok' message, indicating a successful quit operation."
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            "Operation result: Failed. Evidence: 'status=-30107'. Reason: The request returned a negative status code, indicating that the quit operation failed."
+        ]
+    ],
+    "remote_user2_ScanQRCode": [
+        [
+            "Operation result: Success. Evidence: 'error=0'. Reason: The zero error code indicates a successful operation"
+        ],
+        [
+            "Operation result: Failed. Evidence: 'error=-2010'. Reason: The negative error code indicates the operation failed"
+        ],
+        [
+            "Operation result: Failed. Evidence: 'error=-2011'. Reason: The negative error code indicates the operation was not successful"
+        ]
+    ]
+}
