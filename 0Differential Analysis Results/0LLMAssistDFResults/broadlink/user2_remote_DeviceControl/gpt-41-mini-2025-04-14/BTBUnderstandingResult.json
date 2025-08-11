@@ -1,0 +1,97 @@
+{
+    "local_user1_AddDevice": [
+        [
+            "Operation result: Success. Evidence: ''status':0,'msg':'ok'' in multiple HTTP POST responses'. Reason: The consistent presence of 'status':0 and 'msg':'ok' in multiple HTTP POST responses from various endpoints, including /vtproxy/common, /appsync/group/dev/manage, and local cloud APIs, confirms a successful AddDevice execution."
+        ]
+    ],
+    "local_user1_DeviceControl": [
+        [
+            "Operation result: Undetermined. Evidence: 'no decisive payload or header keywords related to DeviceControl'; 'only short UDP packets without explicit control keywords or status codes'; 'Sustained UDP packets with increasing payload lengths but no explicit success or error keywords'; 'sustained bidirectional UDP packets without explicit payload keywords or status codes'; 'udp packets flow without explicit operation keywords or status codes'. Reason: The traffic captures uniformly lack explicit DeviceControl payload keywords or status codes necessary to determine operation success or failure, showing only UDP packets without clear operation outcome indicators."
+        ]
+    ],
+    "local_user1_InviteToHome": [
+        [
+            "Operation result: Success. Evidence: ''error':0,'status':0,'msg':'ok'' in /appsync/group/member/invited/reqqrcode response'. Reason: Majority consensus confirms that the HTTP response with zero error and status, accompanied by 'ok' message, indicates the invitation operation succeeded successfully."
+        ],
+        [
+            "Operation result: Success. Evidence: ''error':0,'status':0,'msg':'ok'' in /appsync/group/member/invited/reqqrcode response'. Reason: The unanimous matching zero error and status with 'ok' message demonstrate successful invite operation completion."
+        ]
+    ],
+    "local_user1_RemoveDevice": null,
+    "local_user1_RemoveFromHome": [
+        [
+            "Operation result: Success. Evidence: 'POST /appsync/group/member/delfamilymember error:0 msg:'ok''; ''error':0,'msg':'ok'' in /appsync/group/member/delfamilymember response'; ''error':0,'status':0,'msg':'ok'' in /appsync/group/member/delfamilymember response; 'POST /appsync/group/member/delfamilymember error=0 status=0 msg=ok'. Reason: Majority consensus confirms the delete member API returned error=0 and msg='ok', reflecting a successful removal from home. Consistent positive status codes (error=0, status=0) and clear 'ok' messages in the deletion response support this successful operation."
+        ]
+    ],
+    "local_user2_DeviceControl": [
+        [
+            "Operation result: Success. Evidence: ''status':0' in payload and multiple DNA.TransmissionControl Response events'. Reason: The presence of 'status':0 within payloads unambiguously signals successful operations confirmed by repetitive DNA.TransmissionControl Response events, demonstrating consistent bidirectional control acknowledgments and indicating successful device command execution."
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            "Operation result: Undetermined. Evidence: 'UDP packets with no explicit control payload'. Reason: The UDP exchanges lack embedded control payloads or explicit success/failure codes, with encrypted continuous packet flow carrying no definitive status indicators, rendering the operation outcome inconclusive."
+        ]
+    ],
+    "remote_user1_DeviceControl": null,
+    "remote_user2_AcceptInvite": [
+        [
+            "Operation result: Success. Evidence: 'error':0,'status':0,'msg':'ok' in /appsync/group/member/invited/joinfamily response'. Reason: The majority consensus confirms successful invite acceptance as indicated by HTTP POST responses bearing zero error and status along with 'ok' messages; a minority report indicating a device reset error is noted but lacks sufficient agreement to override the success determination."
+        ]
+    ],
+    "remote_user2_DeviceControl": [
+        [
+            ""
+        ],
+        [
+            "Operation result: Success. Evidence: 'DNA.TransmissionControl Response with pwri values 0 and 1'; 'Response event with multiple bidirectional payloads indicating active interaction'; ''name':'Response', bidirectional exchange with multiple POSTs and responses'; 'DNA.TransmissionControl Response with pwri:1 indicating device accepted control'; ''name':'Response', 'POST /device/control/v2/sdkcontrol''. Reason: Majority control responses exhibit bidirectional, sustained payload exchanges with 'pwri' acknowledgments and valid 'Response' events confirming successful device control command execution."
+        ],
+        [
+            ""
+        ],
+        [
+            "Operation result: Failed. Evidence: 'ErrorResponse with status -7 and message 'device reset, please rebind''; ''name':'ErrorResponse', 'status':-7, 'message':'device reset, please rebind''; ''status':-7, 'device reset, please rebind''. Reason: Consistent presence of explicit 'ErrorResponse' containing status code -7 and reset message signifies failure caused by device reset requiring rebinding, blocking control operation."
+        ]
+    ],
+    "remote_user2_QuitHome": [
+        [
+            "Operation result: Undetermined. Evidence: '/appsync/group/member/quitfamily' with error 0 and msg 'ok'; '/appsync/group/member/quitfamily' with {'error':0,'status':0,'msg':'ok'}'; '/appsync/group/member/quitfamily' with status -30107 and garbled msg; '/appsync/group/member/quitfamily' responded with {'status':-30107,'msg':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd'}'. Reason: Majority consensus shows both success with zero error and 'ok' message indicating successful quit operation, and failure indicators with negative status code -30107 and corrupted message indicating failure. The evidence reflects conflicting operation outcomes; therefore, the overall operation result is undetermined."
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ]
+    ],
+    "remote_user2_ScanQRCode": [
+        [
+            "Operation result: Success. Evidence: ''error':0,'msg':'ok''; ''error':0,'status':0,'msg':'ok''. Reason: Majority positive response with error=0 and msg='ok' indicates ScanQRCode succeeded with consistent success indicators in the payload."
+        ],
+        [
+            "Operation result: Failed. Evidence: ''error':-2010''. Reason: Negative error code -2010 signifies ScanQRCode failure with consistent presence of this error code across evidence payloads."
+        ],
+        [
+            "Operation result: Failed. Evidence: ''error':-2011''. Reason: Negative error code -2011 confirms unsuccessful ScanQRCode attempt, supported by uniform error code evidence in payloads."
+        ]
+    ]
+}
