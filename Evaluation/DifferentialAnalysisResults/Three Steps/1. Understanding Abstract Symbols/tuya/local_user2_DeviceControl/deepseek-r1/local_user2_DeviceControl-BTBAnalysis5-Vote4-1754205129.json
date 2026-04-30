@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Undetermined. Evidence: 'Single TCP packet with encrypted payload'; 'tcp|135|FPSPER...w3.3'. Reason: Single encrypted TCP packet observed (port 135), no response traffic or explicit success/error codes. Insufficient protocol exchange to confirm operation status."
+    ],
+    [
+        "Operation result: Success. Evidence: 'MQTT publish to smart/mb/in/208580022462ab36ab23'; 'sustained TCP flow'; 'smart/mb/in'. Reason: MQTT control messages to device command topic (smart/mb/in) with sustained bidirectional flow (8 packets). Header patterns and traffic persistence confirm command delivery without error responses."
+    ]
+]

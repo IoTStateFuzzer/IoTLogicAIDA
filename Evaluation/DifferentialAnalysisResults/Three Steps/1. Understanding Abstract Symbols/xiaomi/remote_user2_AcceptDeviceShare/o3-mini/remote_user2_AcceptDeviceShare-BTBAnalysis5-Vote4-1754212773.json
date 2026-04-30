@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: ''code':0,'message':'ok''. Reason: The share_response payload consistently indicates a success condition with a return code 0 and an 'ok' message, confirming proper share acceptance."
+    ],
+    [
+        "Operation result: Failed. Evidence: ''code':-6,'message':'invalid request, invite not exist''. Reason: The share_response payload consistently returns an error condition marked by code -6 and a message stating 'invalid request, invite not exist', confirming that the invite does not exist."
+    ],
+    [
+        ""
+    ]
+]

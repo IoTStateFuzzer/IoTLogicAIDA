@@ -1,0 +1,97 @@
+{
+    "local_user1_AddDevice": [
+        [
+            "Operation result: Success. Evidence: 'status':0,'msg':'ok'. Reason: Consistent HTTP 200 responses with success status (0) and confirmation messages across all reports confirm successful device addition."
+        ]
+    ],
+    "local_user1_DeviceControl": [
+        [
+            "Operation result: Undetermined. Evidence: 'No decisive payload evidence'; 'No decisive payload evidence or clear traffic patterns'; 'No relevant payload evidence or clear traffic patterns'. Reason: Traffic analysis shows only length indicators/UDP headers without operation-specific payload evidence or status codes"
+        ]
+    ],
+    "local_user1_InviteToHome": [
+        [
+            "Operation result: Success. Evidence: ''error':0,'status':0,'msg':'ok','data':{'qrcode':'11Abs_Len14|'}'. Reason: Consistent HTTP 200 equivalent responses with success status (error:0, status:0) and QR code generation confirmation across all reports."
+        ],
+        [
+            "Operation result: Success. Evidence: ''error':0,'status':0,'msg':'ok','data':{'qrcode':'11Abs_Len14|}'. Reason: Uniform success confirmation (error:0, status:0) with QR code payload, verifying successful family member invitation process."
+        ]
+    ],
+    "local_user1_RemoveDevice": null,
+    "local_user1_RemoveFromHome": [
+        [
+            "Operation result: Success. Evidence: '{'error':0,'status':0,'msg':'ok'}'. Reason: Consistent HTTP 200 equivalent responses with success status codes (error:0) and confirmation message ('ok') across all reports for /appsync/group/member/delfamilymember endpoint."
+        ]
+    ],
+    "local_user2_DeviceControl": [
+        [
+            "Operation result: Success. Evidence: ''status':0'. Reason: Consistent HTTP 200 responses with status:0 across all reports confirm successful control operation."
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            "Operation result: Undetermined. Evidence: 'UDP traffic pattern'; 'No decisive payload evidence'. Reason: Encrypted UDP traffic lacks both explicit success confirmation and error indicators, with no payload evidence of operation completion."
+        ]
+    ],
+    "remote_user1_DeviceControl": null,
+    "remote_user2_AcceptInvite": [
+        [
+            "Operation result: Success. Evidence: '/appsync/group/member/invited/joinfamily|||||FPSPER{'error':0,'status':0,'msg':'ok'}'; '/appsync/group/member/invited/joinfamily' with 'error':0, 'status':0, 'msg':'ok'. Reason: Consistent HTTP 200 equivalent responses with 'ok' message across all reports confirm successful family join operation."
+        ]
+    ],
+    "remote_user2_DeviceControl": [
+        [
+            ""
+        ],
+        [
+            "Operation result: Success. Evidence: ''name':'Response''. Reason: Consistent successful responses with 'Response' header and control data payloads across all reports."
+        ],
+        [
+            ""
+        ],
+        [
+            "Operation result: Failed. Evidence: ''name':'ErrorResponse', 'message':'device reset, please rebind''; ''status':-7'. Reason: Unanimous error responses indicating device reset requirement with consistent error message and status code."
+        ]
+    ],
+    "remote_user2_QuitHome": [
+        [
+            "Operation result: Success. Evidence: **'{'error':0,'status':0,'msg':'ok'}**'; **'/appsync/group/member/quitfamily|||||FPSPER{'error':0,'status':0,'msg':'ok'}'**. Reason: Consistent HTTP 200 responses with success status (0) and 'ok' message confirm successful quitfamily operations."
+        ],
+        [
+            "Operation result: Success. Evidence: **'{'error':0,'status':0,'msg':'ok'}**'; **'/appsync/group/member/quitfamily|||||FPSPER{'error':0,'status':0,'msg':'ok'}'**. Reason: Repeated confirmation of successful operations through identical success status codes and messages."
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            "Operation result: Failed. Evidence: **'{'status':-30107,'msg':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd'}'**; **'/appsync/group/member/quitfamily|||||FPSPER{'status':-30107,'msg':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd'}'**. Reason: Negative status code (-30107) with garbled error message consistently indicates system-level failure in quitfamily operation."
+        ]
+    ],
+    "remote_user2_ScanQRCode": [
+        [
+            "Operation result: Success. Evidence: ''error':0,'status':0,'msg':'ok''. Reason: Consistent success status codes (error:0, status:0) with confirmation message"
+        ],
+        [
+            "Operation result: Failed. Evidence: ''error':-2010,'status':-2010'. Reason: Consistent negative error codes (error:-2010, status:-2010) indicating system rejection"
+        ],
+        [
+            "Operation result: Failed. Evidence: ''error':-2011,'status':-2011'. Reason: Consistent negative error codes (error:-2011, status:-2011) indicating system rejection"
+        ]
+    ]
+}

@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: '{'code':0,'message':'ok','result':{'list':[{'pid':0,'did':'369647111','ret':1}]}}'. Reason: Consensus across all reports confirms unshare success through HTTP 200-equivalent code 0, 'ok' message, and ret:1 status in payload indicating device removal confirmation."
+    ]
+]

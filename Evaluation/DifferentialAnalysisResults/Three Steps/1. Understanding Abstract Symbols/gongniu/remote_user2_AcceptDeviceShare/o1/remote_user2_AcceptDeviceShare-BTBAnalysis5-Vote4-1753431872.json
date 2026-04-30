@@ -1,0 +1,14 @@
+[
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Evidence: {'code':200,'message':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd','result':null,'success':true}. Reason: Code 200 and success=true indicate the acceptance succeeded."
+    ],
+    [
+        "Operation result: Failed. Evidence: {'code':|------|,'message':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd','result':null,'success':false}. Reason: success=false signals the request was not accepted."
+    ],
+    [
+        "Operation result: Failed. Evidence: {'code':|------|,'message':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd','result':null,'success':false}. Reason: success=false confirms the acceptance was not successful."
+    ]
+]

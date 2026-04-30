@@ -1,0 +1,14 @@
+[
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Evidence: 'namespace':'DNA.TransmissionControl','name':'Response','payload':{'data':'paVaWqDSAws1AAAAeyJwd3IiOjAs...','data':'paVaWqHSAws1AAAAeyJwd3IiOjEs...'. Reason: Consensus confirms successful state changes through multiple Response headers with valid payloads containing power parameters (pwr:0/1). Base64-decoded data shows operational parameters (indicator:1) and no error indicators, confirming command execution through transmission control channel."
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Evidence: 'name':'ErrorResponse','status':-7,'message':'device reset, please rebind','type':'DEVICE_RESET'. Reason: Unanimous error confirmation through ErrorResponse headers with critical status code (-7) and reset/rebind requirement. The payload structure confirms authorization failure through DEVICE_RESET type and persistent security lockout message."
+    ]
+]

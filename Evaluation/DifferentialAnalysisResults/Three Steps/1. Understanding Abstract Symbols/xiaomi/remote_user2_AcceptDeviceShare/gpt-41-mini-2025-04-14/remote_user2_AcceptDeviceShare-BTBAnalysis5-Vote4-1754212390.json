@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: ''code':0,'message':'ok''; ''code':0,'message':'ok','result':'true''. Reason: Majority consensus shows HTTP response with code 0 and message 'ok', often accompanied by 'result':'true', firmly establishes successful acceptance of device share."
+    ],
+    [
+        "Operation result: Failed. Evidence: ''code':-6,'message':'invalid request, invite not exist''. Reason: Clear agreement on error code -6 with message indicating the invite does not exist confirms failure in acceptance due to invalid or absent invitation."
+    ],
+    [
+        ""
+    ]
+]

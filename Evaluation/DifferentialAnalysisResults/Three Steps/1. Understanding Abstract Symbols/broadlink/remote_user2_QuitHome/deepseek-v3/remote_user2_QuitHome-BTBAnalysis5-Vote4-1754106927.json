@@ -1,0 +1,20 @@
+[
+    [
+        "Operation result: Success. Evidence: '/appsync/group/member/quitfamily|||||FPSPER{'error':0,'status':0,'msg':'ok'}'. Reason: HTTP 200 equivalent status (status:0) with 'ok' message confirms successful quitfamily operation."
+    ],
+    [
+        "Operation result: Success. Evidence: '/appsync/group/member/quitfamily|||||FPSPER{'error':0,'status':0,'msg':'ok'}'. Reason: Repeated success confirmation with status 0 and 'ok' message in second traffic set."
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Evidence: '/appsync/group/member/quitfamily|||||FPSPER{'status':-30107,'msg':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd'}'. Reason: Negative status code (-30107) with error message indicates operation failure."
+    ]
+]

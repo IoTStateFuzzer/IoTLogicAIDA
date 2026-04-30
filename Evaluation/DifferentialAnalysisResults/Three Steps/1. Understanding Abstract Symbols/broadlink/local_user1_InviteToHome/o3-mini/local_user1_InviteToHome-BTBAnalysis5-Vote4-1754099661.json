@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Success. Evidence: ''qrcode':'11Abs_Len14|''). Reason: The majority of reports confirm success with a payload showing error:0 and a valid qrcode, indicating the invite was successfully issued."
+    ],
+    [
+        "Operation result: Success. Evidence: ''qrcode':'11Abs_Len14|''). Reason: Consistent invite responses with error:0 and a valid qrcode across most reports support a successful operation despite additional unique fragments in minority cases."
+    ]
+]

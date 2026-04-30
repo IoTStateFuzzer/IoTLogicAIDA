@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: 'a1.tuyacn.com|443|http|POST|a1.tuyacn.com|/api.json/smartlife/m/sharing/device/remove|||||FPSPER{'result':true,'t':|-----------|,'success':true,'status':'ok'}'. Reason: The consistent presence of 'success':true, 'result':true, and 'status':'ok' in the response to the /sharing/device/remove API clearly indicates the unshare operation for the device completed successfully. The repeated identical evidence confirms the reliability of this conclusion."
+    ]
+]

@@ -1,0 +1,20 @@
+[
+    [
+        "Operation result: Success. Evidence: 'FPSPER{'error':0,'status':0,'msg':'ok'}'. Reason: The /appsync/group/member/quitfamily API returned status 0 in multiple reports, indicating that the quit operation succeeded despite unrelated network timeout or device control error messages."
+    ],
+    [
+        "Operation result: Success. Evidence: 'FPSPER{'error':0,'status':0,'msg':'ok'}'. Reason: The quitfamily endpoint consistently showed error 0 and status 0, confirming a successful quit operation even though later device control responses reported errors."
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Evidence: 'FPSPER{'status':-30107,'msg':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd'}'. Reason: The /appsync/group/member/quitfamily API returned a negative status (-30107) accompanied by malformed message content, clearly indicating a failure of the quit operation."
+    ]
+]

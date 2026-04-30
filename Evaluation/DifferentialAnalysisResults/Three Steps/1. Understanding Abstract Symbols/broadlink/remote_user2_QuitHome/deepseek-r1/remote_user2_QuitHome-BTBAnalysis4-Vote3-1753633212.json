@@ -1,0 +1,20 @@
+[
+    [
+        "Operation result: Success. Evidence: 'FPSPER{'error':0,'status':0,'msg':'ok'}'. Reason: Core membership operation succeeded with status 0 and explicit success message in /appsync/group/member/quitfamily response. Subsequent device control errors (-49001) involve separate device binding processes unrelated to home group removal."
+    ],
+    [
+        "Operation result: Success. Evidence: 'errorPSPER{'error':0,'status':0,'msg':'ok'}'. Reason: Primary membership revocation confirmed through status 0 success code in quitfamily API. Post-operation DEVICE_RESET error (-7) relates to device state management rather than family group exit authorization."
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Evidence: 'FPSPER{'status':-30107,'msg':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd'}'. Reason: Authorization failure confirmed through consistent -30107 status code across both getfamilymember and quitfamily endpoints, with corrupted message payload indicating invalid credentials or insufficient permissions for home group exit."
+    ]
+]

@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Undetermined. Evidence: 'single TCP packet'. Reason: Only a single packet observed with no success or error signals"
+    ],
+    [
+        "Operation result: Success. Evidence: 'sustained TCP+MQTT flow'. Reason: Multiple bidirectional packets with no abrupt termination indicate normal operation"
+    ]
+]

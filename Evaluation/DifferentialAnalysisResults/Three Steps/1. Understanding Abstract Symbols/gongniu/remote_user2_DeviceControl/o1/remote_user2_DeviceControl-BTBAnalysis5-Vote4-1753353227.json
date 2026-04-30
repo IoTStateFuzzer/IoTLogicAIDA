@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: 'code':200,'message':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd','result':null,'success':true. Reason: Code=200 with success=true indicates the device property set request was successfully processed."
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Evidence: 'code':9017,'message':'','result':null,'success':false. Reason: Code=9017 with success=false indicates the setDeviceProperty operation failed."
+    ]
+]

@@ -1,0 +1,51 @@
+{
+    "local_user1_AddDevice": null,
+    "local_user1_DeviceControl": [
+        [
+            "Operation result: Success. Evidence: 'code':200; 'success':true'. Reason: Explicit HTTP 200 status and boolean success payload confirm successful command execution."
+        ]
+    ],
+    "local_user1_RemoveDevice": [
+        [
+            "Operation result: Success. Evidence: 'code':200,'success':true. Reason: Consistent HTTP response payload showing code 200 and success flag true confirms successful device removal operation."
+        ]
+    ],
+    "local_user1_SharePlug": [
+        [
+            "Operation result: Success. Evidence: ''success':true'. Reason: Payload analysis confirms explicit success flag (success:true) in share endpoint responses, indicating operational success."
+        ],
+        [
+            "Operation result: Failed. Evidence: ''success':false'. Reason: Payload examination reveals explicit failure indicator (success:false) across share endpoint responses, confirming operational failure."
+        ]
+    ],
+    "local_user1_UnsharePlug": [
+        [
+            "Operation result: Success. Evidence: 'code':200,'success':true'. Reason: Explicit success flag ('success':true) in API response payload combined with HTTP 200 status from cancellation endpoint confirms unshare operation completion."
+        ]
+    ],
+    "remote_user2_AcceptDeviceShare": [
+        [
+            ""
+        ],
+        [
+            "Operation result: Success. Evidence: 'code':200'; 'success':true'. Reason: HTTP 200 status code and explicit 'success':true payload confirmation consistent with successful device share acceptance."
+        ],
+        [
+            "Operation result: Failed. Evidence: 'success':false'. Reason: Explicit 'success':false payload response conclusively indicates API-level failure of share acceptance."
+        ],
+        [
+            "Operation result: Failed. Evidence: 'success':false'. Reason: Rejection confirmed by 'success':false payload response at device share confirmation endpoint."
+        ]
+    ],
+    "remote_user2_DeviceControl": [
+        [
+            "Operation result: Success. Evidence: {'code':200,'success':true}. Reason: HTTP 200 status with payload success flag confirms command execution; MQTT state changes validate device control completion."
+        ],
+        [
+            ""
+        ],
+        [
+            "Operation result: Failed. Evidence: {'code':9017,'success':false}. Reason: Explicit failure code (9017) with false success flag in payload indicates cloud API command rejection."
+        ]
+    ]
+}

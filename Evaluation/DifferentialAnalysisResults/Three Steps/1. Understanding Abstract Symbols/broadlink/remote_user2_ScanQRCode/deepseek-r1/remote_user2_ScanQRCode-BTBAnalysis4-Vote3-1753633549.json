@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: {'error':0,'status':0,'msg':'ok'}. Reason: Consistent success confirmation through status code 0 and explicit 'ok' message, indicating valid QR authentication granting family group permissions. All reports show identical payload structure with operational success markers."
+    ],
+    [
+        "Operation result: Failed. Evidence: {'error':-2010,'status':-2010,'msg':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd'}. Reason: Unified error code -2010 across all reports with corrupted message payload (character decoding failures) indicates systemic authentication failure, consistent with expired/invalid credentials or unauthorized access patterns."
+    ],
+    [
+        "Operation result: Failed. Evidence: {'error':-2011,'status':-2011,'msg':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd'}. Reason: Error code -2011 with persistent message corruption across reports suggests security protocol enforcement against reused/revoked credentials, consistent with anti-replay mechanisms or invitation revocation."
+    ]
+]

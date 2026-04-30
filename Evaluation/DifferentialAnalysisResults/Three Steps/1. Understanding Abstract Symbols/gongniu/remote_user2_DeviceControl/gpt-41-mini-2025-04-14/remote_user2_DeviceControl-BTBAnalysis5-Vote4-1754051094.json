@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: ''code':200'; ''success':true'. Reason: Consensus confirms HTTP 200 code with success:true in payload signals the device control command was successfully accepted and executed."
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Evidence: ''code':9017'; ''success':false'. Reason: Unified evidence shows HTTP code 9017 coupled with success:false clearly indicates the device control command failed."
+    ]
+]

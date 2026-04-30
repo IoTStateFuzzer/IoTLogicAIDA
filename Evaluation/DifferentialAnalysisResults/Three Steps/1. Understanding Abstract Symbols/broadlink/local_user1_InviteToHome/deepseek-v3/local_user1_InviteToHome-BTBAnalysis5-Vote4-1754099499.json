@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Success. Evidence: '{'error':0,'status':0,'msg':'ok','data':{'qrcode':'11Abs_Len14|'}}'. Reason: HTTP 200 equivalent status with successful QR code generation for invitation confirmed by consistent success indicators (error:0, status:0) across all reports."
+    ],
+    [
+        "Operation result: Success. Evidence: '{'error':0,'status':0,'msg':'ok','data':{'qrcode':'11Abs_Len14|'}}'. Reason: Valid QR code presence and consistent success status (error:0, status:0) in all payloads confirms invitation completion with family member integration."
+    ]
+]

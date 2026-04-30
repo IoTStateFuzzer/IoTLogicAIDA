@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: ''success':true,'status':'ok'' from /device/reset; ''type':'del'' in MQTT payload. Reason: The device removal action is confirmed by HTTP POST /device/reset returning success=true and status=ok, combined with the MQTT payload containing 'type':'del', representing explicit deletion intent."
+    ]
+]

@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: '{'code':0,'message':'ok','result':{'list':[{'pid':0,'did':'369647111','ret':1}]}}', 'api.mijia.tech|443|http|POST|api.mijia.tech|/app/share/delete_user||||||FPSPER{'code':0,'message':'ok','result':{'list':[{'pid':0,'did':'369647111','ret':1}]}}', '{'code':0,'message':'OK','result':{'list':[{'pid':0,'did':'369647111','ret':1}]}'. Reason: The majority consensus is that the operation succeeded, based on multiple instances of an identical response showing code 0 and message 'ok' from the /app/share/delete_user API, which indicates successful unsharing of the camera. The presence of 'ret':1 alongside device id '369647111' consistently marks the success of the unshare operation. Additionally, related share list queries returning code 0 and updated lists further affirm that the system state reflects the unsharing action was completed successfully."
+    ]
+]

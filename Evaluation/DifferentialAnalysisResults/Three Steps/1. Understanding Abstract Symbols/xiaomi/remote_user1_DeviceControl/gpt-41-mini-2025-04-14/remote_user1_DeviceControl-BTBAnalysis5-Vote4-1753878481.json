@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: ''code':0,'message':'success'' . Reason: Majority consensus confirms explicit payload status code 0 with message 'success' verifying remote DeviceControl action succeeded; the presence of 'ok' in some payloads supports successful completion without error."
+    ]
+]

@@ -1,0 +1,14 @@
+[
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Evidence: 'name':'Response'. Reason: A consistent 'Response' indication shows the device was successfully controlled."
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Evidence: 'name':'ErrorResponse','message':'device reset, please rebind','status':-7'. Reason: An error response with status -7 and the message 'device reset, please rebind' prevents successful operation."
+    ]
+]

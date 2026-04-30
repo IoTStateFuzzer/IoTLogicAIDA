@@ -1,0 +1,20 @@
+[
+    [
+        "Operation result: Success. Evidence: 'data':'paVaWqHSAws1AAAAeyJwd3IiOjEsImluZGljYXRvciI6MSw...'; 'data':'paVaWqHSAws1AAAAeyJwd3IiOjEsImluZGljYXRvciI6MSwibWF4d29ya3RpbWUiOjAsImNoaWxkbG9jayI6MH0AAAAAAAAAAAAAAAAAAAA='. Reason: Multiple control response payloads contain identical base64-decoded JSON structures with 'pwr':1 parameter, confirming successful power state change through HTTP/local SDK control channels. Critical evidence preserved: Base64 payloads decode to {'pwr':1} indicating active power status."
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Evidence: 'FPSPERZAbs_Len2|UAbs_Len28|...'; 'ZAbs_Len2|UZAbs_Len2|UAbs_Len28|luAbs_Len4|aAbs_Len3|CAbs_Len9|'. Reason: UDP traffic exclusively contains obfuscated payloads with Abs_Len field patterns and zero control confirmation parameters. Critical evidence preserved: No decoded status codes or power parameters found, with payloads showing placeholder metadata structures (Abs_Len markers) instead of valid control responses."
+    ]
+]

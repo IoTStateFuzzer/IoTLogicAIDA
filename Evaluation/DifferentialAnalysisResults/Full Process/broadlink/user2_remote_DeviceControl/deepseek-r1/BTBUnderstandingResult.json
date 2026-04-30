@@ -1,0 +1,97 @@
+{
+    "local_user1_AddDevice": [
+        [
+            "Operation result: Success. Evidence: 'POST|/appsync/group/dev/manage'; ''error':0,'status':0,'msg':'ok''. Reason: Device management endpoint responses confirm operation success with explicit indicators (status:0, error:0, 'ok' message). Absence of direct 'AddDevice' keywords in payloads doesn't override explicit success markers."
+        ]
+    ],
+    "local_user1_DeviceControl": [
+        [
+            "Operation result: Undetermined. Evidence: 'Bidirectional UDP exchange (2 packets)'; 'pattern analysis'; 'bidirectional UDP flow'; 'UDP payload abstraction (Abs_Len)'. Reason: Bidirectional UDP traffic was observed, but confirmation requires explicit payload indicators of device control success. No status codes, control keywords, or operational context were found in packet contents. Minimal packet exchange (2 packets) provides only connectivity evidence despite bidirectional patterns. While traffic characteristics suggest possible command-response interaction, payloads contain only length markers or abstracted data without error/confirmation semantics, preventing definitive verification of control operation success."
+        ]
+    ],
+    "local_user1_InviteToHome": [
+        [
+            "Operation result: Success. Evidence: 'error':0; 'status':0; 'msg':'ok'. Reason: Payload indicators (error:0, status:0, msg:'ok') confirm successful QR code generation at /appsync/group/member/invited/reqqrcode endpoint for invitation request."
+        ],
+        [
+            "Operation result: Success. Evidence: 'error':0; 'status':0; 'msg':'ok'. Reason: Identical payload success indicators (error:0, status:0, msg:'ok') demonstrate consistent operational success at invite QR code endpoint despite parametric variations."
+        ]
+    ],
+    "local_user1_RemoveDevice": null,
+    "local_user1_RemoveFromHome": [
+        [
+            "Operation result: Success. Evidence: 'error':0,'status':0,'msg':'ok'. Reason: Deletion API response confirms success with status:0 and 'ok' message, directly correlating to removal command execution at critical endpoint despite no immediate list change."
+        ]
+    ],
+    "local_user2_DeviceControl": [
+        [
+            "Operation result: Success. Evidence: 'sustained bidirectional traffic'; 'UDP exchange between device_0 and user2_local'; 'Bidirectional UDP flow (device_0 \u2194 user2_local)'. Reason: Sustained bidirectional UDP traffic between device_0 and user2_local without termination signals or error indicators, with complementary event response headers confirming protocol-level command execution."
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            "Operation result: Success. Evidence: 'UDP exchange between device_0 and user2_local'. Reason: Persisting UDP exchange pattern without termination or error signals, establishing session continuity despite minimal packet volume and lack of explicit control markers."
+        ]
+    ],
+    "remote_user1_DeviceControl": null,
+    "remote_user2_AcceptInvite": [
+        [
+            "Operation result: Success. Evidence: '/appsync/group/member/invited/joinfamily|||||FPSPER{'error':0,'status':0,'msg':'ok'}'. Reason: HTTP POST to invitation acceptance endpoint with explicit success indicators (status:0, error:0, 'ok' message) confirms successful family group join operation."
+        ]
+    ],
+    "remote_user2_DeviceControl": [
+        [
+            ""
+        ],
+        [
+            "Operation result: Success. Evidence: 'POST /device/control/v2/sdkcontrol' + 'name':'Response' + alternating 'pwr' values (0/1). Reason: Control endpoint responses with HTTP POST method and alternating power state values confirm command acceptance through payload patterns, despite encrypted content obscuring full transaction details."
+        ],
+        [
+            ""
+        ],
+        [
+            "Operation result: Failed. Evidence: 'name':'ErrorResponse' + 'status:-7' + 'message':'device reset, please rebind'. Reason: Explicit error response with negative status code (-7) and device reset notification confirms critical authentication failure requiring reinitialization."
+        ]
+    ],
+    "remote_user2_QuitHome": [
+        [
+            "Operation result: Success. Evidence: '/appsync/group/member/quitfamily|||||FPSPER{'error':0,'status':0,'msg':'ok'}'. Reason: HTTP 200 equivalent (status:0) with 'ok' message confirms successful quitfamily operation through appsync endpoint."
+        ],
+        [
+            "Operation result: Success. Evidence: '/appsync/group/member/quitfamily|||||FPSPER{'error':0,'status':0,'msg':'ok'}'. Reason: Core API response (status=0, error=0) validates quitfamily success, independent of subsequent device state changes."
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            "Operation result: Failed. Evidence: '/appsync/group/member/quitfamily|||||FPSPER{'status':-30107,'msg':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd'}'. Reason: Negative status code -30107 with encoded error message indicates system-level rejection of quitfamily request."
+        ]
+    ],
+    "remote_user2_ScanQRCode": [
+        [
+            "Operation result: Success. Evidence: 'error':0,'status':0,'msg':'ok'. Reason: Consistent success confirmation through HTTP 200-equivalent status codes (0) with explicit 'ok' message in payload."
+        ],
+        [
+            "Operation result: Failed. Evidence: 'error':-2010,'status':-2010. Reason: System-specific authentication failure indicated by negative error code -2010 in payload response."
+        ],
+        [
+            "Operation result: Failed. Evidence: 'error':-2011,'status':-2011. Reason: Sequential error code -2011 confirms credential expiration or invalid permissions for QR code operation."
+        ]
+    ]
+}

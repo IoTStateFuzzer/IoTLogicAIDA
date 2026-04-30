@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: {'error':0,'status':0,'msg':'ok','data':{'familyid':'11b9af345feef8afb71de0053611d0eb'}}. Reason: The critical /appsync/group/member/invited/joinfamily API response demonstrates operational success through status code 0 and error code 0. The returned familyid '11b9af345feef8afb71de0053611d0eb' matches the target home configuration, confirming valid family membership establishment. While subsequent device control attempts show error code -7 (device reset requirement), this occurs after successful family binding and represents a separate device management phase unrelated to the core invitation acceptance process."
+    ]
+]

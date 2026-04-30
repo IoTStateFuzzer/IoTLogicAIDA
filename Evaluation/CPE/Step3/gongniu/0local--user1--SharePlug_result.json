@@ -1,0 +1,125 @@
+{
+    "10": [
+        [
+            "api.iotbull.com|443|http|POST|api.iotbull.com|/mos/share/v1/devices|||||"
+        ],
+        [
+            "api.iotbull.com|443|http|GET|api.iotbull.com|/mos/schedule/v1/mHXk6DR3zDiKDwQd4vRo000000/scheduleTips|||||",
+            "api.iotbull.com|443|http|GET|api.iotbull.com|/mos/device/v1/devices/mHXk6DR3zDiKDwQd4vRo000000/purpose|||||",
+            "api.iotbull.com|443|http|POST|api.iotbull.com|/mos/share/v1/devices|||||"
+        ],
+        true,
+        "3/67"
+    ],
+    "100": [
+        [
+            "api.iotbull.com|443|http|POST|api.iotbull.com|/mos/share/v1/devices|||||"
+        ],
+        [
+            "api.iotbull.com|443|http|GET|api.iotbull.com|/mos/schedule/v1/mHXk6DR3zDiKDwQd4vRo000000/scheduleTips|||||"
+        ],
+        false,
+        [
+            "api.iotbull.com|443|http|POST|api.iotbull.com|/mos/share/v1/devices|||||"
+        ],
+        1,
+        "1/67"
+    ],
+    "20": [
+        [
+            "api.iotbull.com|443|http|POST|api.iotbull.com|/mos/share/v1/devices|||||"
+        ],
+        [
+            "api.iotbull.com|443|http|GET|api.iotbull.com|/mos/schedule/v1/mHXk6DR3zDiKDwQd4vRo000000/scheduleTips|||||",
+            "api.iotbull.com|443|http|GET|api.iotbull.com|/mos/device/v1/devices/mHXk6DR3zDiKDwQd4vRo000000/purpose|||||",
+            "api.iotbull.com|443|http|POST|api.iotbull.com|/mos/share/v1/devices|||||"
+        ],
+        true,
+        "3/67"
+    ],
+    "30": [
+        [
+            "api.iotbull.com|443|http|POST|api.iotbull.com|/mos/share/v1/devices|||||"
+        ],
+        [
+            "api.iotbull.com|443|http|GET|api.iotbull.com|/mos/schedule/v1/mHXk6DR3zDiKDwQd4vRo000000/scheduleTips|||||",
+            "api.iotbull.com|443|http|GET|api.iotbull.com|/mos/device/v1/devices/mHXk6DR3zDiKDwQd4vRo000000/purpose|||||",
+            "api.iotbull.com|443|http|POST|api.iotbull.com|/mos/share/v1/devices|||||"
+        ],
+        true,
+        "3/67"
+    ],
+    "40": [
+        [
+            "api.iotbull.com|443|http|POST|api.iotbull.com|/mos/share/v1/devices|||||"
+        ],
+        [
+            "api.iotbull.com|443|http|GET|api.iotbull.com|/mos/schedule/v1/mHXk6DR3zDiKDwQd4vRo000000/scheduleTips|||||",
+            "api.iotbull.com|443|http|GET|api.iotbull.com|/mos/device/v1/devices/mHXk6DR3zDiKDwQd4vRo000000/purpose|||||",
+            "api.iotbull.com|443|http|POST|api.iotbull.com|/mos/share/v1/devices|||||"
+        ],
+        true,
+        "3/67"
+    ],
+    "50": [
+        [
+            "api.iotbull.com|443|http|POST|api.iotbull.com|/mos/share/v1/devices|||||"
+        ],
+        [
+            "api.iotbull.com|443|http|GET|api.iotbull.com|/mos/schedule/v1/mHXk6DR3zDiKDwQd4vRo000000/scheduleTips|||||",
+            "api.iotbull.com|443|http|GET|api.iotbull.com|/mos/device/v1/devices/mHXk6DR3zDiKDwQd4vRo000000/purpose|||||",
+            "api.iotbull.com|443|http|POST|api.iotbull.com|/mos/share/v1/devices|||||"
+        ],
+        true,
+        "3/67"
+    ],
+    "60": [
+        [
+            "api.iotbull.com|443|http|POST|api.iotbull.com|/mos/share/v1/devices|||||"
+        ],
+        [
+            "api.iotbull.com|443|http|GET|api.iotbull.com|/mos/schedule/v1/mHXk6DR3zDiKDwQd4vRo000000/scheduleTips|||||",
+            "api.iotbull.com|443|http|GET|api.iotbull.com|/mos/device/v1/devices/mHXk6DR3zDiKDwQd4vRo000000/purpose|||||",
+            "api.iotbull.com|443|http|POST|api.iotbull.com|/mos/share/v1/devices|||||"
+        ],
+        true,
+        "3/67"
+    ],
+    "70": [
+        [
+            "api.iotbull.com|443|http|POST|api.iotbull.com|/mos/share/v1/devices|||||"
+        ],
+        [
+            "api.iotbull.com|443|http|GET|api.iotbull.com|/mos/schedule/v1/mHXk6DR3zDiKDwQd4vRo000000/scheduleTips|||||",
+            "api.iotbull.com|443|http|GET|api.iotbull.com|/mos/device/v1/devices/mHXk6DR3zDiKDwQd4vRo000000/purpose|||||",
+            "api.iotbull.com|443|http|POST|api.iotbull.com|/mos/share/v1/devices|||||"
+        ],
+        true,
+        "3/67"
+    ],
+    "80": [
+        [
+            "api.iotbull.com|443|http|POST|api.iotbull.com|/mos/share/v1/devices|||||"
+        ],
+        [
+            "api.iotbull.com|443|http|GET|api.iotbull.com|/mos/schedule/v1/mHXk6DR3zDiKDwQd4vRo000000/scheduleTips|||||",
+            "api.iotbull.com|443|http|POST|api.iotbull.com|/mos/share/v1/devices|||||"
+        ],
+        true,
+        "2/67"
+    ],
+    "90": [
+        [
+            "api.iotbull.com|443|http|POST|api.iotbull.com|/mos/share/v1/devices|||||"
+        ],
+        [
+            "api.iotbull.com|443|http|GET|api.iotbull.com|/mos/schedule/v1/mHXk6DR3zDiKDwQd4vRo000000/scheduleTips|||||"
+        ],
+        false,
+        [
+            "api.iotbull.com|443|http|POST|api.iotbull.com|/mos/share/v1/devices|||||"
+        ],
+        1,
+        "1/67"
+    ]
+}

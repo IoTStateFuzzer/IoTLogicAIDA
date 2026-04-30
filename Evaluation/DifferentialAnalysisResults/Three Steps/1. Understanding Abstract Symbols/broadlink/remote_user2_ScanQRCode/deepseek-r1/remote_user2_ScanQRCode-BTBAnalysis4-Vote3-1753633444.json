@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: 'error':0,'status':0,'msg':'ok'. Reason: Consistent status code 0 with 'ok' message confirms successful QR authentication. The payload structure indicates valid code processing and family data retrieval, demonstrating proper device authorization."
+    ],
+    [
+        "Operation result: Failed. Evidence: 'error':-2010,'status':-2010. Reason: Uniform error code -2010 across all reports indicates fundamental authorization failure. This corresponds to either cryptographic validation failure of QR credentials (expired/invalid timestamp) or explicit permission denial in system policies."
+    ],
+    [
+        "Operation result: Failed. Evidence: 'error':-2011,'status':-2011. Reason: Consensus error code -2011 confirms state-based rejection, typically indicating revoked invitations or exhausted usage limits. This represents post-authorization revocation rather than initial validation failure."
+    ]
+]

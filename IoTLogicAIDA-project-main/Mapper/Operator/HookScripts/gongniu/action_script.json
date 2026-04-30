@@ -1,0 +1,6 @@
+{
+    "user2|remote|DeviceControl": "hookGongniuDeviceControl.py",
+    "user2|remote|DeviceControl|hook": "deviceControl_remote.py",
+    "user2|remote|AcceptDeviceShare": "hookAcceptDeviceShare.py",
+    "user2|remote|AcceptDeviceShare|hook": "acceptDeviceShare.py"
+}

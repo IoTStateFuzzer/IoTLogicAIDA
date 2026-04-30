@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: '{'code':0,'message':'ok','result':'true'}'. Reason: API response code 0 with 'ok' message and 'true' result confirms successful share request execution."
+    ],
+    [
+        "Operation result: Failed. Evidence: '{'code':-11,'message':'have share permit','result':'have share permit'}'. Reason: Error code -11 indicates existing share permissions preventing new sharing due to conflict."
+    ],
+    [
+        "Operation result: Failed. Evidence: '{'code':-12,'message':'false','result':'false'}'. Reason: Share request failed with error code -12 and explicit 'false' result."
+    ]
+]

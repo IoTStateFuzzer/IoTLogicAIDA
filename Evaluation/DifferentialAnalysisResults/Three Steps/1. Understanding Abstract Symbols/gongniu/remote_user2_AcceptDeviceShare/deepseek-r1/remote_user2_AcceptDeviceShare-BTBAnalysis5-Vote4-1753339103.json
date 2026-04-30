@@ -1,0 +1,14 @@
+[
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Evidence: {'code':200,'message':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd','result':null,'success':true}. Reason: Consistent HTTP 200 status code paired with explicit success:true parameter in API response payload confirms successful operation execution. The presence of both status code validation and boolean success indicator provides dual confirmation of share acceptance."
+    ],
+    [
+        "Operation result: Failed. Evidence: {'code':|------|,'message':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd','result':null,'success':false}. Reason: Operational failure confirmed through persistent success:false flag in payload despite masked status code. The boolean success indicator takes precedence over obscured HTTP code, with error message structure matching failed transaction patterns in IoT APIs."
+    ],
+    [
+        "Operation result: Failed. Evidence: {'code':|------|,'message':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd','result':null,'success':false}. Reason: Extended error message payload with success:false parameter confirms persistent operation rejection. The elongated message field suggests additional error context while maintaining core failure indicators through boolean flag and null result payload."
+    ]
+]

@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: '{'code':200,'success':true}'; ''code':200,'success':true'; '{'code':200,'message':'\u8bbe\u5907\u5220\u9664\u6210\u529f','result':null,'success':true}'. Reason: Consistent HTTP 200 status codes with explicit success flags (including Chinese confirmation message) confirm successful device removal."
+    ]
+]

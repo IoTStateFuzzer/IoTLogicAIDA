@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: 'code':0; 'message':'ok'; 'ret':1. Reason: Unshare operation succeeded with consistent response indicators: API success code (0), confirmation message ('ok'), and explicit success return status (ret=1) in device removal payload."
+    ]
+]

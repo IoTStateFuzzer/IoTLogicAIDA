@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: 'error':0,'status':0,'msg':'ok''. Reason: Consistent HTTP 200-equivalent status (0) with 'ok' message confirms successful QR code scan authorization."
+    ],
+    [
+        "Operation result: Failed. Evidence: 'error':-2010,'status':-2010'. Reason: Protocol-level rejection (code -2010) indicates invalid/expired QR code or scan timeout."
+    ],
+    [
+        "Operation result: Failed. Evidence: 'error':-2011,'status':-2011'. Reason: Error code -2011 confirms systematic authorization failure, suggesting credential expiration or duplicate scan attempt."
+    ]
+]

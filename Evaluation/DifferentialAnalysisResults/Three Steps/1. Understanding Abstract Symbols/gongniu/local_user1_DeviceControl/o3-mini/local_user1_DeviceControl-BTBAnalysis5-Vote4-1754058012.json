@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: ''value':1'; 'value':1'. Reason: The MQTT packet payloads consistently show that the device property is updated to 1, with the evidence fragment 'value':1 occurring in all reports. This uniform payload update confirms that the DeviceControl command executed as intended."
+    ]
+]

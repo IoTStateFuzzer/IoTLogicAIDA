@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: ''code':0'; ''result':'true''. Reason: Camera sharing succeeded with response code 0 and 'true' result confirming successful device pairing."
+    ],
+    [
+        "Operation result: Failed. Evidence: ''code':-11'; ''message':'have share permit''. Reason: Sharing failed due to existing permissions (error code -11) with message indicating prior authorization exists."
+    ],
+    [
+        "Operation result: Failed. Evidence: ''code':-12'; ''result':'false''. Reason: Sharing rejected with error code -12 and explicit 'false' result confirming operational failure."
+    ]
+]

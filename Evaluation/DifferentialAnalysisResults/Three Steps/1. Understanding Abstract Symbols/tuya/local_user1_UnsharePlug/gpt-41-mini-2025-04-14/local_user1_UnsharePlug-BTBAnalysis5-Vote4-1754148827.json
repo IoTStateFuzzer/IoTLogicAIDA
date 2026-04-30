@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: 'POST /api.json/smartlife/m/sharing/device/remove' with 'success':true, 'status':'ok', and 'result':true'; ''success':true,'status':'ok'' in /api.json/smartlife/m/sharing/device/remove'; '/api.json/smartlife/m/sharing/device/remove' with 'success':true and 'status':'ok' payload; ''success':true,'status':'ok'' in /api.json/smartlife/m/sharing/device/remove payload; '/api.json/smartlife/m/sharing/device/remove' status:'ok', 'success':true'. Reason: The majority consensus is that the device remove API call explicitly returned response payloads containing 'success':true and 'status':'ok', with one report specifying 'result':true, confirming the successful execution of the device unsharing operation."
+    ]
+]

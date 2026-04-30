@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: '{'error':0,'status':0,'msg':'ok'}'; 'app-service-chn-467a8f05.ibroadlink.com|443|http|POST|app-service-chn-467a8f05.ibroadlink.com|/appsync/group/member/delfamilymember|||||FPSPER{'error':0,'status':0,'msg':'ok'}'. Reason: The consistent presence of error=0, status=0, and msg='ok' across the delete family member API responses and HTTP POST calls at the endpoint /appsync/group/member/delfamilymember demonstrates a successful removal operation. This unanimity confirms the absence of errors or failures, indicating the removal was processed correctly and effectively."
+    ]
+]

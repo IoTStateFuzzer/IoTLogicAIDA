@@ -1,0 +1,20 @@
+[
+    [
+        "Operation result: Success. Evidence: 'FPSPER{'context':{'properties':[{'namespace':'DNA.TransmissionControl','name':'. Reason: The device responses displayed valid control indications without error, confirming success."
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Undetermined. Evidence: 'device_0||udp||||||||64FPSPERZAbs_Len2|'. Reason: No recognized status or error markers were observed, preventing a definitive conclusion. A separate view considered empty payload as failure, yet it remained inconclusive overall."
+    ]
+]

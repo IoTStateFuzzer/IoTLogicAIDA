@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: ''code':0,'message':'ok''; '{'code':0,'message':'ok','result':{'369647111':1}}'. Reason: Consistent HTTP 200 equivalent responses with success codes (0) and confirmation messages ('ok') across all reports, including specific device removal confirmation."
+    ]
+]

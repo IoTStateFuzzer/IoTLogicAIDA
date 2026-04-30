@@ -1,0 +1,14 @@
+[
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Evidence: 'POST /device/control/v2/sdkcontrol'; 'name':'Response'; 'pwr:0/1'. Reason: Control command responses with valid payload data (alternating pwr:0/1 values) confirm successful state changes. Majority consensus aligns with successful execution markers and absence of error indicators."
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Evidence: 'name':'ErrorResponse'; 'message':'device reset, please rebind'; 'status':-7. Reason: Explicit error response with status code -7 and device reset directive confirms operational failure. All reports concur on authentication rejection requiring device reconfiguration."
+    ]
+]

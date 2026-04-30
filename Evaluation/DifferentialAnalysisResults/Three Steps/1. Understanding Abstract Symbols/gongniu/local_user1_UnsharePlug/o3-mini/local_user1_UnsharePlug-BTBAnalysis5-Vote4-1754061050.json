@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: ''code':200'. Reason: The POST packets to /mos/share/v1/devices/cancel consistently returned a code 200 response, confirming the unshare operation."
+    ]
+]

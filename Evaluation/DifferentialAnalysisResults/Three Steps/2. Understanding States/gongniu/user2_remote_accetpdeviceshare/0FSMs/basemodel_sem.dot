@@ -1,0 +1,47 @@
+digraph g {
+
+	s0 [shape="circle" label="s0"];
+	s1 [shape="circle" label="s1"];
+	s2 [shape="circle" label="s2"];
+	s3 [shape="circle" label="s3"];
+	s4 [shape="circle" label="s4"];
+	s0 -> s1 [label="user1|local|AddDevice / Symbol: CLS_-1. Operation result: Success."];
+	s0 -> s2 [label="user1|local|SharePlug / NoElement"];
+	s0 -> s2 [label="user1|local|UnsharePlug / NoElement"];
+	s0 -> s2 [label="user1|local|RemoveDevice / NoElement"];
+	s0 -> s2 [label="user1|local|DeviceControl / NoElement"];
+	s0 -> s2 [label="user2|remote|AcceptDeviceShare / NoElement"];
+	s0 -> s2 [label="user2|remote|DeviceControl / NoElement"];
+	s1 -> s2 [label="user1|local|AddDevice / NoElement"];
+	s1 -> s3 [label="user1|local|SharePlug / Symbol: CLS_0. Operation result: Success. Evidence: ''code':200, 'success':true'. Reason: The majority consensus confirms that the share plug operation succeeded as each report provided evidence with a 200 response code and a true success flag."];
+	s1 -> s2 [label="user1|local|UnsharePlug / NoElement"];
+	s1 -> s0 [label="user1|local|RemoveDevice / Symbol: CLS_0. Operation result: Success. Evidence: '200'; 'success':true'. Result: The device was successfully deleted via HTTP DELETE (200). Subsequent HTTP GET requests confirmed device status: ONLINE, firmware 3.0.0, no active schedules. MQTT downlink shows all PowerSwitch_LocalTimer entries disabled (0), indicating no active timers."];
+	s1 -> s1 [label="user1|local|DeviceControl / Symbol: CLS_0. Operation result: Success. Evidence: ''value':1'; 'value':1'. Reason: The MQTT packet payloads consistently show that the device property is updated to 1, with the evidence fragment 'value':1 occurring in all reports. This uniform payload update confirms that the DeviceControl command executed as intended."];
+	s1 -> s2 [label="user2|remote|AcceptDeviceShare / NoElement"];
+	s1 -> s2 [label="user2|remote|DeviceControl / NoElement"];
+	s2 -> s2 [label="user1|local|AddDevice / NoElement"];
+	s2 -> s2 [label="user1|local|SharePlug / NoElement"];
+	s2 -> s2 [label="user1|local|UnsharePlug / NoElement"];
+	s2 -> s2 [label="user1|local|RemoveDevice / NoElement"];
+	s2 -> s2 [label="user1|local|DeviceControl / NoElement"];
+	s2 -> s2 [label="user2|remote|AcceptDeviceShare / NoElement"];
+	s2 -> s2 [label="user2|remote|DeviceControl / NoElement"];
+	s3 -> s2 [label="user1|local|AddDevice / NoElement"];
+	s3 -> s3 [label="user1|local|SharePlug / Symbol: CLS_1. Operation result: Failed. Evidence: ''success':false'. Reason: The majority consensus establishes a failure of the share plug operation as every report consistently highlighted a false success flag in the response."];
+	s3 -> s1 [label="user1|local|UnsharePlug / Symbol: CLS_0. Operation result: Success. Evidence: ''code':200'; ''success':true'. Reason: Consistent payload evidence confirms unshare operation success: application-defined 'code':200 (typically indicating success) and explicit 'success':true found across all analysis reports."];
+	s3 -> s0 [label="user1|local|RemoveDevice / Symbol: CLS_0. Operation result: Success. Evidence: '200'; 'success':true'. Result: The device was successfully deleted via HTTP DELETE (200). Subsequent HTTP GET requests confirmed device status: ONLINE, firmware 3.0.0, no active schedules. MQTT downlink shows all PowerSwitch_LocalTimer entries disabled (0), indicating no active timers."];
+	s3 -> s3 [label="user1|local|DeviceControl / Symbol: CLS_0. Operation result: Success. Evidence: ''value':1'; 'value':1'. Reason: The MQTT packet payloads consistently show that the device property is updated to 1, with the evidence fragment 'value':1 occurring in all reports. This uniform payload update confirms that the DeviceControl command executed as intended."];
+	s3 -> s4 [label="user2|remote|AcceptDeviceShare / Symbol: CLS_1. Operation result: Success. Evidence: {'code':200,'message':'������������','result':null,'success':true}. Reason: HTTP 200 status code with 'success':true parameter in the response structure confirms successful device share acceptance through valid API transaction completion."];
+	s3 -> s2 [label="user2|remote|DeviceControl / NoElement"];
+	s4 -> s2 [label="user1|local|AddDevice / NoElement"];
+	s4 -> s4 [label="user1|local|SharePlug / Symbol: CLS_1. Operation result: Failed. Evidence: ''success':false'. Reason: The majority consensus establishes a failure of the share plug operation as every report consistently highlighted a false success flag in the response."];
+	s4 -> s1 [label="user1|local|UnsharePlug / Symbol: CLS_0. Operation result: Success. Evidence: ''code':200'; ''success':true'. Reason: Consistent payload evidence confirms unshare operation success: application-defined 'code':200 (typically indicating success) and explicit 'success':true found across all analysis reports."];
+	s4 -> s0 [label="user1|local|RemoveDevice / Symbol: CLS_0. Operation result: Success. Evidence: '200'; 'success':true'. Result: The device was successfully deleted via HTTP DELETE (200). Subsequent HTTP GET requests confirmed device status: ONLINE, firmware 3.0.0, no active schedules. MQTT downlink shows all PowerSwitch_LocalTimer entries disabled (0), indicating no active timers."];
+	s4 -> s4 [label="user1|local|DeviceControl / Symbol: CLS_0. Operation result: Success. Evidence: ''value':1'; 'value':1'. Reason: The MQTT packet payloads consistently show that the device property is updated to 1, with the evidence fragment 'value':1 occurring in all reports. This uniform payload update confirms that the DeviceControl command executed as intended."];
+	s4 -> s2 [label="user2|remote|AcceptDeviceShare / NoElement"];
+	s4 -> s4 [label="user2|remote|DeviceControl / Symbol: CLS_0. Operation result: Success. Evidence: '{'code':200,'message':'������������','result':null,'success':true}'. Reason: The HTTP responses consistently returned code 200 with success true, confirming that the device control command executed correctly. In each analysis, the accompanying details of the notification (e.g., device property update and command acceptance) further support this conclusion."];
+
+__start0 [label="" shape="none" width="0" height="0"];
+__start0 -> s0;
+
+}

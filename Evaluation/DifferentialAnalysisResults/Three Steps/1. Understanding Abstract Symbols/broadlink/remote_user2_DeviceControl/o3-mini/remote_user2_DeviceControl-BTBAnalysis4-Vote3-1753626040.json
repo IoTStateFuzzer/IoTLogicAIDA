@@ -1,0 +1,14 @@
+[
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Evidence: '{'event':{'header':{'namespace':'DNA.TransmissionControl','name':'Response'},'payload':{'data':'paVaWqDSAws1AAAAeyJwd3IiOjAsImluZGljYXRvciI6MSwibWF4d29ya3RpbWUiOjAsImNoaWxkbG9jayI6MH0'}}'. Reason: The majority of reports detail an HTTP response carrying a 'Response' event with a consistent payload data value 'paVaWqDSAws1AAAAeyJwd3IiOjAsImluZGljYXRvciI6MSwibWF4d29ya3RpbWUiOjAsImNoaWxkbG9jayI6MH0', which indicates the device control command was executed successfully."
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Evidence: '{'event':{'header':{'namespace':'DNA.TransmissionControl','name':'ErrorResponse'},'payload':{'type':'DEVICE_RESET','message':'device reset, please rebind','status':-7}}}'. Reason: The reports consistently include an error response with the 'ErrorResponse' event whose payload contains 'DEVICE_RESET', a status of -7, and the message 'device reset, please rebind', clearly demonstrating that the operation failed."
+    ]
+]

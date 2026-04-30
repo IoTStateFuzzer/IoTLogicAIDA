@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: '/api.json/smartlife/m/sharing/device/remove|||||FPSPER{'result':true,'t':|-----------|,'success':true,'status':'ok'}''. Reason: Consistent success response from device removal endpoint with multiple confirmations (result:true, success:true, status:'ok')"
+    ]
+]

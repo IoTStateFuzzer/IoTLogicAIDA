@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: ''error':0, 'msg':'ok''. Reason: The joinfamily responses in all packets consistently indicate a successful invitation acceptance by returning error:0 and an ok message. Although some reports include additional context (such as status:0 and reference to invited/joinfamily), the common and decisive evidence across all is the raw fragment ''error':0, 'msg':'ok''."
+    ]
+]

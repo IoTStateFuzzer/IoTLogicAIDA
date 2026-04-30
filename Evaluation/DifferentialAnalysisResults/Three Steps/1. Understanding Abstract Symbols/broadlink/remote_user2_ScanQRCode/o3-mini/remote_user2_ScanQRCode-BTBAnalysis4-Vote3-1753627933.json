@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: '{'error':0,'status':0,'msg':'ok', 'data':{'familyid':'11b9af345feef8afb71de0053611d0eb','familyname':'user1home','icon':'','createuser':'11b9af34c645972ed9e6a5d82018bb2c','countryCode':'1','provinceCode':'12','cityCode':'12','createTime':'|--------| |------|','master':'11b9af34c645972ed9e6a5d82018bb2c','usernickname':'user1'}}'. Reason: The response payload uniformly reports an error value of 0 and a status value of 0 with the message 'ok', which\u2014based on the consistent data structure and content\u2014indicates a successful ScanQRCode operation."
+    ],
+    [
+        "Operation result: Failed. Evidence: '{'error':-2010,'status':-2010}'. Reason: The payloads consistently include error and status codes set to -2010 while the message field shows garbled content. This consistent assignment of -2010 to both the error and status fields confirms that the ScanQRCode operation failed."
+    ],
+    [
+        "Operation result: Failed. Evidence: '{'error':-2011,'status':-2011}'. Reason: The response data consistently shows an error and status code of -2011 along with an invalid message. These shared technical details confirm that the ScanQRCode operation did not complete successfully."
+    ]
+]

@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: 'code':200, 'success':true'; 'MQTT property updates'. Reason: Command acceptance confirmed by HTTP 200 status with explicit success flag, with subsequent MQTT property updates verifying device state change execution (PowerSwitch 0\u21921)."
+    ]
+]

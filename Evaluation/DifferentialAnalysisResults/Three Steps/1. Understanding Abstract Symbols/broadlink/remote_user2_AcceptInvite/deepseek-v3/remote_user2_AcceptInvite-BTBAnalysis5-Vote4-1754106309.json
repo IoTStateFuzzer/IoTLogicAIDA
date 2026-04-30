@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: '/appsync/group/member/invited/joinfamily|||||FPSPER{'error':0,'status':0,'msg':'ok'}'; '{'error':0,'status':0,'msg':'ok','data':{'familyid':'11b9af345feef8afb71de0053611d0eb'}}'. Reason: Consistent HTTP 200 responses with success status (error:0) and familyid confirmation across all reports."
+    ]
+]

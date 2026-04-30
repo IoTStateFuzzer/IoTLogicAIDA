@@ -1,0 +1,8 @@
+connectivitycheck.gstatic.com|80|http|||||||||
+api.account.xiaomi.com|443|http|||||||||
+api.mijia.tech|443|http|POST|api.mijia.tech|/app/share/device_share_list||||||
+api.mijia.tech|443|http|POST|api.mijia.tech|/app/v2/share/sharelist_block_list||||||
+api.mijia.tech|443|http|POST|api.mijia.tech|/app/share/get_share_user||||||
+api.mijia.tech|443|http|POST|api.mijia.tech|/app/share/share_request||||||
+my.combine.api.io.mi.com.api.mijia.tech|443|tcp||||||0x00000018|1341||
+my.combine.api.io.mi.com.api.mijia.tech|443|tcp||||||0x00000018|31||

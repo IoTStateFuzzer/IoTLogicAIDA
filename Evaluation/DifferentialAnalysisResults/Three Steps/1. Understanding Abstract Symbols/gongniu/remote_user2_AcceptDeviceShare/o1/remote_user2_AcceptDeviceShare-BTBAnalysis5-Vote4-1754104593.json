@@ -1,0 +1,14 @@
+[
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Evidence: 'code=200'; 'success=true'. Reason: The server indicates success with code=200 and success=true."
+    ],
+    [
+        "Operation result: Failed. Evidence: 'success=false'. Reason: The payload shows a failure status with success=false."
+    ],
+    [
+        "Operation result: Failed. Evidence: 'success=false'. Reason: The response indicates failure with success=false."
+    ]
+]

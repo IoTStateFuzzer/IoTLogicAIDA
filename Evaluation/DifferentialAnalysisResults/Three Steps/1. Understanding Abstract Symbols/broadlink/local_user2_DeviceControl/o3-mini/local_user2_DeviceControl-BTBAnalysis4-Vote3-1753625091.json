@@ -1,0 +1,20 @@
+[
+    [
+        "Operation result: Success. Evidence: 'paVaWqHSAws1AAAAeyJwd3IiOjEsImluZGljYXRvciI6MSwibWF4d29ya3RpbWUiOjAsImNoaWxkbG9jayI6MH0AAAAAAAAAAAAAAAAAAAA='. Reason: The HTTP responses from /device/control/v2/sdkcontrol exhibit identical payload data that reflects a control state change (for instance a field update from 0 to 1) and include expected parameters with no error indications. This clearly supports a successful device control operation."
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Undetermined. Evidence: '144FPSPERZAbs_Len2|UZAbs_Len2|UAbs_Len28|luAbs_Len4|aAbs_Len3|CAbs_Len89|'. Reason: The UDP packet evidence consistently shows placeholder markers (e.g. Abs_Len values) without any protocol\u2011specific status codes or explicit control response fields. This lack of definitive indicators results in an inconclusive assessment of the control operation's outcome."
+    ]
+]

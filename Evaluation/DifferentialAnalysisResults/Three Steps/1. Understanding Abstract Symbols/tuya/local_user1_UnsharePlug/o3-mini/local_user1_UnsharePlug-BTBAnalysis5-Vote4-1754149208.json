@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: 'sharing/device/remove'; 'result':true. Reason: The removal API endpoint 'sharing/device/remove' consistently returned an explicit success indication with a true result, confirming the unshare operation."
+    ]
+]

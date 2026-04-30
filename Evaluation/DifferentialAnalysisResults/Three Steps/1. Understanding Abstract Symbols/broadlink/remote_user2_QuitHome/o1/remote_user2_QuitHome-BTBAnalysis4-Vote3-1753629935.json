@@ -1,0 +1,20 @@
+[
+    [
+        "Operation result: Success. Evidence: 'FPSPER{'error':0,'status':0,'msg':'ok'}'. Reason: The server returned zero for both 'error' and 'status' with 'ok' message, indicating the operation succeeded."
+    ],
+    [
+        "Operation result: Success. Evidence: 'FPSPER{'error':0,'status':0,'msg':'ok'}'. Reason: The server returned zero for both 'error' and 'status' with 'ok' message, indicating the operation succeeded."
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Evidence: 'FPSPER{'status':-30107,'msg':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd'}'. Reason: The negative status code -30107 indicates the operation failed."
+    ]
+]

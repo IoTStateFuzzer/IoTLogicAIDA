@@ -1,0 +1,20 @@
+[
+    [
+        "Operation result: Success. Evidence: 'paVaWqHSAws1AAAAeyJwd3IiOjEsImluZGljYXRvciI6MSwibWF4d29ya3RpbWUiOjAsImNoaWxkbG9jayI6MH0AAAAAAAAAAAAAAAAAAAA='; '{'header':{'namespace':'DNA.TransmissionControl','name':'Response'}'; 'app-service-chn-467a8f05.ibroadlink.com|443|http|POST|app-service-chn-467a8f05.ibroadlink.com|/device/control/v2/sdkcontrol|||||FPSPER{'context':{'properties':[{'namespace':'DNA.TransmissionControl','name':'notpadding','value':0,'timeOfSample':'|----------------------|'}]},'event':{'header':{'namespace':'DNA.TransmissionControl','name':'Response','interfaceVersion':'2','messageId':'00000000000000000000a043b008f861-|--------|'},'payload':{'data':'paVaWqHSAws1AAAAeyJwd3IiOjEsImluZGljYXRvciI6MSwibWF4d29ya3RpbWUiOjAsImNoaWxkbG9jayI6MH0AAAAAAAAAAAAAAAAAAAA='},'endpoint':{'scope':{},'endpointId':'00000000000000000000a043b008f861'}}}'. Reason: The HTTP POST packets to /device/control/v2/sdkcontrol returned a JSON response containing a valid payload and a 'Response' event with the DNA.TransmissionControl header, including a payload with a non-zero field change. This consistent evidence across the reports confirms that the device control command executed successfully."
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Undetermined. Evidence: 'user2_local||udp||||||||144FPSPERZAbs_Len2|UZAbs_Len2|UAbs_Len28|luAbs_Len4|aAbs_Len3|CAbs_Len89|'. Reason: The UDP traffic examined carries only generic placeholders and length indicators without protocol-specific status information or clear payload data. The lack of explicit control status details in these packets makes it impossible to decisively determine the success or failure of the device control operation."
+    ]
+]

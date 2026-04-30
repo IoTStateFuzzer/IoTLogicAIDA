@@ -1,0 +1,17 @@
+{
+  "constrain_dict": {
+    "user1|local|AddDevice": "not|user1|local|AddDevice",
+    "user1|remote|DeviceControl": "user1|local|AddDevice",
+    "user1|local|RemoveDevice": "user1|local|AddDevice",
+    "user1|local|ShareCamera": "user1|local|AddDevice",
+    "user1|local|UnshareCamera": "user1|local|ShareCamera",
+
+    "user2|remote|AcceptDeviceShare": "user1|local|ShareCamera",
+    "user2|remote|DeviceControl": "user2|remote|AcceptDeviceShare"
+  },
+  "conflict_dict": {
+    "user1|local|RemoveDevice": ["user1|local|AddDevice", "user2|remote|AcceptDeviceShare"],
+    "user1|local|UnshareCamera": "user2|remote|AcceptDeviceShare",
+    "user1|local|AddDevice": "user1|local|RemoveDevice"
+  }
+}

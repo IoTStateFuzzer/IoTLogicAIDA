@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: 'suAbs_Len4|'Abs_Len1|uAbs_Len2|esAbs_Len2|'. Reason: The majority of reports support a complete DeviceControl command with sustained, sequenced data flow; notably, the payload fragment 'suAbs_Len4|'Abs_Len1|uAbs_Len2|esAbs_Len2|' appears in multiple reports, which confirms the success indication despite one report lacking explicit success codes."
+    ]
+]

@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: 'FPSPER{'result':true,'t':|-----------|,'success':true,'status':'ok'}'. Reason: The HTTP POST calls to /api.json/smartlife/m/sharing/device/remove consistently returned a payload containing {'result':true,'t':|-----------|,'success':true,'status':'ok'}, which directly confirms that the unshare operation executed successfully."
+    ]
+]

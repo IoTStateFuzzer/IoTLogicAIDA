@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Success. Evidence: ''error':0,'status':0,'msg':'ok''; 'qrcode'. Reason: Majority consensus confirms zero error and status with 'ok' messages, accompanied by valid 'qrcode' data in payload, indicating successful invite operation."
+    ],
+    [
+        "Operation result: Success. Evidence: ''error':0,'status':0,'msg':'ok''; 'qrcode'. Reason: Consistent and unanimous report verification of zero error and status with 'ok' response and invitation QR code present, confirming operation success."
+    ]
+]

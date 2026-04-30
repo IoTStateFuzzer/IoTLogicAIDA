@@ -1,0 +1,123 @@
+{
+    "10": [
+        [
+            "api.mijia.tech|443|http|POST|api.mijia.tech|/app/share/share_response||||||"
+        ],
+        [
+            "home.mi.com|443|http|GET|home.mi.com|/cgi-op/api/v1/recommendation/banner||||||",
+            "api.mijia.tech|443|http|POST|api.mijia.tech|/app/v2/message/v2/typelist||||||",
+            "api.mijia.tech|443|http|POST|api.mijia.tech|/app/share/share_response||||||",
+            "my.combine.api.io.mi.com.api.mijia.tech|443|http|POST|api.mijia.tech|/app/appgateway/miot/appsceneservice/AppSceneService/GetSpeedySceneList||||||"
+        ],
+        true,
+        "4/363"
+    ],
+    "100": [
+        [
+            "api.mijia.tech|443|http|POST|api.mijia.tech|/app/share/share_response||||||"
+        ],
+        [
+            "home.mi.com|443|http|GET|home.mi.com|/cgi-op/api/v1/recommendation/banner||||||",
+            "api.mijia.tech|443|http|POST|api.mijia.tech|/app/v2/message/v2/typelist||||||",
+            "api.mijia.tech|443|http|POST|api.mijia.tech|/app/share/share_response||||||"
+        ],
+        true,
+        "3/363"
+    ],
+    "20": [
+        [
+            "api.mijia.tech|443|http|POST|api.mijia.tech|/app/share/share_response||||||"
+        ],
+        [
+            "home.mi.com|443|http|GET|home.mi.com|/cgi-op/api/v1/recommendation/banner||||||",
+            "api.mijia.tech|443|http|POST|api.mijia.tech|/app/v2/message/v2/typelist||||||",
+            "api.mijia.tech|443|http|POST|api.mijia.tech|/app/share/share_response||||||"
+        ],
+        true,
+        "3/363"
+    ],
+    "30": [
+        [
+            "api.mijia.tech|443|http|POST|api.mijia.tech|/app/share/share_response||||||"
+        ],
+        [
+            "home.mi.com|443|http|GET|home.mi.com|/cgi-op/api/v1/recommendation/banner||||||",
+            "api.mijia.tech|443|http|POST|api.mijia.tech|/app/v2/message/v2/typelist||||||",
+            "api.mijia.tech|443|http|POST|api.mijia.tech|/app/share/share_response||||||"
+        ],
+        true,
+        "3/363"
+    ],
+    "40": [
+        [
+            "api.mijia.tech|443|http|POST|api.mijia.tech|/app/share/share_response||||||"
+        ],
+        [
+            "home.mi.com|443|http|GET|home.mi.com|/cgi-op/api/v1/recommendation/banner||||||",
+            "api.mijia.tech|443|http|POST|api.mijia.tech|/app/v2/message/v2/typelist||||||",
+            "api.mijia.tech|443|http|POST|api.mijia.tech|/app/share/share_response||||||"
+        ],
+        true,
+        "3/363"
+    ],
+    "50": [
+        [
+            "api.mijia.tech|443|http|POST|api.mijia.tech|/app/share/share_response||||||"
+        ],
+        [
+            "home.mi.com|443|http|GET|home.mi.com|/cgi-op/api/v1/recommendation/banner||||||",
+            "api.mijia.tech|443|http|POST|api.mijia.tech|/app/v2/message/v2/typelist||||||",
+            "api.mijia.tech|443|http|POST|api.mijia.tech|/app/share/share_response||||||"
+        ],
+        true,
+        "3/363"
+    ],
+    "60": [
+        [
+            "api.mijia.tech|443|http|POST|api.mijia.tech|/app/share/share_response||||||"
+        ],
+        [
+            "home.mi.com|443|http|GET|home.mi.com|/cgi-op/api/v1/recommendation/banner||||||",
+            "api.mijia.tech|443|http|POST|api.mijia.tech|/app/v2/message/v2/typelist||||||",
+            "api.mijia.tech|443|http|POST|api.mijia.tech|/app/share/share_response||||||"
+        ],
+        true,
+        "3/363"
+    ],
+    "70": [
+        [
+            "api.mijia.tech|443|http|POST|api.mijia.tech|/app/share/share_response||||||"
+        ],
+        [
+            "home.mi.com|443|http|GET|home.mi.com|/cgi-op/api/v1/recommendation/banner||||||",
+            "api.mijia.tech|443|http|POST|api.mijia.tech|/app/v2/message/v2/typelist||||||",
+            "api.mijia.tech|443|http|POST|api.mijia.tech|/app/share/share_response||||||"
+        ],
+        true,
+        "3/363"
+    ],
+    "80": [
+        [
+            "api.mijia.tech|443|http|POST|api.mijia.tech|/app/share/share_response||||||"
+        ],
+        [
+            "home.mi.com|443|http|GET|home.mi.com|/cgi-op/api/v1/recommendation/banner||||||",
+            "api.mijia.tech|443|http|POST|api.mijia.tech|/app/v2/message/v2/typelist||||||",
+            "api.mijia.tech|443|http|POST|api.mijia.tech|/app/share/share_response||||||"
+        ],
+        true,
+        "3/363"
+    ],
+    "90": [
+        [
+            "api.mijia.tech|443|http|POST|api.mijia.tech|/app/share/share_response||||||"
+        ],
+        [
+            "home.mi.com|443|http|GET|home.mi.com|/cgi-op/api/v1/recommendation/banner||||||",
+            "api.mijia.tech|443|http|POST|api.mijia.tech|/app/v2/message/v2/typelist||||||",
+            "api.mijia.tech|443|http|POST|api.mijia.tech|/app/share/share_response||||||"
+        ],
+        true,
+        "3/363"
+    ]
+}

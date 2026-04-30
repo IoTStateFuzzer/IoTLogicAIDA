@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: 'error=0'. Reason: Majority indicates 'error=0' signals success."
+    ],
+    [
+        "Operation result: Failed. Evidence: 'error=-2010'. Reason: Majority indicates a negative error code signals failure."
+    ],
+    [
+        "Operation result: Failed. Evidence: 'error=-2011'. Reason: Majority indicates a negative error code signals failure."
+    ]
+]

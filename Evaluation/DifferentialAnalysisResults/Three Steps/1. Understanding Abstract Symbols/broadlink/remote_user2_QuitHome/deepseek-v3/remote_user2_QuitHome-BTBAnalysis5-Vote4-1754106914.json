@@ -1,0 +1,20 @@
+[
+    [
+        "Operation result: Success. Evidence: 'FPSPER{'error':0,'status':0,'msg':'ok'}'; '/appsync/group/member/quitfamily|||||FPSPER{'error':0,'status':0,'msg':'ok'}'. Reason: Consistent HTTP 200 status with 'ok' message across all reports confirms successful quitfamily operation."
+    ],
+    [
+        "Operation result: Success. Evidence: 'FPSPER{'error':0,'status':0,'msg':'ok'}'; '/appsync/group/member/quitfamily|||||FPSPER{'error':0,'status':0,'msg':'ok'}'. Reason: HTTP 200 status with 'ok' message confirms successful quitfamily operation, though some reports note subsequent device errors."
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Evidence: 'FPSPER{'status':-30107,'msg':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd'}'; '/appsync/group/member/quitfamily|||||FPSPER{'status':-30107,'msg':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd'}'. Reason: Consistent negative status code (-30107) with error message indicates operation failure."
+    ]
+]

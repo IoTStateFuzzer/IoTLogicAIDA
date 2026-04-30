@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: 'api.iotbull.com|443|http|POST|api.iotbull.com|/mos/share/v1/devices/cancel|||||FPSPER{'code':200,'message':'\\ufffd\\ufffd\\ufffd\\ufffd\\ufffd\\ufffd\\ufffd\\ufffd\\ufffd\\ufffd\\ufffd\\ufffd','result':null,'success':true}'. Reason: The code=200 and success=true indicate the unshare request was successful."
+    ]
+]

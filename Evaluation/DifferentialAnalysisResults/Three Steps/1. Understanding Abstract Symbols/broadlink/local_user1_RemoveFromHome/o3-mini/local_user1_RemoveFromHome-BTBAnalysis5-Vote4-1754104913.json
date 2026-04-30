@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: '/appsync/group/member/delfamilymember'; 'msg':'ok'. Reason: All reports consistently reference the delfamilymember endpoint and include the exact payload fragment 'msg':'ok', confirming the removal operation succeeded."
+    ]
+]

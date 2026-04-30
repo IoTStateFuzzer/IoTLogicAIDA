@@ -1,0 +1,47 @@
+digraph g {
+
+	s0 [shape="circle" label="s0"];
+	s1 [shape="circle" label="s1"];
+	s2 [shape="circle" label="s2"];
+	s3 [shape="circle" label="s3"];
+	s4 [shape="circle" label="s4"];
+	s0 -> s1 [label="user1|local|AddDevice / Operation succeeded"];
+	s0 -> s2 [label="user1|local|SharePlug / NoElement"];
+	s0 -> s2 [label="user1|local|UnsharePlug / NoElement"];
+	s0 -> s2 [label="user1|local|RemoveDevice / NoElement"];
+	s0 -> s2 [label="user1|local|DeviceControl / NoElement"];
+	s0 -> s2 [label="user2|remote|AcceptDeviceShare / NoElement"];
+	s0 -> s2 [label="user2|remote|DeviceControl / NoElement"];
+	s1 -> s2 [label="user1|local|AddDevice / NoElement"];
+	s1 -> s3 [label="user1|local|SharePlug / Both operations (GET scheduleTips and POST share/devices) succeeded with HTTP 200 and 'success': true."];
+	s1 -> s2 [label="user1|local|UnsharePlug / NoElement"];
+	s1 -> s0 [label="user1|local|RemoveDevice / Operation succeeded. The device was successfully deleted (HTTP 200), device info retrieved (status ONLINE), schedule tips checked (no data), and MQTT properties confirmed (all PowerSwitch timers inactive)."];
+	s1 -> s1 [label="user1|local|DeviceControl / Operation succeeded (HTTP 200). The system sent two MQTT downlink commands to update the PowerSwitch property: first to value 0, then to value 1, confirming state changes."];
+	s1 -> s2 [label="user2|remote|AcceptDeviceShare / NoElement"];
+	s1 -> s2 [label="user2|remote|DeviceControl / NoElement"];
+	s2 -> s2 [label="user1|local|AddDevice / NoElement"];
+	s2 -> s2 [label="user1|local|SharePlug / NoElement"];
+	s2 -> s2 [label="user1|local|UnsharePlug / NoElement"];
+	s2 -> s2 [label="user1|local|RemoveDevice / NoElement"];
+	s2 -> s2 [label="user1|local|DeviceControl / NoElement"];
+	s2 -> s2 [label="user2|remote|AcceptDeviceShare / NoElement"];
+	s2 -> s2 [label="user2|remote|DeviceControl / NoElement"];
+	s3 -> s2 [label="user1|local|AddDevice / NoElement"];
+	s3 -> s3 [label="user1|local|SharePlug / GET scheduleTips succeeded (HTTP 200), but POST share/devices failed due to missing/invalid code and 'success': false."];
+	s3 -> s1 [label="user1|local|UnsharePlug / Operation succeeded: Both GET and POST requests returned HTTP 200 with 'success': true, indicating successful schedule tips retrieval and device share cancellation."];
+	s3 -> s0 [label="user1|local|RemoveDevice / Operation succeeded. The device was successfully deleted (HTTP 200), device info retrieved (status ONLINE), schedule tips checked (no data), and MQTT properties confirmed (all PowerSwitch timers inactive)."];
+	s3 -> s3 [label="user1|local|DeviceControl / Operation succeeded (HTTP 200). The system sent two MQTT downlink commands to update the PowerSwitch property: first to value 0, then to value 1, confirming state changes."];
+	s3 -> s4 [label="user2|remote|AcceptDeviceShare / Operation succeeded: HTTP 200 with 'success': true confirms device sharing."];
+	s3 -> s2 [label="user2|remote|DeviceControl / NoElement"];
+	s4 -> s2 [label="user1|local|AddDevice / NoElement"];
+	s4 -> s4 [label="user1|local|SharePlug / GET scheduleTips succeeded (HTTP 200), but POST share/devices failed due to missing/invalid code and 'success': false."];
+	s4 -> s1 [label="user1|local|UnsharePlug / Operation succeeded: Both GET and POST requests returned HTTP 200 with 'success': true, indicating successful schedule tips retrieval and device share cancellation."];
+	s4 -> s0 [label="user1|local|RemoveDevice / Operation succeeded. The device was successfully deleted (HTTP 200), device info retrieved (status ONLINE), schedule tips checked (no data), and MQTT properties confirmed (all PowerSwitch timers inactive)."];
+	s4 -> s4 [label="user1|local|DeviceControl / Operation succeeded (HTTP 200). The system sent two MQTT downlink commands to update the PowerSwitch property: first to value 0, then to value 1, confirming state changes."];
+	s4 -> s2 [label="user2|remote|AcceptDeviceShare / NoElement"];
+	s4 -> s4 [label="user2|remote|DeviceControl / Operation succeeded: HTTP 200 response confirms success, followed by MQTT messages updating PowerSwitch to 0 and 1, indicating device state changes."];
+
+__start0 [label="" shape="none" width="0" height="0"];
+__start0 -> s0;
+
+}

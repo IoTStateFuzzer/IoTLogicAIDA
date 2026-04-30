@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: 'code:0'; 'message:ok'. Reason: /app/share/share_response endpoint returned success code 0 with 'ok' confirmation, matching protocol success semantics for share acceptance."
+    ],
+    [
+        "Operation result: Failed. Evidence: 'code:-6'; 'message:invalid request, invite not exist'. Reason: Error code -6 at share_response endpoint explicitly indicates non-existent invitation through payload rejection message."
+    ],
+    [
+        ""
+    ]
+]

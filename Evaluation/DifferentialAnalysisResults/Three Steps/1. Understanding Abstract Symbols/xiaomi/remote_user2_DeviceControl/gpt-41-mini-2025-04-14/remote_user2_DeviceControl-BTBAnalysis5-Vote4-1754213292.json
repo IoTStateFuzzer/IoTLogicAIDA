@@ -1,0 +1,17 @@
+[
+    [
+        "Operation result: Success. Evidence: ''success' message with code 0'; ''success' message and HTTP code 0 with ret true'; ''success' message in /app/v2/plugin/get_standard_operation and HTTP code 0 with message 'ok''. Reason: Majority consensus confirms HTTP POST responses with explicit code 0 and success-related messages indicate successful device control action; while some reports lack explicit status codes or present encrypted ambiguous traffic, the decisive presence of standardized success codes and messages reliably supports operation success."
+    ],
+    [
+        "Operation result: Success. Evidence: ''success' message with code 0'; ''success' message and HTTP code 0 with ret true'; ''success' message in /app/v2/plugin/get_standard_operation and HTTP code 0 with message 'ok''. Reason: The productivity of control operations is affirmed by multiple reports documenting consistent HTTP code 0 and success message indicators; despite the absence of explicit status or ambiguous encrypted streams in some inputs, the coherent success markers from HTTP response payloads define a conclusive successful operation verdict."
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ]
+]

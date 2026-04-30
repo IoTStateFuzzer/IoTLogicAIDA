@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: 'code':200,'success':true. Reason: Majority consensus confirms the device control command was accepted as indicated by HTTP status code 200 and success true flags consistently appearing in all reports."
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Evidence: 'code':9017,'success':false. Reason: Majority consensus confirms operation failure signaled by a specific error code 9017 accompanied by success false status consistently reported."
+    ]
+]

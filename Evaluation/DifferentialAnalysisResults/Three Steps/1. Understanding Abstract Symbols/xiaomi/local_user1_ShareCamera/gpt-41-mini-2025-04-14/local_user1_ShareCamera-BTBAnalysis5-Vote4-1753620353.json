@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: {'code':0,'message':'ok','result':'true'}. Reason: The majority consensus confirms the share_request API consistently returns code 0 with message 'ok' and result 'true', which objectively indicates a successful camera sharing operation."
+    ],
+    [
+        "Operation result: Failed. Evidence: {'code':-11,'message':'have share permit','result':'have share permit'}. Reason: Consensus evidence shows the share_request API returns code -11 and message 'have share permit', explicitly indicating the failure is due to an existing sharing permission, thus the sharing request is unsuccessful."
+    ],
+    [
+        "Operation result: Failed. Evidence: {'code':-12,'message':'false','result':'false'}. Reason: The majority evidence demonstrates the share_request API response with code -12, message 'false', and result 'false', collectively signifying a failed share camera operation."
+    ]
+]

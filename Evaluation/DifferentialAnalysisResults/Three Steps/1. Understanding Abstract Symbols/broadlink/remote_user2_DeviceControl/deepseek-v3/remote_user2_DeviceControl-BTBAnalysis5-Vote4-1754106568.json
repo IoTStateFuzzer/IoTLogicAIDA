@@ -1,0 +1,14 @@
+[
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Evidence: **''name':'Response''**. Reason: Consistent successful responses with 'Response' header and control data payloads across all reports"
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Evidence: **''name':'ErrorResponse', 'message':'device reset, please rebind''**. Reason: Uniform error responses indicating device reset condition requiring rebinding"
+    ]
+]

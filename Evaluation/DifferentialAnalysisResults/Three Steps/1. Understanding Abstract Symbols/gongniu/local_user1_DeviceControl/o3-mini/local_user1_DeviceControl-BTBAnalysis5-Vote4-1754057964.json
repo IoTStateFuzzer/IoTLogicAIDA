@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: ''value':1'. Reason: All reports consistently show that the final MQTT packet updated the device property to a value of 1. The common evidence fragment ''value':1' (appearing in four out of five reports) confirms that the DeviceControl operation executed successfully, with only one report providing additional context which does not alter the overall consensus."
+    ]
+]

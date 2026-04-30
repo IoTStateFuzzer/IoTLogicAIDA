@@ -1,0 +1,2 @@
+api.iotbull.com|443|http|POST|api.iotbull.com|/mos/device/v1/devices|||||
+api.iotbull.com|443|http|GET|api.iotbull.com|/mos/product/v1/categories|||||

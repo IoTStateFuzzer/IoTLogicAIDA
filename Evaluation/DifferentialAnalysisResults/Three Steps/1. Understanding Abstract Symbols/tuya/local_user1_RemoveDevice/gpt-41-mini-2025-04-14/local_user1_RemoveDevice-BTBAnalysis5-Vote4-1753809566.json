@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: 'success':true,'type':'del'. Reason: Consensus HTTP payloads consistently contain 'success':true indicating successful operation, while MQTT payloads include 'type':'del' confirming the device removal command executed successfully."
+    ]
+]

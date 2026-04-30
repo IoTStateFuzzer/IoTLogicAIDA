@@ -1,0 +1,14 @@
+[
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Evidence: 'name':'Response','payload':{'data':'paVaWqDSAws1AAAAeyJwd3IiOjAsImluZGljYXRvciI6MSwibWF4d29ya3RpbWUiOjAsImNoaWxkbG9kayI6MH0AAAAAAAAAAAAAAAAAAAA=' . Reason: The HTTP responses consistently include an event with 'name':'Response' and a matching 'payload' containing the data string 'paVaWqDSAws1AAAAeyJwd3IiOjAsImluZGljYXRvciI6MSwibWF4d29ya3RpbWUiOjAsImNoaWxkbG9kayI6MH0AAAAAAAAAAAAAAAAAAAA='. This consensus in the response structure and valid data content demonstrates that the device control command executed successfully."
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Evidence: 'name':'ErrorResponse','payload':{'type':'DEVICE_RESET','message':'device reset, please rebind','status':-7} . Reason: Every report in this group presents an 'ErrorResponse' event that includes a payload with {'type':'DEVICE_RESET','message':'device reset, please rebind','status':-7}. The presence of a negative status (-7) and an explicit DEVICE_RESET message confirms that a device reset error occurred, leading to the failure of the device control operation."
+    ]
+]

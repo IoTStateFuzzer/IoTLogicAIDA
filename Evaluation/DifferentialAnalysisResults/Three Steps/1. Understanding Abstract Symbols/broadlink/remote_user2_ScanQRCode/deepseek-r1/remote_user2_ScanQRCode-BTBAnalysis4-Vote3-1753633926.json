@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: {'error':0,'status':0,'msg':'ok'}. Reason: Consistent error:0 status with 'ok' message confirms successful QR authentication, demonstrating valid code recognition and family data retrieval through standardized API response patterns."
+    ],
+    [
+        "Operation result: Failed. Evidence: {'error':-2010,'status':-2010}. Reason: Unified -2010 error code confirms invalid/expired QR code, with corrupted message fragments (\ufffd symbols) in partial reports indicating potential authorization system interference or payload decryption failures during access attempts."
+    ],
+    [
+        "Operation result: Failed. Evidence: {'error':-2011,'status':-2011}. Reason: Consensus -2011 error code reflects revoked permissions/scan quota exhaustion, supported by malformed Unicode sequences (\ufffd) in subsystem responses suggesting security protocol-triggered data sanitization during denied access events."
+    ]
+]

@@ -1,0 +1,20 @@
+[
+    [
+        "Operation result: Success. Evidence: 'status=0'. Reason: Majority consensus indicates the 'quitfamily' request returned 'status=0' indicating success."
+    ],
+    [
+        "Operation result: Success. Evidence: 'status=0'. Reason: Majority consensus indicates the 'quitfamily' request returned 'status=0' indicating success."
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Evidence: 'status=-30107'. Reason: Majority consensus indicates the 'quitfamily' request returned '-30107' indicating failure."
+    ]
+]

@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: '/appsync/group/member/invited/joinfamily'; 'error':0; 'status':0; 'msg':'ok'. Reason: Consistent evidence of HTTP 200/OK responses with status:0 and confirmation message 'ok' at the invitation acceptance endpoint validates successful family join operation."
+    ]
+]

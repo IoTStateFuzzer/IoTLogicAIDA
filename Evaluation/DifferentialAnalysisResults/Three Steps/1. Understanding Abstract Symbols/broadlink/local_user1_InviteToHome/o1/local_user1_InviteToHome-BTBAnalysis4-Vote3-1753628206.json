@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Success. Evidence: 'FPSPER{'error':0,'status':0,'msg':'ok','data':{'qrcode':'11Abs_Len14|'}}'. Reason: Consistent zero error and status codes, along with a valid qrcode, demonstrate that the invitation process succeeded."
+    ],
+    [
+        "Operation result: Success. Evidence: 'FPSPER{'status':0,'error':0,'msg':'ok','data':{'familymember':[{'userid':'112dae9018cdebd9cc0614003ebfd219','type':1,'expiredtime':0},{'userid':'11b9af34c645972ed9e6a5d82018bb2c','type':0,'expiredtime':0}]}}'. Reason: The majority consensus indicates a successful home invitation, as shown by status=0, error=0, and the updated familymember details. Other variations in the data do not contradict this successful result."
+    ]
+]

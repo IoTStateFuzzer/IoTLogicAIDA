@@ -1,0 +1,131 @@
+{
+    "10": [
+        [
+            "app-service-chn-467a8f05.ibroadlink.com|443|http|POST|app-service-chn-467a8f05.ibroadlink.com|/device/control/v2/sdkcontrol|||||",
+            "device_0||udp||||||||180"
+        ],
+        [
+            "app-service-chn-467a8f05.ibroadlink.com|443|http|POST|app-service-chn-467a8f05.ibroadlink.com|/device/control/v2/sdkcontrol|||||",
+            "30060v2main.broadlink.com.cn|1812|udp||||||||308",
+            "device_0||udp||||||||180",
+            "30060v2tcp.broadlink.com.cn|1812|udp||||||||308"
+        ],
+        true,
+        "4/240"
+    ],
+    "100": [
+        [
+            "app-service-chn-467a8f05.ibroadlink.com|443|http|POST|app-service-chn-467a8f05.ibroadlink.com|/device/control/v2/sdkcontrol|||||",
+            "device_0||udp||||||||180"
+        ],
+        [
+            "app-service-chn-467a8f05.ibroadlink.com|443|http|POST|app-service-chn-467a8f05.ibroadlink.com|/device/control/v2/sdkcontrol|||||",
+            "device_0||udp||||||||180"
+        ],
+        true,
+        "2/240"
+    ],
+    "20": [
+        [
+            "app-service-chn-467a8f05.ibroadlink.com|443|http|POST|app-service-chn-467a8f05.ibroadlink.com|/device/control/v2/sdkcontrol|||||",
+            "device_0||udp||||||||180"
+        ],
+        [
+            "app-service-chn-467a8f05.ibroadlink.com|443|http|POST|app-service-chn-467a8f05.ibroadlink.com|/device/control/v2/sdkcontrol|||||",
+            "30060v2main.broadlink.com.cn|1812|udp||||||||308",
+            "device_0||udp||||||||180",
+            "30060v2tcp.broadlink.com.cn|1812|udp||||||||308"
+        ],
+        true,
+        "4/240"
+    ],
+    "30": [
+        [
+            "app-service-chn-467a8f05.ibroadlink.com|443|http|POST|app-service-chn-467a8f05.ibroadlink.com|/device/control/v2/sdkcontrol|||||",
+            "device_0||udp||||||||180"
+        ],
+        [
+            "app-service-chn-467a8f05.ibroadlink.com|443|http|POST|app-service-chn-467a8f05.ibroadlink.com|/device/control/v2/sdkcontrol|||||",
+            "30060v2main.broadlink.com.cn|1812|udp||||||||308",
+            "device_0||udp||||||||180",
+            "30060v2tcp.broadlink.com.cn|1812|udp||||||||308"
+        ],
+        true,
+        "4/240"
+    ],
+    "40": [
+        [
+            "app-service-chn-467a8f05.ibroadlink.com|443|http|POST|app-service-chn-467a8f05.ibroadlink.com|/device/control/v2/sdkcontrol|||||",
+            "device_0||udp||||||||180"
+        ],
+        [
+            "app-service-chn-467a8f05.ibroadlink.com|443|http|POST|app-service-chn-467a8f05.ibroadlink.com|/device/control/v2/sdkcontrol|||||",
+            "30060v2main.broadlink.com.cn|1812|udp||||||||308",
+            "device_0||udp||||||||180",
+            "30060v2tcp.broadlink.com.cn|1812|udp||||||||308"
+        ],
+        true,
+        "4/240"
+    ],
+    "50": [
+        [
+            "app-service-chn-467a8f05.ibroadlink.com|443|http|POST|app-service-chn-467a8f05.ibroadlink.com|/device/control/v2/sdkcontrol|||||",
+            "device_0||udp||||||||180"
+        ],
+        [
+            "app-service-chn-467a8f05.ibroadlink.com|443|http|POST|app-service-chn-467a8f05.ibroadlink.com|/device/control/v2/sdkcontrol|||||",
+            "device_0||udp||||||||180",
+            "30060v2tcp.broadlink.com.cn|1812|udp||||||||308"
+        ],
+        true,
+        "3/240"
+    ],
+    "60": [
+        [
+            "app-service-chn-467a8f05.ibroadlink.com|443|http|POST|app-service-chn-467a8f05.ibroadlink.com|/device/control/v2/sdkcontrol|||||",
+            "device_0||udp||||||||180"
+        ],
+        [
+            "app-service-chn-467a8f05.ibroadlink.com|443|http|POST|app-service-chn-467a8f05.ibroadlink.com|/device/control/v2/sdkcontrol|||||",
+            "device_0||udp||||||||180"
+        ],
+        true,
+        "2/240"
+    ],
+    "70": [
+        [
+            "app-service-chn-467a8f05.ibroadlink.com|443|http|POST|app-service-chn-467a8f05.ibroadlink.com|/device/control/v2/sdkcontrol|||||",
+            "device_0||udp||||||||180"
+        ],
+        [
+            "app-service-chn-467a8f05.ibroadlink.com|443|http|POST|app-service-chn-467a8f05.ibroadlink.com|/device/control/v2/sdkcontrol|||||",
+            "device_0||udp||||||||180"
+        ],
+        true,
+        "2/240"
+    ],
+    "80": [
+        [
+            "app-service-chn-467a8f05.ibroadlink.com|443|http|POST|app-service-chn-467a8f05.ibroadlink.com|/device/control/v2/sdkcontrol|||||",
+            "device_0||udp||||||||180"
+        ],
+        [
+            "app-service-chn-467a8f05.ibroadlink.com|443|http|POST|app-service-chn-467a8f05.ibroadlink.com|/device/control/v2/sdkcontrol|||||",
+            "device_0||udp||||||||180"
+        ],
+        true,
+        "2/240"
+    ],
+    "90": [
+        [
+            "app-service-chn-467a8f05.ibroadlink.com|443|http|POST|app-service-chn-467a8f05.ibroadlink.com|/device/control/v2/sdkcontrol|||||",
+            "device_0||udp||||||||180"
+        ],
+        [
+            "app-service-chn-467a8f05.ibroadlink.com|443|http|POST|app-service-chn-467a8f05.ibroadlink.com|/device/control/v2/sdkcontrol|||||",
+            "device_0||udp||||||||180"
+        ],
+        true,
+        "2/240"
+    ]
+}

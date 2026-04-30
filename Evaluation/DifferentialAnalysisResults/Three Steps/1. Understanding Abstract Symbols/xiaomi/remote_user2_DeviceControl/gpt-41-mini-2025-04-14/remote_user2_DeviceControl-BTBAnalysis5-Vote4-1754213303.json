@@ -1,0 +1,17 @@
+[
+    [
+        "Operation result: Success. Evidence: 'success' message; 'code':0,'message':'ok'; result ret:true. Reason: Majority of HTTP POST responses contain code 0 with messages 'ok' or 'success' along with result.ret true, indicating successful remote DeviceControl execution by user2. Although encrypted data flow without explicit success codes is noted, the consensus evidence from payload contents confirms operation success."
+    ],
+    [
+        "Operation result: Success. Evidence: 'success' message; 'code':0,'message':'ok'; result ret:true. Reason: Positive HTTP POST replies from device control APIs consistently show code 0 and success-related messages, affirming successful remote operation by user2. The ongoing encrypted traffic lacks explicit status indicators but does not contradict the prevailing success evidence."
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ]
+]

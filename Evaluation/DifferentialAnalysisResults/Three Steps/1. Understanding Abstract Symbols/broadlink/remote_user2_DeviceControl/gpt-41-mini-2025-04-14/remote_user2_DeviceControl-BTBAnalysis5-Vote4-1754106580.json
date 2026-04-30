@@ -1,0 +1,14 @@
+[
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Evidence: ''name':'Response'' with payload data indicating multiple message exchanges'; ''namespace':'DNA.TransmissionControl','name':'Response''; ''name':'Response'' with varying 'pwri' values indicating control command execution'; ''event':{'header':{'namespace':'DNA.TransmissionControl','name':'Response'' with payload data showing pwri:0 or 1 indicating control succeeded''. Reason: Majority consensus shows multiple 'Response' messages with payload data indicating successful bidirectional device control operations, including execution of control commands and consistent normal reply statuses."
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Evidence: ''name':'ErrorResponse'' and ''status':-7' with message 'device reset, please rebind''. Reason: Majority evidence clearly shows explicit ErrorResponse payloads indicating device reset and requirement to rebind, directly evidencing failure in device control operations."
+    ]
+]

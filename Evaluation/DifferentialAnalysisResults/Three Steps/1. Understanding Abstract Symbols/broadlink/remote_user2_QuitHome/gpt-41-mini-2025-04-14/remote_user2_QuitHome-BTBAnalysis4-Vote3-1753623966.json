@@ -1,0 +1,20 @@
+[
+    [
+        "Operation result: Success. Evidence: '{'error':0,'status':0,'msg':'ok'}'. Reason: The quitfamily endpoint consistently returned an error code 0, status 0, and message 'ok', demonstrating a successful QuitHome operation. This unanimous evidence indicates that the operation completed without error, as the combination of error=0 and status=0 with the clear 'ok' message is the standard indicator of successful API execution."
+    ],
+    [
+        "Operation result: Success. Evidence: '{'error':0,'status':0,'msg':'ok'}'. Reason: The quitfamily API endpoint consistently provided responses with error=0, status=0, and the message 'ok', confirming the successful execution of the QuitHome operation across all evidence. These common, uncorrupted fields signal that the operation completed correctly with no internal errors reported."
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Evidence: '{'status':-30107,'msg':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd'}'. Reason: The quitfamily response consistently contained a negative status code -30107 accompanied by a corrupted or garbled message string, pointing directly to a failure in performing the QuitHome operation. Such a negative status combined with illegible message content unambiguously signals an unsuccessful operation attempt."
+    ]
+]

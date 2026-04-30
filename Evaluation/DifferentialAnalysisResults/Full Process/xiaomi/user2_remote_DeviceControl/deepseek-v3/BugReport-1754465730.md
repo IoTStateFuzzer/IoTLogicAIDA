@@ -1,0 +1,40 @@
+### Base model
+* No issues found.
+
+### Divergent model
+*   **Vulnerability 1: Persistent Unauthorized Device Control After Unshare/Re-addition**
+    *   **Impact:** User2 retains control over the device even after User1 has unshared it or after the device has been removed and re-added, violating permission revocation rules. This allows User2 to perform `DeviceControl` operations successfully (CLS_1) in states where permissions should be revoked, leading to unauthorized access and potential security breaches.
+    *   **Problematic State(s):**
+        *   `s12`: User2 performs **DeviceControl** and receives **Success (CLS_1)** response, transitioning to the same state, despite the device being unshared.
+        *   `s20`: User2 performs **DeviceControl** and receives **Success (CLS_1)** response, transitioning to the same state, even after the device was unshared.
+        *   `s21`: User2 performs **DeviceControl** and receives **Success (CLS_1)** response, transitioning to the same state, despite the device being re-shared without User2 re-accepting the invitation.
+        *   `s19`: User2 retains control over a re-added device instance without re-invitation, violating permission revocation upon device removal.
+        *   `s22`: User2 retains control over a re-added device instance without re-invitation, indicating improper permission persistence.
+
+*   **Vulnerability 2: Information Leakage via Differential Responses**
+    *   **Impact:** User2 can infer the state of the device (shared/unshared, re-added, or invitation status) based on differential responses to `DeviceControl` and `AcceptDeviceShare` operations. This violates the principle of differential inference, as error codes (e.g., CLS_4, -6) reveal system state changes, potentially aiding an attacker in exploiting the system.
+    *   **Problematic State(s):**
+        *   `s11`: User2 performs **DeviceControl** and receives a failed response (**CLS_4**), while in `s12` and `s20`, the same operation succeeds (CLS_1), leaking the device's sharing state.
+        *   `s14`: User2 performs **DeviceControl** and receives a failed response (**CLS_4**), revealing the device's re-added state despite no active permissions.
+        *   `s5`, `s6`, `s15`, `s16`: User2 receives error code **-6 ("invite not exist")** when attempting **AcceptDeviceShare**, exposing the absence of an invitation.
+        *   `s17`: User2's **DeviceControl** fails with **CLS_4**, but the state semantics differ from `s14`, potentially leaking invitation state.
+
+*   **Vulnerability 3: Stale Invitation Exploitation and Inconsistent Permission Handling**
+    *   **Impact:** User2 can exploit stale invitations or inconsistent permission enforcement to gain unauthorized control over the device. This includes accepting a share invitation after device removal or performing `DeviceControl` in states where permissions should not yet be granted, violating the intended permission lifecycle.
+    *   **Problematic State(s):**
+        *   `s14`: User2 accepts a share invitation (transition to `s22`) after device removal/re-addition, bypassing the re-invitation requirement.
+        *   `s13`: User2 performs **DeviceControl** and receives **Success (CLS_1)** response, transitioning to the same state, despite the device being in a re-initiated sharing state requiring re-acceptance.
+        *   `s21`: User2 performs **DeviceControl** and receives **Success (CLS_1)** response, transitioning to the same state, while the invitation is pending.
+        *   `s10`: User2's **DeviceControl** fails (no response), but in `s12` it succeeds after unsharing, showing inconsistent revocation.
+        *   `s15`: User2's **DeviceControl** fails (no response), but in `s19` it succeeds after re-adding and re-sharing, indicating inconsistent permission handling.
+
+### Key Observations:
+1. **Permission Persistence:** User2 retains or gains control in states where permissions should be revoked (e.g., post-unshare, device removal, or during re-invitation), violating Direct Sharing Permission rules.
+2. **State Inference:** Differential error codes (CLS_1 vs. CLS_4, -6) allow attackers to deduce device lifecycle events (addition/removal, invitation status), violating Principle 2 (Differential Inference).
+3. **Invitation Integrity:** Share invitations are not consistently invalidated upon device removal, enabling stale invitation acceptance and unauthorized access.
+
+### Recommendations:
+1. Enforce strict permission revocation on unshare/removal actions to prevent persistent control.
+2. Standardize error responses (e.g., use generic "permission denied") to prevent state inference.
+3. Invalidate all pending/accepted shares upon device removal and require re-invitation for re-added devices.
+4. Validate User2's permissions strictly against the current device instance, excluding historical permissions.

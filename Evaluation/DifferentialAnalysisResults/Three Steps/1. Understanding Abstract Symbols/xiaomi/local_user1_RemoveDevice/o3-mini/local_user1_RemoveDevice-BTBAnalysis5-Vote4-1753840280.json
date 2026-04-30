@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: ''code':0'. Reason: The API responses consistently returned a payload fragment ''code':0', indicating a successful RemoveDevice operation. Although some packets include extra details (e.g. additional message or result fields), the common and critical evidence across all sources is ''code':0', which objectively confirms the operation succeeded."
+    ]
+]

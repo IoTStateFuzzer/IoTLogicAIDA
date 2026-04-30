@@ -1,0 +1,42 @@
+{
+    "local_user1_AddDevice": null,
+    "local_user1_DeviceControl": [
+        [
+            "Operation result: Undetermined. Evidence: 'Abs_Len1'; 'mqtt traffic patterns'; 'smart/mb/in/208580022462ab36ab23'; 'mqtt traffic with topic smart/mb/in/208580022462ab36ab23'. Reason: Consistent MQTT traffic patterns detected (topic smart/mb/in/208580022462ab36ab23) with minimal data transfer (Abs_Len1), but lacking explicit success/failure indicators in payload content."
+        ]
+    ],
+    "local_user1_RemoveDevice": [
+        [
+            "Operation result: Success. Evidence: ''type':'del''. Reason: MQTT payload contains explicit device deletion confirmation with success status (unanimous consensus)"
+        ]
+    ],
+    "local_user1_SharePlug": [
+        [
+            "Operation result: Failed. Evidence: ''success':false,'errorCode':'REPETITION_SHARE','errorMsg':'This device has already been shared with the user.''. Reason: Consistent error responses indicate sharing failed due to existing share relationship (REPETITION_SHARE code with matching error message)"
+        ],
+        [
+            "Operation result: Success. Evidence: ''success':true,'result':{'receiverName':'user2','relationId':117443320}'. Reason: Multiple successful responses confirm new sharing relationship established with user2 (including relation ID verification)"
+        ]
+    ],
+    "local_user1_UnsharePlug": [
+        [
+            "Operation result: Success. Evidence: ''success':true,'status':'ok''; '/api.json/smartlife/m/sharing/device/remove|||||FPSPER{'result':true,'t':|-----------|,'success':true,'status':'ok'}''. Reason: Consistent payload evidence showing successful device removal operation with explicit success status (true), result confirmation, and 'ok' status across all reports."
+        ]
+    ],
+    "local_user2_DeviceControl": [
+        [
+            "Operation result: Undetermined. Evidence: 'No relevant payload or pattern'; 'Abs_Len2|UAbs_Len12|w3.3Abs_Len115|U'. Reason: No decisive payload evidence or clear traffic pattern for DeviceControl operation, with consistent observation of length patterns but no operational content."
+        ],
+        [
+            "Operation result: Success. Evidence: 'MQTT topic smart/mb/in/208580022462ab36ab23'; 'smart/mb/in/208580022462ab36ab23 MQTT topic + sustained TCP flow'. Reason: Majority consensus confirms MQTT control channel activity with device-specific topic and sustained TCP traffic, though some reports note lack of explicit control confirmation."
+        ]
+    ],
+    "remote_user2_DeviceControl": [
+        [
+            "Operation result: Success. Evidence: 'smart/mb/in/208580022462ab36ab23'. Reason: MQTT publish to device control topic with valid message lengths and sustained bidirectional flow."
+        ],
+        [
+            "Operation result: Undetermined. Evidence: 'Abs_Len1'. Reason: Insufficient packet length and data for conclusive analysis."
+        ]
+    ]
+}

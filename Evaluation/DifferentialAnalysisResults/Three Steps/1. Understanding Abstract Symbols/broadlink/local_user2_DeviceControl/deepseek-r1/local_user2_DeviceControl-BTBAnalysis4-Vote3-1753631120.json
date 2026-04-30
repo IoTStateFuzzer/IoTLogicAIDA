@@ -1,0 +1,20 @@
+[
+    [
+        "Operation result: Success. Evidence: '{'context':{'properties':[{'namespace':'DNA.TransmissionControl','name':'notpadding','value':0,'timeOfSample':'|----------------------|'}]},'event':{'header':{'namespace':'DNA.TransmissionControl','name':'Response','interfaceVersion':'2','messageId':'00000000000000000000a043b008f861-|--------|'},'payload':{'data':'paVaWqHSAws1AAAAeyJwd3IiOjEsImluZGljYXRvciI6MSwibWF4d29ya3RpbWUiOjAsImNoaWxkbG9jayI6MH0AAAAAAAAAAAAAAAAAAAA='},'endpoint':{'scope':{},'endpointId':'00000000000000000000a043b008f861'}}}'. Reason: Control response payloads contained base64-decoded status indicators confirming command acknowledgment. The predominant evidence showed power activation (pwr:1), while one instance recorded pwr:0; both states signify successful operation within the DNA.TransmissionControl namespace."
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Evidence: 'No valid control response payload.'. Reason: Absence of structured control responses in observed traffic. UDP packets contained only obfuscated/placeholder data (Abs_Len fields) unrelated to device control protocols. Undetermined assessments stem from insufficient decodable payloads but align with failure due to lack of valid acknowledgment."
+    ]
+]

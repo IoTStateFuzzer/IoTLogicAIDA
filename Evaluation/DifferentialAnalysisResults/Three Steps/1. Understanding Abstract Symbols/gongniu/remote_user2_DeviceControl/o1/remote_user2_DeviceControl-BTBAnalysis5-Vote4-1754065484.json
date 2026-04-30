@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: 'code=200, success=true'. Reason: The response with code=200 and success=true indicates a successful property update."
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Evidence: 'code=9017, success=false'. Reason: The response with code=9017 and success=false indicates a failed property update request."
+    ]
+]

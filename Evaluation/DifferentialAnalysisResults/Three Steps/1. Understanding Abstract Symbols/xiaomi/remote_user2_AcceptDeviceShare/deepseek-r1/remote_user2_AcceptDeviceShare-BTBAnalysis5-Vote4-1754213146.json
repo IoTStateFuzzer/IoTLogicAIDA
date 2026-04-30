@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: 'code':0,'message':'ok','result':'true'. Reason: HTTP 200-equivalent success code (0) with explicit confirmation message ('ok') and boolean result validation in API response."
+    ],
+    [
+        "Operation result: Failed. Evidence: 'code':-6,'message':'invalid request, invite not exist'. Reason: Protocol-level rejection (code -6) indicating non-existent/invalid sharing invitation with explicit error message about request validity."
+    ],
+    [
+        ""
+    ]
+]

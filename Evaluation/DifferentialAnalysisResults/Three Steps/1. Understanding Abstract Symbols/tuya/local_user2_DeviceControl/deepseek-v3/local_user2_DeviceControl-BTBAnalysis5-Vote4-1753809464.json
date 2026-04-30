@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Failed. Evidence: 'Abs_Len1|'; 'Abs_Len2|UAbs_Len12|w3.3Abs_Len115|U'. Reason: Consistent empty/invalid response payloads (Abs_Len1|) with corrupted control fragments (Abs_Len2|U...) indicate complete operation failure."
+    ],
+    [
+        "Operation result: Failed. Evidence: 'Abs_Len1|'; 'Abs_Len2|UAbs_Len13|eAbs_Len2|'Abs_Len3|U'. Reason: Persistent empty MQTT responses (Abs_Len1|) with fragmented/incomplete payloads (Abs_Len2|U...) confirm operation failure."
+    ]
+]

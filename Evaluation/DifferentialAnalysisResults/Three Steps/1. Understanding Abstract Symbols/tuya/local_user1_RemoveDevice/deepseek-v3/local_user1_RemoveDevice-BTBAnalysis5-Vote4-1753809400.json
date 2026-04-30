@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: ''type':'del''; ''result':true,'success':true,'status':'ok''. Reason: Consistent MQTT payload evidence shows successful device deletion ('del' type) with operational confirmation (true result, success status)"
+    ]
+]

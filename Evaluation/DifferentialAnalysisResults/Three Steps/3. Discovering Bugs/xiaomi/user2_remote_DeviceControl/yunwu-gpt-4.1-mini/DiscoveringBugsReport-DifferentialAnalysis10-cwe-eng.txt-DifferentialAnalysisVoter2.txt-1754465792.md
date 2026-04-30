@@ -1,0 +1,26 @@
+### Base model
+No issues found.
+
+### Divergent model
+* **Vulnerability 1: Unauthorized DeviceControl Access After Unsharing**  
+  * **Impact:** In states where user1 has unshared the device or revoked sharing permissions (notably states s12, s20, and s21), user2 is still able to perform DeviceControl operations successfully despite the intended revocation. This unauthorized access violates permission timeliness and least privilege principles, allowing user2 to maintain control rights beyond sharing revocation. Such permission persistence causes confidentiality and integrity breaches by enabling unauthorized control of user1’s device. Multiple reports confirm consistent success responses (e.g., CLS_1) for user2’s DeviceControl commands in these states, even though permission should no longer exist. The unauthorized control conflicts with expected permission semantics, leading to severe security concerns.  
+  * **Problematic State(s):**  
+    * `s12`: Performed **user2|remote|DeviceControl**, received **Success (CLS_1)** response, stayed in **s12/not specified**, causing **device control permission persisted post-unshare despite revocation**.  
+    * `s20`: Performed **user2|remote|DeviceControl**, received **Success (CLS_1)** response, stayed in **s20**, causing **device control permission persisted post-unshare despite revocation**.  
+    * `s21`: Performed **user2|remote|DeviceControl**, received **Success (CLS_1)** response, stayed in **s21**, causing **device control permission persisted in post-sharing revoked state**.
+
+* **Vulnerability 2: DeviceControl Permission Persistence Across Device Removal and Re-Addition Without Fresh Share Acceptance**  
+  * **Impact:** In states involving device removal and re-adding (notably states s8, s19, and s22), user2 continues to successfully perform DeviceControl operations without new or fresh acceptance of sharing invitations. This indicates that permissions persist improperly across device removal or re-addition, potentially enabling unauthorized control on new device instances without explicit re-sharing consent. Such persistence breaches permission timeliness and risks privilege escalation, especially if user2 is not a family member and no legitimate sharing has occurred. While some controls are legitimate when re-sharing is accepted (e.g., in s19), concerns remain about whether permissions are always correctly revoked on previous instances, creating possible unauthorized access windows.  
+  * **Problematic State(s):**  
+    * `s8`: Performed **user2|remote|DeviceControl**, received **Success (CLS_0)** response, stayed in **s19**, causing **control continuation without explicit fresh acceptance after removal/re-adding**.  
+    * `s19`: Performed **user2|remote|DeviceControl**, received **Success (CLS_0)** response, stayed in **s19**, causing **control permission on new device instance possibly without proper re-sharing verification**.  
+    * `s22`: Performed **user2|remote|DeviceControl**, received **Success (CLS_0)** response, stayed in **s9**, causing **control permission continuation on new device instance; potential improper revocation on prior instances**.
+
+* **Information Leakage and Error Handling:**  
+  * All reports uniformly agree that error codes and failure messages returned to user2 during unauthorized attempts (e.g., AcceptDeviceShare or DeviceControl without permission) are consistent and do not leak unauthorized information. Typical error codes include -6 ("invalid request, invite not exist"), -12 ("false"), or similar, strictly reflecting user2's permissions without revealing other user identities or device states.  
+  * Response symbols (CLS codes) differ according to user2’s own permission status but these variations do not leak system or other users’ confidential data, minimizing differential inference risks.  
+  * No direct or indirect information leakage vulnerabilities were found.
+
+**Summary:**  
+The primary vulnerabilities in the Divergent model pertain to improper enforcement of permission revocation and timeliness: user2 is able to retain device control rights after unsharing and across device removal/re-addition operations without fresh acceptance of sharing. These issues violate least privilege and access control principles, potentially allowing unauthorized device control and confidentiality/integrity breaches. However, no evidence of information leakage or unauthorized data exposure was found.  
+---

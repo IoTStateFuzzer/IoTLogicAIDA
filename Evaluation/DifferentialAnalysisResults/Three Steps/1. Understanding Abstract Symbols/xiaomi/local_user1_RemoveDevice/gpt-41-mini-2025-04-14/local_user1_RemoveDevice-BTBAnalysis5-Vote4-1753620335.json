@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: '{'code':0,'message':'ok','result':{'369647111':1}}'. Reason: The consistent HTTP response showing code 0 and message 'ok' from api.mijia.tech in the /app/user/del_owner_device_batch API indicates that the device removal request was processed and completed successfully. This consensus reflects a successful batch operation outcome."
+    ]
+]

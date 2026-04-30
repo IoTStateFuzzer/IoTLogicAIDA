@@ -1,0 +1,51 @@
+{
+    "local_user1_AddDevice": null,
+    "local_user1_DeviceControl": [
+        [
+            "Operation result: Success. Evidence: 'code':200,'success':true. Reason: Majority consensus confirms that the HTTP PUT responses carried code 200 and success true flags, objectively validating the device control commands were accepted and executed successfully."
+        ]
+    ],
+    "local_user1_RemoveDevice": [
+        [
+            "Operation result: Success. Evidence: 'DELETE ... code':200,'success':true'. Reason: The HTTP DELETE request consistently returned code 200 with success:true in the payload, confirming device removal was accepted and completed successfully."
+        ]
+    ],
+    "local_user1_SharePlug": [
+        [
+            "Operation result: Undetermined. Evidence: 'POST /mos/share/v1/devices HTTP 200 success:true'; 'HTTP code: 200, success: true'; 'HTTP 200', 'success':true'; 'code':200,'success':true'; 'POST /mos/share/v1/devices code:200 success:true'. Reason: Majority consensus cannot be reached on the operation result due to conflicting reports: various evidences demonstrate successful HTTP 200 responses with success:true confirming share operation success, while counter-evidences show success:false indicating failure. The evidences for success and failure directly oppose each other, creating an unresolved conflict on the share plug operation outcome."
+        ],
+        [
+            "Operation result: Undetermined. Evidence: 'POST /mos/share/v1/devices success:false'; 'HTTP success:false' with abnormal code; 'success':false'; 'success':false' in POST /mos/share/v1/devices'; 'POST /mos/share/v1/devices success:false'. Reason: The presence of multiple verbatim indications of failure via success:false responses from POST requests to /mos/share/v1/devices contrasts with the success:true evidences in another entry. As this entry uniformly indicates failure with no shared evidence in the opposite direction, but conflicts with the other entry, the integrated verdict cannot be established as successful or failed solely on one side's evidence."
+        ]
+    ],
+    "local_user1_UnsharePlug": [
+        [
+            "Operation result: Success. Evidence: 'POST /mos/share/v1/devices/cancel' with code:200, success:true'. Reason: HTTP 200 response status combined with success:true flag in the payload from the share cancel endpoint uniformly confirms that the UnsharePlug action completed successfully."
+        ]
+    ],
+    "remote_user2_AcceptDeviceShare": [
+        [
+            ""
+        ],
+        [
+            "Operation result: Success. Evidence: 'code':200,'success':true'. Reason: Majority consensus confirms HTTP 200 status with success=true explicitly verifies the remote device share acceptance succeeded."
+        ],
+        [
+            "Operation result: Failed. Evidence: 'success':false'. Reason: Consensus shows explicit failure marked by 'success':false in the payload signifying rejection of the remote device share acceptance."
+        ],
+        [
+            "Operation result: Failed. Evidence: 'success':false'. Reason: Uniform agreement on failure status indicated by 'success':false confirms the device share acceptance attempt was unsuccessful."
+        ]
+    ],
+    "remote_user2_DeviceControl": [
+        [
+            "Operation result: Success. Evidence: ''code':200,'success':true'; ''code':200,'success':true' in HTTP PUT response'. Reason: HTTP 200 status with success:true in HTTP PUT response confirms device control command acceptance and successful property setting, supported by matching MQTT state updates."
+        ],
+        [
+            ""
+        ],
+        [
+            "Operation result: Failed. Evidence: ''code':9017,'success':false'; ''code':9017,'success':false' in HTTP PUT response'. Reason: Explicit error code 9017 combined with success:false in HTTP PUT response provides clear indication of device control failure."
+        ]
+    ]
+}

@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: {'code':200,'success':true} and MQTT property updates (PowerSwitch:0/1). Reason: HTTP 200 status code with success=true validates API command acceptance. Synchronized MQTT downlink messages containing PowerSwitch value changes (0\u21921) confirm physical device state alteration through cloud-to-device synchronization."
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Evidence: {'code':9017,'success':false}. Reason: HTTP 9017 error code with explicit success=false in API response indicates authorization protocol failure during remote control attempt. This error condition persists across multiple identical requests, confirming systematic rejection of control commands due to invalid credentials or permission misconfiguration."
+    ]
+]

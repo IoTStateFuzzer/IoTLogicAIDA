@@ -1,0 +1,14 @@
+[
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Evidence: {'code':200,'message':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd','result':null,'success':true}. Reason: The consistent presence of HTTP 200 status code combined with success=true in the API response objectively confirms successful device share acceptance. The uniform response structure across all reports reinforces this conclusion."
+    ],
+    [
+        "Operation result: Failed. Evidence: {'code':|------|,'message':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd','result':null,'success':false}. Reason: The unanimous indication of success=false in the API response, despite the obscured status code, demonstrates clear operation failure. The consistent response pattern across all reports confirms this assessment."
+    ],
+    [
+        "Operation result: Failed. Evidence: {'code':|------|,'message':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd','result':null,'success':false}. Reason: The extended error message combined with success=false in the API response provides definitive evidence of operation failure. The presence of this pattern across all reports, including the detailed error message, substantiates the failure conclusion."
+    ]
+]

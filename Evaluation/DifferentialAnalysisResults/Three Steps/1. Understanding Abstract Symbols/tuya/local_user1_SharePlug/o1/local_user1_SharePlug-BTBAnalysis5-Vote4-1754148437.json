@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Failed. Evidence: 'REPETITION_SHARE'. Reason: The share request was rejected for being a repeated share attempt."
+    ],
+    [
+        "Operation result: Success. Evidence: 'success':true. Reason: The share operation returned a successful response with 'success':true."
+    ]
+]

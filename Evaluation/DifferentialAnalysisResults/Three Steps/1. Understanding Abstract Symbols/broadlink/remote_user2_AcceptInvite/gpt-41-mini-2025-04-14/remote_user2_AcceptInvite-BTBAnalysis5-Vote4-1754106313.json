@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Failed. Evidence: 'ErrorResponse' with status -7 and message 'device reset, please rebind'. Reason: The majority of analyses concur that the presence of a negative status -7 combined with the device reset message in the error response clearly indicates the invite acceptance operation failed. Though one report shows success with error=0 and status=0, the consensus-backed error payload evidence marks failure of the operation."
+    ]
+]

@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: {'error':0,'status':0,'msg':'ok'}. Reason: A zero error code and zero status indicate a successful QR code scan."
+    ],
+    [
+        "Operation result: Failed. Evidence: {'error':-2010,'status':-2010}. Reason: The negative error code indicates the scan attempt failed."
+    ],
+    [
+        "Operation result: Failed. Evidence: {'error':-2011,'status':-2011}. Reason: Another negative error code indicates the scan attempt failed."
+    ]
+]

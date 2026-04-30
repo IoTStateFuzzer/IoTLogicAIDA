@@ -1,0 +1,20 @@
+[
+    [
+        "Operation result: Success. Evidence: '{'error':0,'status':0,'msg':'ok'}'. Reason: The /appsync/group/member/quitfamily response indicates error=0 and status=0, confirming a successful quit operation despite additional unrelated sdkcontrol or network timeout errors."
+    ],
+    [
+        "Operation result: Success. Evidence: '{'error':0,'status':0,'msg':'ok'}'. Reason: The quitfamily endpoint response shows error=0 and status=0, evidencing a successful operation even though additional device reset errors are present."
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Evidence: '{'status':-30107,'msg':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd'}'. Reason: The /appsync/group/member/quitfamily response returned a negative status (-30107) with garbled message content, indicating the QuitHome operation did not succeed."
+    ]
+]

@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: 'code':200, 'success':true'; 'HTTP 200'; '{'code':200,'success':true}'; 'method':'thing.properties','params':{'keys':['PowerSwitch'],'items':{'PowerSwitch':{'value':0/1}}'. Reason: HTTP 200 status codes with explicit success flags confirm command acceptance, while MQTT property updates (PowerSwitch 0\u21921) demonstrate physical device state change through both cloud and local control channels."
+    ]
+]

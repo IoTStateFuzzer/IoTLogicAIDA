@@ -1,0 +1,12 @@
+a1.tuyacn.com|443|http|POST|a1.tuyacn.com|/api.json/smartlife/m/oem/network/ist|||||
+a1.tuyacn.com|443|http|POST|a1.tuyacn.com|/api.json/smartlife/m/category/scheme/level/one/list|||||
+a1.tuyacn.com|443|http|POST|a1.tuyacn.com|/api.json/smartlife/m/category/scheme/sub/list|||||
+a1.tuyacn.com|443|http|POST|a1.tuyacn.com|/api.json/s/m/gw/token/create|||||
+a1.tuyacn.com|443|http|POST|a1.tuyacn.com|/api.json/smartlife/m/device/list/token|||||
+a1.tuyacn.com|443|http|POST|a1.tuyacn.com|/api.json/smartlife/m/device/biz/prop/list|||||
+a1.tuyacn.com|443|http|POST|a1.tuyacn.com|/api.json/s/m/gw/location/update|||||
+a1.tuyacn.com|443|http|POST|a1.tuyacn.com|/api.json/smartlife/m/device/reset|||||
+a1.tuyacn.com|443|http|POST|a1.tuyacn.com|/api.json/smartlife/m/linkage/recom/library/match|||||
+a1.tuyacn.com|443|http|POST|a1.tuyacn.com|/api.json/smartlife/m/linkage/recom/rule/list|||||
+a1.tuyacn.com|443|http|POST|a1.tuyacn.com|/api.json/smartlife/m/app/build/common/get|||||
+a1.tuyacn.com|443|http|POST|a1.tuyacn.com|/api.json/smartlife/m/category/scheme/third/detail|||||

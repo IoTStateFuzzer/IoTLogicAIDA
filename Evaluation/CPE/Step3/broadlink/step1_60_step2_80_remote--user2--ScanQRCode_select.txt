@@ -1,0 +1,1 @@
+app-service-chn-467a8f05.ibroadlink.com|443|http|POST|app-service-chn-467a8f05.ibroadlink.com|/appsync/group/member/invited/scanqrcode|||||

@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Failed. Evidence: ''success':false,'errorCode':'REPETITION_SHARE''; ''success':false,'errorCode':'REPETITION_SHARE','errorMsg':'This device has already been shared with the user.''; ''success':false,'errorCode':'REPETITION_SHARE','status':'error','errorMsg':'This device has already been shared with the user.''. Reason: Consistent error responses (REPETITION_SHARE) with explicit messages confirm the device was previously shared with the target user."
+    ],
+    [
+        "Operation result: Success. Evidence: ''success':true,'result':{'receiverName':'user2'}'; ''success':true,'status':'ok''; ''success':true,'result':{'receiverName':'user2','relationId':117443320}'. Reason: Multiple successful responses with receiver confirmation and valid relation IDs demonstrate completed sharing operation."
+    ]
+]

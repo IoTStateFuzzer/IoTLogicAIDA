@@ -1,0 +1,14 @@
+[
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Evidence: **'code':200, 'success':true'**. Reason: HTTP 200 status code with explicit success flag in payload."
+    ],
+    [
+        "Operation result: Failed. Evidence: **'success':false'**. Reason: Explicit failure flag in payload despite obscured or partially redacted status code."
+    ],
+    [
+        "Operation result: Failed. Evidence: **'success':false'**. Reason: Explicit failure flag in payload; extended error message patterns were also observed."
+    ]
+]

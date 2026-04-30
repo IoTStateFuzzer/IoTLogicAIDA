@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Failed. Evidence: 'success':false,'errorCode':'REPETITION_SHARE'. Reason: The device was already shared, leading to a repeated share error"
+    ],
+    [
+        "Operation result: Success. Evidence: 'success':true. Reason: The device share request was completed successfully"
+    ]
+]

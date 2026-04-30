@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: '/appsync/group/member/delfamilymember' HTTP POST with {'error':0,'status':0,'msg':'ok'}'; ''error':0,'status':0,'msg':'ok'' in /appsync/group/member/delfamilymember response'. Reason: Majority consensus confirms successful removal from the home group as indicated by consistent presence of error 0, status 0, and 'ok' messages in the HTTP POST response to /appsync/group/member/delfamilymember."
+    ]
+]

@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: ''code':0'. Reason: The share_request returned code=0 with 'true' result indicating success."
+    ],
+    [
+        "Operation result: Undetermined. Evidence: ''code':-11'. Reason: Conflicting interpretations of code=-11 prevented a unified conclusion."
+    ],
+    [
+        "Operation result: Failed. Evidence: ''code':-12'. Reason: The share_request returned code=-12 indicating no active share was created."
+    ]
+]

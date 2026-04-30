@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Failed. Evidence: 'errorCode':'REPETITION_SHARE','status':'error','errorMsg':'This\ufffd\ufffddevice\ufffd\ufffdhas\ufffd\ufffdalready\ufffd\ufffdbeen\ufffd\ufffdshared\ufffd\ufffdwith\ufffd\ufffdthe\ufffd\ufffduser.'. Reason: The response consistently returns a failure payload that explicitly includes the errorCode 'REPETITION_SHARE' along with the message indicating the device has already been shared with the user. This confirms that the sharing operation was rejected due to a duplicate share attempt."
+    ],
+    [
+        "Operation result: Success. Evidence: 'result':{'receiverName':'user2','relationId':117443320},'success':true,'status':'ok'. Reason: The payloads uniformly demonstrate a successful operation, providing a success flag set to true and valid sharing details such as receiverName 'user2' and a corresponding relationId. The consistent presence of these details confirms that the device sharing was executed successfully."
+    ]
+]

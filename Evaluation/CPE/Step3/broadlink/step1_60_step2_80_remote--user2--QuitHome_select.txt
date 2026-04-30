@@ -1,0 +1,4 @@
+app-service-chn-467a8f05.ibroadlink.com|443|http|POST|app-service-chn-467a8f05.ibroadlink.com|/device/control/v2/sdkcontrol|||||
+app-service-chn-467a8f05.ibroadlink.com|443|http|POST|app-service-chn-467a8f05.ibroadlink.com|/appsync/group/member/getfamilymember|||||
+app-service-chn-467a8f05.ibroadlink.com|443|http|POST|app-service-chn-467a8f05.ibroadlink.com|/account/usersketchyinfo|||||
+app-service-chn-467a8f05.ibroadlink.com|443|http|POST|app-service-chn-467a8f05.ibroadlink.com|/appsync/group/member/quitfamily|||||

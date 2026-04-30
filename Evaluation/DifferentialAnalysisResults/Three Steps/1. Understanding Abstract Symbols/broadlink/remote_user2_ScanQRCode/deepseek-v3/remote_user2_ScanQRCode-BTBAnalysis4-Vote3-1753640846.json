@@ -1,0 +1,13 @@
+[
+    [
+        "Operation result: Success. Evidence: 'error':0,'status':0,'msg':'ok'. 'data': {'familyid':'11b9af345feef8afb71de0053611d0eb','familyname':'user1home','icon':'','createuser':'11b9af34c645972ed9e6a5d82018bb2c','countryCode':'1','provinceCode':'12','cityCode':'12','createTime':'|--------| |------|','master':'11b9af34c645972ed9e6a5d82018bb2c','usernickname':'user1'}. Reason: The consistent presence of error code 0, status 0, and 'ok' message across all reports confirms successful QR code scanning. The additional data payload containing valid family information further substantiates the operation's success.",
+        "Operation result: Failed. Evidence: 'error':-2010,'status':-2010,'msg':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd'. Reason: The unanimous error code -2010 indicates a systematic failure in QR code scanning. The presence of corrupted or unreadable message content suggests potential authentication or authorization issues during the scanning process.",
+        "Operation result: Failed. Evidence: 'error':-2011,'status':-2011,'msg':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd'. Reason: The consistent error code -2011 across all reports indicates a distinct failure mode from the -2010 error. The corrupted message content, while unreadable, suggests this may represent a different class of scanning failure, potentially related to QR code validity or system state."
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ]
+]

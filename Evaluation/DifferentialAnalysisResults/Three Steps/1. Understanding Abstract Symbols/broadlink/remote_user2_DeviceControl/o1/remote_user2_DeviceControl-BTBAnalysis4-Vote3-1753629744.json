@@ -1,0 +1,14 @@
+[
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Evidence: 'name':'Response'. Reason: The device returned normal response messages with no error codes."
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Evidence: 'message':'device reset, please rebind','status':-7'. Reason: The device returned a reset error with negative status code, preventing successful control."
+    ]
+]

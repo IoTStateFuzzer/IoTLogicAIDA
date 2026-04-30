@@ -1,0 +1,14 @@
+api.iotbull.com|443|http|GET|api.iotbull.com|/mos/device/v1/devices/mHXk6DR3zDiKDwQd4vRo000000/purpose|||||
+api.iotbull.com|443|http|GET|api.iotbull.com|/mos/home/v1/rooms|||||
+api.iotbull.com|443|http|GET|api.iotbull.com|/mos/home/v1/scenes|||||
+api.iotbull.com|443|http|GET|api.iotbull.com|/mos/schedule/v1/mHXk6DR3zDiKDwQd4vRo000000/scheduleTips|||||
+api.iotbull.com|443|http|GET|api.iotbull.com|/mos/uic/v1/users|||||
+api.iotbull.com|443|http|GET|api.iotbull.com|/mos/user/v1/user_extras|||||
+api.iotbull.com|443|http|PUT|api.iotbull.com|/mos/v1/dc/setDeviceProperty/mHXk6DR3zDiKDwQd4vRo000000|||||
+api.link.aliyun.com|443|http|POST|api.link.aliyun.com|/living/awss/bt/devices/register|||||
+public.iot-as-mqtt.cn-shanghai.aliyuncs.com|1883|tcp||||||0x00000018|31|
+user1_local||http||||||||
+user1_local||tcp||||||0x00000018|31|
+user2_remote||http||||||||
+user2_remote||tcp||||||0x00000018|31|
+usere-user(1|2)_(local|remote)(\|){2}http(\|){8,9}

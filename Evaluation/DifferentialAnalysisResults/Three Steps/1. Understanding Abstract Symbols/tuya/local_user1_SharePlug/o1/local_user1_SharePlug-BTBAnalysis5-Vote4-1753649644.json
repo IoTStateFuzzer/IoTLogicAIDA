@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Failed. Evidence: 'FPSPER{'t':|-----------|,'success':false,'errorCode':'REPETITION_SHARE','status':'error','errorMsg':'This\ufffd\ufffddevice\ufffd\ufffdhas\ufffd\ufffdalready\ufffd\ufffdbeen\ufffd\ufffdshared\ufffd\ufffdwith\ufffd\ufffdthe\ufffd\ufffduser.'}'. Reason: The device was already shared with the user, indicated by errorCode='REPETITION_SHARE'."
+    ],
+    [
+        "Operation result: Success. Evidence: 'FPSPER{'result':{'receiverName':'user2','relationId':117443320},'t':|-----------|,'success':true,'status':'ok'}'. Reason: The share request completed successfully, indicated by success=true and a valid relationId."
+    ]
+]

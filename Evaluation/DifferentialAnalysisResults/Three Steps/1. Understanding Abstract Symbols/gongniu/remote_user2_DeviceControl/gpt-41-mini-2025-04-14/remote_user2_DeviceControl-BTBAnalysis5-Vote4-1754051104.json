@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: ''code':200','success':true','PowerSwitch' value':1' '. Reason: The consistent presence of HTTP code 200 and 'success':true across reports, together with evidence of 'PowerSwitch' value changing to 1, confirms a successful device control operation acknowledged remotely and executed on the device."
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Evidence: ''code':9017','success':false' '. Reason: The HTTP response consistently showing code 9017 with 'success':false evidences explicit failure and rejection of the remote device control command."
+    ]
+]

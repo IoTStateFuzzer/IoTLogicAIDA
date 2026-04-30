@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: 'pppp_stream_payload'. Reason: The predominant evidence shows a sustained, continuous payload exchange marked by 'pppp_stream_payload', which is characteristic of a complete bidirectional DeviceControl operation, despite some reports presenting merely fragmented payload data without explicit status codes."
+    ]
+]

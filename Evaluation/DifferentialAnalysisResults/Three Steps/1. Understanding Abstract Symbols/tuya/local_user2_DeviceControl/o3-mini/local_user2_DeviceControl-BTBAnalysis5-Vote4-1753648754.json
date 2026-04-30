@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Success. Evidence: 'w3.3Abs_Len115|U'. Reason: Analysis of the traffic sets shows that device_0 consistently delivered TCP packets carrying non\u2010empty payloads with expected numeric fields and no error indicators. In several packets the payload fragment 'w3.3Abs_Len115|U' was clearly present, which strongly supports the conclusion that the control command was properly processed, even though one packet provided only the fragment 'w3.3' which was not sufficient to indicate failure."
+    ],
+    [
+        "Operation result: Success. Evidence: 'FPSPER2.2Abs_Len124'. Reason: Integrated observations indicate that multiple packets\u2014from both TCP responses and MQTT acknowledgements\u2014provided payload segments with clear regularity and valid numeric formats. In particular, the evidence 'FPSPER2.2Abs_Len124' (noting that a near\u2010identical variant appears with only a trailing delimiter in another report) appears in more than one analysis, confirming that the DeviceControl command was acknowledged despite one set of packets presenting ambiguous fragments such as 'e' and '3.3' which did not carry a clearly defined success status."
+    ]
+]

@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: '{'error':0,'status':0,'msg':'ok','data':{'familyid':'11b9af345feef8afb71de0053611d0eb}}'. Reason: All reports contain the exact evidence fragment '{'error':0,'status':0,'msg':'ok','data':{'familyid':'11b9af345feef8afb71de0053611d0eb}}', which indicates error 0 and status 0 with a message of 'ok'. This consistent indicator confirms that the AcceptInvite operation succeeded, even though one report included additional network packet details that do not affect the shared evidence."
+    ]
+]

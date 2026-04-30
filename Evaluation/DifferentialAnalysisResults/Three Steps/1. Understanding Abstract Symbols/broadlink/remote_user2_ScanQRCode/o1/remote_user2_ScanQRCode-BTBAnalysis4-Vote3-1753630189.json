@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: '{'error':0,'status':0,'msg':'ok'}'. Reason: Zero error and status values indicate a successful operation."
+    ],
+    [
+        "Operation result: Failed. Evidence: '{'error':-2010,'status':-2010}'. Reason: Negative error and status values confirm the operation was rejected."
+    ],
+    [
+        "Operation result: Failed. Evidence: '{'error':-2011,'status':-2011}'. Reason: Negative error and status values indicate the operation was not completed successfully."
+    ]
+]

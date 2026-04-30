@@ -1,0 +1,3 @@
+api.iotbull.com|443|http|GET|api.iotbull.com|/mos/device/v1/devices/mHXk6DR3zDiKDwQd4vRo000000/purpose|||||
+api.iotbull.com|443|http|GET|api.iotbull.com|/mos/schedule/v1/mHXk6DR3zDiKDwQd4vRo000000/scheduleTips|||||
+api.iotbull.com|443|http|POST|api.iotbull.com|/mos/share/v1/devices/cancel|||||

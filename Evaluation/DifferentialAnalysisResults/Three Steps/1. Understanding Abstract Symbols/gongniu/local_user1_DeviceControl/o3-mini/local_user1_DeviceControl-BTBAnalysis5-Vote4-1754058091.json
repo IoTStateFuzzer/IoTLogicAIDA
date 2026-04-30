@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: ''value':1'. Reason: The MQTT payloads consistently include the exact fragment ''value':1', which indicates that the device property was updated successfully. Although one report mentioned ambiguity due to the lack of explicit status codes, the majority evidence of a 'value':1 update confirms a successful DeviceControl operation."
+    ]
+]

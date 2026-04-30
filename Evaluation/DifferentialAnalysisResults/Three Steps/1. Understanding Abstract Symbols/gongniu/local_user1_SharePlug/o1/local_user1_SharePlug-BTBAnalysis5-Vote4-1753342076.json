@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Success. Evidence: 'FPSPER{'code':200,'message':'\\ufffd\\ufffd\\ufffd\\ufffd\\ufffd\\ufffd\\ufffd\\ufffd\\ufffd\\ufffd\\ufffd\\ufffd','result':null,'success':true}'. Reason: The returned code=200 with success=true reflects a successful share operation."
+    ],
+    [
+        "Operation result: Failed. Evidence: 'FPSPER{'code':|------|,'message':'\\ufffd\\ufffd\\ufffd\\ufffd\\ufffd\\ufffd\\ufffd\\ufffd\\ufffd\\ufffd\\ufffd\\ufffd\\ufffd\\ufffd\\ufffd\\ufffd\\ufffd\\ufffd\\ufffd\\ufffd\\ufffd','result':null,'success':false}'. Reason: The result indicated success=false, confirming a failed share operation."
+    ]
+]

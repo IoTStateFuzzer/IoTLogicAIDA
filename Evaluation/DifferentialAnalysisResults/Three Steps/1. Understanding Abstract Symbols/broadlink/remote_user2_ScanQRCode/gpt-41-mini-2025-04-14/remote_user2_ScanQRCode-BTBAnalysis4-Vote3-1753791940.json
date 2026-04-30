@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: **''error':0,'status':0,'msg':'ok''**. Reason: The unanimous presence of error 0 and status 0 with the message 'ok' across all responses clearly indicates that the ScanQRCode operation completed successfully without any error."
+    ],
+    [
+        "Operation result: Failed. Evidence: **''error':-2010,'status':-2010'**. Reason: The consistently negative error and status codes of -2010 reported in all responses signify a failure in the ScanQRCode operation, marking the scan as unsuccessful."
+    ],
+    [
+        "Operation result: Failed. Evidence: **''error':-2011,'status':-2011'**. Reason: The uniform reporting of negative error and status codes -2011 across all evidence confirms the ScanQRCode operation encountered a failure, resulting in an unsuccessful scan."
+    ]
+]

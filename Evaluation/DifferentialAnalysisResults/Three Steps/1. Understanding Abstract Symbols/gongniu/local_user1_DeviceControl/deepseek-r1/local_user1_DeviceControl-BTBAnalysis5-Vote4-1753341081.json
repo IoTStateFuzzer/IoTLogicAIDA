@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: {'code':200,'message':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd','success':true} and MQTT property updates with PowerSwitch values 0/1. Reason: HTTP 200 status code with 'success:true' field validates command execution, while MQTT property changes (PowerSwitch 0\u21921 transitions) confirm physical state synchronization. The consistent message field corruption (unicode replacement symbols) indicates potential encoding mismatches in the API response, but doesn't invalidate the operational success as core status codes and boolean flags remain intact."
+    ]
+]

@@ -1,0 +1,14 @@
+[
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Evidence: {'code':200,'message':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd','result':null,'success':true}. Reason: Consistent HTTP 200 status code with explicit 'true' value in success field confirms successful device share acceptance. The standardized message pattern across all responses reinforces operational success despite encoded characters."
+    ],
+    [
+        "Operation result: Failed. Evidence: {'code':|------|,'message':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd','result':null,'success':false}. Reason: Explicit failure indication through 'success':false field persists across all responses, with corrupted/masked status code pattern (|------|) suggesting server-side validation failure. The consistent error message structure indicates systemic rejection of the request."
+    ],
+    [
+        "Operation result: Failed. Evidence: {'code':|------|,'message':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd','result':null,'success':false}. Reason: Extended error message pattern combined with persistent 'success':false confirms authorization failure. The elongated message structure suggests detailed server-side rejection reasons, while masked status code maintains consistency with previous failure patterns."
+    ]
+]

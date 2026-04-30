@@ -1,0 +1,14 @@
+[
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Evidence: 'name':'Response', 'data':'paVaWqDSAws1AAAAeyJwd3IiOjAsImluZGljYXRvciI6MSw...', 'event':{'header':{'namespace':'DNA.TransmissionControl','name':'Response','payload':{'data':'...eyJwd3IiOjEsImluZGljYXRvciI6MSw...'}}. Reason: Response payloads contain valid device control confirmation with power state parameters (pwr=0 and pwr=1) and operational indicators. A conflicting DEVICE_RESET error was observed but did not override multiple successful control acknowledgments in transaction sequencing."
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Evidence: 'ErrorResponse', 'type':'DEVICE_RESET', 'message':'device reset, please rebind', 'status':-7, 'name':'ErrorResponse', 'payload':{'type':'DEVICE_RESET','message':'device reset, please rebind','status':-7}. Reason: Consistent ErrorResponse patterns with status code -7 confirm device reset state, invalidating control attempts through mandatory rebinding requirements."
+    ]
+]

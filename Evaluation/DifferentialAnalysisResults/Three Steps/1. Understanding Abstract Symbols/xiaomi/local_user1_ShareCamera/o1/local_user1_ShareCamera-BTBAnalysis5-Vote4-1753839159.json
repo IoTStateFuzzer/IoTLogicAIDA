@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: ''code':0'. Reason: The share_request returned code=0 indicating success, overshadowing mentions of no matching header."
+    ],
+    [
+        "Operation result: Failed. Evidence: ''code':-11'. Reason: Negative code -11 indicates no new share was granted, despite some indications of an existing share."
+    ],
+    [
+        "Operation result: Failed. Evidence: ''code':-12'. Reason: Negative code -12 shows the share request was rejected, despite references to missing packets."
+    ]
+]

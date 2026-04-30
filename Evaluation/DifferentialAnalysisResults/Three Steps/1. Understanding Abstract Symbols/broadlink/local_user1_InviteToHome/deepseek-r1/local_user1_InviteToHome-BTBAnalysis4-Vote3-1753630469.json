@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Success. Evidence: 'error':0,'status':0,'msg':'ok','data':{'qrcode':'11Abs_Len14|'. Reason: Consensus shows successful API responses with status=0/error=0 across all critical endpoints. QR code generation (11Abs_Len14|) confirms invitation initiation. Minority concern about missing member list confirmation doesn't override API success indicators."
+    ],
+    [
+        "Operation result: Success. Evidence: 'status':0,'error':0,'data':{'familymember':[{'userid':'112dae9018cdebd9cc0614003ebfd219','type':1}. Reason: Unified evidence demonstrates user2 appears as type=1 member in family list with persistent success status (0) across QR code regeneration and member list verification workflows."
+    ]
+]

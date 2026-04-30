@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Success. Evidence: ''. Reason: Broker acknowledgment (PUBACK) confirms QoS1 command delivery despite absence of explicit success codes in payloads."
+    ],
+    [
+        "Operation result: Undetermined. Evidence: '0x00000040'. Reason: Isolated PUBACK packets without corresponding PUBLISH commands prevent operation status determination."
+    ]
+]

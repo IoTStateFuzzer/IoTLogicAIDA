@@ -1,0 +1,15 @@
+device_0||udp||||||||56
+device_0||udp||||||||320
+user1_local||udp||||||||96
+device_0||udp||||||||144
+user1_local||udp||||||||64
+device_0||udp||||||||80
+user1_local||udp||||||||144
+ai-service-chn-001.ibroadlink.com|443|http|POST|ai-service-chn-001.ibroadlink.com|/vtproxy/common|||||
+app-service-chn-467a8f05.ibroadlink.com|80|tcp||||||0x00000018|360|
+app-service-chn-467a8f05.ibroadlink.com|80|http|POST|47.103.46.229|/devactiva/v2/devactiva|||||
+30060v2main.broadlink.com.cn|1812|udp||||||||148
+device_0||udp||||||||404
+app-service-chn-467a8f05.ibroadlink.com|443|http|POST|app-service-chn-467a8f05.ibroadlink.com|/appsync/group/dev/manage|||||
+app-service-chn-467a8f05.ibroadlink.com|443|http|POST|app-service-chn-467a8f05.ibroadlink.com|/appsync/group/userprivatedata|||||
+app-service-chn-467a8f05.ibroadlink.com|443|http|POST|app-service-chn-467a8f05.ibroadlink.com|/appsync/group/member/getfamilylist|||||

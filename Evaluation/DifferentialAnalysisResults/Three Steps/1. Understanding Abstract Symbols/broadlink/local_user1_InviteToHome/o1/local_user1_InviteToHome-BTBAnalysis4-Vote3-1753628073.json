@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Success. Evidence: '{'error':0,'status':0,'msg':'ok','data':{'qrcode':'11Abs_Len14|'}}'. Reason: The server returned error=0 and status=0 with a valid QR code, indicating a successful invitation."
+    ],
+    [
+        "Operation result: Success. Evidence: '{'status':0,'error':0,'msg':'ok','data':{'familymember':[{'userid':'112dae9018cdebd9cc0614003ebfd219','type':1},{'userid':'11b9af34c645972ed9e6a5d82018bb2c','type':0}]}}'. Reason: The server confirmed status=0 and error=0 while listing user2 with type=1, indicating the invite operation succeeded."
+    ]
+]

@@ -1,0 +1,42 @@
+As an expert in state machine analysis for the IoT domain, you excel at analyzing Finite State Machines (FSMs) and precisely understanding the semantic meaning of each state within a given context. Now, I will provide information about each state Sx in the state machine: starting from the initial state S0, the path to reach Sx requires executing a sequence of actions.
+
+**Key Scenario Context:**  
+- Involves two users: user1 (normal user, device owner) and user2 (potential attacker who may gain temporary control through user1’s permission sharing).  
+- **user1’s permission-sharing rules**—current sharing method [InvitationMethod]:  
+  1) *Family priority (member invitation)*: If user2 is user1’s family member, they gain permanent control rights to all user1’s devices. If a device is removed and re-added, user2 retains control without re-invitation. Permissions remain valid until identity revocation.  
+  2) *Direct device sharing*: If user2 is granted access to a specific device, permissions are limited to that instance. Removal/re-addition revokes permissions, requiring user1 to reshare.  
+- **user2’s permission-acceptance mechanism**—current actions [User2Actions]:  
+  1) Manual invitation acceptance (e.g., entering a code/scanning QR code) is required.  
+  2) Permissions are granted automatically upon user1’s invitation.  
+
+- All operations involve only one device (e.g., rebinding). Analysis must track how many times user1 has added the device instance.  
+- State semantics should focus on:  
+  — *user1’s status*: Device addition count, sharing status (following permission principles).  
+  — *user2’s status*: Family membership (not invited/invited but unaccepted/accepted), control permissions (family members always have control rights, regardless of device addition).  
+
+**Input Format:**  
+- Each state Sx input: `Sx: ["action1", "action2", ...]`  
+  - Represents the full action sequence from S0 to Sx, following chronological order.  
+  - Actions may involve user1 or user2 (e.g., `"user1_invite"`, `"user2_accept"`).  
+  - Combined actions (e.g., `"InviteAndAccept"`) denote sequential independent operations.  
+
+**Your Task:**  
+1. **Analyze state semantics**: Infer each state Sx’s meaning based on its path. Describe:  
+   - user1’s current status.  
+   - user2’s permission status.  
+2. **Output Format**: Markdown table with two columns (*State* and *Semantic Description*). Keep descriptions concise (≤2 sentences), directly reflecting path impacts.  
+
+**Output Example (hypothetical input):**  
+- Input: `S1: ["user1|local|AddDevice", "user1|local|InviteAndAccept"]`  
+- Table row: `|1|user1 added the device; user2 is a family member with control permissions.|`  
+- For initial/error states: label as "Initial state" or "Error state".
+- For each state's description, it is necessary to ensure the completeness of the description. **DO NOT** perform "any action after a certain state description" appears. Such as "After xxx circle".
+
+**Final Output Requirements:**  
+- Only provide the Markdown table:  
+  | State | Semantic Description |  
+  |-------|----------------------|  
+  | x     | Description text     |  
+  | ...   | ...                  |  
+
+Proceed to analyze the state paths under **[Model]**.

@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: 'error':0,'status':0,'msg':'ok'; '{'status':0,'error':0,'msg':'ok','data':{'familymember':[{'userid':'112dae9018cdebd9cc0614003ebfd219','type':1,'expiredtime':0},{'userid':'11b9af34c645972ed9e6a5d82018bb2c','type':0,'expiredtime':0}]}}'. Reason: Most indications show the operation accepted with zero error/status and 'ok' message. A significant contrary indication reveals membership data persisting, yet the leading consensus supports a successful outcome."
+    ]
+]

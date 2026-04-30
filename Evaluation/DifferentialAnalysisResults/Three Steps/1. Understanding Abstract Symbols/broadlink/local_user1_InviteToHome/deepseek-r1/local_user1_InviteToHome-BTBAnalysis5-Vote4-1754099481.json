@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Success. Evidence: 'error':0,'status':0,'msg':'ok'. Reason: Consistent success indicators (status code 0, error code 0, and 'ok' message) in the invite endpoint payload confirm QR code generation succeeded."
+    ],
+    [
+        "Operation result: Success. Evidence: 'error':0,'status':0,'msg':'ok'. Reason: Success indicators in the invitation endpoint response and presence of the user ID in the family member list (type 1) confirm invitation processing and membership update."
+    ]
+]

@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: ''code':200' and ''success':true' in API response'; ''code':200' and ''success':true' in response payload'; ''code':200' and ''success':true' in JSON payload'; ''code':200' and ''success':true' in payload'. Reason: The consistent presence of HTTP status code 200 and success flag across all payloads indicates a consensus that the device control or property set operation was successfully accepted and executed."
+    ]
+]

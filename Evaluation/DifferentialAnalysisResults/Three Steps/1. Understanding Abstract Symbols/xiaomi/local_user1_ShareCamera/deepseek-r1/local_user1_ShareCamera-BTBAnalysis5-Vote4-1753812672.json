@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: '{'code':0,'message':'ok','result':'true'}'. Reason: Share request succeeded with HTTP 200 equivalent (code 0), 'ok' message, and 'true' result confirming successful camera sharing."
+    ],
+    [
+        "Operation result: Failed. Evidence: '{'code':-11,'message':'have share permit','result':'have share permit'}'. Reason: Existing share permission conflict indicated by error code -11 with 'have share permit' message and result, blocking new sharing requests."
+    ],
+    [
+        "Operation result: Failed. Evidence: '{'code':-12,'message':'false','result':'false'}'. Reason: Explicit failure indicated by error code -12 with 'false' message and result, denying the sharing attempt."
+    ]
+]

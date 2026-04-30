@@ -1,0 +1,3 @@
+user1_local||http||||||||
+user2_remote||http||||||||
+usere-user(1|2)_(local|remote)(\|){2}http(\|){8,9}

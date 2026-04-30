@@ -1,0 +1,14 @@
+[
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Evidence: {'code':200,'message':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd','result':null,'success':true}. Reason: HTTP 200 status code (code:200) with explicit 'success':true in payload confirms successful share acceptance. Full payload consistency across reports demonstrates server acknowledgment of valid request processing."
+    ],
+    [
+        "Operation result: Failed. Evidence: {'code':|------|,'message':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd','result':null,'success':false}. Reason: Explicit 'success':false flag in payload indicates operational failure despite partial code field corruption. Accompanying standardized error message pattern suggests systematic rejection by the API endpoint."
+    ],
+    [
+        "Operation result: Failed. Evidence: {'code':|------|,'message':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd','result':null,'success':false}. Reason: Extended-length error message pattern combined with persistent 'success':false confirms sustained operational failure. Message length variation across attempts suggests accumulated error logging while maintaining consistent failure state."
+    ]
+]

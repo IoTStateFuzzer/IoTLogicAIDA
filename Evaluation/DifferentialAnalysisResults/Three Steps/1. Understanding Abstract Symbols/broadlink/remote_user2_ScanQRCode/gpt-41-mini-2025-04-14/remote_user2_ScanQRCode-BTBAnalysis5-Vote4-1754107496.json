@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: ''error':0,'msg':'ok''; ''error':0,'status':0,'msg':'ok''. Reason: Majority consensus confirms successful ScanQRCode operation indicated by payloads reporting error code 0 and 'ok' message, explicitly showing no error and positive status."
+    ],
+    [
+        "Operation result: Failed. Evidence: ''error':-2010''; ''error':-2010,'status':-2010''. Reason: Negative error codes in payloads consistently indicate failure during ScanQRCode operation, reflecting operation failure confirmed by majority consensus."
+    ],
+    [
+        "Operation result: Failed. Evidence: ''error':-2011''; ''error':-2011,'status':-2011''. Reason: Distinct negative error codes with unreadable accompanying messages in payloads confirm unsuccessful scan attempts and failure of ScanQRCode operation."
+    ]
+]

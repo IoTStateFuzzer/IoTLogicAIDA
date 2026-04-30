@@ -1,0 +1,20 @@
+[
+    [
+        "Operation result: Success. Evidence: '/appsync/group/member/quitfamily' response with error=0, status=0, msg='ok'. Reason: Consensus shows successful quit operation confirmed by zero error and status and 'ok' message in quitfamily API response."
+    ],
+    [
+        "Operation result: Success. Evidence: '/appsync/group/member/quitfamily' response with error=0, status=0, msg='ok'. Reason: Majority agreement indicates successful family quit execution validated by status 0 and 'ok' message from quitfamily API."
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Evidence: '/appsync/group/member/quitfamily' response with status=-30107. Reason: Negative status code (-30107) in quitfamily response evidences failure of the quit operation despite minority success claims."
+    ]
+]

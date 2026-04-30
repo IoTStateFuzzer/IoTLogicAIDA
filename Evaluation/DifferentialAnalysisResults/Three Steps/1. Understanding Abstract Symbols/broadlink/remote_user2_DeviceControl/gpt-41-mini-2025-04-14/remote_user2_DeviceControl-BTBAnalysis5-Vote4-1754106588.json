@@ -1,0 +1,14 @@
+[
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Evidence: 'DNA.TransmissionControl name':'Response' with varying pwri values'; 'DNA.TransmissionControl Response payload with pwri:0 or 1 indicating ack'; ''name':'Response' with varying 'pwri' values indicating control feedback'; ''name':'Response', repeated SDK control responses with varying 'pwd' values'; 'DNA.TransmissionControl Response' with payload field 'pwri':1 indicating acknowledged control'. Reason: Consensus confirms successful command execution acknowledged by multiple control feedback responses showing recognized and differentiated device states without error signals."
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Evidence: 'ErrorResponse with status -7 and message 'device reset, please rebind''; 'DNA.TransmissionControl ErrorResponse with status -7 and message 'device reset, please rebind''; ''name':'ErrorResponse', 'message':'device reset, please rebind', 'status':-7'. Reason: Majority agreement indicates explicit failure due to device reset requiring rebind, evidenced by consistent error status and message signaling control operation failure."
+    ]
+]

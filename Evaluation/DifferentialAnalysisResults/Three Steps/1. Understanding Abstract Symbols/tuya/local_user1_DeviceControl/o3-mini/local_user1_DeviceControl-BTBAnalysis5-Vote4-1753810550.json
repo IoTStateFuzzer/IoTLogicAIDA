@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: '2.2'. Reason: A majority of the reports indicate a successful control response based on the explicit payload '2.2'. Although some packets included additional payload segments (such as '2.2Abs_Len124' or 'Abs_Len124'), the common evidence is the exact '2.2' fragment, which supports a protocol-specific acknowledgment of the command."
+    ]
+]

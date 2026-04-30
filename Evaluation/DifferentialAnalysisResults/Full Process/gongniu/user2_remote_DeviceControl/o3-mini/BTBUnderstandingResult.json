@@ -1,0 +1,51 @@
+{
+    "local_user1_AddDevice": null,
+    "local_user1_DeviceControl": [
+        [
+            "Operation result: Success. Evidence: ''code':200'. Reason: HTTP PUT responses consistently returned a 200 status with success confirmation, and accompanying MQTT messages indicated corresponding state changes, confirming successful execution of the device control command."
+        ]
+    ],
+    "local_user1_RemoveDevice": [
+        [
+            "Operation result: Success. Evidence: 'DELETE'; '200'. Reason: The DELETE request is validated by consistent evidence across reports, with every packet clearly indicating the use of DELETE and returning HTTP status 200, thereby confirming the successful completion of the RemoveDevice operation."
+        ]
+    ],
+    "local_user1_SharePlug": [
+        [
+            "Operation result: Success. Evidence: ''code':200'; 'success':true'. Reason: The POST packet to /mos/share/v1/devices consistently returned a 200 response with success true, confirming proper operation execution."
+        ],
+        [
+            "Operation result: Failed. Evidence: ''success':false'. Reason: The POST packet to /mos/share/v1/devices consistently indicated a false success flag, objectively showing operation failure."
+        ]
+    ],
+    "local_user1_UnsharePlug": [
+        [
+            "Operation result: Success. Evidence: 'POST /mos/share/v1/devices/cancel'. Reason: The unshare operation is validated by consistent POST requests to /mos/share/v1/devices/cancel with HTTP 200 responses, confirming the cancellation operation."
+        ]
+    ],
+    "remote_user2_AcceptDeviceShare": [
+        [
+            ""
+        ],
+        [
+            "Operation result: Success. Evidence: 'code:200'; 'success:true'. Reason: The majority of evidence consistently shows the HTTP code 200 in combination with a true success flag, confirming that the device share acceptance was successful."
+        ],
+        [
+            "Operation result: Failed. Evidence: 'success:false'. Reason: Consistent evidence reveals a false success flag, indicating that the device share acceptance failed."
+        ],
+        [
+            "Operation result: Failed. Evidence: 'success:false'. Reason: Repeated inclusion of a false success indicator in the payload confirms the operation did not succeed."
+        ]
+    ],
+    "remote_user2_DeviceControl": [
+        [
+            "Operation result: Success. Evidence: 'code':200. Reason: The HTTP response consistently reports a 200 status \u2013 with the presence of 'code':200 in every packet \u2013 indicating a successful DeviceControl execution with clear confirmation from the network evidence."
+        ],
+        [
+            ""
+        ],
+        [
+            "Operation result: Failed. Evidence: 'code':9017. Reason: The HTTP response uniformly presents error code 9017 across the packets, showing clear indication of operation failure through the explicit error flag."
+        ]
+    ]
+}

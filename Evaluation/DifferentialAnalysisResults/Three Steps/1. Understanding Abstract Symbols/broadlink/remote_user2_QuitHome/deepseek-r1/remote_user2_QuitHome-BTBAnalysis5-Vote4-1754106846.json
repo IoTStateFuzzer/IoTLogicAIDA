@@ -1,0 +1,20 @@
+[
+    [
+        "Operation result: Success. Evidence: 'POST|/appsync/group/member/quitfamily|||||FPSPER{'error':0,'status':0,'msg':'ok'}'. Reason: HTTP 200-equivalent confirmation (status:0, error:0) with 'ok' message at quitfamily endpoint."
+    ],
+    [
+        "Operation result: Success. Evidence: 'POST|/appsync/group/member/quitfamily|||||FPSPER{'error':0,'status':0,'msg':'ok'}'. Reason: Core quitfamily operation succeeded (status:0) despite subsequent DEVICE_RESET errors in unrelated control paths."
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Evidence: 'POST|/appsync/group/member/quitfamily|||||FPSPER{'status':-30107,'msg':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd'}'. Reason: Critical rejection (status:-30107) with unreadable error symbols at quitfamily endpoint."
+    ]
+]

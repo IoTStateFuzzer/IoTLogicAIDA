@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: '{'code':0,'message':'ok','result':'true'}'. Reason: HTTP 200 equivalent response with success confirmation (unanimous consensus)"
+    ],
+    [
+        "Operation result: Failed. Evidence: '{'code':-6,'message':'invalid request, invite not exist'}'. Reason: Invalid share request (code -6) with non-existent invite error (unanimous consensus)"
+    ],
+    [
+        ""
+    ]
+]

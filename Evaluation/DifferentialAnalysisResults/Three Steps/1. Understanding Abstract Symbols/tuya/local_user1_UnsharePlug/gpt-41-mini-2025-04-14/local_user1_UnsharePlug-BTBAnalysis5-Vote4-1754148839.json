@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: ''success':true,'status':'ok'' in /api.json/smartlife/m/sharing/device/remove''. Reason: The HTTP POST call to the endpoint /api.json/smartlife/m/sharing/device/remove consistently returns payloads with 'success':true and 'status':'ok', directly indicating that the unshare operation succeeded."
+    ]
+]

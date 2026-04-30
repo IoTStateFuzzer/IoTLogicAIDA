@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: {'code':200,'message':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd','result':null,'success':true}. Reason: The consistent presence of HTTP 200 status code combined with the success=true parameter confirms successful device control operation. The uniform response structure across all reports indicates reliable execution of the command."
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Evidence: {'code':9017,'message':'','result':null,'success':false}. Reason: The unanimous occurrence of HTTP error code 9017 paired with success=false demonstrates definitive control failure. The empty message field and null result further corroborate the unsuccessful operation, suggesting either device unresponsiveness or protocol-level rejection."
+    ]
+]

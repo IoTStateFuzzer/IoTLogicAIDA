@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: '{'code':200,'message':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd','result':null,'success':true}'. Reason: Consistent HTTP 200 status codes with 'success':true payload confirm successful device removal across all reports."
+    ]
+]

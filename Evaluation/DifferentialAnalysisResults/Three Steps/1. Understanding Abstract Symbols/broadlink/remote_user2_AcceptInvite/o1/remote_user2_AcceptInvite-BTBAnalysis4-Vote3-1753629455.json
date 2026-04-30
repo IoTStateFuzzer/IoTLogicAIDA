@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: 'FPSPER{'error':0,'status':0,'msg':'ok','data':{'familyid':'11b9af345feef8afb71de0053611d0eb'}}'. Reason: The consistent presence of error=0, status=0, and msg=ok in the returned data reflects a successful invitation acceptance. A distinct prefix in one fragment does not alter these codes, confirming success."
+    ]
+]

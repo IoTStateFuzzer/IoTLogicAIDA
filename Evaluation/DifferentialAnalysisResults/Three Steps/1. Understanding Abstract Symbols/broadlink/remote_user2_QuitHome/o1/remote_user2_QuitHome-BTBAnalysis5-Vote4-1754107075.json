@@ -1,0 +1,20 @@
+[
+    [
+        "Operation result: Success. Evidence: 'status':0'; 'msg':'ok'. Reason: The request returned success code 0 with 'ok' message."
+    ],
+    [
+        "Operation result: Success. Evidence: 'status':0'; 'msg':'ok'. Reason: The request returned success code 0 with 'ok' message."
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Evidence: 'status':-30107. Reason: The request returned a negative status code indicating failure."
+    ]
+]

@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Failed. Evidence: 'success':false,'errorCode':'REPETITION_SHARE','status':'error'. Reason: The sharing operation failed due to pre-existing share configuration, confirmed by the REPETITION_SHARE error code explicitly indicating device had already been shared to the target user."
+    ],
+    [
+        "Operation result: Success. Evidence: 'success':true,'status':'ok','result':{'receiverName':'user2','relationId':117443320}. Reason: The operation succeeded with valid relation ID confirmation, as evidenced by success status and receiverName matching the target user in share configuration."
+    ]
+]

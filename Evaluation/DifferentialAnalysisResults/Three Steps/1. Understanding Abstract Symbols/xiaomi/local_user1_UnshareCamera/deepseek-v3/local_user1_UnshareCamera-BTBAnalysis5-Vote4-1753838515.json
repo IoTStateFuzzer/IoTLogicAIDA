@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: '{'code':0,'message':'ok','result':{'list':[{'pid':0,'did':'369647111','ret':1}]}}'. Reason: Consistent evidence shows HTTP 200 response with success indicators (code:0, message:'ok', ret:1) confirming successful unshare operation."
+    ]
+]

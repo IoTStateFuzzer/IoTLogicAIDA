@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Undetermined. Evidence: 'tcp||||||0x00000018|135|FPSPER...'. Reason: Single TCP packet with encoded payload (0x00000018) lacking protocol-specific control confirmation (MQTT/HTTP) or error codes. No semantic correlation to DeviceControl operation found in payload patterns."
+    ],
+    [
+        "Operation result: Success. Evidence: 'mqtt|smart/mb/in/208580022462ab36ab23'; sustained TCP/MQTT flows. Reason: MQTT control channel messages to device-specific path (smart/mb/in/208580022462ab36ab23) with bidirectional exchange patterns and encrypted transaction sequence, absent of error responses or rejection codes."
+    ]
+]

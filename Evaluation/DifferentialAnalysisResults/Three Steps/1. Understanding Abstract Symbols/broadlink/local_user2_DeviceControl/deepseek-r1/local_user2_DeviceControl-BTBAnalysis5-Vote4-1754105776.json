@@ -1,0 +1,20 @@
+[
+    [
+        "Operation result: Success. Evidence: 'status':0'; 'name':'Response''; 'Response' in payload; 'POST|/device/control/v2/sdkcontrol'. Reason: HTTP 200-series responses with status=0 success indicator and control command confirmation through dedicated endpoint with response verification."
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Undetermined. Evidence: 'UDP packets with Abs_Len patterns'; 'fragmented payloads'. Reason: Encrypted UDP traffic patterns lack protocol-level status codes, control confirmations, or decipherable success/failure payload structures."
+    ]
+]

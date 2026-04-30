@@ -1,0 +1,14 @@
+[
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Evidence: 'data':'paVaWqDSAws1AAAAeyJwd3IiOjAsImluZGljYXRvciI6MSw'; 'data':'paVaWqDSAws1AAAAeyJwd3IiOjAsImluZGljYXRvciI6MSwibWF4d29ya3RpbWUiOjAsImNoaWxkbG9jayI6MH0AAAAAAAAAAAAAAAAAAAA='; 'pwr':0; HTTP 200 POST. Reason: Multiple payloads confirm successful power state change (pwr=0) through valid control confirmation patterns. The single conflicting error (status -7) represents an isolated authentication anomaly against operational success evidence."
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Evidence: 'ErrorResponse', 'status':-7, 'message':'device reset, please rebind'; 'type':'DEVICE_RESET','message':'device reset, please rebind','status':-7. Reason: Consensus across all reports shows persistent DEVICE_RESET error (status -7) indicating revoked access privileges requiring device reauthorization, with identical error patterns in payload structures."
+    ]
+]

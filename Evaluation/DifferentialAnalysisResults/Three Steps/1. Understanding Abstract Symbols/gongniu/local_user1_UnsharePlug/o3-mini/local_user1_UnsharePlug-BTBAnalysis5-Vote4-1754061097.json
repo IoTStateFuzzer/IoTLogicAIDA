@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: ''code':200'; 'success':true'; '/mos/share/v1/devices/cancel'. Reason: The reports uniformly indicate a successful unshare operation by returning an HTTP 200 status code (''code':200' or equivalent), with a success flag (present as 'success':true in the majority) and a matching cancel share endpoint (/mos/share/v1/devices/cancel) in the payload. This consistent technical evidence confirms that the unshare action completed without error."
+    ]
+]

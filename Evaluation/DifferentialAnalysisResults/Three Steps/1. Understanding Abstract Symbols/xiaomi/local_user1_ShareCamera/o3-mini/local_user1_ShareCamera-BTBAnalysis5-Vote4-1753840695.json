@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: ''{'code':0,'message':'ok','result':'true'}''. Reason: The share_request response consistently returned a 0 error code with an 'ok' message and a true result, confirming the operation completed successfully."
+    ],
+    [
+        "Operation result: Failed. Evidence: ''{'code':-11,'message':'have share permit','result':'have share permit'}''. Reason: The share_request response predominantly returned error code -11 with a 'have share permit' message, indicating a failure due to share permit conditions."
+    ],
+    [
+        "Operation result: Failed. Evidence: ''{'code':-12,'message':'false','result':'false'}''. Reason: The share_request response consistently showed error code -12 with a 'false' message, confirming the operation failed."
+    ]
+]

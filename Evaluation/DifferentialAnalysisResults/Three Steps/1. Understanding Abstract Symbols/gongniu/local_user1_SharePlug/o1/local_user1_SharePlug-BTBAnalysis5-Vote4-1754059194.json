@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Success. Evidence: 'code=200'; 'success=true'. Reason: The share request returned code=200 with a success flag."
+    ],
+    [
+        "Operation result: Failed. Evidence: 'success=false'. Reason: The share request returned a false success field."
+    ]
+]

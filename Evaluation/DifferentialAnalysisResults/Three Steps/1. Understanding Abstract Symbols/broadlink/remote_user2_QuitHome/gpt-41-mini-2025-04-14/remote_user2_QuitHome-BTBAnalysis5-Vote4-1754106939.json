@@ -1,0 +1,20 @@
+[
+    [
+        "Operation result: Success. Evidence: '/appsync/group/member/quitfamily' with {'error':0,'status':0,'msg':'ok'}'. Reason: The response consistently returns zero error and status codes with a clear 'ok' message, confirming the quitfamily operation was successfully executed."
+    ],
+    [
+        "Operation result: Success. Evidence: '/appsync/group/member/quitfamily' with {'error':0,'status':0,'msg':'ok'}'. Reason: Unified evidence of error=0 and status=0 alongside 'ok' message verifies the quitfamily action completed successfully."
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Evidence: '/appsync/group/member/quitfamily' with {'status':-30107,'msg':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd'}'. Reason: The negative status code -30107 combined with corrupted, unreadable message payload reveals failure in the quitfamily operation."
+    ]
+]

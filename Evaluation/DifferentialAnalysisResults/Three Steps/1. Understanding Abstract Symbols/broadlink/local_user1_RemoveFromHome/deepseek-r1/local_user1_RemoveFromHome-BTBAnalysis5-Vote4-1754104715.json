@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: '/appsync/group/member/delfamilymember' with '{'error':0,'status':0,'msg':'ok'}'. Reason: HTTP POST to deletion endpoint returned status 0 with explicit success codes and confirmation message."
+    ]
+]

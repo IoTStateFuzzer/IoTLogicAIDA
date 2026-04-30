@@ -1,0 +1,14 @@
+[
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Evidence: 'code=200'. Reason: The server indicates success."
+    ],
+    [
+        "Operation result: Failed. Evidence: 'success=false'. Reason: The server indicates failure."
+    ],
+    [
+        "Operation result: Failed. Evidence: 'success=false'. Reason: The server indicates failure."
+    ]
+]

@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: ''code':0'. Reason: code=0 indicates the share request succeeded."
+    ],
+    [
+        "Operation result: Failed. Evidence: ''code':-11'. Reason: Negative code indicates the share request was not newly completed, though one viewpoint suggests existing share permission."
+    ],
+    [
+        "Operation result: Failed. Evidence: ''code':-12'. Reason: Negative code indicates the share request was rejected."
+    ]
+]

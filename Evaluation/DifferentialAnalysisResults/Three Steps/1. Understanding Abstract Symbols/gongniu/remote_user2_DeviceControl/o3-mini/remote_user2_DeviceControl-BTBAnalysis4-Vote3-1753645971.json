@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: '{'code':200,'message':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd','result':null,'success':true}'. Reason: The HTTP responses consistently returned code 200 with success true, confirming that the device control command executed correctly. In each analysis, the accompanying details of the notification (e.g., device property update and command acceptance) further support this conclusion."
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Evidence: '{'code':9017,'message':'','result':null,'success':false}'. Reason: The HTTP responses uniformly indicate an error condition, returning code 9017 with success false. This common evidence underlines that the device control operation did not execute successfully."
+    ]
+]

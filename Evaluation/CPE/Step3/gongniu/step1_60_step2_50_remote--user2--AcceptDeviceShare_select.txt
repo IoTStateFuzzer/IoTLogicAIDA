@@ -1,0 +1,2 @@
+api.iotbull.com|443|http|GET|api.iotbull.com|/mos/messageCenter/v1/message|||||
+api.iotbull.com|443|http|POST|api.iotbull.com|/mos/share/v1/devices/confirm|||||

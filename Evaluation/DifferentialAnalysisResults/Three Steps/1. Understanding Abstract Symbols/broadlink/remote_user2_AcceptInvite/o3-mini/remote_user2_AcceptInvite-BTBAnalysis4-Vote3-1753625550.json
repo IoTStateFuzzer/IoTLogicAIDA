@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: '{'error':0,'status':0,'msg':'ok','data':{'familyid':'11b9af345feef8afb71de0053611d0eb}}'. Reason: The response consistently indicates error=0, status=0, and msg='ok', clearly confirming that the AcceptInvite operation succeeded. Although one report included extra routing details, the commonly occurring evidence drove the conclusion that the operation was successful."
+    ]
+]

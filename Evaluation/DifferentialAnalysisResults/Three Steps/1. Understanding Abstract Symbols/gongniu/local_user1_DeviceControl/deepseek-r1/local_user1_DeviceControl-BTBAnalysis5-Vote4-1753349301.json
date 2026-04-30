@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: {'code':200,'message':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd','success':true}. Reason: Consistent HTTP 200 status code with 'success':true in all API payloads confirms cloud service acceptance and execution of the control command. While not universally documented, observed MQTT downlink packets with PowerSwitch value changes (0/1) in some reports provide secondary confirmation of device state synchronization, aligning with successful IoT command propagation."
+    ]
+]

@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: ''code':200,'success':true'; '{'code':200,'success':true}'; '{'value':0}' AND '{'value':1}'. Reason: Unanimous HTTP 200 status with success flags and device state changes (0\u21921) confirm successful operation."
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Evidence: ''code':9017,'success':false'; '{'code':9017,'success':false}'. Reason: Consistent error code 9017 with failure flags indicates authentication or system-level failure."
+    ]
+]

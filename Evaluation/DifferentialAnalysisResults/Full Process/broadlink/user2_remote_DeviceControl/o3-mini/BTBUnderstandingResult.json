@@ -1,0 +1,97 @@
+{
+    "local_user1_AddDevice": [
+        [
+            "Operation result: Success. Evidence: ''msg':'ok', 'status':0' ''. Reason: The recurring explicit success indicators, notably the consistent inclusion of 'msg':'ok' (and in most cases 'status':0), provide clear confirmation that the device addition operation was executed successfully."
+        ]
+    ],
+    "local_user1_DeviceControl": [
+        [
+            "Operation result: Undetermined. Evidence: 'user1_local'. Reason: The majority of analysis reveals that the packet containing 'user1_local' presents the expected header yet lacks explicit success or error status codes and bidirectional confirmation. Although a minority of reports noted bidirectional exchanges involving device_0, the common evidence across most reports does not provide definitive control feedback."
+        ]
+    ],
+    "local_user1_InviteToHome": [
+        [
+            "Operation result: Success. Evidence: '/appsync/group/member/invited/reqqrcode'. Reason: The responses consistently reveal the invitation endpoint with error:0, status:0 and msg:'ok', confirming a successful invite operation."
+        ],
+        [
+            "Operation result: Success. Evidence: '/appsync/group/member/invited/reqqrcode'. Reason: The data shows the invitation endpoint returning error:0 and a valid invite message, with additional membership details reinforcing the successful invite."
+        ]
+    ],
+    "local_user1_RemoveDevice": null,
+    "local_user1_RemoveFromHome": [
+        [
+            "Operation result: Success. Evidence: 'msg':'ok'. Reason: The majority of API responses explicitly confirm removal by returning 'msg':'ok' with associated success indicators (error:0, status changes), while a single report indicating a persisting user likely represents an outlier verification anomaly."
+        ]
+    ],
+    "local_user2_DeviceControl": [
+        [
+            "Operation result: Success. Evidence: 'Response'. Reason: The control command execution is confirmed by repeated instances of 'Response' in the HTTP POST flows, indicating bidirectional acknowledgment across the reports."
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            "Operation result: Success. Evidence: 'UDP'. Reason: Sustained UDP communications are evident, with the consistent presence of UDP traffic confirming a continuous control operation despite an isolated report with an undetermined outcome."
+        ]
+    ],
+    "remote_user1_DeviceControl": null,
+    "remote_user2_AcceptInvite": [
+        [
+            "Operation result: Success. Evidence: ''invited/joinfamily' with 'msg':'ok''. Reason: The join family packet clearly demonstrates invite acceptance through the consistent appearance of the 'invited/joinfamily' endpoint and the 'msg':'ok' flag, indicating a successful operation response."
+        ]
+    ],
+    "remote_user2_DeviceControl": [
+        [
+            ""
+        ],
+        [
+            "Operation result: Success. Evidence: '**Response**'. Reason: The majority consensus indicates that packets carry a 'Response' header without error codes, signifying a successfully completed control operation."
+        ],
+        [
+            ""
+        ],
+        [
+            "Operation result: Failed. Evidence: '**ErrorResponse**'. Reason: The consistent presence of an explicit error response, marked by a 'device reset, please rebind' message and an error status, confirms an operation failure."
+        ]
+    ],
+    "remote_user2_QuitHome": [
+        [
+            "Operation result: Success. Evidence: ''msg':'ok''. Reason: The explicit quitfamily responses all include the fragment ''msg':'ok'', confirming a successful operation despite any subsequent unrelated error packets."
+        ],
+        [
+            "Operation result: Success. Evidence: ''msg':'ok''. Reason: The quitfamily API returned a clear success response containing ''msg':'ok'', which underlines the effectiveness of the quit action even in the context of additional device control responses."
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            ""
+        ],
+        [
+            "Operation result: Failed. Evidence: ''status':-30107''. Reason: The quitfamily endpoint responses consistently show a negative status (-30107), directly indicating that the quit operation failed."
+        ]
+    ],
+    "remote_user2_ScanQRCode": [
+        [
+            "Operation result: Success. Evidence: 'msg':'ok'. Reason: The payload details consistently reflect a successful operation with a clear 'ok' message as indicated in every report."
+        ],
+        [
+            "Operation result: Failed. Evidence: 'error':-2010. Reason: The payload details uniformly include an error field with value -2010, confirming the operation failed."
+        ],
+        [
+            "Operation result: Failed. Evidence: 'error':-2011. Reason: The payload details consistently show an error field with value -2011, confirming the failure outcome."
+        ]
+    ]
+}

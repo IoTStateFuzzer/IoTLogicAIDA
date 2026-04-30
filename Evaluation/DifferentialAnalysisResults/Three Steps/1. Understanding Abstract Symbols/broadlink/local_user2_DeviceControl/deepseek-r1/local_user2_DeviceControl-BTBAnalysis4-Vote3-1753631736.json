@@ -1,0 +1,20 @@
+[
+    [
+        "Operation result: Success. Evidence: '{'data':'paVaWqHSAws1AAAAeyJwd3IiOjEsImluZGljYXRvciI6MSwibWF4d29ya3RpbWUiOjAsImNoaWxkbG9jayI6MH0AAAAAAAAAAAAAAAAAAAA='}', '{'status':0,'msg':'','data':[{'pid':'0000000000000000000000006c750000',...}]}'. Reason: Multiple HTTP/443 POST control responses contain Base64 payloads consistently decoding to {'pwr':1} (power ON state) with status code 0. This confirms successful execution through protocol-compliant confirmation. Minority UDP noise observations don't contradict the HTTP success indicators."
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Undetermined. Evidence: 'device_0||udp...Abs_Len9|', 'ZAbs_Len2|UZAbs_Len2|UAbs_Len28|lujAbs_Len3|aAbs_Len3|CAbs_Len9|'. Reason: Exclusive presence of UDP packets with Abs_Len metadata placeholders and zero HTTP control responses. While some reports suggest failure due to lack of confirmation payloads, the evidence strictly shows incomplete protocol traces rather than explicit errors. Abs_Len patterns indicate payload obfuscation/truncation without decodable status parameters."
+    ]
+]

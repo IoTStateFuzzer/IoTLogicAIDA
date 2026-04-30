@@ -1,0 +1,20 @@
+[
+    [
+        "Operation result: Success. Evidence: 'FPSPER{' 'pwr':1'. Reason: The device provided a response referencing pwr=1, indicating successful control."
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Undetermined. Evidence: 'ZAbs_Len2|UZAbs_Len2|UAbs_Len28|'. Reason: The captured data does not show a recognizable control response, and thus the outcome cannot be confirmed. Some evidence suggests an empty payload might imply failure, but it was not conclusive."
+    ]
+]

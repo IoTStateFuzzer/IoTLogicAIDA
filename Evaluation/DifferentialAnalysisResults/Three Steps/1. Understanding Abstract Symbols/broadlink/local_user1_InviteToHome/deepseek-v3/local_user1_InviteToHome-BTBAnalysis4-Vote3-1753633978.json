@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Success. Evidence: {'error':0,'status':0,'msg':'ok','data':{'qrcode':'11Abs_Len14|'}}. Reason: The response indicates a successful QR code generation for the invitation, supported by the error and status codes being 0, along with the confirmation message 'ok'. This consistent evidence across all reports confirms the operation's success."
+    ],
+    [
+        "Operation result: Success. Evidence: {'error':0,'status':0,'msg':'ok','data':{'qrcode':'11Abs_Len14|'}}. Reason: The response confirms a successful invitation request with a valid QR code generated, as evidenced by the error and status codes being 0 and the message 'ok'. The uniformity of this evidence across all reports reinforces the operation's success."
+    ]
+]

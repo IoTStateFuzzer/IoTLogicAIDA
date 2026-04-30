@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: 'HTTP 200'; 'success':true'. Reason: HTTP 200 status code with explicit success indicator in payload confirms successful device control operation."
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Evidence: 'code':9017; 'success':false'. Reason: Error code 9017 combined with explicit failure flag in payload indicates server rejected control request."
+    ]
+]

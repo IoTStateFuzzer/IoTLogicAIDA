@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: ''code':200,'success':true'. Reason: HTTP 200 status with success=true confirms successful device control."
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Evidence: ''code':9017,'success':false'. Reason: HTTP 9017 error code with success=false indicates control failure."
+    ]
+]

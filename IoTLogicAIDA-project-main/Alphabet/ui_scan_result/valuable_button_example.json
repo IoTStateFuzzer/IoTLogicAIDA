@@ -1,0 +1,169 @@
+{
+    "appPackage": "com.apk.example",  // string: Android package name of the target app.
+    "appStartActivity": ".login.Activity",  // string: Activity used to launch the app.
+    "homePage": ".MainActivity",  // string: Activity or component name of the app home page.
+    "appName": "example APP",  // string: Human-readable app name.
+    "version": "1.0.0",  // string: App version used by this configuration.
+    "removeDeviceSleepTime": 5,  // number: Seconds to wait after removing a device, usually for cloud/device state synchronization.
+    "addDeviceSleepTime": 5,  // number: Seconds to wait before adding a device, usually for device wake-up or reset.
+
+    "resetActions": [  // string[]: Actions executed to restore the app/device state before a test flow.
+        "user1|local|RemoveDevice",
+        "user2|remote|ClearInviteMessage",
+        "Action..."
+    ],
+    "hookableActions": [  // string[]: Optional actions whose runtime behavior can be hooked or observed separately.
+        "user2|local|DeviceControl",
+        "user2|remote|DeviceControl"
+    ],
+    "overlookActions": [  // string[]: Actions that should not be sent to LearnLib/model learning.
+        "user1|local|AddDevice",
+        "user1|local|InviteToHome",
+        "Action..."
+    ],
+    "createDatabaseActionOrder": [  // string[]: Ordered action sequence used for database/model creation.
+        "user1|local|AddDevice",
+        "user1|local|DeviceControl",
+        "user2|remote|AcceptInvite",
+        "Action..."
+    ],
+
+    "actionTypeDescriptions": {  // Reference for common action names found in ui_scan_result/*/valuable_button.json.
+        "format": "user|side|ActionName. Example: user1|local|AddDevice.",
+        "user": "The actor account/device, such as user1 or user2.",
+        "side": "local means the phone directly connected to or near the IoT device; remote means the other phone/account used to observe or operate remotely.",
+        "Special": "Auxiliary actions that support a flow, such as refresh, restart, back navigation, screenshots, file cleanup, or message cleanup. These usually do not represent business logic and are not sent to LearnLib.",
+        "AddDevice": "Onboard or bind a new IoT device to the app account.",
+        "AddPlug": "Onboard or bind a smart plug. This is a device-specific add-device action.",
+        "RemoveDevice": "Delete or unbind a device from the app account.",
+        "DeviceControl": "Open a device and operate its main control, such as toggling a plug or camera switch.",
+        "SharePlug": "Share a smart plug with another user/account.",
+        "ShareCamera": "Share a camera with another user/account.",
+        "UnsharePlug": "Cancel a previously shared smart plug permission.",
+        "UnshareCamera": "Cancel a previously shared camera permission.",
+        "InviteToHome": "Invite another user/account to join a home/family.",
+        "RemoveFromHome": "Remove a user/account from a home/family.",
+        "AcceptInvite": "Accept a home/family invitation on the invited user's phone/account.",
+        "AcceptDeviceShare": "Accept a device-sharing invitation on the invited user's phone/account.",
+        "ClearInviteMessage": "Clear invitation or notification messages before running a flow.",
+        "ScanQRCode": "Scan or import a QR code to join a home/family or accept an invitation.",
+        "QuitHome": "Leave a joined home/family from the invited user's account.",
+        "BackHome": "Navigate back to the app home page.",
+        "ClickBack": "Press the Android/app back action.",
+        "refresh": "Refresh the current page or app state.",
+        "restartApp": "Restart the app and refresh state after relaunch.",
+        "removeConfirm": "Handle a remove-success or confirmation dialog if it appears.",
+        "OpenDeviceStateAndControlDevice": "Open a device state page and perform a control action.",
+        "ControlDeviceAtHomepage": "Operate a device directly from the home page.",
+        "SaveScreenShot": "Save a screenshot or QR-code image to the target phone.",
+        "RemoveScreenShot": "Remove a saved screenshot or QR-code image from the target phone.",
+        "RemoveTcpdumpPacket": "Remove a packet-capture file from the target phone.",
+        "RefreshAtHomeList": "Refresh the home/family list so membership changes are visible."
+    },
+
+    "Special": {  // object: Auxiliary actions, not direct business actions, generally excluded from LearnLib.
+        "Action1": {
+            "no_need_back_homepage": true,  // boolean: If true, this action can start from the current page instead of first returning to the app home page.
+            "1": {  // step id: Step order. IDs can be "1", "2", "2-1", "8-1", etc. to express branches or inserted steps.
+                "xpath": "",  // string: XPath selector of the target UI element.
+                "resource_id": "",  // string: Android resource-id selector. Use this when it is more stable than XPath.
+                "posi_x": 120,  // number: X coordinate for coordinate-based tapping.
+                "posi_y": 120,  // number: Y coordinate for coordinate-based tapping.
+                "description": "",  // string: Log message describing what this step does.
+                "act_before": "",  // string: Optional expected Activity before executing this step.
+                "act_after": "",  // string: Optional expected Activity after executing this step.
+                "input_text": "",  // string: Text to input into the selected field.
+
+                // Optional execution controls for the current step. Omit any field that is not needed.
+                "restartApp": true,  // boolean: Restart the app, then continue with the next step.
+                "waiting_time": 10,  // number: Seconds to wait before or after this step, depending on executor behavior.
+                "wait_until_exist": true,  // boolean or number: Wait until the element appears. A number can be used as the wait timeout in some configs.
+                "refresh": true,  // boolean or number: Refresh the current page/app state before executing this step.
+                "bottom": true,  // boolean: Scroll to the bottom before executing this step.
+                "back": true,  // boolean: Press Back after executing this step.
+                "back_to_home": true,  // boolean: Return to the configured home page after this step.
+                "getScreenShot": true,  // boolean: Capture and save a screenshot, usually for QR-code transfer.
+                "can_not_exist": true,  // boolean or number: The element is optional; continue when it does not exist.
+                "otherPhoneAction": "user2|local|Action1",  // string: Ask another phone/account to execute an action at this point.
+                "not_exist_and_do": "Action",  // string: Execute this action on the current phone if the target element does not exist.
+                "not_exist_and_other_phone_do": "Action",  // string: Ask another phone to execute this action if the target element does not exist.
+                "exist_and_do": "Action",  // string: Execute this action on the current phone if the target element exists.
+                "command": {  // object: ADB command operation instead of a UI click.
+                    "is_shell": true,  // boolean: true means run through "adb shell"; false means run as a direct adb subcommand.
+                    "root": false,  // boolean: true means execute with root/su when supported.
+                    "need_params": false,  // boolean: true if the command expression requires runtime parameters.
+                    "command_expression": "rm /sdcard/Download/1.png"  // string: Command body to execute.
+                }
+            },
+            "2": {
+                "resource_id": "",
+                "description": ""
+            },
+            "3": {
+                "posi_x": 120,
+                "posi_y": 120,
+                "description": ""
+            }
+        },
+        "Action2": {
+            "1": {
+                "xpath": "",
+                "description": ""
+            }
+        }
+    },
+
+    "user1": {  // object: Actions executed by user1.
+        "local": {  // object: Actions executed on user1's local phone/account.
+            "Action1": {  // object: Business action, such as AddDevice, RemoveDevice, DeviceControl, SharePlug, or InviteToHome.
+                "1": {
+                    "xpath": "",
+                    "description": ""
+                },
+                "2": {
+                    "xpath": "",
+                    "description": ""
+                }
+            }
+        },
+        "remote": {  // object: Actions executed on user1's remote phone/account.
+            "Action1": {
+                "1": {
+                    "xpath": "",
+                    "description": ""
+                },
+                "2": {
+                    "xpath": "",
+                    "description": ""
+                }
+            }
+        }
+    },
+
+    "user2": {  // object: Actions executed by user2.
+        "local": {  // object: Actions executed on user2's local phone/account.
+            "Action1": {
+                "1": {
+                    "xpath": "",
+                    "description": ""
+                },
+                "2": {
+                    "xpath": "",
+                    "description": ""
+                }
+            }
+        },
+        "remote": {  // object: Actions executed on user2's remote phone/account.
+            "Action1": {
+                "1": {
+                    "xpath": "",
+                    "description": ""
+                },
+                "2": {
+                    "xpath": "",
+                    "description": ""
+                }
+            }
+        }
+    }
+}

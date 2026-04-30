@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: 'delfamilymember'; 'error=0'; 'status=0'; 'ok'. Reason: Most reasons confirm the server responded with zero error, status=0, and 'ok' message, while a minority indicates user2 remains in membership. The consensus is success."
+    ]
+]

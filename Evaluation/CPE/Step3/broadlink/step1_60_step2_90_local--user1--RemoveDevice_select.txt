@@ -1,0 +1,10 @@
+device_0||udp||||||||80
+user1_local||udp||||||||144
+device_0||udp||||||||144
+user1_local||udp||||||||272
+user1_local||udp||||||||80
+app-service-chn-467a8f05.ibroadlink.com|443|http|POST|app-service-chn-467a8f05.ibroadlink.com|/device/control/v2/sdkcontrol|||||
+app-service-chn-467a8f05.ibroadlink.com|443|http|POST|app-service-chn-467a8f05.ibroadlink.com|/appfront/blappproxy/v1/firmware/upgrade|||||
+app-service-chn-467a8f05.ibroadlink.com|443|http|POST|app-service-chn-467a8f05.ibroadlink.com|/appsync/group/dev/manage|||||
+app-service-chn-467a8f05.ibroadlink.com|443|http|POST|app-service-chn-467a8f05.ibroadlink.com|/appsync/group/member/getfamilylist|||||
+app-service-chn-467a8f05.ibroadlink.com|443|http|POST|app-service-chn-467a8f05.ibroadlink.com|/appsync/group/userprivatedata|||||

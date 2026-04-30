@@ -1,0 +1,88 @@
+digraph g {
+	// Atk action:["user2|remote|AcceptDeviceShare"]
+	// KS:[]  Clickable:[]
+	s0 [shape="circle" label="s0"];
+	// KS:[]  Clickable:[]
+	s1 [shape="circle" label="s1"];
+	// KS:[]  Clickable:[]
+	s2 [shape="circle" label="s2"];
+	// KS:[]  Clickable:["user2|remote|AcceptDeviceShare"]
+	s3 [shape="circle" label="s3"];
+	// KS:["user2|remote|AcceptDeviceShare"]  Clickable:[]
+	s4 [shape="circle" label="s4"];
+	// KS:["user2|remote|AcceptDeviceShare"]  Clickable:[]
+	s5 [shape="circle" label="s5"];
+	// KS:["user2|remote|AcceptDeviceShare"]  Clickable:[]
+	s6 [shape="circle" label="s6"];
+	// KS:["user2|remote|AcceptDeviceShare"]  Clickable:["user2|remote|AcceptDeviceShare"]
+	s7 [shape="circle" label="s7"];
+	// KS:["user2|remote|AcceptDeviceShare"]  Clickable:[]
+	s8 [shape="circle" label="s8"];
+	s0 -> s2 [label="user1|remote|DeviceControl / NoElement"];
+	s0 -> s1 [label="user1|local|AddDevice / Symbol: CLS_-1. Operation result: Success."];
+	s0 -> s2 [label="user1|local|ShareCamera / NoElement"];
+	s0 -> s2 [label="user1|local|RemoveDevice / NoElement"];
+	s0 -> s2 [label="user1|local|UnshareCamera / NoElement"];
+	s0 -> s2 [label="user2|remote|AcceptDeviceShare / NoElement"];
+	s0 -> s2 [label="user2|remote|DeviceControl / NoElement"];
+	s1 -> s1 [label="user1|remote|DeviceControl / Symbol: CLS_0. Operation result: Success. Evidence: 'pppp_stream_payload'. Reason: The predominant traffic patterns indicate successful remote device control as demonstrated by the repeated presence of 'pppp_stream_payload' within sustained data exchanges, with this common payload marker affirming a continuous and error-free operation despite the appearance of ambiguous indicators in isolated reports."];
+	s1 -> s2 [label="user1|local|AddDevice / NoElement"];
+	s1 -> s3 [label="user1|local|ShareCamera / Symbol: CLS_0. Operation result: Success. Evidence: '{'code':0,'message':'ok','result':'true'}'. Reason: Share request succeeded with HTTP 200 equivalent (code 0), 'ok' message, and 'true' result confirming successful camera sharing."];
+	s1 -> s0 [label="user1|local|RemoveDevice / Symbol: CLS_0. Operation result: Success. Evidence: ''code':0,'message':'ok''. Reason: The consistent API packet payload carrying code 0 and message 'ok' confirms the successful removal, with the common evidence fragment ''code':0,'message':'ok'' observed across the reports."];
+	s1 -> s2 [label="user1|local|UnshareCamera / NoElement"];
+	s1 -> s2 [label="user2|remote|AcceptDeviceShare / NoElement"];
+	s1 -> s2 [label="user2|remote|DeviceControl / NoElement"];
+	s2 -> s2 [label="user1|remote|DeviceControl / NoElement"];
+	s2 -> s2 [label="user1|local|AddDevice / NoElement"];
+	s2 -> s2 [label="user1|local|ShareCamera / NoElement"];
+	s2 -> s2 [label="user1|local|RemoveDevice / NoElement"];
+	s2 -> s2 [label="user1|local|UnshareCamera / NoElement"];
+	s2 -> s2 [label="user2|remote|AcceptDeviceShare / NoElement"];
+	s2 -> s2 [label="user2|remote|DeviceControl / NoElement"];
+	s3 -> s3 [label="user1|remote|DeviceControl / Symbol: CLS_0. Operation result: Success. Evidence: 'pppp_stream_payload'. Reason: The predominant traffic patterns indicate successful remote device control as demonstrated by the repeated presence of 'pppp_stream_payload' within sustained data exchanges, with this common payload marker affirming a continuous and error-free operation despite the appearance of ambiguous indicators in isolated reports."];
+	s3 -> s2 [label="user1|local|AddDevice / NoElement"];
+	s3 -> s3 [label="user1|local|ShareCamera / Symbol: CLS_2. Operation result: Failed. Evidence: '{'code':-12,'message':'false','result':'false'}'. Reason: Explicit failure indicated by error code -12 with 'false' message and result, denying the sharing attempt."];
+	s3 -> s5 [label="user1|local|RemoveDevice / Symbol: CLS_0. Operation result: Success. Evidence: ''code':0,'message':'ok''. Reason: The consistent API packet payload carrying code 0 and message 'ok' confirms the successful removal, with the common evidence fragment ''code':0,'message':'ok'' observed across the reports."];
+	s3 -> s1 [label="user1|local|UnshareCamera / Symbol: CLS_0. Operation result: Success. Evidence: ''code':0,'message':'ok''. Reason: The majority of payloads returned a code 0 with message 'ok', conclusively indicating a successful unshare operation, while an outlier cited unmatched packet headers without contradicting the prevailing code 0 evidence."];
+	s3 -> s4 [label="user2|remote|AcceptDeviceShare / Symbol: CLS_0. Operation result: Success. Evidence: ''code':0,'message':'ok''. Reason: The share_response payload consistently indicates a success condition with a return code 0 and an 'ok' message, confirming proper share acceptance."];
+	s3 -> s2 [label="user2|remote|DeviceControl / NoElement"];
+	s4 -> s4 [label="user1|remote|DeviceControl / Symbol: CLS_0. Operation result: Success. Evidence: 'pppp_stream_payload'. Reason: The predominant traffic patterns indicate successful remote device control as demonstrated by the repeated presence of 'pppp_stream_payload' within sustained data exchanges, with this common payload marker affirming a continuous and error-free operation despite the appearance of ambiguous indicators in isolated reports."];
+	s4 -> s2 [label="user1|local|AddDevice / NoElement"];
+	s4 -> s4 [label="user1|local|ShareCamera / Symbol: CLS_1. Operation result: Failed. Evidence: '{'code':-11,'message':'have share permit','result':'have share permit'}'. Reason: Existing share permission conflict indicated by error code -11 with 'have share permit' message and result, blocking new sharing requests."];
+	s4 -> s5 [label="user1|local|RemoveDevice / Symbol: CLS_0. Operation result: Success. Evidence: ''code':0,'message':'ok''. Reason: The consistent API packet payload carrying code 0 and message 'ok' confirms the successful removal, with the common evidence fragment ''code':0,'message':'ok'' observed across the reports."];
+	s4 -> s6 [label="user1|local|UnshareCamera / Symbol: CLS_0. Operation result: Success. Evidence: ''code':0,'message':'ok''. Reason: The majority of payloads returned a code 0 with message 'ok', conclusively indicating a successful unshare operation, while an outlier cited unmatched packet headers without contradicting the prevailing code 0 evidence."];
+	s4 -> s4 [label="user2|remote|AcceptDeviceShare / Symbol: CLS_1. Operation result: Failed. Evidence: ''code':-6,'message':'invalid request, invite not exist''. Reason: The share_response payload consistently returns an error condition marked by code -6 and a message stating 'invalid request, invite not exist', confirming that the invite does not exist."];
+	s4 -> s4 [label="user2|remote|DeviceControl / Symbol: CLS_0. Operation result: Success. Evidence: ''code':0,'message':'ok'; ''code':0,'message':'ok''. Reason: Traffic analysis shows that user2 successfully accessed vendor details, established a P2P connection, and received streaming payloads. Responses from '/app/v2/device/miss_get_vendor' and standard operations retrieval indicate successful device control."];
+	s5 -> s2 [label="user1|remote|DeviceControl / NoElement"];
+	s5 -> s6 [label="user1|local|AddDevice / Symbol: CLS_-1. Operation result: Success."];
+	s5 -> s2 [label="user1|local|ShareCamera / NoElement"];
+	s5 -> s2 [label="user1|local|RemoveDevice / NoElement"];
+	s5 -> s2 [label="user1|local|UnshareCamera / NoElement"];
+	s5 -> s5 [label="user2|remote|AcceptDeviceShare / Symbol: CLS_1. Operation result: Failed. Evidence: ''code':-6,'message':'invalid request, invite not exist''. Reason: The share_response payload consistently returns an error condition marked by code -6 and a message stating 'invalid request, invite not exist', confirming that the invite does not exist."];
+	s5 -> s2 [label="user2|remote|DeviceControl / NoElement"];
+	s6 -> s6 [label="user1|remote|DeviceControl / Symbol: CLS_0. Operation result: Success. Evidence: 'pppp_stream_payload'. Reason: The predominant traffic patterns indicate successful remote device control as demonstrated by the repeated presence of 'pppp_stream_payload' within sustained data exchanges, with this common payload marker affirming a continuous and error-free operation despite the appearance of ambiguous indicators in isolated reports."];
+	s6 -> s2 [label="user1|local|AddDevice / NoElement"];
+	s6 -> s7 [label="user1|local|ShareCamera / Symbol: CLS_0. Operation result: Success. Evidence: '{'code':0,'message':'ok','result':'true'}'. Reason: Share request succeeded with HTTP 200 equivalent (code 0), 'ok' message, and 'true' result confirming successful camera sharing."];
+	s6 -> s5 [label="user1|local|RemoveDevice / Symbol: CLS_0. Operation result: Success. Evidence: ''code':0,'message':'ok''. Reason: The consistent API packet payload carrying code 0 and message 'ok' confirms the successful removal, with the common evidence fragment ''code':0,'message':'ok'' observed across the reports."];
+	s6 -> s2 [label="user1|local|UnshareCamera / NoElement"];
+	s6 -> s6 [label="user2|remote|AcceptDeviceShare / Symbol: CLS_1. Operation result: Failed. Evidence: ''code':-6,'message':'invalid request, invite not exist''. Reason: The share_response payload consistently returns an error condition marked by code -6 and a message stating 'invalid request, invite not exist', confirming that the invite does not exist."];
+	s6 -> s2 [label="user2|remote|DeviceControl / NoElement"];
+	s7 -> s7 [label="user1|remote|DeviceControl / Symbol: CLS_0. Operation result: Success. Evidence: 'pppp_stream_payload'. Reason: The predominant traffic patterns indicate successful remote device control as demonstrated by the repeated presence of 'pppp_stream_payload' within sustained data exchanges, with this common payload marker affirming a continuous and error-free operation despite the appearance of ambiguous indicators in isolated reports."];
+	s7 -> s2 [label="user1|local|AddDevice / NoElement"];
+	s7 -> s7 [label="user1|local|ShareCamera / Symbol: CLS_2. Operation result: Failed. Evidence: '{'code':-12,'message':'false','result':'false'}'. Reason: Explicit failure indicated by error code -12 with 'false' message and result, denying the sharing attempt."];
+	s7 -> s5 [label="user1|local|RemoveDevice / Symbol: CLS_0. Operation result: Success. Evidence: ''code':0,'message':'ok''. Reason: The consistent API packet payload carrying code 0 and message 'ok' confirms the successful removal, with the common evidence fragment ''code':0,'message':'ok'' observed across the reports."];
+	s7 -> s6 [label="user1|local|UnshareCamera / Symbol: CLS_0. Operation result: Success. Evidence: ''code':0,'message':'ok''. Reason: The majority of payloads returned a code 0 with message 'ok', conclusively indicating a successful unshare operation, while an outlier cited unmatched packet headers without contradicting the prevailing code 0 evidence."];
+	s7 -> s8 [label="user2|remote|AcceptDeviceShare / Symbol: CLS_0. Operation result: Success. Evidence: ''code':0,'message':'ok''. Reason: The share_response payload consistently indicates a success condition with a return code 0 and an 'ok' message, confirming proper share acceptance."];
+	s7 -> s2 [label="user2|remote|DeviceControl / NoElement"];
+	s8 -> s8 [label="user1|remote|DeviceControl / Symbol: CLS_0. Operation result: Success. Evidence: 'pppp_stream_payload'. Reason: The predominant traffic patterns indicate successful remote device control as demonstrated by the repeated presence of 'pppp_stream_payload' within sustained data exchanges, with this common payload marker affirming a continuous and error-free operation despite the appearance of ambiguous indicators in isolated reports."];
+	s8 -> s2 [label="user1|local|AddDevice / NoElement"];
+	s8 -> s8 [label="user1|local|ShareCamera / Symbol: CLS_1. Operation result: Failed. Evidence: '{'code':-11,'message':'have share permit','result':'have share permit'}'. Reason: Existing share permission conflict indicated by error code -11 with 'have share permit' message and result, blocking new sharing requests."];
+	s8 -> s5 [label="user1|local|RemoveDevice / Symbol: CLS_0. Operation result: Success. Evidence: ''code':0,'message':'ok''. Reason: The consistent API packet payload carrying code 0 and message 'ok' confirms the successful removal, with the common evidence fragment ''code':0,'message':'ok'' observed across the reports."];
+	s8 -> s6 [label="user1|local|UnshareCamera / Symbol: CLS_0. Operation result: Success. Evidence: ''code':0,'message':'ok''. Reason: The majority of payloads returned a code 0 with message 'ok', conclusively indicating a successful unshare operation, while an outlier cited unmatched packet headers without contradicting the prevailing code 0 evidence."];
+	s8 -> s8 [label="user2|remote|AcceptDeviceShare / Symbol: CLS_2. Operation result: Failed. Evidence: ''message':'already in room''.Reason: Artificial supplement, already in the family at this time, to receive the invitation failed."];
+	s8 -> s8 [label="user2|remote|DeviceControl / Symbol: CLS_0. Operation result: Success. Evidence: ''code':0,'message':'ok'; ''code':0,'message':'ok''. Reason: Traffic analysis shows that user2 successfully accessed vendor details, established a P2P connection, and received streaming payloads. Responses from '/app/v2/device/miss_get_vendor' and standard operations retrieval indicate successful device control."];
+
+__start0 [label="" shape="none" width="0" height="0"];
+__start0 -> s0;
+
+}

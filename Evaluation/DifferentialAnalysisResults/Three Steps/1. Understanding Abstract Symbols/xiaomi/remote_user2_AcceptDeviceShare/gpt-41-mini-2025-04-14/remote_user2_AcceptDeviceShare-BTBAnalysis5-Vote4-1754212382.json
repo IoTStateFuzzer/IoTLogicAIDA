@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: ''code':0,'message':'ok','result':'true'''. Reason: The response consistently includes code 0, message 'ok', and result 'true', which are definitive indicators of successful acceptance of the share operation."
+    ],
+    [
+        "Operation result: Failed. Evidence: ''code':-6,'message':'invalid request, invite not exist'''. Reason: The negative code -6 paired with the explicit error message 'invalid request, invite not exist' conclusively demonstrates failure due to an invalid or missing share invitation."
+    ],
+    [
+        ""
+    ]
+]

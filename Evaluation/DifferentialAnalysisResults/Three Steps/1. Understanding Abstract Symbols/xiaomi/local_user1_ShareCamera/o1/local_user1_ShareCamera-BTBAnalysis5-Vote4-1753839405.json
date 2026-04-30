@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: 'code':0'. Reason: Code=0 indicates a successful share request."
+    ],
+    [
+        "Operation result: Failed. Evidence: 'code':-11'. Reason: Most reports indicate negative code -11 means the share attempt did not succeed; an alternate explanation suggests the device is already shared."
+    ],
+    [
+        "Operation result: Failed. Evidence: 'code':-12'. Reason: Negative code -12 indicates the share request was refused."
+    ]
+]

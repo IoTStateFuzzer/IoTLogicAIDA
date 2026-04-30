@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Success. Evidence: '{'code':200,'message':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd','result':null,'success':true}'. Reason: The response payload contained HTTP status code 200 and an explicit success=true flag, confirming successful device sharing operation."
+    ],
+    [
+        "Operation result: Failed. Evidence: '{'code':|------|,'message':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd','result':null,'success':false}'. Reason: The response payload contained an explicit success=false flag, indicating operation failure despite the masked HTTP status code."
+    ]
+]

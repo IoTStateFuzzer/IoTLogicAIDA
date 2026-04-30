@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Failed. Evidence: ''success':false,'errorCode':'REPETITION_SHARE''; ''errorMsg':'This device has already been shared with the user.''. Reason: Consistent error payload confirms sharing failed due to existing share relationship (REPETITION_SHARE code with matching error message)"
+    ],
+    [
+        "Operation result: Success. Evidence: ''success':true,'result':{'receiverName':'user2'}' ; ''result':{'receiverName':'user2','relationId':117443320}'. Reason: Multiple successful payloads confirm sharing completion with user2, including relation ID creation"
+    ]
+]

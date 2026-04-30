@@ -1,0 +1,14 @@
+[
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Evidence: '{'data':'paVaWqHSAws1AAAAeyJwd3IiOjEsImluZGljYXRvciI6MSwibWF4d29ya3RpbWUiOjAsImNoaWxkbG9jayI6MH0AAAAAAAAAAAAAAAAAAAA='}'. Reason: The majority consensus indicates a successful operation, supported by the presence of valid data in the payload with 'pwr' set to 1, confirming device control execution. A minority report suggests failure due to a device reset error, but this is outweighed by the consistent success evidence."
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Evidence: '{'type':'DEVICE_RESET','message':'device reset, please rebind','status':-7}'. Reason: The majority of reports confirm failure, evidenced by the device reset error with status code -7, indicating the need for rebinding. A single report indicates success based on data payload, but this is inconsistent with the predominant error condition."
+    ]
+]

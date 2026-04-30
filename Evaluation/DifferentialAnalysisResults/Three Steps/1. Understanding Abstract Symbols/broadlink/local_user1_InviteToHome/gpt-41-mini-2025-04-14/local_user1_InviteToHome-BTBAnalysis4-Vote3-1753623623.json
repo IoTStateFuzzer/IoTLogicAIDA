@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Success. Evidence: '{'error':0,'status':0,'msg':'ok','data':{'qrcode':'11Abs_Len14|'}}'. Reason: The unanimous consensus indicates that the invite operation succeeded, as the response consistently shows error=0 and status=0 alongside an 'ok' message. Critically, the presence of valid QR code data within the data field further confirms that the invitation process was completed successfully, reflecting an error-free and properly handled request."
+    ],
+    [
+        "Operation result: Success. Evidence: '{'error':0,'status':0,'msg':'ok','data':{'qrcode':'11Abs_Len14|'}}'. Reason: Consistent agreement across all evidence shows that the invite-to-home operation was successful. The zero error and status codes combined with the 'ok' message and availability of QR code data constitute a robust indication that the system processed the invite request correctly and without fault."
+    ]
+]

@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: '{'code':0,'message':'ok','result':'true'}'. Reason: Consistent success confirmation (code 0) with operational acceptance message across all reports."
+    ],
+    [
+        "Operation result: Failed. Evidence: '{'code':-11,'message':'have share permit'}'. Reason: Unanimous permission conflict detection (code -11) indicating existing share rights."
+    ],
+    [
+        "Operation result: Failed. Evidence: '{'code':-12,'message':'false'}'. Reason: Consistent rejection evidence (code -12) with explicit failure state in payload."
+    ]
+]

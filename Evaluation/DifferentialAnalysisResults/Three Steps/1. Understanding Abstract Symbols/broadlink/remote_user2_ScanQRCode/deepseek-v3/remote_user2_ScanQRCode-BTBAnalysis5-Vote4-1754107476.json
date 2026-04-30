@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: ''error':0,'status':0,'msg':'ok''. Reason: Consistent success status codes (0) with confirmation message ('ok') across all reports."
+    ],
+    [
+        "Operation result: Failed. Evidence: ''error':-2010,'status':-2010'. Reason: Consistent negative error codes (-2010) indicating system rejection."
+    ],
+    [
+        "Operation result: Failed. Evidence: ''error':-2011,'status':-2011'. Reason: Consistent negative error codes (-2011) indicating system rejection."
+    ]
+]

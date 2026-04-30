@@ -1,0 +1,14 @@
+[
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Evidence: {'data':'...pwr':0...'}. Reason: The device response payload consistently showed power state set to 0 (pwr=0) with no error indicators, confirming successful state change through a valid control transmission."
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Evidence: 'name':'ErrorResponse', 'status':-7, 'message':'device reset, please rebind'; 'name':'ErrorResponse','payload':{'type':'DEVICE_RESET','message':-7}. Reason: ErrorResponse with status/message code -7 and explicit reset/rebind directives confirmed access denial due to unauthorized control attempts, requiring device reauthentication."
+    ]
+]

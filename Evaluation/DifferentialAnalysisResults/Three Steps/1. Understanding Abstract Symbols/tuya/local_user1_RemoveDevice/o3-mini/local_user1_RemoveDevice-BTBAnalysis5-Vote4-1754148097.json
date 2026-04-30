@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: **''type':'del''**. Reason: The majority of reports show an MQTT payload carrying the deletion indicator (''type':'del''), which confirms that the RemoveDevice operation successfully executed."
+    ]
+]

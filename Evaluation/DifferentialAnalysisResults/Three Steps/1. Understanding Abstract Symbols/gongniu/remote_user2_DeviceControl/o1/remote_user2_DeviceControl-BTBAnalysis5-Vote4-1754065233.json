@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: 'code=200, success=true'. Reason: The request returned code=200 with success=true, indicating a successful control"
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Evidence: 'code=9017, success=false'. Reason: The request returned code=9017 with success=false, indicating a failed control attempt"
+    ]
+]

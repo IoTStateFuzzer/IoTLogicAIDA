@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: ''value':1'. Reason: The MQTT messages from the user1_local flow consistently show an update in the device property with the payload indicating a value change to 1. This common evidence, reflected in multiple packets, confirms that the DeviceControl operation successfully executed."
+    ]
+]

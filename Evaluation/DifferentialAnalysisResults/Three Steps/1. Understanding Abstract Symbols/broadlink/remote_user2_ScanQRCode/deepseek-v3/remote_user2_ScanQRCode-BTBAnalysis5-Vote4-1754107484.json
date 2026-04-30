@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: 'error':0,'status':0,'msg':'ok'. Reason: HTTP 200 with success status codes and 'ok' message confirmation."
+    ],
+    [
+        "Operation result: Failed. Evidence: 'error':-2010,'status':-2010. Reason: Negative error code (-2010) indicates operation failure with credential rejection."
+    ],
+    [
+        "Operation result: Failed. Evidence: 'error':-2011,'status':-2011. Reason: Negative error code (-2011) indicates operation failure with system rejection."
+    ]
+]

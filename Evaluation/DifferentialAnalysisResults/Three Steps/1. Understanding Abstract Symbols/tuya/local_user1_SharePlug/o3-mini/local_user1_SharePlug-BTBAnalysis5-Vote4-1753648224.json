@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Failed. Evidence: FPSPER{'t':|-----------|,'success':false,'errorCode':'REPETITION_SHARE','status':'error','errorMsg':'This\ufffd\ufffddevice\ufffd\ufffdhas\ufffd\ufffdalready\ufffd\ufffdbeen\ufffd\ufffdshared\ufffd\ufffdwith\ufffd\ufffdthe\ufffd\ufffduser.'}. Reason: The sharing API returned failure with errorCode REPETITION_SHARE, and each response consistently indicates 'success':false and 'status':'error', confirming that the plug had already been shared."
+    ],
+    [
+        "Operation result: Success. Evidence: FPSPER{'result':{'receiverName':'user2','relationId':117443320},'t':|-----------|,'success':true,'status':'ok'}. Reason: The sharing API call succeeded with valid result details; the inclusion of receiverName 'user2' and relationId 117443320 confirms that the plug was successfully shared."
+    ]
+]

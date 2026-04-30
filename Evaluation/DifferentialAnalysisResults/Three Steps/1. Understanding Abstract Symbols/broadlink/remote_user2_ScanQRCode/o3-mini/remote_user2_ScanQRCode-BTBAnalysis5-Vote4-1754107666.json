@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: ''msg':'ok''. Reason: The payload consistently includes the fragment 'msg':'ok', which confirms an error code of 0 and hence a successful ScanQRCode operation."
+    ],
+    [
+        "Operation result: Failed. Evidence: ''error':-2010''. Reason: The recurring payload fragment 'error':-2010 clearly indicates a negative error condition, marking the ScanQRCode operation as failed."
+    ],
+    [
+        "Operation result: Failed. Evidence: ''error':-2011''. Reason: Consistent appearance of the payload fragment 'error':-2011 demonstrates the presence of a negative error code, confirming failure of the ScanQRCode operation."
+    ]
+]

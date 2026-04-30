@@ -1,0 +1,8 @@
+my.combine.api.io.mi.com.api.mijia.tech|443|tcp||||||0x00000018|5792||
+my.combine.api.io.mi.com.api.mijia.tech|443|tcp||||||0x00000018|4728||
+my.combine.api.io.mi.com.api.mijia.tech|443|tcp||||||0x00000018|7240||
+api.mijia.tech|443|http|POST|api.mijia.tech|/app/user/del_owner_device_batch||||||
+api.mijia.tech|443|http|POST|api.mijia.tech|/app/v2/message/get_msg_alert||||||
+core.api.mijia.tech|443|http|POST|core.api.mijia.tech|/app/v2/plugin/get_support_models||||||
+home.mi.com|443|http|GET|home.mi.com|/cgi-op/api/v1/recommendation/banner||||||
+my.combine.api.io.mi.com.api.mijia.tech|443|http|POST|api.mijia.tech|/app/v2/statv2/stat_info||||||

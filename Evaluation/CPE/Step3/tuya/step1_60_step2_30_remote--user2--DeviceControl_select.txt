@@ -1,0 +1,1 @@
+a1.tuyacn.com|443|http|POST|a1.tuyacn.com|/api.json/smartlife/m/pull/config/data/for/app|||||

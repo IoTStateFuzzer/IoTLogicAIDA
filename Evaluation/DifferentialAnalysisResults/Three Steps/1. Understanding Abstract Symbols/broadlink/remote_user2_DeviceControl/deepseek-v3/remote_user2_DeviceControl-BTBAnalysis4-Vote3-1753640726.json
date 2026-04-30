@@ -1,0 +1,14 @@
+[
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Evidence: 'payload':{'data':'paVaWqHSAws1AAAAeyJwd3IiOjEsImluZGljYXRvciI6MSwibWF4d29ya3RpbWUiOjAsImNoaWxkbG9jayI6MH0AAAAAAAAAAAAAAAAAAAA='}. Reason: The payload contains a successful control response with 'pwr':1 indicating device power state change. The consistent presence of valid data fields and power state confirmation across all reports demonstrates successful operation execution."
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Evidence: 'payload':{'type':'DEVICE_RESET','message':'device reset, please rebind','status':-7}. Reason: The error response consistently indicates a reset state requiring re-binding, preventing successful operation. The uniform status code (-7) and reset message across all reports confirm operational failure due to device state."
+    ]
+]

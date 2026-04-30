@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Undetermined. Evidence: '**Missing explicit removal confirmation**'; **'user1_local' MQTT packet lacked remove confirmation**; **'user1_local_mqtt packet missing explicit removal confirmation'**; **'user1_local|mqtt packet with thing.properties payload'**. Reason: The majority consensus is based on locally-relevant evidence showing that the user1_local packet does not provide an explicit deletion confirmation\u2014no explicit removal status or success code is present\u2014while a secondary cloud-originated DELETE packet (HTTP DELETE with code 200) appears only as a significant minority detail."
+    ]
+]

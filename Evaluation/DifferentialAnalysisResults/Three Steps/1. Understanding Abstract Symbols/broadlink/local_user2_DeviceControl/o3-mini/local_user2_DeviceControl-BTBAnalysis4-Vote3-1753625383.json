@@ -1,0 +1,20 @@
+[
+    [
+        "Operation result: Success. Evidence: 'name':'Response'. Reason: The HTTP POST responses consistently returned a 'Response' event header\u2014whether as part of a JSON object with base64 payload or a simplified payload string\u2014indicating that the command from /device/control/v2/sdkcontrol was processed with a valid, well\u2010formed response."
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Undetermined. Evidence: 'user2_local||udp||||||||144FPSPERZAbs_Len2|UZAbs_Len2|UAbs_Len28|luAbs_Len4|aAbs_Len3|CAbs_Len89|'. Reason: The UDP packets, which uniformly carry the placeholder payload without structured fields or explicit status codes, do not provide conclusive evidence regarding the execution result of the device control command."
+    ]
+]

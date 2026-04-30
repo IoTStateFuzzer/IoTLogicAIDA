@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: 'code:200, success:true'; ''success':true'. Reason: Unshare operation succeeded with HTTP 200 status indicating server acceptance and consistent 'success':true payload fields across responses, confirming device cancellation execution."
+    ]
+]

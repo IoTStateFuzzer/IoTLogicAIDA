@@ -1,0 +1,11 @@
+### Base model
+No issues found.
+
+### Divergent model
+*   **Vulnerability 1: Unshare Fails to Revoke user2’s DeviceControl Permission**
+*   **Impact:** After user1 performs an “Unshare” action intended to revoke user2’s direct‐sharing permission, user2 can still successfully invoke “DeviceControl.” This unauthorized access violates the intended permission model and poses a risk to the device’s integrity and confidentiality. Despite the revocation or pending re‐acceptance state, user2 retains control privileges, indicating improper handling of permissions (CWE‑280) and a clear authorization gap.
+*   **Problematic State(s):**
+    *   `s12`: Performed “DeviceControl,” received a success (“CLS_1”) result, causing unauthorized control despite revoked permission.  
+    *   `s13`: Performed “DeviceControl,” received a success (“CLS_1”) result, causing unauthorized control during a pending re‐acceptance state.  
+    *   `s20`: Performed “DeviceControl,” received a success (“CLS_1”) result, indicating revoked permission was not enforced.  
+    *   `s21`: Performed “DeviceControl,” received a success (“CLS_1”) result, again enabling unauthorized operation in a pending share state.  

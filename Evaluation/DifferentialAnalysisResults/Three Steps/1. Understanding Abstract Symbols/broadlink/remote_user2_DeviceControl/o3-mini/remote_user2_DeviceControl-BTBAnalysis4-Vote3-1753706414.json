@@ -1,0 +1,14 @@
+[
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Evidence: 'Response' and payload data containing 'paVaWq'. Reason: HTTP POST responses featuring the event header 'Response' along with data payload segments such as 'paVaWq...' were consistently observed, and these valid control data fragments indicate that the command execution succeeded."
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Evidence: 'ErrorResponse', 'device reset, please rebind', and status -7. Reason: The responses include an 'ErrorResponse' event with a payload explicitly stating 'device reset, please rebind' and a status of -7, which clearly indicates a failure in the device control operation."
+    ]
+]

@@ -1,0 +1,14 @@
+[
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Evidence: **'Response'**. Reason: The majority of reports consistently show a 'Response' header indicating successful device control via multiple valid payload acknowledgments."
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Evidence: **'ErrorResponse' with 'device reset, please rebind'**. Reason: The prevailing evidence indicates a failure triggered by an error response that calls for a device reset with rebind instructions, while a single variant adds status detail but does not alter the overall failure conclusion."
+    ]
+]

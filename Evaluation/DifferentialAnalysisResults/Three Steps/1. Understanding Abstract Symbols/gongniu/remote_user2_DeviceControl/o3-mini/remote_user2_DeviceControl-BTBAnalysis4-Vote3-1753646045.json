@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: '{'code':200,'message':'\\ufffd\\ufffd\\ufffd\\ufffd\\ufffd\\ufffd\\ufffd\\ufffd\\ufffd\\ufffd\\ufffd\\ufffd','result':null,'success':true}'. Reason: The HTTP response consistently shows a 200 code with 'success':true, indicating that the device control command executed properly despite additional MQTT messages."
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Evidence: '{'code':9017,'message':'','result':null,'success':false}'. Reason: The HTTP response consistently carries error code 9017 with 'success':false, which objectively indicates that the device control operation failed."
+    ]
+]

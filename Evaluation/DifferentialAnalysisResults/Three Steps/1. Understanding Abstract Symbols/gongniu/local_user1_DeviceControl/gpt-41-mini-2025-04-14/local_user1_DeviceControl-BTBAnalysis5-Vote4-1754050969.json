@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: ''code':200', ''success':true', ''value':1', PowerSwitch value change from 0 to 1, MQTT property update value changed from 0 to 1, MQTT update with 'PowerSwitch' value change to 1, MQTT property value change to 1. Reason: Majority consensus confirms operation success based on HTTP 200 status and success:true flags, along with multiple MQTT payloads verifying PowerSwitch property updated from 0 to 1 as intended."
+    ]
+]

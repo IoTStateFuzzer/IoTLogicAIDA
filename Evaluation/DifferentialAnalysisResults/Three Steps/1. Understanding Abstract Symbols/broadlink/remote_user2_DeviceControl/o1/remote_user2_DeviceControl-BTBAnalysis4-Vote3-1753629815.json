@@ -1,0 +1,14 @@
+[
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Evidence:  . Reason: Multiple indications of normal responses with no negative status confirm a successful device control."
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Evidence: 'payload':{'type':'DEVICE_RESET','status':-7}. Reason: The negative status -7 referencing a device reset indicates the control attempt failed and requires a rebind."
+    ]
+]

@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: 'api.mijia.tech|443|http|POST|api.mijia.tech|/app/share/delete_user||||||FPSPER{'code':0,'message':'ok','result':{'list':[{'pid':0,'did':'369647111','ret':1}]}}', '{'code':0,'message':'ok','result':{'list':[{'pid':0,'did':'369647111','ret':1}]}}'. Reason: The consistent presence of response code 0 and message 'ok' across all reports, along with the result indicating 'ret':1 for device id '369647111', demonstrates a successful unshare operation. The unanimous agreement and identical evidence confirm the operation concluded successfully."
+    ]
+]

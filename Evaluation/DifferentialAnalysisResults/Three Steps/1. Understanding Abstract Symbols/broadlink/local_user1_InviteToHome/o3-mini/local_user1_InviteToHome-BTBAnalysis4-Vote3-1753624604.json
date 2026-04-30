@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Success. Evidence: '{'error':0,'status':0,'msg':'ok','data':{'qrcode':'11Abs_Len14|'}}'. Reason: The responses consistently include error 0, status 0, a message 'ok', and a valid qrcode payload, which confirms that the invite operation was executed successfully."
+    ],
+    [
+        "Operation result: Success. Evidence: '{'error':0,'status':0,'msg':'ok','data':{'qrcode':'11Abs_Len14|'}}'. Reason: The evidence shows that every response returned error 0 and status 0 along with the same valid qrcode, providing clear confirmation of a successful invitation process."
+    ]
+]

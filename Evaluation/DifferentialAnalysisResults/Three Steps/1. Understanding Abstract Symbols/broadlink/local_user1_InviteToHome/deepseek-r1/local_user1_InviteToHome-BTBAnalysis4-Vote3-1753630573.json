@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Undetermined. Evidence: {'error':0,'status':0,'msg':'ok','data':{'qrcode':'11Abs_Len14|'}}. Reason: QR code generation succeeded (status/error 0), but critical absence of user2 in family member list from initial traffic set prevents full confirmation. Majority consensus acknowledges technical success at API level but requires behavioral confirmation for final status."
+    ],
+    [
+        "Operation result: Success. Evidence: {'status':0,'error':0,'msg':'ok','data':{'familymember':[{'userid':'112dae9018cdebd9cc0614003ebfd219','type':1,'expiredtime':0}]}}. Reason: Family member list definitively shows user2 with member type=1 and status=0, confirming successful invitation propagation. Unified evidence demonstrates completed enrollment through persistent system state change."
+    ]
+]

@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Failed. Evidence: 'success':false,'errorCode':'REPETITION_SHARE','status':'error','errorMsg':'This device has already been shared with the user.'. Reason: The sharing request was rejected due to an existing share relationship, as explicitly confirmed by the error code 'REPETITION_SHARE' and the error message stating the device was already shared with the user."
+    ],
+    [
+        "Operation result: Success. Evidence: 'success':true,'status':'ok','result':{'receiverName':'user2','relationId':117443320}. Reason: The sharing operation succeeded, validated by the API response containing success status with a valid relation ID and receiver name identifying user2."
+    ]
+]

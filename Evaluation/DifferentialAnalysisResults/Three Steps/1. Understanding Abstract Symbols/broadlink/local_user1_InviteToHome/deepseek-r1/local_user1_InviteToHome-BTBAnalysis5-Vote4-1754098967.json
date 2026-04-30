@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Success. Evidence: 'status':0,'error':0,'msg':'ok''. Reason: Unanimous success indicators (status:0, error:0, message:'ok') from endpoint responses confirm successful QR code generation for invitation."
+    ],
+    [
+        "Operation result: Success. Evidence: 'status':0,'error':0,'msg':'ok';''familymember':[{'userid':'112dae9018cdebd9cc0614003ebfd219','type':1'. Reason: The operation succeeded with endpoint success indicators complemented by direct evidence of the invited user added as a guest in family member data (userid:112dae9018cdebd9cc0614003ebfd219, type:1), confirming invitation acceptance."
+    ]
+]

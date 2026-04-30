@@ -1,0 +1,6 @@
+a1.tuyacn.com|443|http|POST|a1.tuyacn.com|/api.json/smartlife/m/pull/config/data/for/app|||||
+device_0||tcp||||||0x00000018|40|
+device_0||tcp||||||0x00000018|24|
+user2_local||tcp||||||0x00000018|28|
+device_0||tcp||||||0x00000018|135|
+user2_local||tcp||||||0x00000018|123|

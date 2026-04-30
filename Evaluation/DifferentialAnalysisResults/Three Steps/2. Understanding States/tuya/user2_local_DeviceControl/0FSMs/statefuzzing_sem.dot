@@ -1,0 +1,88 @@
+digraph g {
+	// Atk action:["user2|local|DeviceControl"]
+	// KS:[]  Clickable:[]
+	s0 [shape="circle" label="s0"];
+	// KS:[]  Clickable:[]
+	s1 [shape="circle" label="s1"];
+	// KS:[]  Clickable:[]
+	s2 [shape="circle" label="s2"];
+	// KS:[]  Clickable:["user2|local|DeviceControl"]
+	s3 [shape="circle" label="s3"];
+	// KS:["user2|local|DeviceControl"]  Clickable:["user2|local|DeviceControl"]
+	s4 [shape="circle" label="s4"];
+	// KS:["user2|local|DeviceControl"]  Clickable:[]
+	s5 [shape="circle" label="s5"];
+	// KS:["user2|local|DeviceControl"]  Clickable:[]
+	s6 [shape="circle" label="s6"];
+	// KS:["user2|local|DeviceControl"]  Clickable:[]
+	s7 [shape="circle" label="s7"];
+	// KS:["user2|local|DeviceControl"]  Clickable:["user2|local|DeviceControl"]
+	s8 [shape="circle" label="s8"];
+	s0 -> s1 [label="user1|local|AddDevice / Symbol: CLS_-1. Operation result: Success."];
+	s0 -> s2 [label="user1|local|SharePlug / NoElement"];
+	s0 -> s2 [label="user1|local|UnsharePlug / NoElement"];
+	s0 -> s2 [label="user1|local|RemoveDevice / NoElement"];
+	s0 -> s2 [label="user1|local|DeviceControl / NoElement"];
+	s0 -> s2 [label="user2|local|DeviceControl / NoElement"];
+	s0 -> s2 [label="user2|remote|DeviceControl / NoElement"];
+	s1 -> s2 [label="user1|local|AddDevice / NoElement"];
+	s1 -> s3 [label="user1|local|SharePlug / Symbol: CLS_1. Operation result: Success. Evidence: 'success':true,'status':'ok'. Reason: Sharing endpoint returned success status with relationId confirmation. Bidirectional HTTP flow confirms device share operation completion."];
+	s1 -> s2 [label="user1|local|UnsharePlug / NoElement"];
+	s1 -> s0 [label="user1|local|RemoveDevice / Symbol: CLS_0. Operation result: Success. Evidence: ''type':'del''. Reason: MQTT payload contains definitive device deletion command (type: 'del') with no error responses observed in traffic, confirming successful removal execution."];
+	s1 -> s1 [label="user1|local|DeviceControl / Symbol: CLS_0. Operation result: Success. Evidence: '0x00000040'. Reason: MQTT PUBACK packet (0x40) confirms successful broker acknowledgment of command delivery per protocol standards. While minority reports indicate empty response payloads violating operational requirements, these findings are superseded by the consistent majority evidence of protocol-compliant PUBACK verification."];
+	s1 -> s2 [label="user2|local|DeviceControl / NoElement"];
+	s1 -> s2 [label="user2|remote|DeviceControl / NoElement"];
+	s2 -> s2 [label="user1|local|AddDevice / NoElement"];
+	s2 -> s2 [label="user1|local|SharePlug / NoElement"];
+	s2 -> s2 [label="user1|local|UnsharePlug / NoElement"];
+	s2 -> s2 [label="user1|local|RemoveDevice / NoElement"];
+	s2 -> s2 [label="user1|local|DeviceControl / NoElement"];
+	s2 -> s2 [label="user2|local|DeviceControl / NoElement"];
+	s2 -> s2 [label="user2|remote|DeviceControl / NoElement"];
+	s3 -> s2 [label="user1|local|AddDevice / NoElement"];
+	s3 -> s3 [label="user1|local|SharePlug / Symbol: CLS_0. Operation result: Failed. Evidence: 'success':false,'errorCode':'REPETITION_SHARE'. Reason: Explicit error response from sharing endpoint indicates device was already shared to user. Repetition share error prevents duplicate sharing operation."];
+	s3 -> s1 [label="user1|local|UnsharePlug / Symbol: CLS_0. Operation result: Success. Evidence: 'sharing/device/remove'; 'result':true. Reason: The removal API endpoint 'sharing/device/remove' consistently returned an explicit success indication with a true result, confirming the unshare operation."];
+	s3 -> s0 [label="user1|local|RemoveDevice / Symbol: CLS_0. Operation result: Success. Evidence: ''type':'del''. Reason: MQTT payload contains definitive device deletion command (type: 'del') with no error responses observed in traffic, confirming successful removal execution."];
+	s3 -> s3 [label="user1|local|DeviceControl / Symbol: CLS_0. Operation result: Success. Evidence: '0x00000040'. Reason: MQTT PUBACK packet (0x40) confirms successful broker acknowledgment of command delivery per protocol standards. While minority reports indicate empty response payloads violating operational requirements, these findings are superseded by the consistent majority evidence of protocol-compliant PUBACK verification."];
+	s3 -> s4 [label="user2|local|DeviceControl / Symbol: CLS_1. Operation result: Success. Evidence: 'FPSPER2.2Abs_Len124'. Reason: Investigations reveal that user2_local MQTT and TCP messages repeatedly include the payload 'FPSPER2.2Abs_Len124', which is interpreted as a successful acknowledgment of the command. While one instance presented a variant payload and a minor discrepancy, the dominant evidence supports the conclusion that the DeviceControl command executed successfully."];
+	s3 -> s3 [label="user2|remote|DeviceControl / Symbol: CLS_0. Operation result: Success. Evidence: Abs_Len1|. Reason: MQTT PUBACK delivery confirmation (evidence: Abs_Len1|) validates command acceptance through QoS 1 acknowledgment protocol, confirming successful broker receipt and device execution despite isolated reports of empty responses."];
+	s4 -> s2 [label="user1|local|AddDevice / NoElement"];
+	s4 -> s4 [label="user1|local|SharePlug / Symbol: CLS_0. Operation result: Failed. Evidence: 'success':false,'errorCode':'REPETITION_SHARE'. Reason: Explicit error response from sharing endpoint indicates device was already shared to user. Repetition share error prevents duplicate sharing operation."];
+	s4 -> s5 [label="user1|local|UnsharePlug / Symbol: CLS_0. Operation result: Success. Evidence: 'sharing/device/remove'; 'result':true. Reason: The removal API endpoint 'sharing/device/remove' consistently returned an explicit success indication with a true result, confirming the unshare operation."];
+	s4 -> s6 [label="user1|local|RemoveDevice / Symbol: CLS_0. Operation result: Success. Evidence: ''type':'del''. Reason: MQTT payload contains definitive device deletion command (type: 'del') with no error responses observed in traffic, confirming successful removal execution."];
+	s4 -> s4 [label="user1|local|DeviceControl / Symbol: CLS_0. Operation result: Success. Evidence: '0x00000040'. Reason: MQTT PUBACK packet (0x40) confirms successful broker acknowledgment of command delivery per protocol standards. While minority reports indicate empty response payloads violating operational requirements, these findings are superseded by the consistent majority evidence of protocol-compliant PUBACK verification."];
+	s4 -> s4 [label="user2|local|DeviceControl / Symbol: CLS_1. Operation result: Success. Evidence: 'FPSPER2.2Abs_Len124'. Reason: Investigations reveal that user2_local MQTT and TCP messages repeatedly include the payload 'FPSPER2.2Abs_Len124', which is interpreted as a successful acknowledgment of the command. While one instance presented a variant payload and a minor discrepancy, the dominant evidence supports the conclusion that the DeviceControl command executed successfully."];
+	s4 -> s4 [label="user2|remote|DeviceControl / Symbol: CLS_0. Operation result: Success. Evidence: Abs_Len1|. Reason: MQTT PUBACK delivery confirmation (evidence: Abs_Len1|) validates command acceptance through QoS 1 acknowledgment protocol, confirming successful broker receipt and device execution despite isolated reports of empty responses."];
+	s5 -> s2 [label="user1|local|AddDevice / NoElement"];
+	s5 -> s4 [label="user1|local|SharePlug / Symbol: CLS_1. Operation result: Success. Evidence: 'success':true,'status':'ok'. Reason: Sharing endpoint returned success status with relationId confirmation. Bidirectional HTTP flow confirms device share operation completion."];
+	s5 -> s2 [label="user1|local|UnsharePlug / NoElement"];
+	s5 -> s6 [label="user1|local|RemoveDevice / Symbol: CLS_0. Operation result: Success. Evidence: ''type':'del''. Reason: MQTT payload contains definitive device deletion command (type: 'del') with no error responses observed in traffic, confirming successful removal execution."];
+	s5 -> s5 [label="user1|local|DeviceControl / Symbol: CLS_0. Operation result: Success. Evidence: '0x00000040'. Reason: MQTT PUBACK packet (0x40) confirms successful broker acknowledgment of command delivery per protocol standards. While minority reports indicate empty response payloads violating operational requirements, these findings are superseded by the consistent majority evidence of protocol-compliant PUBACK verification."];
+	s5 -> s5 [label="user2|local|DeviceControl / Symbol: CLS_1. Operation result: Success. Evidence: 'FPSPER2.2Abs_Len124'. Reason: Investigations reveal that user2_local MQTT and TCP messages repeatedly include the payload 'FPSPER2.2Abs_Len124', which is interpreted as a successful acknowledgment of the command. While one instance presented a variant payload and a minor discrepancy, the dominant evidence supports the conclusion that the DeviceControl command executed successfully."];
+	s5 -> s2 [label="user2|remote|DeviceControl / NoElement"];
+	s6 -> s7 [label="user1|local|AddDevice / Symbol: CLS_-1. Operation result: Success."];
+	s6 -> s2 [label="user1|local|SharePlug / NoElement"];
+	s6 -> s2 [label="user1|local|UnsharePlug / NoElement"];
+	s6 -> s2 [label="user1|local|RemoveDevice / NoElement"];
+	s6 -> s2 [label="user1|local|DeviceControl / NoElement"];
+	s6 -> s6 [label="user2|local|DeviceControl / Symbol: CLS_NoResponse. Operation result: Failed. Reason: response is empty"];
+	s6 -> s2 [label="user2|remote|DeviceControl / NoElement"];
+	s7 -> s2 [label="user1|local|AddDevice / NoElement"];
+	s7 -> s8 [label="user1|local|SharePlug / Symbol: CLS_1. Operation result: Success. Evidence: 'success':true,'status':'ok'. Reason: Sharing endpoint returned success status with relationId confirmation. Bidirectional HTTP flow confirms device share operation completion."];
+	s7 -> s2 [label="user1|local|UnsharePlug / NoElement"];
+	s7 -> s6 [label="user1|local|RemoveDevice / Symbol: CLS_0. Operation result: Success. Evidence: ''type':'del''. Reason: MQTT payload contains definitive device deletion command (type: 'del') with no error responses observed in traffic, confirming successful removal execution."];
+	s7 -> s7 [label="user1|local|DeviceControl / Symbol: CLS_0. Operation result: Success. Evidence: '0x00000040'. Reason: MQTT PUBACK packet (0x40) confirms successful broker acknowledgment of command delivery per protocol standards. While minority reports indicate empty response payloads violating operational requirements, these findings are superseded by the consistent majority evidence of protocol-compliant PUBACK verification."];
+	s7 -> s7 [label="user2|local|DeviceControl / Symbol: CLS_0. Operation result: Success. Evidence: 'w3.3Abs_Len115|U'. Reason: Analysis shows that multiple device_0 TCP responses consistently feature the payload fragment 'w3.3Abs_Len115|U', indicating that the control command was processed without error. Even though one report included additional details leading to an undetermined result, the recurring evidence of the expected payload confirms successful operation."];
+	s7 -> s2 [label="user2|remote|DeviceControl / NoElement"];
+	s8 -> s2 [label="user1|local|AddDevice / NoElement"];
+	s8 -> s8 [label="user1|local|SharePlug / Symbol: CLS_0. Operation result: Failed. Evidence: 'success':false,'errorCode':'REPETITION_SHARE'. Reason: Explicit error response from sharing endpoint indicates device was already shared to user. Repetition share error prevents duplicate sharing operation."];
+	s8 -> s7 [label="user1|local|UnsharePlug / Symbol: CLS_0. Operation result: Success. Evidence: 'sharing/device/remove'; 'result':true. Reason: The removal API endpoint 'sharing/device/remove' consistently returned an explicit success indication with a true result, confirming the unshare operation."];
+	s8 -> s6 [label="user1|local|RemoveDevice / Symbol: CLS_0. Operation result: Success. Evidence: ''type':'del''. Reason: MQTT payload contains definitive device deletion command (type: 'del') with no error responses observed in traffic, confirming successful removal execution."];
+	s8 -> s8 [label="user1|local|DeviceControl / Symbol: CLS_0. Operation result: Success. Evidence: '0x00000040'. Reason: MQTT PUBACK packet (0x40) confirms successful broker acknowledgment of command delivery per protocol standards. While minority reports indicate empty response payloads violating operational requirements, these findings are superseded by the consistent majority evidence of protocol-compliant PUBACK verification."];
+	s8 -> s4 [label="user2|local|DeviceControl / Symbol: CLS_1. Operation result: Success. Evidence: 'FPSPER2.2Abs_Len124'. Reason: Investigations reveal that user2_local MQTT and TCP messages repeatedly include the payload 'FPSPER2.2Abs_Len124', which is interpreted as a successful acknowledgment of the command. While one instance presented a variant payload and a minor discrepancy, the dominant evidence supports the conclusion that the DeviceControl command executed successfully."];
+	s8 -> s8 [label="user2|remote|DeviceControl / Symbol: CLS_0. Operation result: Success. Evidence: Abs_Len1|. Reason: MQTT PUBACK delivery confirmation (evidence: Abs_Len1|) validates command acceptance through QoS 1 acknowledgment protocol, confirming successful broker receipt and device execution despite isolated reports of empty responses."];
+
+__start0 [label="" shape="none" width="0" height="0"];
+__start0 -> s0;
+
+}

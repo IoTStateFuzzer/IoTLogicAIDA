@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: {'error':0,'status':0,'msg':'ok','data':{'familyid':'11b9af345feef8afb71de0053611d0eb'}}. Reason: The response payload consistently indicates a successful operation, confirmed by the error code 0, status code 0, and the message 'ok', which collectively signify the successful acceptance of the invitation."
+    ]
+]

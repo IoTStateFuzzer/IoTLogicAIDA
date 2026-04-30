@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Success. Evidence: 'error':0'; 'qrcode'. Reason: Invitation succeeded with no error and a valid QR code was generated."
+    ],
+    [
+        "Operation result: Success. Evidence: ''userid':'112dae9018cdebd9cc0614003ebfd219','type':1'. Reason: User2 was added successfully as type=1, indicating a completed family membership."
+    ]
+]

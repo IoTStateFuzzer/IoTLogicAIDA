@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: 'property updates (value:0\u21921) with no errors'; 'params':{'iotId':'mHXk6DR3zDiKDwQd4vRo000000','items':{'PowerSwitch':{'value':0}} and {'value':1}'; 'thing.properties' with 'PowerSwitch' set to 0 then 1. Reason: Majority consensus indicates successful property toggles and no errors, though some reports highlight missing explicit success codes."
+    ]
+]

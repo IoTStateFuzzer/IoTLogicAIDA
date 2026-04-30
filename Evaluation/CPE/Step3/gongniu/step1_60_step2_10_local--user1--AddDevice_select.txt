@@ -1,0 +1,4 @@
+api.iotbull.com|443|http|POST|api.iotbull.com|/mos/device/v1/devices|||||
+api.link.aliyun.com|443|http|POST|api.link.aliyun.com|/living/awss/bt/devices/register|||||
+api.iotbull.com|443|http|GET|api.iotbull.com|/mos/product/v1/categories|||||
+api.iotbull.com|443|tcp||||||0x00000018|1667|

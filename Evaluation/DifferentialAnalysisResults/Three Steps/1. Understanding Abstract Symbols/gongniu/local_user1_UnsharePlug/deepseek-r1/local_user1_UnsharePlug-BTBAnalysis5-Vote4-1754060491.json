@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: 'code:200'; 'success:true'. Reason: Unshare operation succeeded with HTTP 200 status and explicit success flag in payload based on consistent authentication response patterns."
+    ]
+]

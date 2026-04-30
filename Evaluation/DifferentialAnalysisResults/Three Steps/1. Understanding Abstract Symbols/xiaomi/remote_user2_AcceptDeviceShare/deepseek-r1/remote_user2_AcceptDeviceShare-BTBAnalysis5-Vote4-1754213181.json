@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: 'code':0,'message':'ok','result':'true'; '/app/share/share_response'. Reason: HTTP 200 equivalent (code 0) with 'ok' message and 'true' result in share_response endpoint confirms successful share acceptance."
+    ],
+    [
+        "Operation result: Failed. Evidence: 'code':-6,'message':'invalid request, invite not exist'; '/app/share/share_response'. Reason: Error code -6 with 'invite not exist' message indicates invalid/expired sharing invitation at share_response endpoint."
+    ],
+    [
+        ""
+    ]
+]

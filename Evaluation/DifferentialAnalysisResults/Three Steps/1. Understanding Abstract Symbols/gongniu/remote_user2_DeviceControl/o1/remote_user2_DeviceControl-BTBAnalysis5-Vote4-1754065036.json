@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: 'code=200'. Reason: The HTTP response indicated a success code=200"
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Evidence: ''. Reason: The device responded with code=9017 or success=false, indicating failure"
+    ]
+]

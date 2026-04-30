@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Failed. Evidence: 'ErrorResponse' with status:-7 and message:'device reset, please rebind'. Reason: The unanimous presence of an explicit error response with status -7 and message 'device reset, please rebind' confirms that the AcceptInvite operation failed due to the device reset requiring rebind."
+    ]
+]

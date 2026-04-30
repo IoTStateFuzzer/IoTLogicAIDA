@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: '{'code':0,'message':'ok','result':'true'}'. Reason: HTTP 200 equivalent response with success confirmation and consistent positive status code"
+    ],
+    [
+        "Operation result: Failed. Evidence: '{'code':-6,'message':'invalid request, invite not exist'}'. Reason: Negative status code (-6) with explicit error message about non-existent invite"
+    ],
+    [
+        ""
+    ]
+]

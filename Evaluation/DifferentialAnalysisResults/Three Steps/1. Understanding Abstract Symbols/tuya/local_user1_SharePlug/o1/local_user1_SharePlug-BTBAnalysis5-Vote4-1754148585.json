@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Failed. Evidence: 'errorCode':'REPETITION_SHARE'. Reason: The share request indicated duplication and was not successful, showing the device was already shared."
+    ],
+    [
+        "Operation result: Success. Evidence: 'success':true. Reason: The add-sharing call returned a positive status, confirming the share was created."
+    ]
+]

@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Success. Evidence: 'bidirectional mqtt message exchange with sustained data flow'; 'bidirectional mqtt packets with sustained data flow'. Reason: Majority consensus confirms successful device control based on sustained, complete bidirectional MQTT packet sequences indicating uninterrupted communication and command execution."
+    ],
+    [
+        "Operation result: Undetermined. Evidence: 'single mqtt packet with no response or further exchange'; 'single mqtt packet only'; 'single short mqtt packet with no payload content'; 'single mqtt packet of length 1 with no payload details'; 'single MQTT packet with no payload and no status code'. Reason: Insufficient traffic and absence of response or explicit status indicators prevent determination of operation outcome."
+    ]
+]

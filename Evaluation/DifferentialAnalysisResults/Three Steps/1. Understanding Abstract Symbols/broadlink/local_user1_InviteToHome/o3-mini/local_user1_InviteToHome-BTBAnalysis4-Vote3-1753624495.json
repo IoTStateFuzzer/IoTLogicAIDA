@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Success. Evidence: '{'error':0,'status':0,'msg':'ok','data':{'qrcode':'11Abs_Len14|'}}'. Reason: The invite operation is confirmed by responses showing error=0, status=0 and a valid qrcode. This consistent packet content across the reports\u2014where the payload exactly includes {'error':0,'status':0,'msg':'ok','data':{'qrcode':'11Abs_Len14|'}}\u2014supports the successful execution of the InviteToHome operation."
+    ],
+    [
+        "Operation result: Success. Evidence: '{'error':0,'status':0,'msg':'ok','data':{'qrcode':'11Abs_Len14|'}}'. Reason: The invitation process is validated by the majority of responses that returned error=0, status=0 along with the proper qrcode field. The recurring raw evidence {'error':0,'status':0,'msg':'ok','data':{'qrcode':'11Abs_Len14|'}} appears in multiple traffic sets, objectively indicating that the operation executed successfully."
+    ]
+]

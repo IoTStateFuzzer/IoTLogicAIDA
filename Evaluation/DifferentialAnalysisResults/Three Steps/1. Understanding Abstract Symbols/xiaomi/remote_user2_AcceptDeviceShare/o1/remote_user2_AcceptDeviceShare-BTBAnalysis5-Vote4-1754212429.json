@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: 'code=0'. Reason: The share_response call returned code=0 indicating success"
+    ],
+    [
+        "Operation result: Failed. Evidence: 'code=-6'. Reason: The share_response indicated 'invalid request, invite not exist' with code=-6"
+    ],
+    [
+        ""
+    ]
+]

@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: {'error':0,'status':0,'msg':'ok'}. Reason: The consistent presence of error code 0, status 0, and message 'ok' across all reports confirms successful operation. Additional data fields in some responses (familyid, familyname, etc.) further validate the successful QR code scan and family account association."
+    ],
+    [
+        "Operation result: Failed. Evidence: {'error':-2010,'status':-2010,'msg':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd'}. Reason: The unanimous error code -2010 indicates a systematic failure in QR code processing. While the message content is garbled, the consistent negative status code confirms operational failure, likely related to invalid or expired QR credentials."
+    ],
+    [
+        "Operation result: Failed. Evidence: {'error':-2011,'status':-2011,'msg':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd'}. Reason: The persistent error code -2011 suggests a distinct failure mode from the -2010 cases, potentially indicating system-level rejection. The garbled message implies possible encoding issues, but the negative status codes definitively indicate operation failure."
+    ]
+]

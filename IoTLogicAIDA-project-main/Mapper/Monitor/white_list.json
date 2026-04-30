@@ -1,0 +1,16 @@
+{
+  "request_uri": [
+    "/device/control/v2/sdkcontrol",
+    "mustsel-/appsync/group/member/invited/joinfamily",
+    "mustsel-/app/share/share_response",
+
+    "mustsel-/mos/share/v1/devices/confirm",
+
+    "mustsel-/api.json/smartlife/m/sharing/device/remove",
+
+    "/app/v2/device/miss_get_vendor"
+  ],
+  "full_feature": [
+    "mustsel-user1_local||mqtt||||0x00000030|/sys/a1bveGxYmbV/C411E02ECC84/app/down/thing/properties"
+  ]
+}

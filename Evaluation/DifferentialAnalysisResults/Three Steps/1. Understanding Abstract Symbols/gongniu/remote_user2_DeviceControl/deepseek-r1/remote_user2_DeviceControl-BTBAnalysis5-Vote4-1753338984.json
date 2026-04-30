@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: {'code':200,'message':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd','success':true}. Reason: HTTP 200 status code with success=true consistently confirms valid command execution through standardized API response structure. All reports demonstrate identical success confirmation patterns despite Unicode character variations in message fields."
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Evidence: {'code':9017,'message':'','result':null,'success':false}. Reason: HTTP 9017 error code with success=false and empty message parameters indicates systemic authorization failure. Null result field and error code consistency across reports confirm server-side rejection due to permission restrictions or invalid control context."
+    ]
+]

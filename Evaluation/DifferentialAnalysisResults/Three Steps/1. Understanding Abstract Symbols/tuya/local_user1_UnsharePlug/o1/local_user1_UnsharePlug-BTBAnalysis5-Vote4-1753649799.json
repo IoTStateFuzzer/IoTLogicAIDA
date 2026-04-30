@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: '{'result':true,'t':|-----------|,'success':true,'status':'ok'}'. Reason: The removal request contained 'result':true and 'success':true, indicating the unshare operation was successfully completed."
+    ]
+]

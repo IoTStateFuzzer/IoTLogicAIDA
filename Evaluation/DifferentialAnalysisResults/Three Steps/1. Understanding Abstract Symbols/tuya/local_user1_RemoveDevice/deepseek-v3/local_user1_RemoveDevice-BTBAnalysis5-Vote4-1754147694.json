@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: **''type':'del''**; **'/api.json/smartlife/m/device/reset|||||FPSPER{'result':true,'t':|-----------|,'success':true,'status':'ok'}'**. Reason: Consistent MQTT payload confirmation of device deletion ('del' type) with corroborating HTTP 200 response showing successful reset operation (success:true, result:true, status:ok)"
+    ]
+]

@@ -1,0 +1,14 @@
+[
+    [
+        ""
+    ],
+    [
+        "Operation result: Success. Evidence: 'Response'. Reason: Multiple normal device responses with no negative codes indicate success"
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Evidence: 'ErrorResponse' 'status':-7. Reason: A negative code (-7) indicates device reset requiring rebind"
+    ]
+]

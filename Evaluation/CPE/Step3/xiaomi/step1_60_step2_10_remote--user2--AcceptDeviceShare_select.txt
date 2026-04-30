@@ -1,0 +1,4 @@
+home.mi.com|443|http|GET|home.mi.com|/cgi-op/api/v1/recommendation/banner||||||
+api.mijia.tech|443|http|POST|api.mijia.tech|/app/v2/message/v2/typelist||||||
+api.mijia.tech|443|http|POST|api.mijia.tech|/app/share/share_response||||||
+my.combine.api.io.mi.com.api.mijia.tech|443|http|POST|api.mijia.tech|/app/appgateway/miot/appsceneservice/AppSceneService/GetSpeedySceneList||||||

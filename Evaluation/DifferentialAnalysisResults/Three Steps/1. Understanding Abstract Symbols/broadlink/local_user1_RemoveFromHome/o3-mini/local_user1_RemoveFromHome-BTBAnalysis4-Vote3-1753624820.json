@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: '{'error':0,'status':0,'msg':'ok'}'; FPSPER{'error':0,'status':0,'msg':'ok'}'. Reason: The majority of API calls to /appsync/group/member/delfamilymember returned a payload with error=0 and msg 'ok', directly indicating a successful removal operation. Although one report included additional listing details after the removal call, the consistent API confirmation (error=0 and 'ok') across the other responses supports that the deletion operation was executed successfully."
+    ]
+]

@@ -1,0 +1,18 @@
+{
+  "constrain_dict": {
+    "user1|local|AddDevice": "not|user1|local|AddDevice",
+    "user1|local|RemoveDevice": "user1|local|AddDevice",
+    "user1|local|SharePlug": "user1|local|AddDevice",
+    "user1|local|UnsharePlug": ["or|user2|remote|AcceptDeviceShare", "or|user1|local|SharePlug"],
+    "user1|local|DeviceControl": "user1|local|AddDevice",
+
+    "user2|remote|DeviceControl": ["user1|local|AddDevice", "user2|remote|AcceptDeviceShare"],
+    "user2|remote|AcceptDeviceShare": ["user1|local|SharePlug", "not|user2|remote|AcceptDeviceShare"]
+  },
+  "conflict_dict": {
+    "user2|remote|AcceptDeviceShare": "user1|local|SharePlug",
+    "user1|local|SharePlug": "user1|local|SharePlug",
+    "user1|local|UnsharePlug": ["user1|local|SharePlug", "user2|remote|AcceptDeviceShare"],
+    "user1|local|RemoveDevice": ["user1|local|AddDevice", "user2|remote|AcceptDeviceShare", "user1|local|SharePlug"]
+  }
+}

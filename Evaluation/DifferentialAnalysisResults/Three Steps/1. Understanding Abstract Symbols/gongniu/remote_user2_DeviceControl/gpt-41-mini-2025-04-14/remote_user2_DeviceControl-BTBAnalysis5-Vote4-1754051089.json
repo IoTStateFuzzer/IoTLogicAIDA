@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: ''code':200'; ''success':true'. Reason: HTTP 200 status code with success:true message consistently confirm the command was accepted and executed; MQTT payload change confirms device property update."
+    ],
+    [
+        ""
+    ],
+    [
+        "Operation result: Failed. Evidence: ''code':9017'; ''success':false'. Reason: HTTP error code 9017 combined with success:false clearly indicates the device control operation failed."
+    ]
+]

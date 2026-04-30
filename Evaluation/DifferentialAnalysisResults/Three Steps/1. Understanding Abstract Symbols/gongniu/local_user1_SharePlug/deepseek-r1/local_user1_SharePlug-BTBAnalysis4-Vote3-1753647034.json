@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Success. Evidence: '{'code':200,'message':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd','result':null,'success':true}'. Reason: The response payload contained an explicit 'success':true field alongside an HTTP 200 status code, confirming the device sharing operation completed successfully. The presence of a structured JSON response with these indicators demonstrates successful endpoint processing at the sharing interface."
+    ],
+    [
+        "Operation result: Failed. Evidence: '{'code':|------|,'message':'\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd','result':null,'success':false}'. Reason: The explicit 'success':false field in the response payload indicates terminal operation failure. This is compounded by the presence of an obscured error code (|------|) and unreadable error message, confirming unrecoverable system-level errors during device sharing execution."
+    ]
+]

@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: 'error':0,'status':0,'msg':'ok'. Reason: The zero error and status values indicate operation success."
+    ],
+    [
+        "Operation result: Failed. Evidence: 'error':-2010,'status':-2010'. Reason: Negative error code -2010 indicates a failed request."
+    ],
+    [
+        "Operation result: Failed. Evidence: 'error':-2011,'status':-2011'. Reason: Negative error code -2011 indicates a failed operation."
+    ]
+]

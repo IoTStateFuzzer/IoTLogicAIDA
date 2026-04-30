@@ -1,0 +1,5 @@
+[
+    [
+        "Operation result: Success. Evidence: ''code':200'; ''success':true'. Reason: The HTTP 200 status and success:true in API responses consistently confirm acceptance of the command; the majority consensus acknowledges MQTT payload updates showing the PowerSwitch change to 1, verifying effective device control."
+    ]
+]

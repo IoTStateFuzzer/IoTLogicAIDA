@@ -1,0 +1,11 @@
+[
+    [
+        "Operation result: Success. Evidence: ''code':0'. Reason: code=0 indicates the share request succeeded; a minority found no relevant packet but does not alter the consensus of success."
+    ],
+    [
+        "Operation result: Failed. Evidence: ''code':-11'. Reason: the negative code indicates the request was not newly completed; a minority found no relevant packet but does not override the refusal code."
+    ],
+    [
+        "Operation result: Failed. Evidence: ''code':-12'. Reason: the negative code indicates the share request was refused; a minority found no relevant packet but does not affect the failure conclusion."
+    ]
+]

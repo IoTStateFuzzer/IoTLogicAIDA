@@ -1,0 +1,8 @@
+[
+    [
+        "Operation result: Success. Evidence: ''code':200, 'success':true'. Reason: Consistent HTTP 200 status codes with explicit success flags across all reports"
+    ],
+    [
+        "Operation result: Failed. Evidence: ''success':false'; ''code':|------|,'success':false'. Reason: Corrupted/incomplete status codes with consistent failure flags in all reports"
+    ]
+]
